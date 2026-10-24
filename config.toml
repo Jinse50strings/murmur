@@ -1,0 +1,87 @@
+[app]
+name = "Murmur"
+subtitle = "Complex networks & computational social science, daily"
+top_n = 10
+wechat_top_n = 5
+backfill_max = 3
+
+[arxiv]
+# cs.SI 社会与信息网络 / physics.soc-ph 物理与社会
+# cond-mat.stat-mech + nlin.AO 复杂系统 / cs.CY 计算与社会
+categories = ["cs.SI", "physics.soc-ph", "cond-mat.stat-mech", "nlin.AO", "cs.CY"]
+core_categories = ["cs.SI", "physics.soc-ph"]
+gated_categories = ["cond-mat.stat-mech", "nlin.AO", "cs.CY"]
+lookback_hours = 72
+max_results = 300
+
+[openalex]
+lookback_days = 3
+per_page = 200
+max_pages = 3
+journals = [
+  { name = "EPJ Data Science", issn = "2193-1127", broad = false },
+  { name = "Journal of Artificial Societies and Social Simulation", issn = "1460-7425", broad = false },
+  { name = "Big Data & Society", issn = "2053-9517", broad = false },
+  { name = "Social Science Computer Review", issn = "0894-4393", broad = false },
+  { name = "Network Science", issn = "2050-1242", broad = false },
+  { name = "Journal of Complex Networks", issn = "2051-1310", broad = false },
+  { name = "Social Networks", issn = "0378-8733", broad = false },
+  { name = "Journal of Computational Social Science", issn = "2432-2717", broad = false },
+  { name = "IEEE Transactions on Network Science and Engineering", issn = "2327-4697", broad = true },
+  { name = "Nature Human Behaviour", issn = "2397-3374", broad = true },
+  { name = "Nature Communications", issn = "2041-1723", broad = true },
+  { name = "Proceedings of the National Academy of Sciences", issn = "0027-8424", broad = true },
+  { name = "Science Advances", issn = "2375-2548", broad = true },
+  { name = "PNAS Nexus", issn = "2752-6542", broad = true },
+]
+
+[filter]
+max_candidates = 130
+min_score = 5.0
+
+keywords = [
+  # 网络科学与社会网络分析
+  "social network", "network science", "complex network", "network analysis",
+  "network structure", "network formation", "network evolution", "network topology",
+  "centrality", "homophily", "community detection", "clustering coefficient", "assortativity",
+  "small world", "scale-free", "power law", "percolation", "random graph",
+  "stochastic block model", "exponential random graph", "ergm",
+  "multilayer network", "multiplex network", "temporal network", "signed network",
+  "link prediction", "influence maximization", "citation network", "collaboration network",
+  "tie", "dyad", "clique", "social capital", "structural hole", "weak tie", "strong tie",
+  "peer effect", "peer influence", "social influence", "social contagion",
+  "network effect", "social structure", "social relation",
+  # 计算社会科学
+  "computational social science", "digital trace", "digital footprint", "social media",
+  "online platform", "online experiment", "collective behavior", "collective action",
+  "coordination", "cooperation", "opinion dynamics", "polarization", "echo chamber",
+  "misinformation", "disinformation", "information diffusion", "diffusion", "contagion", "cascade",
+  "agent-based", "agent based", "abm", "social simulation", "synthetic population",
+  "causal inference", "natural experiment", "text as data", "large language model", "llm agent",
+  "generative ai", "survey experiment", "segregation", "mobility", "migration", "urbanization",
+  "urban", "science of science", "inequality", "demography", "digital divide",
+]
+
+negative_keywords = [
+  # 物理/材料/化学
+  "protein", "polymer", "alloy", "crystal", "molecular dynamics", "quantum", "superconduct",
+  "magnetic", "optical", "photonic", "battery", "electrolyte", "cataly", "chemical", "fluid",
+  "turbulence", "granular", "soft matter", "active matter", "astro", "cosmolog", "climate model",
+  "electrochem", "photocorrosion", "electrosynthesis", "fluorinated", "chiral", "plasmon",
+  # 生物/医学
+  "gene", "genetic", "genome", "genomic", "proteom", "transcriptom", "metabolom",
+  "cellular", "clinical", "patient", "immune", "immun", "virus", "virome", "enterovirus",
+  "bacter", "microbi", "neuron", "brain", "tissue", "tumor", "cancer", "mouse", "mice",
+  "antibod", "enzyme", "receptor", "metabolic", "biosensing", "insecticide", "malaria",
+  "livestock", "fibroin", "keratin", "nucleoporin", "virolog",
+]
+
+[llm]
+model = "deepseek-chat"
+base_url = "https://api.deepseek.com"
+batch_size = 8
+max_abstract_chars = 800
+tags = [
+  "社会网络", "复杂网络", "扩散与传播", "舆论与极化", "在线平台", "数字痕迹",
+  "因果推断", "实验", "仿真与ABM", "LLM智能体", "文本计算", "城市与流动", "方法论", "综述",
+]
