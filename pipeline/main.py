@@ -45,6 +45,7 @@ def parse_args(argv: list[str] | None = None) -> argparse.Namespace:
     parser.add_argument("--no-backfill", action="store_true", help="do not fill quiet days from archives")
     parser.add_argument("--ignore-seen", action="store_true", help="ignore data/seen.json for this run")
     parser.add_argument("--no-seen-update", action="store_true", help="do not write seen state after the run")
+    parser.add_argument("--require-llm", action="store_true", help="fail if DeepSeek key is missing or all calls fail")
     return parser.parse_args(argv)
 
 
@@ -103,6 +104,9 @@ def main(argv: list[str] | None = None) -> int:
 
     api_key = os.environ.get("DEEPSEEK_API_KEY", "").strip()
     llm_enabled = bool(api_key) and not args.no_llm
+    if args.require_llm and not llm_enabled:
+        print("[fatal] LLM required but DEEPSEEK_API_KEY is missing or empty", flush=True)
+        return 1
     llm_failures = 0
     if llm_enabled:
         stats = enrich_with_llm(candidates, cfg, api_key)
@@ -112,6 +116,9 @@ def main(argv: list[str] | None = None) -> int:
             f"tokens_in={stats['prompt_tokens']} tokens_out={stats['completion_tokens']}",
             flush=True,
         )
+        if stats["batches"] > 0 and stats["failures"] == stats["batches"]:
+            print("[fatal] every LLM batch failed; aborting before writing", flush=True)
+            return 1
     else:
         reason = "--no-llm" if args.no_llm else "DEEPSEEK_API_KEY missing"
         print(f"[llm] rule-based fallback ({reason})", flush=True)

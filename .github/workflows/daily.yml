@@ -5,6 +5,11 @@ on:
     # 16:30 UTC = 00:30 Asia/Shanghai
     - cron: "30 16 * * *"
   workflow_dispatch:
+    inputs:
+      force_rescore:
+        description: "Force re-scoring of today's papers"
+        type: boolean
+        default: false
 
 permissions:
   contents: write
@@ -34,7 +39,12 @@ jobs:
         env:
           DEEPSEEK_API_KEY: ${{ secrets.DEEPSEEK_API_KEY }}
           OPENALEX_MAILTO: ${{ secrets.OPENALEX_MAILTO }}
-        run: python -m pipeline.main
+        run: |
+          if [ "${{ inputs.force_rescore }}" = "true" ]; then
+            python -m pipeline.main --require-llm --ignore-seen
+          else
+            python -m pipeline.main --require-llm
+          fi
 
       - name: Commit and push
         run: |
