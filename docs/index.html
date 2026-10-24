@@ -258,7 +258,33 @@ footer {
   cursor: pointer; white-space: nowrap;
 }
 .ghost-button:hover { border-color: var(--accent); color: var(--accent); }
-#today-view[hidden], #favorites-view[hidden] { display: none !important; }
+.archive-dates {
+  display: flex; gap: 7px; overflow-x: auto; padding: 0 0 8px;
+  margin: 0 0 14px 26px; scrollbar-width: thin;
+}
+.archive-dates[hidden] { display: none !important; }
+.archive-date {
+  flex: 0 0 auto; border: 1px solid var(--line); background: transparent;
+  color: var(--muted); font-family: var(--mono); font-size: 9.5px;
+  letter-spacing: 0.04em; padding: 6px 9px; border-radius: 4px;
+  cursor: pointer; white-space: nowrap;
+}
+.archive-date:hover { border-color: var(--line-strong); color: var(--fg); }
+.archive-date.is-active {
+  border-color: var(--accent); color: var(--accent);
+  background: var(--accent-soft);
+}
+.archive-meta {
+  margin: 0 0 12px 26px; font-family: var(--mono); font-size: 9.5px;
+  letter-spacing: 0.03em; color: var(--faint);
+}
+.archive-loading {
+  font-family: var(--mono); font-size: 10px; letter-spacing: 0.03em;
+  color: var(--faint); padding: 24px 0 24px 26px;
+}
+#today-view[hidden], #favorites-view[hidden], #archive-view[hidden] {
+  display: none !important;
+}
 @media (max-width: 720px) {
   .net { display: none; }
 }
@@ -275,6 +301,7 @@ footer {
   .card h2 { font-size: 18px; }
   .tldr { font-size: 13.5px; }
   .empty { margin-left: 18px; }
+  .archive-dates, .archive-meta, .archive-loading { margin-left: 18px; }
   .favorites-toolbar { flex-direction: column; align-items: stretch; }
   .ghost-button { align-self: flex-start; }
 }
@@ -336,6 +363,7 @@ footer {
     <div class="view-switch" role="tablist" aria-label="视图">
       <button class="view-button is-active" type="button" data-view="today" role="tab" aria-selected="true">今日</button>
       <button class="view-button" type="button" data-view="favorites" role="tab" aria-selected="false">收藏<span class="view-count" id="fav-count-badge"></span></button>
+      <button class="view-button" type="button" data-view="archive" role="tab" aria-selected="false">归档</button>
     </div>
   </header>
   <main id="today-view">
@@ -562,13 +590,26 @@ footer {
     <div id="favorites-list"></div>
     <p class="empty" id="favorites-empty" hidden>还没有收藏。点击论文卡片右上角的书签即可保存。</p>
   </section>
+  <section id="archive-view" hidden aria-label="往期回顾">
+    <div class="favorites-toolbar">
+      <div>
+        <div class="eyebrow">Archive / daily</div>
+        <h2>往期回顾</h2>
+        <p class="favorites-sub">按日期回看每日精选 · <span id="archive-count"></span></p>
+      </div>
+    </div>
+    <div class="archive-dates" id="archive-dates"></div>
+    <p class="archive-meta" id="archive-meta"></p>
+    <div id="archive-papers"></div>
+    <p class="empty" id="archive-empty" hidden>还没有更早的记录。</p>
+  </section>
   <footer>
     <div class="footer-links">
       <a href="feed.json">JSON Feed</a>
       <span>/</span>
       <a href="archive/index.json">Archive</a>
       <span>/</span>
-      <span>2026-10-24 21:44</span>
+      <span>2026-10-24 22:29</span>
     </div>
     <p class="disclaimer">内容由 AI 辅助筛选和摘要，仅作研究线索，请以论文原文为准。</p>
   </footer>
@@ -599,6 +640,14 @@ footer {
   var countBadge = document.getElementById("fav-count-badge");
   var countText = document.getElementById("favorites-count");
   var viewButtons = Array.prototype.slice.call(document.querySelectorAll("[data-view]"));
+  var archiveView = document.getElementById("archive-view");
+  var archiveDatesEl = document.getElementById("archive-dates");
+  var archivePapersEl = document.getElementById("archive-papers");
+  var archiveEmpty = document.getElementById("archive-empty");
+  var archiveMeta = document.getElementById("archive-meta");
+  var archiveCount = document.getElementById("archive-count");
+  var archiveDates = null;
+  var activeArchiveDate = null;
 
   function loadFavorites() {
     try {
@@ -651,6 +700,12 @@ footer {
     return parseInt(match[2], 10) + "月" + parseInt(match[3], 10) + "日";
   }
 
+  function fullDate(iso) {
+    var match = /^(\d{4})-(\d{2})-(\d{2})/.exec(String(iso || ""));
+    if (!match) return String(iso || "");
+    return match[1] + "年" + parseInt(match[2], 10) + "月" + parseInt(match[3], 10) + "日";
+  }
+
   function summaryOf(paper) {
     if (paper.tldr_zh) return paper.tldr_zh;
     if (paper.tldr) return paper.tldr;
@@ -677,7 +732,7 @@ footer {
     );
   }
 
-  function favoriteCard(paper) {
+  function paperCardHtml(paper, rankLabel) {
     var url = safeUrl(paper.url);
     var pdf = safeUrl(paper.pdf_url);
     var doi = safeUrl(paper.doi);
@@ -698,11 +753,13 @@ footer {
     var scoreHtml = paper.score != null && isFinite(score)
       ? '<span class="score"><span class="score-label">评分</span>' + score.toFixed(1) + "</span>"
       : "";
-
+    var badge = paper.backfill_date
+      ? '<span class="badge">往期精选</span>'
+      : "";
     return (
-      '<article class="card favorite-card" data-paper-id="' + escapeHtml(paper.id) + '">' +
-      '<div class="card-head"><span class="rank">Saved</span><div class="head-right">' +
-      scoreHtml + bookmarkButton(paper.id, true) + "</div></div>" +
+      '<article class="card" data-paper-id="' + escapeHtml(paper.id) + '">' +
+      '<div class="card-head"><span class="rank">' + escapeHtml(rankLabel) + '</span><div class="head-right">' +
+      badge + scoreHtml + bookmarkButton(paper.id, Boolean(favorites[paper.id])) + "</div></div>" +
       "<h2>" + title + "</h2>" +
       '<p class="tldr">' + escapeHtml(summaryOf(paper)) + "</p>" +
       '<p class="meta">' + meta + "</p>" +
@@ -710,6 +767,10 @@ footer {
       (links ? '<div class="links">' + links + "</div>" : "") +
       "</article>"
     );
+  }
+
+  function favoriteCard(paper) {
+    return paperCardHtml(paper, "Saved");
   }
 
   function favoriteItems() {
@@ -768,15 +829,100 @@ footer {
     toggleFavorite(button.getAttribute("data-bookmark"));
   });
 
+  function loadArchiveDay(date) {
+    activeArchiveDate = date;
+    Array.prototype.forEach.call(archiveDatesEl.querySelectorAll("[data-archive-date]"), function (button) {
+      var active = button.getAttribute("data-archive-date") === date;
+      button.classList.toggle("is-active", active);
+      button.setAttribute("aria-pressed", active ? "true" : "false");
+    });
+    archiveMeta.textContent = fullDate(date) + " · 加载中…";
+    archiveEmpty.hidden = true;
+    archivePapersEl.innerHTML = '<p class="archive-loading">正在加载这一天的论文…</p>';
+
+    fetch("archive/" + encodeURIComponent(date) + ".json", { cache: "no-store" })
+      .then(function (response) {
+        if (!response.ok) throw new Error("archive day");
+        return response.json();
+      })
+      .then(function (data) {
+        var papers = Array.isArray(data.papers) ? data.papers : [];
+        papers.forEach(function (paper) {
+          if (paper && paper.id) paperById[paper.id] = paper;
+        });
+        archiveMeta.textContent = fullDate(date) + " · " + papers.length + " 篇";
+        archivePapersEl.innerHTML = papers.map(function (paper, index) {
+          return paperCardHtml(paper, String(index + 1).padStart(2, "0"));
+        }).join("");
+        updateBookmarkButtons();
+      })
+      .catch(function () {
+        archivePapersEl.innerHTML = "";
+        archiveMeta.textContent = "";
+        archiveEmpty.textContent = "这一天的数据加载失败，请稍后重试。";
+        archiveEmpty.hidden = false;
+      });
+  }
+
+  function ensureArchive() {
+    if (archiveDates) return;
+    archiveDatesEl.hidden = false;
+    archiveDatesEl.innerHTML = '<span class="archive-loading">正在加载归档…</span>';
+
+    fetch("archive/index.json", { cache: "no-store" })
+      .then(function (response) {
+        if (!response.ok) throw new Error("archive index");
+        return response.json();
+      })
+      .then(function (data) {
+        archiveDates = Array.isArray(data.dates) ? data.dates : [];
+        archiveCount.textContent = archiveDates.length ? archiveDates.length + " 天" : "";
+        archiveDatesEl.innerHTML = "";
+        if (!archiveDates.length) {
+          archiveDatesEl.hidden = true;
+          archivePapersEl.innerHTML = "";
+          archiveMeta.textContent = "";
+          archiveEmpty.textContent = "还没有更早的记录。";
+          archiveEmpty.hidden = false;
+          return;
+        }
+        archiveEmpty.hidden = true;
+        archiveDatesEl.hidden = false;
+        archiveDatesEl.innerHTML = archiveDates.map(function (date, index) {
+          return '<button class="archive-date" type="button" data-archive-date="' +
+            escapeHtml(date) + '" aria-pressed="' + (index === 0 ? "true" : "false") + '">' +
+            escapeHtml(shortDate(date)) + "</button>";
+        }).join("");
+        loadArchiveDay(archiveDates[0]);
+      })
+      .catch(function () {
+        archiveDates = null;
+        archiveDatesEl.hidden = true;
+        archivePapersEl.innerHTML = "";
+        archiveMeta.textContent = "";
+        archiveEmpty.textContent = "归档加载失败，请稍后重试。";
+        archiveEmpty.hidden = false;
+      });
+  }
+
+  archiveDatesEl.addEventListener("click", function (event) {
+    var button = event.target.closest("[data-archive-date]");
+    if (!button) return;
+    var date = button.getAttribute("data-archive-date");
+    if (date && date !== activeArchiveDate) loadArchiveDay(date);
+  });
+
   function setView(view) {
     todayView.hidden = view !== "today";
     favoritesView.hidden = view !== "favorites";
+    archiveView.hidden = view !== "archive";
     viewButtons.forEach(function (button) {
       var active = button.getAttribute("data-view") === view;
       button.classList.toggle("is-active", active);
       button.setAttribute("aria-selected", active ? "true" : "false");
     });
     if (view === "favorites") renderFavorites();
+    if (view === "archive") ensureArchive();
   }
 
   viewButtons.forEach(function (button) {

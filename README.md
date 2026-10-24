@@ -73,6 +73,14 @@ cp .env.example .env
 - 「收藏」视图可导出 JSON 备份
 - 目前不提供跨设备同步；换设备时可用导出的 JSON 手动备份
 
+## 网页归档
+
+顶部「归档」视图按日期回看往期日报：
+
+- 日期列表来自 `docs/archive/index.json`，每天自动追加
+- 点击日期加载当天精选；收藏按钮与「收藏」视图互通
+- 归档 JSON 由每日 Actions 自动提交到 `docs/archive/`
+
 ## 配置说明
 
 `config.toml` 中主要可调项：
