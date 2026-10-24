@@ -2,49 +2,21 @@
   "app": "Murmur",
   "version": 1,
   "date": "2026-10-24",
-  "generated_at": "2026-10-24T15:56:13+08:00",
+  "generated_at": "2026-10-24T18:22:54+08:00",
   "count": 10,
   "counts": {
     "sources": {
-      "arxiv": 68,
-      "openalex": 148
+      "arxiv": 66,
+      "openalex": 153
     },
-    "unique": 216,
-    "new": 216,
-    "candidates": 35,
+    "unique": 219,
+    "new": 219,
+    "candidates": 33,
     "selected": 10,
     "fresh_selected": 10,
     "errors": 0
   },
   "papers": [
-    {
-      "id": "openalex:W7223209936",
-      "source": "openalex",
-      "title": "A phase transition for the strength of weak ties",
-      "authors": [
-        "Dr. Esha Chatterjee",
-        "Sourav Chatterjee"
-      ],
-      "abstract": "Abstract Granovetter's ``strength of weak ties'' argument links local triadic closure to the global importance of weak relationships, but it does not by itself quantify when strong ties can or cannot sustain large-scale connectivity. We study the subgraph formed by strong ties under a uniform, edgewise closure condition. A strong-tie graph is called p-transitive when, for every ordered adjacent pair (A,B), at least a fraction p of the strong neighbors of B other than A are also strong neighbors of A. Under a fixed maximum-degree bound, we prove a sharp structural transition at p = 2/3. If p > 2/3, every strong-tie component has size bounded by an explicit function of p and the degree bounds, independently of the total network size. If p < 2/3, bounded-degree p-transitive graphs can have arbitrarily large connected strong-tie components. We also revisit three unweighted real-world networks by thresholding a Jaccard neighborhood-overlap proxy for tie strength and plotting global transitivity against normalized size-biased mean component size. These empirical curves show fragmentation as low-overlap edges are removed, but their statistic and thresholds are not the theorem's edgewise parameter. The theorem is therefore a conditional structural result, while the data illustrate a related clustering--connectivity tradeoff rather than a direct validation of the constant 2/3.",
-      "url": "https://doi.org/10.1093/pnasnexus/pgag364",
-      "published": "2026-10-22",
-      "venue": "PNAS Nexus",
-      "categories": [],
-      "pdf_url": "",
-      "doi": "https://doi.org/10.1093/pnasnexus/pgag364",
-      "citations": 0,
-      "rule_score": 7.1,
-      "score": 9.355,
-      "tldr_zh": "在最大度约束下证明强关系p-传递图在p=2/3处发生尖锐结构相变，刻画强关系能否维持全局连通。",
-      "tldr": "",
-      "tags": [
-        "社会网络",
-        "复杂网络",
-        "方法论"
-      ],
-      "reason": "为弱关系强度理论给出严格相变结果，是社会网络与复杂网络交叉的重要理论贡献。",
-      "backfill_date": ""
-    },
     {
       "id": "arxiv:2610.30392",
       "source": "arxiv",
@@ -74,7 +46,7 @@
         "数字痕迹",
         "社会网络"
       ],
-      "reason": "提供伦理合规的大规模社交媒体数据，直接支撑社会网络分析与在线平台研究。",
+      "reason": "提供伦理合规的大规模社交媒体数据，直接支撑社会网络分析与叙事追踪。",
       "backfill_date": ""
     },
     {
@@ -102,7 +74,7 @@
       "citations": 0,
       "rule_score": 7.9,
       "score": 8.895,
-      "tldr_zh": "将四个LLM策略置于全连接、随机正则与异质网络上玩命名博弈，发现拓扑影响共识速度、可达性及对对抗的脆弱性。",
+      "tldr_zh": "将四个LLM策略置于不同网络拓扑中玩命名博弈，发现拓扑影响共识速度、是否达成及对对抗的脆弱性。",
       "tldr": "",
       "tags": [
         "LLM智能体",
@@ -110,6 +82,34 @@
         "仿真与ABM"
       ],
       "reason": "把网络拓扑与LLM群体集体行为结合，是复杂网络与LLM智能体交叉的核心问题。",
+      "backfill_date": ""
+    },
+    {
+      "id": "openalex:W7223209936",
+      "source": "openalex",
+      "title": "A phase transition for the strength of weak ties",
+      "authors": [
+        "Dr. Esha Chatterjee",
+        "Sourav Chatterjee"
+      ],
+      "abstract": "Abstract Granovetter's ``strength of weak ties'' argument links local triadic closure to the global importance of weak relationships, but it does not by itself quantify when strong ties can or cannot sustain large-scale connectivity. We study the subgraph formed by strong ties under a uniform, edgewise closure condition. A strong-tie graph is called p-transitive when, for every ordered adjacent pair (A,B), at least a fraction p of the strong neighbors of B other than A are also strong neighbors of A. Under a fixed maximum-degree bound, we prove a sharp structural transition at p = 2/3. If p > 2/3, every strong-tie component has size bounded by an explicit function of p and the degree bounds, independently of the total network size. If p < 2/3, bounded-degree p-transitive graphs can have arbitrarily large connected strong-tie components. We also revisit three unweighted real-world networks by thresholding a Jaccard neighborhood-overlap proxy for tie strength and plotting global transitivity against normalized size-biased mean component size. These empirical curves show fragmentation as low-overlap edges are removed, but their statistic and thresholds are not the theorem's edgewise parameter. The theorem is therefore a conditional structural result, while the data illustrate a related clustering--connectivity tradeoff rather than a direct validation of the constant 2/3.",
+      "url": "https://doi.org/10.1093/pnasnexus/pgag364",
+      "published": "2026-10-22",
+      "venue": "PNAS Nexus",
+      "categories": [],
+      "pdf_url": "",
+      "doi": "https://doi.org/10.1093/pnasnexus/pgag364",
+      "citations": 0,
+      "rule_score": 7.1,
+      "score": 8.855,
+      "tldr_zh": "在度有界且边闭合条件下证明强关系图在p=2/3处发生尖锐结构相变，界定弱关系何时维系全局连通。",
+      "tldr": "",
+      "tags": [
+        "复杂网络",
+        "社会网络",
+        "方法论"
+      ],
+      "reason": "为Granovetter弱关系理论给出严格相变刻画，是社会网络理论的重要方法进展。",
       "backfill_date": ""
     },
     {
@@ -135,41 +135,13 @@
       "citations": 0,
       "rule_score": 7.9,
       "score": 8.395,
-      "tldr_zh": "在核心-边缘随机块网络上研究阈值传播，发现调节核边连边分配可产生由两个相变界定的全局级联窗口。",
+      "tldr_zh": "在核心-边缘结构网络上研究阈值传播，发现调节连边分配可产生由两个相变界定的全局级联窗口。",
       "tldr": "",
       "tags": [
         "复杂网络",
         "扩散与传播"
       ],
       "reason": "揭示核心-边缘结构对信息级联双相变的影响，属复杂网络扩散核心议题。",
-      "backfill_date": ""
-    },
-    {
-      "id": "openalex:W7223147084",
-      "source": "openalex",
-      "title": "From lifestyle to citizenship: Social influence and political consumerism in egocentric networks",
-      "authors": [
-        "Xueying Zhang",
-        "Ting Wang"
-      ],
-      "abstract": "Political consumerism has become a widespread form of civic engagement, yet the social mechanisms driving boycotting and buycotting remain insufficiently understood. This study investigates how perceived citizenship norms within individuals’ egocentric networks are associated with their own civic orientations and subsequent participation in consumer activism. Using a national survey of 543 U.S. adults reporting on 1822 social ties, we integrate social learning and social influence theories to examine how network environments cultivate engaged and dutiful citizenship norms. Results show a strong correlation between perceived network norms and individuals’ internalized norms, with engaged citizenship norms significantly predicting both boycott and buycott behaviors. Dutiful norms show no significant association. Structural equation modeling reveals that network influence operates indirectly through internalized engaged norms rather than direct social pressure. The study concludes with practical implications for advocacy groups and public relations practitioners, emphasizing how value-aligned messaging and network-based mobilization strategies can more effectively activate consumer activism.",
-      "url": "https://doi.org/10.1016/j.socnet.2026.10.004",
-      "published": "2026-10-21",
-      "venue": "Social Networks",
-      "categories": [],
-      "pdf_url": "",
-      "doi": "https://doi.org/10.1016/j.socnet.2026.10.004",
-      "citations": 0,
-      "rule_score": 6.4,
-      "score": 8.32,
-      "tldr_zh": "用543名美国人的自我中心网络数据，发现感知到的网络公民规范与个人规范强相关，参与型规范显著预测抵制与购买行为。",
-      "tldr": "",
-      "tags": [
-        "社会网络",
-        "扩散与传播",
-        "方法论"
-      ],
-      "reason": "直接研究自我中心网络中的社会影响与政治消费行为，属社会网络分析核心议题。",
       "backfill_date": ""
     },
     {
@@ -196,75 +168,41 @@
       "citations": 0,
       "rule_score": 5.4,
       "score": 8.27,
-      "tldr_zh": "用因果发现框架分析2.7万名巴西研究者职业数据，发现生产力更可能驱动合作而非相反。",
+      "tldr_zh": "用因果发现框架分析2.7万巴西学者，发现生产力驱动合作而非相反。",
       "tldr": "",
       "tags": [
         "因果推断",
         "社会网络",
         "方法论"
       ],
-      "reason": "对科研合作网络做因果方向识别，方法与社会网络分析高度相关。",
+      "reason": "科学合作网络的因果方向识别，直接涉及社会网络与因果推断方法。",
       "backfill_date": ""
     },
     {
-      "id": "arxiv:2610.30900",
-      "source": "arxiv",
-      "title": "Silicon Samples Match the Answers but Not the Respondents",
+      "id": "openalex:W7223147084",
+      "source": "openalex",
+      "title": "From lifestyle to citizenship: Social influence and political consumerism in egocentric networks",
       "authors": [
-        "Yusuke Kumagae",
-        "Masahiro Kaneko"
+        "Xueying Zhang",
+        "Ting Wang"
       ],
-      "abstract": "Silicon sampling generates survey respondents by having a large language model (LLM) answer a survey as a person with given demographic attributes, and the resulting synthetic populations are increasingly used in place of human ones. Existing evaluations focus on individual-answer accuracy, per-question answer distributions, and correlations across questions. None of these compares the respondents themselves, so a generator whose respondents have combinations of answers found in no human respondent can still score well if it reproduces every answer distribution. We propose the respondent coverage gap (RCG), which represents each respondent as a point defined by their complete answer profile and measures how far each human respondent is from the nearest generated one, relative to the distance between human samples. On two US social surveys, all six LLMs we evaluate leave human respondents uncovered, and under our main settings, they fall behind a baseline that samples each answer independently from the human marginals. Across the prompting and inference settings we test, every LLM has a higher RCG than a Gaussian copula fitted to the human data.",
-      "url": "https://arxiv.org/abs/2610.30900",
-      "published": "2026-10-22",
-      "venue": "arXiv",
-      "categories": [
-        "cs.CL",
-        "cs.CY"
-      ],
-      "pdf_url": "https://arxiv.org/pdf/2610.30900v1",
-      "doi": "",
-      "citations": 0,
-      "rule_score": 4.9,
-      "score": 8.245,
-      "tldr_zh": "提出“受访者覆盖差距”指标，发现LLM合成的调查受访者虽能复现单题分布，却缺少真实人类答案组合。",
-      "tldr": "",
-      "tags": [
-        "LLM智能体",
-        "方法论",
-        "文本计算"
-      ],
-      "reason": "对LLM合成调查数据的方法论批判，直接关系计算社会科学中LLM替代人类样本的有效性。",
-      "backfill_date": ""
-    },
-    {
-      "id": "arxiv:2610.29375",
-      "source": "arxiv",
-      "title": "Characterizing Social Media Behavior under Limited Observability: Retweet Link Prediction and Multimodal Intention Recognition",
-      "authors": [
-        "Yifan Wang",
-        "Chenwei Wang"
-      ],
-      "abstract": "Social-media behavior can be observed through both interaction structure and multimodal content, yet each view is often incomplete. We study two complementary tasks on separate datasets: predicting retweet links from an extremely sparse graph without node attributes, and generating user intentions from text-image posts with limited annotations. For link prediction, we use a leakage-controlled transductive protocol to compare GCN and GraphSAGE, classical topology heuristics, and three node-input designs. Across repeated runs, a GCN with compact degree and strength features achieves an average precision of 0.9243 and an MCC of 0.7051. Under joint edge-label corruption, topology-based GCNs retain strong ranking performance, whereas fixed-threshold MCC degrades substantially; adding fixed random node identifiers does not improve overall robustness. For intention recognition, we retain the MIKO framework and evaluate LoRA adaptation of three language models together with distribution-aware sampling based on Pearson correlation, cosine similarity, and KL divergence. Fine-tuning consistently improves lexical-overlap metrics, while distribution-aware sampling produces more uniform performance across intention types. Together, the two studies characterize who interacts and why users post when social-media observations are sparse, noisy, or limited.",
-      "url": "https://arxiv.org/abs/2610.29375",
+      "abstract": "Political consumerism has become a widespread form of civic engagement, yet the social mechanisms driving boycotting and buycotting remain insufficiently understood. This study investigates how perceived citizenship norms within individuals’ egocentric networks are associated with their own civic orientations and subsequent participation in consumer activism. Using a national survey of 543 U.S. adults reporting on 1822 social ties, we integrate social learning and social influence theories to examine how network environments cultivate engaged and dutiful citizenship norms. Results show a strong correlation between perceived network norms and individuals’ internalized norms, with engaged citizenship norms significantly predicting both boycott and buycott behaviors. Dutiful norms show no significant association. Structural equation modeling reveals that network influence operates indirectly through internalized engaged norms rather than direct social pressure. The study concludes with practical implications for advocacy groups and public relations practitioners, emphasizing how value-aligned messaging and network-based mobilization strategies can more effectively activate consumer activism.",
+      "url": "https://doi.org/10.1016/j.socnet.2026.10.004",
       "published": "2026-10-21",
-      "venue": "arXiv",
-      "categories": [
-        "cs.SI"
-      ],
-      "pdf_url": "https://arxiv.org/pdf/2610.29375v1",
-      "doi": "",
+      "venue": "Social Networks",
+      "categories": [],
+      "pdf_url": "",
+      "doi": "https://doi.org/10.1016/j.socnet.2026.10.004",
       "citations": 0,
-      "rule_score": 7.9,
-      "score": 7.895,
-      "tldr_zh": "在极稀疏无属性图上比较GCN与GraphSAGE等做转推链接预测，并用图文帖子识别用户意图。",
+      "rule_score": 6.4,
+      "score": 7.82,
+      "tldr_zh": "基于543名美国人的自我中心网络调查，发现感知网络公民规范与个人规范强相关，参与型规范预测抵制与购买行为。",
       "tldr": "",
       "tags": [
         "社会网络",
-        "在线平台",
-        "文本计算"
+        "扩散与传播"
       ],
-      "reason": "涉及社会网络链接预测与多模态意图识别，对在线行为分析有方法价值。",
+      "reason": "用自我中心网络数据检验社会影响与政治消费行为，属社会网络分析实证研究。",
       "backfill_date": ""
     },
     {
@@ -294,14 +232,75 @@
       "citations": 0,
       "rule_score": 6.2,
       "score": 7.81,
-      "tldr_zh": "分析约82万条推文，发现马斯克收购推特后心理健康自我披露的情感与社会语言下降、第一人称表达上升。",
+      "tldr_zh": "分析约82万条推文，发现马斯克收购Twitter后心理健康自我披露的情感与社会语言下降、第一人称与亲密披露上升。",
       "tldr": "",
       "tags": [
         "在线平台",
-        "文本计算",
-        "数字痕迹"
+        "数字痕迹",
+        "文本计算"
       ],
-      "reason": "利用大规模数字痕迹与文本方法研究平台治理变化对披露行为的影响，与计算社会科学相关。",
+      "reason": "结合LIWC与LLM分类研究平台治理变动下的披露行为，与在线平台和文本计算相关。",
+      "backfill_date": ""
+    },
+    {
+      "id": "arxiv:2610.29714",
+      "source": "arxiv",
+      "title": "Condensation and optimal targeting of repeated forcing in heterogeneous networks",
+      "authors": [
+        "Jose Herrera-Diestra"
+      ],
+      "abstract": "Many networks receive repeated external forcing through a subset of entry nodes, for example infections imported from another population, information seeded by a campaign, or invasive species arriving through ports. We study how concentrating such forcing on important entry nodes, with seeding probability $π_i\\propto w_i^γ$, changes the size of the resulting cascades in a stochastic SIR model on bipartite networks. The response to one seeding event is linear in the degree of the seeded node, so the relative gain from targeting does not depend on transmissibility. The targeting distribution is a Gibbs measure. For importance tails $p(w)\\sim w^{-a}$ and responses growing as $w^η$, the targeted response diverges at $γ_1=a-1-η$ and the forcing condenses on a few nodes at $γ_2=a-1$. Under repeated forcing, the burden-maximizing exponent $γ^*$ is strictly positive, and in large populations depletion of nodes already reached bounds it by the condensation point, $γ^*\\leγ_2$. The optimum decays as $γ^*\\simeq K/x$ for intense forcing, where $x$ is the expected number of seeding events per entry node, and approaches the condensation point as $γ_2-γ^*\\simeq(a-1)/\\ln(1/x)$ for sparse forcing. A cut-off of the importance distribution rounds the transitions in populations smaller than a crossover size $n_c$ and removes them in larger ones. Networks calibrated to survey data on sexual partnerships have between $0.08\\,n_c$ and $0.8\\,n_c$ entry nodes, which places them in the finite-size regime, where the asymptotic results hold only qualitatively.",
+      "url": "https://arxiv.org/abs/2610.29714",
+      "published": "2026-10-21",
+      "venue": "arXiv",
+      "categories": [
+        "physics.soc-ph",
+        "nlin.AO"
+      ],
+      "pdf_url": "https://arxiv.org/pdf/2610.29714v1",
+      "doi": "",
+      "citations": 0,
+      "rule_score": 6.2,
+      "score": 7.81,
+      "tldr_zh": "研究异质网络中重复外部注入的级联规模，给出靶向分布为Gibbs测度及凝聚阈值条件。",
+      "tldr": "",
+      "tags": [
+        "复杂网络",
+        "扩散与传播",
+        "方法论"
+      ],
+      "reason": "异质网络上的SIR扩散与靶向注入理论，直接关联复杂网络传播研究。",
+      "backfill_date": ""
+    },
+    {
+      "id": "arxiv:2610.29924",
+      "source": "arxiv",
+      "title": "Geospatial Dynamics of Online Attention to Nuclear Power in Japan Before and After Fukushima",
+      "authors": [
+        "Yifan Sun",
+        "Ken Kurosaki",
+        "Benjamin C. McLellan"
+      ],
+      "abstract": "Nuclear power is increasingly seen as necessary for sustainable development, but this role depends on informed public engagement and support. Building this support requires understanding what citizens want to know, as reflected in their spontaneous online searches. To map this demand, we present the first long-term (2004-2024), prefecture-level analysis of Google Trends data on nuclear power in Japan. The results indicate that in routine periods, search interest followed a host-locality pattern, being significantly higher in prefectures hosting nuclear plants, with little spillover to their neighbors. Immediately after the Fukushima Daiichi accident in March 2011, this pattern changed, and interest instead declined with distance from Fukushima, before the host-locality pattern returned from 2012. During March 2011, searches leaned heavily toward general and live information rather than guidance on what to do. Their framing also varied with proximity, as those near Fukushima prioritized live updates and formal countermeasures, while others leaned toward background information and personal-scale questions. These patterns and the shift between them provide a behavioral evidence base for designing communication strategies in Japan and countries weighing the use of nuclear power. More broadly, the finding that searches vary with proximity can inform public communication in other geographically anchored crises.",
+      "url": "https://arxiv.org/abs/2610.29924",
+      "published": "2026-10-21",
+      "venue": "arXiv",
+      "categories": [
+        "cs.SI"
+      ],
+      "pdf_url": "https://arxiv.org/pdf/2610.29924v1",
+      "doi": "",
+      "citations": 0,
+      "rule_score": 5.0,
+      "score": 7.75,
+      "tldr_zh": "分析日本2004-2024年县级搜索数据，发现核能关注呈宿主地模式，福岛事故后短暂转为距离衰减。",
+      "tldr": "",
+      "tags": [
+        "数字痕迹",
+        "在线平台",
+        "城市与流动"
+      ],
+      "reason": "用Google Trends数字痕迹研究公众关注的空间动态，契合计算社会科学。",
       "backfill_date": ""
     },
     {
@@ -321,14 +320,14 @@
       "citations": 0,
       "rule_score": 3.5,
       "score": 7.675,
-      "tldr_zh": "用主题模型分析Reddit上1.5万条讨论，揭示用户如何感知和应对谷歌自动补全的算法审查与偏见。",
+      "tldr_zh": "用主题模型分析Reddit上1.5万余条关于Google自动补全审查争议的讨论，揭示用户如何审计算法并受算法想象影响。",
       "tldr": "",
       "tags": [
         "在线平台",
-        "文本计算",
-        "舆论与极化"
+        "舆论与极化",
+        "文本计算"
       ],
-      "reason": "结合数字痕迹与文本计算研究平台算法治理与用户认知，对在线平台和计算社会科学读者有实证价值。",
+      "reason": "直接研究在线平台用户对算法偏见的感知与讨论，属计算社会科学数字平台研究。",
       "backfill_date": ""
     }
   ]
