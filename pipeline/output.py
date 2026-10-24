@@ -283,6 +283,52 @@ footer {
   border-color: var(--accent); color: var(--accent);
   background: var(--accent-soft);
 }
+.archive-search-wrap {
+  position: relative; margin: 0 0 14px 26px;
+}
+.archive-search-icon {
+  position: absolute; left: 12px; top: 50%; width: 14px; height: 14px;
+  transform: translateY(-50%); color: var(--faint); pointer-events: none;
+}
+.archive-search {
+  width: 100%; appearance: none; border: 1px solid var(--line);
+  background: var(--card); color: var(--fg); font-family: var(--sans);
+  font-size: 12.5px; padding: 9px 34px; border-radius: 4px; outline: none;
+}
+.archive-search::placeholder { color: var(--faint); }
+.archive-search:focus {
+  border-color: var(--accent); box-shadow: 0 0 0 3px var(--accent-soft);
+}
+.archive-row {
+  display: flex; align-items: flex-start; gap: 14px;
+  margin-left: 26px; padding: 13px 0;
+  border-bottom: 1px solid var(--line);
+}
+.archive-row:first-child { border-top: 1px solid var(--line); }
+.archive-row-main { flex: 1; min-width: 0; }
+.archive-row-kicker {
+  display: flex; flex-wrap: wrap; align-items: center; gap: 6px;
+  font-family: var(--mono); font-size: 9px; letter-spacing: 0.04em;
+  color: var(--faint); margin-bottom: 4px;
+}
+.archive-row-date { color: var(--accent); }
+.kicker-sep { color: var(--line-strong); }
+.archive-row h3 {
+  font-family: var(--serif); font-size: 16.5px; font-weight: 600;
+  line-height: 1.4; margin: 0 0 4px;
+}
+.archive-row h3 a { color: var(--fg); text-decoration: none; }
+.archive-row h3 a:hover { color: var(--accent); }
+.archive-row-summary {
+  font-size: 12.5px; line-height: 1.65; color: var(--muted);
+  margin: 0 0 4px; display: -webkit-box; -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical; overflow: hidden;
+}
+.archive-row-meta {
+  font-family: var(--mono); font-size: 9px; color: var(--faint);
+  line-height: 1.6;
+}
+.archive-row .bookmark { flex: 0 0 auto; margin-top: 2px; }
 .archive-meta {
   margin: 0 0 12px 26px; font-family: var(--mono); font-size: 9.5px;
   letter-spacing: 0.03em; color: var(--faint);
@@ -311,6 +357,7 @@ footer {
   .tldr { font-size: 13.5px; }
   .empty { margin-left: 18px; }
   .archive-dates, .archive-meta, .archive-loading { margin-left: 18px; }
+  .archive-search-wrap, .archive-row { margin-left: 18px; }
   .favorites-toolbar { flex-direction: column; align-items: stretch; }
   .ghost-button { align-self: flex-start; }
 }
@@ -398,6 +445,13 @@ footer {
         <p class="favorites-sub">按日期回看每日精选 · <span id="archive-count"></span></p>
       </div>
     </div>
+    <div class="archive-search-wrap">
+      <svg class="archive-search-icon" viewBox="0 0 20 20" aria-hidden="true">
+        <circle cx="8.5" cy="8.5" r="5.5" fill="none" stroke="currentColor" stroke-width="1.4"></circle>
+        <path d="m13 13 3.5 3.5" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"></path>
+      </svg>
+      <input class="archive-search" id="archive-search" type="search" placeholder="搜索标题、摘要、作者、标签…" autocomplete="off" aria-label="搜索往期论文">
+    </div>
     <div class="archive-dates" id="archive-dates"></div>
     <p class="archive-meta" id="archive-meta"></p>
     <div id="archive-papers"></div>
@@ -475,6 +529,11 @@ FAVORITES_SCRIPT = """
   var archiveCount = document.getElementById("archive-count");
   var archiveDates = null;
   var activeArchiveDate = null;
+  var archiveSearch = document.getElementById("archive-search");
+  var searchIndex = null;
+  var searchPromise = null;
+  var searchTimer = null;
+  var activeSearchQuery = "";
 
   function loadFavorites() {
     try {
@@ -600,6 +659,39 @@ FAVORITES_SCRIPT = """
     return paperCardHtml(paper, "Saved");
   }
 
+  function paperRowHtml(paper, kickerLabel) {
+    var url = safeUrl(paper.url);
+    var score = Number(paper.score);
+    var title = url
+      ? '<a href="' + escapeHtml(url) + '" target="_blank" rel="noopener">' + escapeHtml(paper.title) + "</a>"
+      : escapeHtml(paper.title);
+    var kicker = [];
+    if (kickerLabel) {
+      kicker.push('<span class="archive-row-date">' + escapeHtml(kickerLabel) + "</span>");
+    }
+    if (paper.venue) kicker.push("<span>" + escapeHtml(paper.venue) + "</span>");
+    if (paper.score != null && isFinite(score)) {
+      kicker.push("<span>评分 " + score.toFixed(1) + "</span>");
+    }
+    var metaParts = [authorsOf(paper)];
+    if (Array.isArray(paper.tags) && paper.tags.length) {
+      metaParts.push(paper.tags.join(" / "));
+    }
+    var meta = metaParts.filter(Boolean).map(escapeHtml).join(" · ");
+
+    return (
+      '<article class="archive-row" data-paper-id="' + escapeHtml(paper.id) + '">' +
+      '<div class="archive-row-main">' +
+      '<div class="archive-row-kicker">' + kicker.join('<span class="kicker-sep">/</span>') + "</div>" +
+      "<h3>" + title + "</h3>" +
+      '<p class="archive-row-summary">' + escapeHtml(summaryOf(paper)) + "</p>" +
+      '<p class="archive-row-meta">' + meta + "</p>" +
+      "</div>" +
+      bookmarkButton(paper.id, Boolean(favorites[paper.id])) +
+      "</article>"
+    );
+  }
+
   function favoriteItems() {
     return Object.keys(favorites)
       .map(function (id) { return favorites[id]; })
@@ -679,7 +771,7 @@ FAVORITES_SCRIPT = """
         });
         archiveMeta.textContent = fullDate(date) + " · " + papers.length + " 篇";
         archivePapersEl.innerHTML = papers.map(function (paper, index) {
-          return paperCardHtml(paper, String(index + 1).padStart(2, "0"));
+          return paperRowHtml(paper, String(index + 1).padStart(2, "0"));
         }).join("");
         updateBookmarkButtons();
       })
@@ -693,7 +785,7 @@ FAVORITES_SCRIPT = """
 
   function ensureArchive() {
     if (archiveDates) return;
-    archiveDatesEl.hidden = false;
+    archiveDatesEl.hidden = Boolean(archiveSearch.value.trim());
     archiveDatesEl.innerHTML = '<span class="archive-loading">正在加载归档…</span>';
 
     fetch("archive/index.json", { cache: "no-store" })
@@ -714,13 +806,14 @@ FAVORITES_SCRIPT = """
           return;
         }
         archiveEmpty.hidden = true;
-        archiveDatesEl.hidden = false;
+        var searching = Boolean(archiveSearch.value.trim());
+        archiveDatesEl.hidden = searching;
         archiveDatesEl.innerHTML = archiveDates.map(function (date, index) {
           return '<button class="archive-date" type="button" data-archive-date="' +
             escapeHtml(date) + '" aria-pressed="' + (index === 0 ? "true" : "false") + '">' +
             escapeHtml(shortDate(date)) + "</button>";
         }).join("");
-        loadArchiveDay(archiveDates[0]);
+        if (!searching) loadArchiveDay(archiveDates[0]);
       })
       .catch(function () {
         archiveDates = null;
@@ -732,11 +825,102 @@ FAVORITES_SCRIPT = """
       });
   }
 
+  function ensureSearchIndex() {
+    if (searchIndex) return Promise.resolve(searchIndex);
+    if (searchPromise) return searchPromise;
+    searchPromise = fetch("archive/search.json", { cache: "no-store" })
+      .then(function (response) {
+        if (!response.ok) throw new Error("search index");
+        return response.json();
+      })
+      .then(function (data) {
+        searchIndex = Array.isArray(data.papers) ? data.papers : [];
+        return searchIndex;
+      })
+      .catch(function (error) {
+        searchPromise = null;
+        throw error;
+      });
+    return searchPromise;
+  }
+
+  function runArchiveSearch(query) {
+    var trimmed = String(query || "").trim();
+    activeSearchQuery = trimmed;
+
+    if (!trimmed) {
+      archiveDatesEl.hidden = false;
+      archiveEmpty.hidden = true;
+      if (activeArchiveDate) {
+        loadArchiveDay(activeArchiveDate);
+      } else {
+        ensureArchive();
+      }
+      return;
+    }
+
+    archiveDatesEl.hidden = true;
+    archiveEmpty.hidden = true;
+    archiveMeta.textContent = "正在搜索…";
+    archivePapersEl.innerHTML = '<p class="archive-loading">正在加载搜索索引…</p>';
+
+    ensureSearchIndex().then(function (papers) {
+      if (activeSearchQuery !== trimmed) return;
+      var tokens = trimmed.toLowerCase().split(/\\s+/).filter(Boolean);
+      var matches = papers.filter(function (paper) {
+        var haystack = [
+          paper.title,
+          paper.tldr_zh,
+          paper.tldr,
+          paper.abstract,
+          paper.venue,
+          (paper.authors || []).join(" "),
+          (paper.tags || []).join(" "),
+          paper.published,
+          paper.date
+        ].join(" ").toLowerCase();
+        return tokens.every(function (token) {
+          return haystack.indexOf(token) !== -1;
+        });
+      });
+      var total = matches.length;
+      var shown = matches.slice(0, 100);
+      shown.forEach(function (paper) {
+        if (paper && paper.id) paperById[paper.id] = paper;
+      });
+      archiveMeta.textContent = "搜索 “" + trimmed + "” · " + total + " 篇" +
+        (total > 100 ? "（显示前 100 条）" : "");
+      archivePapersEl.innerHTML = shown.map(function (paper) {
+        return paperRowHtml(paper, shortDate(paper.date || paper.published));
+      }).join("");
+      if (!total) {
+        archiveEmpty.textContent = "没有匹配的往期论文。";
+        archiveEmpty.hidden = false;
+      }
+      updateBookmarkButtons();
+    }).catch(function () {
+      if (activeSearchQuery !== trimmed) return;
+      archivePapersEl.innerHTML = "";
+      archiveMeta.textContent = "";
+      archiveEmpty.textContent = "搜索索引加载失败，请稍后重试。";
+      archiveEmpty.hidden = false;
+    });
+  }
+
   archiveDatesEl.addEventListener("click", function (event) {
     var button = event.target.closest("[data-archive-date]");
     if (!button) return;
     var date = button.getAttribute("data-archive-date");
     if (date && date !== activeArchiveDate) loadArchiveDay(date);
+  });
+
+  archiveSearch.addEventListener("input", function () {
+    clearTimeout(searchTimer);
+    searchTimer = setTimeout(function () {
+      var trimmed = archiveSearch.value.trim();
+      if (!trimmed && !activeSearchQuery) return;
+      runArchiveSearch(trimmed);
+    }, 160);
   });
 
   function setView(view) {
@@ -978,6 +1162,62 @@ def _update_manifest(archive_dir: Path, day: str) -> None:
     )
 
 
+def build_search_index(archive_dir: Path, now: datetime, max_days: int = 365) -> None:
+    entries: dict[str, dict] = {}
+    paths = [
+        path
+        for path in archive_dir.glob("*.json")
+        if path.name not in {"index.json", "search.json"}
+    ]
+    paths.sort(key=lambda path: path.stem, reverse=True)
+
+    for path in paths[:max_days]:
+        try:
+            payload = json.loads(path.read_text(encoding="utf-8"))
+        except (OSError, json.JSONDecodeError):
+            continue
+        issue_date = str(payload.get("date") or path.stem)
+        for paper in payload.get("papers") or []:
+            if not isinstance(paper, dict):
+                continue
+            paper_id = paper.get("id")
+            if not paper_id or paper_id in entries:
+                continue
+            authors = paper.get("authors") or []
+            if not isinstance(authors, list):
+                authors = []
+            tags = paper.get("tags") or []
+            if not isinstance(tags, list):
+                tags = []
+            entries[paper_id] = {
+                "id": paper_id,
+                "title": paper.get("title") or "",
+                "authors": authors,
+                "abstract": (paper.get("abstract") or "")[:600],
+                "url": paper.get("url") or "",
+                "venue": paper.get("venue") or "",
+                "published": paper.get("published") or "",
+                "date": issue_date,
+                "pdf_url": paper.get("pdf_url") or "",
+                "doi": paper.get("doi") or "",
+                "score": paper.get("score"),
+                "tldr_zh": paper.get("tldr_zh") or "",
+                "tldr": paper.get("tldr") or "",
+                "tags": tags,
+            }
+
+    search = {
+        "version": 1,
+        "generated_at": now.isoformat(timespec="seconds"),
+        "count": len(entries),
+        "papers": list(entries.values()),
+    }
+    (archive_dir / "search.json").write_text(
+        json.dumps(search, ensure_ascii=False),
+        encoding="utf-8",
+    )
+
+
 def write_outputs(
     papers: list[Paper],
     cfg: dict,
@@ -1006,6 +1246,7 @@ def write_outputs(
     archive_path = archive_dir / f"{day}.json"
     archive_path.write_text(json.dumps(feed, ensure_ascii=False, indent=2), encoding="utf-8")
     _update_manifest(archive_dir, day)
+    build_search_index(archive_dir, now)
 
     page_path = out_dir / "index.html"
     page_path.write_text(render_page(papers, now, cfg), encoding="utf-8")
