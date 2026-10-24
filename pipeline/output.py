@@ -91,10 +91,48 @@ h1 {
 .meta-strip {
   display: flex; gap: 16px; flex-wrap: wrap; margin-top: 18px;
   font-family: var(--mono); font-size: 9.5px; letter-spacing: 0.08em;
-  color: var(--faint); text-transform: uppercase;
+  color: var(--faint);
 }
 .meta-strip span::before { content: "["; color: var(--line-strong); margin-right: 5px; }
 .meta-strip span::after { content: "]"; color: var(--line-strong); margin-left: 5px; }
+.meta-link {
+  appearance: none; border: 0; background: transparent; padding: 0;
+  font: inherit; letter-spacing: inherit; color: var(--accent);
+  cursor: pointer;
+}
+.meta-link::before { content: "["; color: var(--line-strong); margin-right: 5px; }
+.meta-link::after { content: "]"; color: var(--line-strong); margin-left: 5px; }
+.meta-link:hover, .meta-link[aria-expanded="true"] { color: var(--fg); }
+.rules-panel {
+  margin: 16px 0 2px; padding: 14px 18px;
+  border: 1px solid var(--line); border-left: 2px solid var(--accent);
+  border-radius: 4px; background: var(--card);
+}
+.rules-panel[hidden] { display: none; }
+.rule-row {
+  display: grid; grid-template-columns: 64px 1fr; gap: 14px;
+  padding: 7px 0; border-top: 1px solid var(--line);
+}
+.rule-row:first-child { border-top: 0; padding-top: 0; }
+.rule-row:last-child { padding-bottom: 0; }
+.rule-key {
+  font-family: var(--mono); font-size: 9.5px; letter-spacing: 0.05em;
+  color: var(--accent); padding-top: 2px; white-space: nowrap;
+}
+.rule-row p { margin: 0; font-size: 12px; line-height: 1.7; color: var(--muted); }
+.rule-text p { margin: 0; font-size: 12px; line-height: 1.7; color: var(--muted); }
+.journal-list { margin-top: 4px; }
+.journal-list summary {
+  display: inline-block; cursor: pointer; list-style: none;
+  font-family: var(--mono); font-size: 10px; color: var(--accent);
+  text-decoration: underline; text-underline-offset: 2px;
+}
+.journal-list summary::-webkit-details-marker { display: none; }
+.journal-list span {
+  display: block; margin-top: 5px; font-size: 11.5px;
+  line-height: 1.7; color: var(--muted);
+}
+.rule-row b { color: var(--fg); font-weight: 600; }
 .net {
   position: absolute; top: 10px; right: -10px; width: 310px; height: 160px;
   color: var(--line-strong); opacity: 0.64; pointer-events: none;
@@ -145,11 +183,10 @@ main { padding-top: 18px; }
   font-family: var(--mono); font-size: 10px; letter-spacing: 0.12em;
   color: var(--faint); text-transform: uppercase;
 }
-.score { font-family: var(--mono); font-size: 9.5px; color: var(--faint); }
-.score:empty { display: none; }
-.score::before {
-  content: ""; display: inline-block; width: 1px; height: 9px;
-  background: var(--line-strong); margin-right: 8px; vertical-align: -1px;
+.score { font-family: var(--mono); font-size: 9.5px; color: var(--muted); white-space: nowrap; }
+.score-label {
+  font-family: var(--sans); font-size: 9px; letter-spacing: 0.02em;
+  color: var(--muted); margin-right: 4px;
 }
 .bookmark {
   display: inline-flex; align-items: center; justify-content: center;
@@ -239,6 +276,8 @@ footer {
   .brand { font-size: 11px; }
   .tagline { display: none; }
   h1 { font-size: 31px; }
+  .rules-panel { padding: 12px 14px; }
+  .rule-row { grid-template-columns: 52px 1fr; gap: 10px; }
   .card { margin-left: 18px; padding: 18px 16px 14px; }
   .card::before { left: -15px; top: 22px; }
   .card::after { left: -11.5px; top: 33px; }
@@ -266,8 +305,20 @@ footer {
       <p class="intro">每天从 arXiv 与核心期刊中筛选社会网络、复杂网络与计算社会科学前沿。</p>
       <div class="meta-strip">
         <span>N = __COUNT__</span>
-        <span>arXiv + OpenAlex</span>
-        <span>Update 00:30 CST</span>
+        <span>__SOURCE_LABEL__</span>
+        <span>更新 00:30 CST</span>
+        <button class="meta-link" id="rules-toggle" type="button" aria-expanded="false" aria-controls="rules-panel">评分规则</button>
+      </div>
+      <div class="rules-panel" id="rules-panel" hidden>
+        <div class="rule-row"><span class="rule-key">0–10</span><p>AI 相关性评分：衡量论文与「复杂网络 / 计算社会科学」的接近程度，不代表论文质量、引用量或作者水平。</p></div>
+        <div class="rule-row"><span class="rule-key">分数段</span><p><b>9–10</b> 核心问题、方法或重要发现；<b>7–8</b> 明确相关；<b>5–6</b> 边缘相关；<b>0–4</b> 基本不相关。</p></div>
+        <div class="rule-row"><span class="rule-key">入选</span><p>每天按分数排序取前 10；低于 5.0 不入选。新论文不足时，从最近 7 天归档补足「往期精选」。</p></div>
+        <div class="rule-row"><span class="rule-key">来源</span><div class="rule-text">
+          <p>arXiv（近 72 小时）：__ARXIV_CATEGORIES__。</p>
+          <p>OpenAlex 期刊（__JOURNAL_COUNT__ 本）：</p>
+          <details class="journal-list"><summary>查看期刊列表</summary><span>__JOURNAL_LIST__</span></details>
+        </div></div>
+        <div class="rule-row"><span class="rule-key">说明</span><p>评分与中文导读由 DeepSeek 生成，仅作研究线索，请以论文原文为准。</p></div>
       </div>
       <svg class="net" viewBox="0 0 320 160" aria-hidden="true">
         <g class="edge">
@@ -333,7 +384,7 @@ CARD_TEMPLATE = """<article class="card" data-paper-id="__PAPER_ID__">
     <span class="rank">__RANK__</span>
     <div class="head-right">
       <span>__BADGES__</span>
-      <span class="score">__SCORE__</span>
+      __SCORE__
       <button class="bookmark" type="button" data-bookmark="__PAPER_ID__" aria-pressed="false" aria-label="收藏" title="收藏">
         <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6.5 3.5h11A1.5 1.5 0 0 1 19 5v15.2a.8.8 0 0 1-1.25.66L12 16.9l-5.75 3.96A.8.8 0 0 1 5 20.2V5a1.5 1.5 0 0 1 1.5-1.5Z"/></svg>
       </button>
@@ -472,7 +523,7 @@ FAVORITES_SCRIPT = """
       ? '<a href="' + escapeHtml(url) + '" target="_blank" rel="noopener">' + escapeHtml(paper.title) + "</a>"
       : escapeHtml(paper.title);
     var scoreHtml = paper.score != null && isFinite(score)
-      ? '<span class="score">' + score.toFixed(1) + "</span>"
+      ? '<span class="score"><span class="score-label">评分</span>' + score.toFixed(1) + "</span>"
       : "";
 
     return (
@@ -582,6 +633,23 @@ FAVORITES_SCRIPT = """
     updateBookmarkButtons();
   });
 
+  var rulesToggle = document.getElementById("rules-toggle");
+  var rulesPanel = document.getElementById("rules-panel");
+  if (rulesToggle && rulesPanel) {
+    rulesToggle.addEventListener("click", function () {
+      var expanded = rulesToggle.getAttribute("aria-expanded") === "true";
+      rulesToggle.setAttribute("aria-expanded", expanded ? "false" : "true");
+      rulesPanel.hidden = expanded;
+    });
+    document.addEventListener("keydown", function (event) {
+      if (event.key === "Escape" && !rulesPanel.hidden) {
+        rulesPanel.hidden = true;
+        rulesToggle.setAttribute("aria-expanded", "false");
+        rulesToggle.focus();
+      }
+    });
+  }
+
   renderFavorites();
   updateBookmarkButtons();
 })();
@@ -632,12 +700,17 @@ def _cards_html(papers: list[Paper]) -> str:
             else ""
         )
         meta_parts = [part for part in [paper.venue, paper.published, _authors_text(paper.authors)] if part]
+        score_html = (
+            f'<span class="score"><span class="score-label">评分</span>{paper.score:.1f}</span>'
+            if paper.score
+            else ""
+        )
         card = CARD_TEMPLATE
         replacements = {
             "__RANK__": f"{index:02d}",
             "__PAPER_ID__": html.escape(paper.id),
             "__BADGES__": badges,
-            "__SCORE__": f"{paper.score:.1f}" if paper.score else "",
+            "__SCORE__": score_html,
             "__URL__": html.escape(paper.url),
             "__TITLE__": html.escape(paper.title),
             "__TLDR__": html.escape(_summary(paper)),
@@ -652,15 +725,28 @@ def _cards_html(papers: list[Paper]) -> str:
     return "\n".join(cards)
 
 
-def render_page(papers: list[Paper], now: datetime) -> str:
+def render_page(papers: list[Paper], now: datetime, cfg: dict | None = None) -> str:
     page = PAGE_TEMPLATE
     feed_json = json.dumps([paper.to_dict() for paper in papers], ensure_ascii=False)
     feed_json = feed_json.replace("<", "\\u003c")
+
+    journals = (cfg or {}).get("openalex", {}).get("journals", [])
+    journal_names = [str(j.get("name", "")) for j in journals if j.get("name")]
+    journal_count = len(journal_names)
+    source_label = f"arXiv + {journal_count} 本期刊" if journal_count else "arXiv + 期刊"
+    journal_text = "、".join(journal_names) if journal_names else "—"
+    categories = (cfg or {}).get("arxiv", {}).get("categories", [])
+    categories_text = "、".join(categories) if categories else "—"
+
     replacements = {
         "__DATE__": now.date().isoformat(),
         "__DATE_ISO__": now.date().isoformat(),
         "__DATE_ZH__": _format_date_zh(now.date().isoformat()),
         "__COUNT__": str(len(papers)),
+        "__SOURCE_LABEL__": source_label,
+        "__JOURNAL_COUNT__": str(journal_count),
+        "__JOURNAL_LIST__": html.escape(journal_text),
+        "__ARXIV_CATEGORIES__": html.escape(categories_text),
         "__CARDS__": _cards_html(papers),
         "__GENERATED__": now.strftime("%Y-%m-%d %H:%M"),
         "__FEED_JSON__": feed_json,
@@ -776,7 +862,7 @@ def write_outputs(
     _update_manifest(archive_dir, day)
 
     page_path = out_dir / "index.html"
-    page_path.write_text(render_page(papers, now), encoding="utf-8")
+    page_path.write_text(render_page(papers, now, cfg), encoding="utf-8")
 
     wechat_path = out_dir / "wechat_draft.html"
     wechat_path.write_text(render_wechat(papers, now, cfg), encoding="utf-8")
