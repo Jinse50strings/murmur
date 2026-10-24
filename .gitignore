@@ -4,3 +4,8 @@ __pycache__/
 *.pyc
 .DS_Store
 .pytest_cache/
+tools/
+DerivedData/
+xcuserdata/
+*.xcuserstate
+app/build/

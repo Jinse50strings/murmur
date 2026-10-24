@@ -27,7 +27,12 @@ class Paper:
     backfill_date: str = ""
 
     def to_dict(self) -> dict:
-        return asdict(self)
+        data = asdict(self)
+        data["authors"] = self.authors[:8]
+        for key in ("pdf_url", "doi", "tldr_zh", "tldr", "backfill_date", "reason"):
+            if not data.get(key):
+                data[key] = None
+        return data
 
     @classmethod
     def from_dict(cls, data: dict) -> "Paper":

@@ -15,7 +15,8 @@ GitHub Pages  →  iOS / macOS / watchOS App + 桌面磁贴（M2 起开发）
 ## 当前进度
 
 - [x] **M0** 数据管道（arXiv + OpenAlex → 筛选 → 中文摘要）
-- [x] **M1** 自动发布配置（GitHub Actions + Pages，待仓库开通）
+- [x] **M1** 自动发布（GitHub Actions + Pages）
+- [x] 网页版收藏（浏览器 localStorage，可导出 JSON）
 - [ ] **M2** iPhone App + 主屏磁贴
 - [ ] **M3** MacBook 桌面磁贴
 - [ ] **M4** Apple Watch App + Smart Stack 磁贴
@@ -62,6 +63,15 @@ cp .env.example .env
 - `docs/wechat_draft.html` — 公众号草稿（见下文）
 
 `--no-llm` 模式不会写入 `data/seen.json`，方便反复调试；正式模式才会记录已处理论文。
+
+## 网页收藏
+
+网页版每张卡片右上角有书签按钮，收藏保存在当前浏览器的 `localStorage`：
+
+- 收藏跨天保留，换一天打开仍能在「收藏」里看到
+- 只存在本机浏览器，不上传服务器；换浏览器、清缓存或换设备不会同步
+- 「收藏」视图可导出 JSON 备份
+- 目前不提供跨设备同步；换设备时可用导出的 JSON 手动备份
 
 ## 配置说明
 
