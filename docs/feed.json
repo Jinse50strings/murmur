@@ -1,20 +1,20 @@
 {
   "app": "Murmur",
   "version": 1,
-  "date": "2026-10-24",
-  "generated_at": "2026-10-24T18:22:54+08:00",
-  "count": 10,
+  "date": "2026-10-25",
+  "generated_at": "2026-10-25T02:56:32+08:00",
+  "count": 3,
   "counts": {
     "sources": {
-      "arxiv": 66,
-      "openalex": 153
+      "arxiv": 44,
+      "openalex": 0
     },
-    "unique": 219,
-    "new": 219,
-    "candidates": 33,
-    "selected": 10,
-    "fresh_selected": 10,
-    "errors": 0
+    "unique": 44,
+    "new": 25,
+    "candidates": 0,
+    "selected": 3,
+    "fresh_selected": 0,
+    "errors": 1
   },
   "papers": [
     {
@@ -35,19 +35,19 @@
         "cs.SI"
       ],
       "pdf_url": "https://arxiv.org/pdf/2610.30392v1",
-      "doi": "",
+      "doi": null,
       "citations": 0,
       "rule_score": 8.3,
       "score": 8.915,
       "tldr_zh": "发布500万条经用户明示同意采集的X帖子数据集，含元数据与正文，并示例分析内容同质性。",
-      "tldr": "",
+      "tldr": null,
       "tags": [
         "在线平台",
         "数字痕迹",
         "社会网络"
       ],
       "reason": "提供伦理合规的大规模社交媒体数据，直接支撑社会网络分析与叙事追踪。",
-      "backfill_date": ""
+      "backfill_date": "2026-10-24"
     },
     {
       "id": "arxiv:2610.31165",
@@ -70,19 +70,19 @@
         "cs.CY"
       ],
       "pdf_url": "https://arxiv.org/pdf/2610.31165v1",
-      "doi": "",
+      "doi": null,
       "citations": 0,
       "rule_score": 7.9,
       "score": 8.895,
       "tldr_zh": "将四个LLM策略置于不同网络拓扑中玩命名博弈，发现拓扑影响共识速度、是否达成及对对抗的脆弱性。",
-      "tldr": "",
+      "tldr": null,
       "tags": [
         "LLM智能体",
         "复杂网络",
         "仿真与ABM"
       ],
       "reason": "把网络拓扑与LLM群体集体行为结合，是复杂网络与LLM智能体交叉的核心问题。",
-      "backfill_date": ""
+      "backfill_date": "2026-10-24"
     },
     {
       "id": "openalex:W7223209936",
@@ -97,238 +97,20 @@
       "published": "2026-10-22",
       "venue": "PNAS Nexus",
       "categories": [],
-      "pdf_url": "",
+      "pdf_url": null,
       "doi": "https://doi.org/10.1093/pnasnexus/pgag364",
       "citations": 0,
       "rule_score": 7.1,
       "score": 8.855,
       "tldr_zh": "在度有界且边闭合条件下证明强关系图在p=2/3处发生尖锐结构相变，界定弱关系何时维系全局连通。",
-      "tldr": "",
+      "tldr": null,
       "tags": [
         "复杂网络",
         "社会网络",
         "方法论"
       ],
       "reason": "为Granovetter弱关系理论给出严格相变刻画，是社会网络理论的重要方法进展。",
-      "backfill_date": ""
-    },
-    {
-      "id": "arxiv:2610.30745",
-      "source": "arxiv",
-      "title": "Core-periphery structure induces double phase transitions in information cascades",
-      "authors": [
-        "Jiaqi Nie",
-        "Xincheng Shu",
-        "Yong Min",
-        "Qi Xuan",
-        "Zhongyuan Ruan"
-      ],
-      "abstract": "Double phase transitions in spreading processes are commonly associated with additional dynamical or structural complexity. Here, we show that such transitions can emerge naturally in prevalent networks exhibiting a core-periphery (CP) organization. Specifically, we consider threshold-driven spreading on CP networks constructed from the stochastic block model, which is characterized by three parameters: the relative core size $r$, the CP coupling strength $μ$, and the fraction of intra-block link allocation $α$. We find that, by varying the allocation of links between the core and periphery, the system can generate a global cascade window in the parameter spaces, bounded by distinct phase transitions. At the upper boundary, where the periphery becomes sparse, the interplay between the structural inertia (resistance to state changes) of the core and the spreading constraints of the periphery can produce a double phase transition via a two-stage cascading mechanism. This double transition may change type from discontinuous-continuous to discontinuous-discontinuous as the model parameters vary in the limit of a vanishingly small initial seed. Our results reveal a simple structural route to double phase transitions of distinct types and highlight the role of CP structure in shaping threshold-driven spreading dynamics.",
-      "url": "https://arxiv.org/abs/2610.30745",
-      "published": "2026-10-22",
-      "venue": "arXiv",
-      "categories": [
-        "physics.soc-ph"
-      ],
-      "pdf_url": "https://arxiv.org/pdf/2610.30745v1",
-      "doi": "",
-      "citations": 0,
-      "rule_score": 7.9,
-      "score": 8.395,
-      "tldr_zh": "在核心-边缘结构网络上研究阈值传播，发现调节连边分配可产生由两个相变界定的全局级联窗口。",
-      "tldr": "",
-      "tags": [
-        "复杂网络",
-        "扩散与传播"
-      ],
-      "reason": "揭示核心-边缘结构对信息级联双相变的影响，属复杂网络扩散核心议题。",
-      "backfill_date": ""
-    },
-    {
-      "id": "openalex:W7220946896",
-      "source": "openalex",
-      "title": "Causal asymmetry suggests productivity underlies scientific collaboration",
-      "authors": [
-        "Diego A. Frota",
-        "Cesar I. N. Sampaio Filho",
-        "Vítor Hugo Ribeiro",
-        "Germano F. C. Luz",
-        "Humberto A. Carmona",
-        "Matjaz Perc",
-        "Haroldo Valentin Ribeiro",
-        "José S. Andrade"
-      ],
-      "abstract": "Abstract Scientific productivity and collaboration are closely related, yet the causal direction between these two dimensions of academic careers remains unclear. Here we analyze the careers of 26,876 Brazilian researchers holding a nationally prestigious fellowship across multiple disciplines to test whether productivity shapes collaboration or the reverse. Focusing on total publications and distinct coauthors, we assess their directional relationship using a causal discovery framework based on asymmetries in conditional and distributional structure to determine the more plausible generative direction. Collaboration conditioned on productivity exhibits a highly regular mean-variance relation consistent with a geometric model, whereas the reverse conditioning yields a much less coherent pattern. Consistently, publication counts follow a lognormal distribution, whereas the coauthor distribution is reproduced by a geometric-lognormal mixture where productivity determines the expected number of collaborators. Surrogate tests indicate that the data are considerably more compatible with productivity shaping collaboration than with the reverse. The two quantities also accumulate asymmetrically: publication inequality rises steadily with career age, whereas coauthor inequality does not, indicating that advantage compounds more in output than in network breadth. Area-resolved analyses reveal a more nuanced picture, and although the direction where collaboration shapes productivity is never favored, the two directions are most clearly distinguished in areas more organized around laboratory and research-group models, where productivity inequality also grows most clearly. Among this cohort of prominent scientists, larger collaboration networks are thus more likely to reflect cumulative advantage in productivity than to independently generate greater output.",
-      "url": "https://doi.org/10.1093/pnasnexus/pgag360",
-      "published": "2026-10-21",
-      "venue": "PNAS Nexus",
-      "categories": [],
-      "pdf_url": "",
-      "doi": "https://doi.org/10.1093/pnasnexus/pgag360",
-      "citations": 0,
-      "rule_score": 5.4,
-      "score": 8.27,
-      "tldr_zh": "用因果发现框架分析2.7万巴西学者，发现生产力驱动合作而非相反。",
-      "tldr": "",
-      "tags": [
-        "因果推断",
-        "社会网络",
-        "方法论"
-      ],
-      "reason": "科学合作网络的因果方向识别，直接涉及社会网络与因果推断方法。",
-      "backfill_date": ""
-    },
-    {
-      "id": "openalex:W7223147084",
-      "source": "openalex",
-      "title": "From lifestyle to citizenship: Social influence and political consumerism in egocentric networks",
-      "authors": [
-        "Xueying Zhang",
-        "Ting Wang"
-      ],
-      "abstract": "Political consumerism has become a widespread form of civic engagement, yet the social mechanisms driving boycotting and buycotting remain insufficiently understood. This study investigates how perceived citizenship norms within individuals’ egocentric networks are associated with their own civic orientations and subsequent participation in consumer activism. Using a national survey of 543 U.S. adults reporting on 1822 social ties, we integrate social learning and social influence theories to examine how network environments cultivate engaged and dutiful citizenship norms. Results show a strong correlation between perceived network norms and individuals’ internalized norms, with engaged citizenship norms significantly predicting both boycott and buycott behaviors. Dutiful norms show no significant association. Structural equation modeling reveals that network influence operates indirectly through internalized engaged norms rather than direct social pressure. The study concludes with practical implications for advocacy groups and public relations practitioners, emphasizing how value-aligned messaging and network-based mobilization strategies can more effectively activate consumer activism.",
-      "url": "https://doi.org/10.1016/j.socnet.2026.10.004",
-      "published": "2026-10-21",
-      "venue": "Social Networks",
-      "categories": [],
-      "pdf_url": "",
-      "doi": "https://doi.org/10.1016/j.socnet.2026.10.004",
-      "citations": 0,
-      "rule_score": 6.4,
-      "score": 7.82,
-      "tldr_zh": "基于543名美国人的自我中心网络调查，发现感知网络公民规范与个人规范强相关，参与型规范预测抵制与购买行为。",
-      "tldr": "",
-      "tags": [
-        "社会网络",
-        "扩散与传播"
-      ],
-      "reason": "用自我中心网络数据检验社会影响与政治消费行为，属社会网络分析实证研究。",
-      "backfill_date": ""
-    },
-    {
-      "id": "arxiv:2610.30413",
-      "source": "arxiv",
-      "title": "X-pressing Intimacy: Mental Health Disclosure After Twitter Acquisition",
-      "authors": [
-        "Olivia Pal",
-        "Yunhao Yuan",
-        "Meghana Mandava",
-        "Talayeh Aledavood",
-        "Eshwar Chandrasekharan",
-        "Koustuv Saha"
-      ],
-      "abstract": "Social media platforms provide spaces for individuals to disclose mental health experiences and seek support, yet how these disclosures evolve during major shifts in platform governance remains unclear. We examine mental health self-disclosure surrounding Elon Musk's October 2022 acquisition of Twitter, analyzing approximately 824K tweets across anxiety, depression, bipolar disorder (BD), borderline personality disorder (BPD), and suicidal ideation (SI) or related experiences, alongside 266K comparison tweets. Using Linguistic Inquiry and Word Count (LIWC) and an LLM-based intimacy classifier, we characterize changes in psycholinguistic expression and disclosure intimacy. Following the acquisition, we observe declines in affective and social language, alongside increases in first-person singular pronouns and future-focused expressions. Intimacy patterns vary by condition: anxiety, depression, and BPD show increases in low-intimacy and decreases in moderate-intimacy disclosures, whereas suicide-related posts show more high-intimacy disclosures. However, compared with broader Twitter discourse, only the relative decline in moderate- versus low-intimacy disclosure for BPD remains statistically significant. Our findings underscore the importance of considering both language and intimacy when studying platform transitions, informing the design of online environments that support sensitive self-disclosure.",
-      "url": "https://arxiv.org/abs/2610.30413",
-      "published": "2026-10-21",
-      "venue": "arXiv",
-      "categories": [
-        "cs.SI",
-        "cs.CL",
-        "cs.CY",
-        "cs.HC"
-      ],
-      "pdf_url": "https://arxiv.org/pdf/2610.30413v1",
-      "doi": "",
-      "citations": 0,
-      "rule_score": 6.2,
-      "score": 7.81,
-      "tldr_zh": "分析约82万条推文，发现马斯克收购Twitter后心理健康自我披露的情感与社会语言下降、第一人称与亲密披露上升。",
-      "tldr": "",
-      "tags": [
-        "在线平台",
-        "数字痕迹",
-        "文本计算"
-      ],
-      "reason": "结合LIWC与LLM分类研究平台治理变动下的披露行为，与在线平台和文本计算相关。",
-      "backfill_date": ""
-    },
-    {
-      "id": "arxiv:2610.29714",
-      "source": "arxiv",
-      "title": "Condensation and optimal targeting of repeated forcing in heterogeneous networks",
-      "authors": [
-        "Jose Herrera-Diestra"
-      ],
-      "abstract": "Many networks receive repeated external forcing through a subset of entry nodes, for example infections imported from another population, information seeded by a campaign, or invasive species arriving through ports. We study how concentrating such forcing on important entry nodes, with seeding probability $π_i\\propto w_i^γ$, changes the size of the resulting cascades in a stochastic SIR model on bipartite networks. The response to one seeding event is linear in the degree of the seeded node, so the relative gain from targeting does not depend on transmissibility. The targeting distribution is a Gibbs measure. For importance tails $p(w)\\sim w^{-a}$ and responses growing as $w^η$, the targeted response diverges at $γ_1=a-1-η$ and the forcing condenses on a few nodes at $γ_2=a-1$. Under repeated forcing, the burden-maximizing exponent $γ^*$ is strictly positive, and in large populations depletion of nodes already reached bounds it by the condensation point, $γ^*\\leγ_2$. The optimum decays as $γ^*\\simeq K/x$ for intense forcing, where $x$ is the expected number of seeding events per entry node, and approaches the condensation point as $γ_2-γ^*\\simeq(a-1)/\\ln(1/x)$ for sparse forcing. A cut-off of the importance distribution rounds the transitions in populations smaller than a crossover size $n_c$ and removes them in larger ones. Networks calibrated to survey data on sexual partnerships have between $0.08\\,n_c$ and $0.8\\,n_c$ entry nodes, which places them in the finite-size regime, where the asymptotic results hold only qualitatively.",
-      "url": "https://arxiv.org/abs/2610.29714",
-      "published": "2026-10-21",
-      "venue": "arXiv",
-      "categories": [
-        "physics.soc-ph",
-        "nlin.AO"
-      ],
-      "pdf_url": "https://arxiv.org/pdf/2610.29714v1",
-      "doi": "",
-      "citations": 0,
-      "rule_score": 6.2,
-      "score": 7.81,
-      "tldr_zh": "研究异质网络中重复外部注入的级联规模，给出靶向分布为Gibbs测度及凝聚阈值条件。",
-      "tldr": "",
-      "tags": [
-        "复杂网络",
-        "扩散与传播",
-        "方法论"
-      ],
-      "reason": "异质网络上的SIR扩散与靶向注入理论，直接关联复杂网络传播研究。",
-      "backfill_date": ""
-    },
-    {
-      "id": "arxiv:2610.29924",
-      "source": "arxiv",
-      "title": "Geospatial Dynamics of Online Attention to Nuclear Power in Japan Before and After Fukushima",
-      "authors": [
-        "Yifan Sun",
-        "Ken Kurosaki",
-        "Benjamin C. McLellan"
-      ],
-      "abstract": "Nuclear power is increasingly seen as necessary for sustainable development, but this role depends on informed public engagement and support. Building this support requires understanding what citizens want to know, as reflected in their spontaneous online searches. To map this demand, we present the first long-term (2004-2024), prefecture-level analysis of Google Trends data on nuclear power in Japan. The results indicate that in routine periods, search interest followed a host-locality pattern, being significantly higher in prefectures hosting nuclear plants, with little spillover to their neighbors. Immediately after the Fukushima Daiichi accident in March 2011, this pattern changed, and interest instead declined with distance from Fukushima, before the host-locality pattern returned from 2012. During March 2011, searches leaned heavily toward general and live information rather than guidance on what to do. Their framing also varied with proximity, as those near Fukushima prioritized live updates and formal countermeasures, while others leaned toward background information and personal-scale questions. These patterns and the shift between them provide a behavioral evidence base for designing communication strategies in Japan and countries weighing the use of nuclear power. More broadly, the finding that searches vary with proximity can inform public communication in other geographically anchored crises.",
-      "url": "https://arxiv.org/abs/2610.29924",
-      "published": "2026-10-21",
-      "venue": "arXiv",
-      "categories": [
-        "cs.SI"
-      ],
-      "pdf_url": "https://arxiv.org/pdf/2610.29924v1",
-      "doi": "",
-      "citations": 0,
-      "rule_score": 5.0,
-      "score": 7.75,
-      "tldr_zh": "分析日本2004-2024年县级搜索数据，发现核能关注呈宿主地模式，福岛事故后短暂转为距离衰减。",
-      "tldr": "",
-      "tags": [
-        "数字痕迹",
-        "在线平台",
-        "城市与流动"
-      ],
-      "reason": "用Google Trends数字痕迹研究公众关注的空间动态，契合计算社会科学。",
-      "backfill_date": ""
-    },
-    {
-      "id": "openalex:W7223183811",
-      "source": "openalex",
-      "title": "From friction to alignment: Algorithmic imaginaries and the Trump autocomplete controversy on Reddit",
-      "authors": [
-        "Kristofer Rolf Söderström"
-      ],
-      "abstract": "Employing topic modelling, this study analyses a collection of 157 submissions and 10,032 comments from Reddit surrounding users’ perceptions of censorship and bias by Google's autocomplete function following the Trump assassination attempt in July 2024. The discussions are examined through the framing of ‘friction of relevance’, operationalised as the tension between the expectations of individual users and algorithmic moderation by search engines, the strategies users employ to navigate it, and the outcomes when the friction is not resolved. Results reveal users experienced this friction by auditing systems and debating the nature of the moderation. However, the opacity of the search infrastructure, combined with pre-existing algorithmic imaginaries, shaped their views on the technical error, often serving as barriers to resolving this friction. When the friction was not resolved, users saw this as validation of these imaginaries, particularly in the presence of ‘alternative algorithmic imaginaries’, involving perceptions of political bias, censorship and conspiracy theories. This led users to explore and promote alternative search engines in a quest for ‘infrastructural alignment’, believing their individual needs were no longer met. The results show that infrastructural opacity acts as a catalyst for distrust and conspiracy theories, suggesting that explicit communication from platforms is crucial, especially in times of crisis.",
-      "url": "https://doi.org/10.1177/20539517261500661",
-      "published": "2026-10-22",
-      "venue": "Big Data & Society",
-      "categories": [],
-      "pdf_url": "",
-      "doi": "https://doi.org/10.1177/20539517261500661",
-      "citations": 0,
-      "rule_score": 3.5,
-      "score": 7.675,
-      "tldr_zh": "用主题模型分析Reddit上1.5万余条关于Google自动补全审查争议的讨论，揭示用户如何审计算法并受算法想象影响。",
-      "tldr": "",
-      "tags": [
-        "在线平台",
-        "舆论与极化",
-        "文本计算"
-      ],
-      "reason": "直接研究在线平台用户对算法偏见的感知与讨论，属计算社会科学数字平台研究。",
-      "backfill_date": ""
+      "backfill_date": "2026-10-24"
     }
   ]
 }
