@@ -39,6 +39,7 @@ jobs:
         env:
           DEEPSEEK_API_KEY: ${{ secrets.DEEPSEEK_API_KEY }}
           OPENALEX_MAILTO: ${{ secrets.OPENALEX_MAILTO }}
+          ARXIV_CONTACT: ${{ secrets.ARXIV_CONTACT }}
         run: |
           if [ "${{ inputs.force_rescore }}" = "true" ]; then
             python -m pipeline.main --require-llm --ignore-seen

@@ -47,7 +47,7 @@ python3 -m venv .venv
 .venv/bin/pip install -r requirements.txt
 
 cp .env.example .env
-# 编辑 .env，填入 DEEPSEEK_API_KEY（可选填 OPENALEX_MAILTO）
+# 编辑 .env，填入 DEEPSEEK_API_KEY（可选：OPENALEX_MAILTO、ARXIV_CONTACT）
 
 # 先不调用 LLM，验证抓取和渲染
 .venv/bin/python -m pipeline.main --no-llm
@@ -106,6 +106,7 @@ cp .env.example .env
 2. 添加 Actions Secret：仓库 → Settings → Secrets and variables → Actions
    - `DEEPSEEK_API_KEY`（必填）
    - `OPENALEX_MAILTO`（可选，填你的邮箱可提升 OpenAlex 配额）
+   - `ARXIV_CONTACT`（可选，填你的邮箱，arXiv 限流时更容易恢复）
 3. 推送代码到 `main` 分支
 4. 开启 Pages：Settings → Pages → Source 选择 **Deploy from a branch** → `main` / **`/docs`**
 5. 在 Actions 页手动运行一次 `daily-digest` 验证
@@ -143,4 +144,6 @@ cp .env.example .env
 - 免费 Google Scholar / Scopus 均无稳定 API，故不采用
 - OpenAlex 已限制 `created_date` 增量接口，本项目使用 `from_publication_date`
 - 周末或没有新论文时，当日 Feed 为空，不重复推送旧论文；可到「归档」回看往期
+- arXiv API 遇到 429 会按 `Retry-After` 长退避重试，仍失败则回退到 arXiv RSS；RSS 在周末为空是正常现象
+- 可选 Actions Secret `ARXIV_CONTACT=你的邮箱`，会写入 User-Agent，提升限流恢复概率
 - 摘要是 AI 辅助生成，仅作为筛选线索，请以论文原文为准
