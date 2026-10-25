@@ -142,5 +142,5 @@ cp .env.example .env
 
 - 免费 Google Scholar / Scopus 均无稳定 API，故不采用
 - OpenAlex 已限制 `created_date` 增量接口，本项目使用 `from_publication_date`
-- 周末 arXiv 不放新论文时，自动从最近 7 天归档补足「往期精选」（最多 3 篇）
+- 周末或没有新论文时，当日 Feed 为空，不重复推送旧论文；可到「归档」回看往期
 - 摘要是 AI 辅助生成，仅作为筛选线索，请以论文原文为准

@@ -386,7 +386,7 @@ footer {
       <div class="rules-panel" id="rules-panel" hidden>
         <div class="rule-row"><span class="rule-key">0–10</span><p>AI 相关性评分：衡量论文与「复杂网络 / 计算社会科学」的接近程度，不代表论文质量、引用量或作者水平。</p></div>
         <div class="rule-row"><span class="rule-key">分数段</span><p><b>9–10</b> 核心问题、方法或重要发现；<b>7–8</b> 明确相关；<b>5–6</b> 边缘相关；<b>0–4</b> 基本不相关。</p></div>
-        <div class="rule-row"><span class="rule-key">入选</span><p>每天按分数排序取前 10；低于 5.0 不入选。新论文不足时，从最近 7 天归档补足「往期精选」。</p></div>
+        <div class="rule-row"><span class="rule-key">入选</span><p>每天按分数排序取前 10；低于 5.0 不入选。没有新论文时不补旧文，可在「归档」回看往期。</p></div>
         <div class="rule-row"><span class="rule-key">来源</span><div class="rule-text">
           <p>arXiv（近 72 小时）：__ARXIV_CATEGORIES__。</p>
           <p>OpenAlex 期刊（__JOURNAL_COUNT__ 本）：</p>
@@ -1012,7 +1012,7 @@ def _summary(paper: Paper) -> str:
 
 def _cards_html(papers: list[Paper]) -> str:
     if not papers:
-        return '<p class="empty">今天没有新的论文，明天见。</p>'
+        return '<p class="empty">今天没有新的论文，可查看「归档」回顾往期。</p>'
     cards = []
     for index, paper in enumerate(papers, start=1):
         badges = ""
@@ -1218,6 +1218,22 @@ def build_search_index(archive_dir: Path, now: datetime, max_days: int = 365) ->
     )
 
 
+def _remove_from_manifest(archive_dir: Path, day: str) -> None:
+    manifest_path = archive_dir / "index.json"
+    if not manifest_path.exists():
+        return
+    try:
+        payload = json.loads(manifest_path.read_text(encoding="utf-8"))
+        dates = [str(d) for d in payload.get("dates") or []]
+    except (OSError, json.JSONDecodeError):
+        return
+    dates = [d for d in dates if d != day]
+    manifest_path.write_text(
+        json.dumps({"dates": dates[:365]}, ensure_ascii=False, indent=2),
+        encoding="utf-8",
+    )
+
+
 def write_outputs(
     papers: list[Paper],
     cfg: dict,
@@ -1244,8 +1260,13 @@ def write_outputs(
     archive_dir = out_dir / "archive"
     archive_dir.mkdir(parents=True, exist_ok=True)
     archive_path = archive_dir / f"{day}.json"
-    archive_path.write_text(json.dumps(feed, ensure_ascii=False, indent=2), encoding="utf-8")
-    _update_manifest(archive_dir, day)
+    if papers:
+        archive_path.write_text(json.dumps(feed, ensure_ascii=False, indent=2), encoding="utf-8")
+        _update_manifest(archive_dir, day)
+    else:
+        if archive_path.exists():
+            archive_path.unlink()
+        _remove_from_manifest(archive_dir, day)
     build_search_index(archive_dir, now)
 
     page_path = out_dir / "index.html"

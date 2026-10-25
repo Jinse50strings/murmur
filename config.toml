@@ -3,7 +3,7 @@ name = "Murmur"
 subtitle = "Complex networks & computational social science, daily"
 top_n = 10
 wechat_top_n = 5
-backfill_max = 3
+backfill_max = 0  # 不补旧文，避免与前一天重复
 
 [arxiv]
 # cs.SI 社会与信息网络 / physics.soc-ph 物理与社会
