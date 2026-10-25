@@ -1,106 +1,20 @@
 {
   "app": "Murmur",
   "version": 1,
-  "date": "2026-10-25",
-  "generated_at": "2026-10-25T11:54:47+08:00",
-  "count": 3,
+  "date": "2026-10-26",
+  "generated_at": "2026-10-26T03:12:55+08:00",
+  "count": 0,
   "counts": {
     "sources": {
       "arxiv": 0,
-      "openalex": 130
+      "openalex": 172
     },
-    "unique": 130,
-    "new": 125,
-    "candidates": 4,
-    "selected": 3,
-    "fresh_selected": 3,
-    "errors": 1
+    "unique": 172,
+    "new": 163,
+    "candidates": 2,
+    "selected": 0,
+    "fresh_selected": 0,
+    "errors": 0
   },
-  "papers": [
-    {
-      "id": "openalex:W7161712988",
-      "source": "openalex",
-      "title": "Dynamics of collective creativity in AI art competitions",
-      "authors": [
-        "Mason Youngblood",
-        "Jeff Nusz",
-        "Joel Simon"
-      ],
-      "abstract": "Abstract Creativity is a fundamental part of cultural evolution, but the mechanisms by which groups produce novelty are notoriously difficult to infer from the historical record. Iterated learning experiments have shown that cultural transmission reliably distorts artifacts toward the inductive biases of learners, but most of this work uses linear chains of human participants, and it is unclear how these dynamics play out in the networked, human-AI systems that increasingly shape cultural production. In this study, we analyze one such system: Artbreeder, which hosts daily “remix parties” in which users iteratively build on each other's work from a single seed image, producing branching lineages of images co-created by humans and generative AI. Using 130,882 images from 368 remix parties over 13 months, we find that images become less novel over the course of a party and that each remix step moves less far from its parents, consistent with the stabilization seen in iterated learning experiments, and that late-stage images drift toward the platform's dominant portrait style. More novel “parent” images produce more novel and more complex “children.” More novel children attract more likes but are not remixed more, whereas more complex children are remixed less. Finally, larger remix parties produce images that are more novel but less complex.",
-      "url": "https://doi.org/10.1093/pnasnexus/pgag369",
-      "published": "2026-10-23",
-      "venue": "PNAS Nexus",
-      "categories": [],
-      "pdf_url": null,
-      "doi": "https://doi.org/10.1093/pnasnexus/pgag369",
-      "citations": 0,
-      "rule_score": 4.7,
-      "score": 7.735,
-      "tldr_zh": "分析Artbreeder上368场“混音派对”的13万余张图像，揭示人机协作网络中集体创造力的分支演化动态。",
-      "tldr": null,
-      "tags": [
-        "在线平台",
-        "数字痕迹",
-        "扩散与传播"
-      ],
-      "reason": "基于在线平台数字痕迹研究人-AI协作网络中的文化传播与变异，对计算社会科学与网络扩散研究有明确实证价值。",
-      "backfill_date": null
-    },
-    {
-      "id": "openalex:W7223335799",
-      "source": "openalex",
-      "title": "Surveillance Path Dependence: Technological and Institutional Lock-In of Digital Surveillance Infrastructures in China",
-      "authors": [
-        "Jingyang Huang",
-        "Jack Linzhou Xing"
-      ],
-      "abstract": "Digital surveillance infrastructures are widely critiqued for their use-side problems of access, privacy, and discrimination, but meaningful intervention requires understanding how these infrastructures are developed and stabilized in the first place. This paper examines China’s health code systems (HCSs) as a revelatory case of path dependence in the development of digital surveillance infrastructures. Drawing on news, first-hand interviews, and fieldwork, we trace how local governments chose to embed contact-tracing systems within the pre-existing digital ecosystems of Alipay and WeChat, primarily at the local level. Such choices persisted despite the central government’s openly cautious stance toward private tech giants and its subsequent attempts to develop independent alternatives. We describe this trajectory as surveillance path dependence, in which the convergence of pre-existing technological foundations, tight temporal pressure, and institutional incentives within a fragmented authoritarian institutional context locked new applications into established digital surveillance paths. This study suggests that mitigating the adverse societal impacts of large-scale digital surveillance requires intervening directly in the foundational design and institutional deployment of digital ecosystems rather than at the level of use-side effects.",
-      "url": "https://doi.org/10.1177/08944393261497164",
-      "published": "2026-10-23",
-      "venue": "Social Science Computer Review",
-      "categories": [],
-      "pdf_url": null,
-      "doi": "https://doi.org/10.1177/08944393261497164",
-      "citations": 0,
-      "rule_score": 3.5,
-      "score": 6.675,
-      "tldr_zh": "以中国健康码系统为案例，通过新闻、访谈与田野调查追踪数字监控基础设施如何嵌入支付宝和微信生态并形成技术与制度锁定。",
-      "tldr": null,
-      "tags": [
-        "在线平台",
-        "数字痕迹",
-        "方法论"
-      ],
-      "reason": "讨论数字监控基础设施的平台嵌入与路径依赖，对在线平台治理与数字社会研究有边缘到中等相关性，但非网络分析方法研究。",
-      "backfill_date": null
-    },
-    {
-      "id": "openalex:W7204461879",
-      "source": "openalex",
-      "title": "Developmental asymmetries in equilibrium selection",
-      "authors": [
-        "Pablo Brañas‐Garza",
-        "Diego Jorrat",
-        "Pablo Lomas"
-      ],
-      "abstract": "Abstract Coordination problems are central to social and economic life and often involve multiple equilibria. Classical theories identify two canonical principles for equilibrium selection: maximizing payoffs and minimizing strategic risk. These principles differ in what they demand of a decision-maker: payoff-based coordination can be reached by recognizing that one equilibrium pays more, whereas risk-based coordination requires reasoning about what happens when coordination fails. Yet little is known about how the use of these principles varies from late childhood to early adulthood. Using a large sample of more than 2,000 participants aged 10 to 20, who played two coordination games and then stated the reason for each choice, we construct measures that pair each choice with a congruent stated reason and document an asymmetry in their age profiles. Payoff-based coordination is already high at the earliest ages studied and shows at most a weak age gradient. In contrast, risk-based coordination shows a modest but consistent increase with age. The difference between the two age gradients is statistically significant; the risk-based gradient also appears within the study using a common protocol across ages and in the risk-dominant choice itself. Cognitive ability shifts the level of both measures but does not alter their age profiles. These findings show that payoff-based and risk-based coordination vary differently with age, while similar observed choices can be accompanied by different stated reasons.",
-      "url": "https://doi.org/10.1093/pnasnexus/pgag370",
-      "published": "2026-10-23",
-      "venue": "PNAS Nexus",
-      "categories": [],
-      "pdf_url": null,
-      "doi": "https://doi.org/10.1093/pnasnexus/pgag370",
-      "citations": 0,
-      "rule_score": 4.7,
-      "score": 5.735,
-      "tldr_zh": "用2000余名10-20岁被试玩两个协调博弈并陈述理由，发现均衡选择中收益原则与风险原则的使用随年龄发展呈不对称变化。",
-      "tldr": null,
-      "tags": [
-        "实验",
-        "方法论"
-      ],
-      "reason": "涉及协调博弈与均衡选择的行为实验，与社会网络/复杂网络方法关联较弱，仅对行为博弈与实验方法读者有边缘价值。",
-      "backfill_date": null
-    }
-  ]
+  "papers": []
 }
