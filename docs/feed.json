@@ -1,17 +1,17 @@
 {
   "app": "Murmur",
   "version": 1,
-  "date": "2026-10-26",
-  "generated_at": "2026-10-26T03:12:55+08:00",
+  "date": "2026-10-27",
+  "generated_at": "2026-10-27T05:09:17+08:00",
   "count": 0,
   "counts": {
     "sources": {
       "arxiv": 0,
-      "openalex": 172
+      "openalex": 143
     },
-    "unique": 172,
-    "new": 163,
-    "candidates": 2,
+    "unique": 143,
+    "new": 137,
+    "candidates": 1,
     "selected": 0,
     "fresh_selected": 0,
     "errors": 0
