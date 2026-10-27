@@ -1,20 +1,339 @@
 {
   "app": "Murmur",
   "version": 1,
-  "date": "2026-10-27",
-  "generated_at": "2026-10-27T05:09:17+08:00",
-  "count": 0,
+  "date": "2026-10-28",
+  "generated_at": "2026-10-28T04:54:45+08:00",
+  "count": 10,
   "counts": {
     "sources": {
-      "arxiv": 0,
-      "openalex": 143
+      "arxiv": 52,
+      "openalex": 110
     },
-    "unique": 143,
-    "new": 137,
-    "candidates": 1,
-    "selected": 0,
-    "fresh_selected": 0,
+    "unique": 162,
+    "new": 160,
+    "candidates": 33,
+    "selected": 10,
+    "fresh_selected": 10,
     "errors": 0
   },
-  "papers": []
+  "papers": [
+    {
+      "id": "arxiv:2610.33927",
+      "source": "arxiv",
+      "title": "Interplay Between Network Heterogeneity and Activation Thresholds in Global Cascades",
+      "authors": [
+        "Aidan Meador-Woodruff",
+        "Gourab Ghoshal"
+      ],
+      "abstract": "The onset of global cascades in complex networks depends on both the distribution of activation thresholds and the underlying network topology. Here we investigate how these two sources of heterogeneity interact within the Watts threshold model, using beta-distributed activation thresholds and beta-binomial degree distributions to systematically vary their respective properties. Analyzing the onset of cascades from infinitesimal seeds, we identify two distinct boundaries governing the large-connectivity behavior of vulnerable branching. The first separates regimes in which increasing connectivity enhances or suppresses propagation, depending on the abundance of individuals with low activation thresholds. The second distinguishes two mechanisms of suppression: one controlled by the scarcity of low-threshold individuals and the other by the diminishing abundance of low-degree nodes as connectivity increases. At the boundary between these mechanisms, their competing contributions produce a logarithmic correction to the asymptotic scaling. Our results demonstrate how the interplay between network structure and individual activation thresholds determines the conditions for extensive propagation.",
+      "url": "https://arxiv.org/abs/2610.33927",
+      "published": "2026-10-24",
+      "venue": "arXiv",
+      "categories": [
+        "physics.soc-ph",
+        "cond-mat.stat-mech"
+      ],
+      "pdf_url": "https://arxiv.org/pdf/2610.33927v1",
+      "doi": null,
+      "citations": 0,
+      "rule_score": 9.3,
+      "score": 9.465,
+      "tldr_zh": "在Watts阈值模型中用beta分布阈值与beta-binomial度分布系统改变异质性，识别出全局级联起始的两类边界。",
+      "tldr": null,
+      "tags": [
+        "复杂网络",
+        "扩散与传播",
+        "仿真与ABM"
+      ],
+      "reason": "直接研究复杂网络上的级联扩散机制，是该领域核心理论问题。",
+      "backfill_date": null
+    },
+    {
+      "id": "openalex:W7223659293",
+      "source": "openalex",
+      "title": "Low-vocality engagement and participation dynamics on Bluesky",
+      "authors": [
+        "Veronica Mesina",
+        "Andrea Failla",
+        "Luca Pappalardo",
+        "Giulio Rossetti"
+      ],
+      "abstract": "Online participation is often measured through visible expression, especially posting, yet consequential forms of engagement also occur through less vocal actions such as liking and following. We study how users inhabit Bluesky by reconstructing participation profiles from more than three billion activity records produced by a near-complete sample accounting for more than 80% of registered users. Aggregating behavior into monthly user-level observations, we distinguish two dimensions often conflated in platform analytics: intensity, capturing how much users engage, and style, capturing how engagement is expressed across actions. We find that vocal production is highly concentrated, but low-posting behavior does not imply absence from platform participation. High-intensity engagement is most strongly associated with liking rather than posting, while posting-oriented participation is more common among low-intensity users. Transition patterns show that high-intensity liking and posting stabilize active participation, network-building redirects users within the active space, and observed inactivity forms a persistent boundary to re-entry. Higher-order motifs further indicate that inactivity can interrupt rather than erase prior regimes, and that low-intensity liking can precede durable high-intensity engagement. These results call for a shift from post-centered measures of activity toward dynamic accounts of platform presence that incorporate differentiated low-vocality practices.",
+      "url": "https://doi.org/10.1140/epjds/s13688-026-00711-9",
+      "published": "2026-10-26",
+      "venue": "EPJ Data Science",
+      "categories": [],
+      "pdf_url": null,
+      "doi": "https://doi.org/10.1140/epjds/s13688-026-00711-9",
+      "citations": 0,
+      "rule_score": 4.0,
+      "score": 9.2,
+      "tldr_zh": "用Bluesky超30亿条活动记录重建用户参与画像，区分参与强度与表达风格，发现低发帖不等于低参与。",
+      "tldr": null,
+      "tags": [
+        "在线平台",
+        "数字痕迹",
+        "社会网络"
+      ],
+      "reason": "基于大规模平台数字痕迹研究在线参与行为，是计算社会科学与在线平台研究的核心实证工作。",
+      "backfill_date": null
+    },
+    {
+      "id": "arxiv:2610.33980",
+      "source": "arxiv",
+      "title": "The Hidden Costs of Gatekeeping in Open Science: Quasi-Experimental Evidence from arXiv's Endorsement Policy Tightening",
+      "authors": [
+        "Wenchang Wang"
+      ],
+      "abstract": "Preprint servers and open science platforms have become core infrastructure through which scientific knowledge circulates on the Web, greatly facilitating the dissemination and diffusion of online scientific information. Yet to safeguard content quality, many of these platforms rely on existing members to vouch for newcomers; how such network-mediated gatekeeping reshapes entry barriers across different scientific communities remains systematically underexplored. To address this, I examine the potential unequal impacts of this mechanism through arXiv's tightening of its endorsement policy in early 2026. Using the metadata of three million arXiv papers and the co-authorship networks of each research community, I compare the influx and dynamics of first-time submitters before and after the policy across eight disciplines. The findings show that the policy reduced the entry of new authors, and this reduction was concentrated in fields where co-authorship ties are sparse, while fields with dense collaboration networks were largely spared. A comparison with a parallel preprint server in biology suggests that this likely reflects a shift in where researchers choose to post rather than a decline in research activity. These findings demonstrate that the network structure of a scientific community shapes who can enter online scientific production, advancing our understanding of how the Web's open knowledge infrastructure shapes inequality in the diffusion of science.",
+      "url": "https://arxiv.org/abs/2610.33980",
+      "published": "2026-10-25",
+      "venue": "arXiv",
+      "categories": [
+        "cs.SI",
+        "cs.DL"
+      ],
+      "pdf_url": "https://arxiv.org/pdf/2610.33980v1",
+      "doi": null,
+      "citations": 0,
+      "rule_score": 8.5,
+      "score": 8.925,
+      "tldr_zh": "利用arXiv 2026年收紧背书政策的准实验，结合三百万论文元数据与合著网络，发现网络化守门加剧新进入者壁垒且影响不均。",
+      "tldr": null,
+      "tags": [
+        "在线平台",
+        "因果推断",
+        "社会网络"
+      ],
+      "reason": "用准实验与合著网络分析平台守门机制，属计算社会科学实证核心议题。",
+      "backfill_date": null
+    },
+    {
+      "id": "arxiv:2610.35162",
+      "source": "arxiv",
+      "title": "Multiplex relational event models of self-reported and perceived gossip",
+      "authors": [
+        "Veronica Poda",
+        "Veronica Vinciotti",
+        "Ernst C. Wit"
+      ],
+      "abstract": "Gossiping is a complex social phenomenon that unfolds through multiple types of relations. Among other things, individuals may initiate gossiping about others as a result of believing themselves to be the target of gossip. These two processes, i.e., gossiping and gossip perception, form a dynamic multiplex network, where self-reported and perceived gossip ties coexist and can influence each other over time. We develop a multiplex relational event model to study the joint evolution of these two processes. The proposed model includes endogeneous covariates that capture the influence of events occurring within one layer, as well as events occurring on the other layer, on the rate of self-reported and perceived gossiping. We analyze survey data collected annually from 44 secondary schools in Hungary. We show how a multiplex relational event model, including linear, smooth and random effects, is able to describe the social mechanisms operating within and between self-reported and perceived gossiping and to capture how these two layers influence each other over time.",
+      "url": "https://arxiv.org/abs/2610.35162",
+      "published": "2026-10-26",
+      "venue": "arXiv",
+      "categories": [
+        "physics.soc-ph",
+        "stat.ME"
+      ],
+      "pdf_url": "https://arxiv.org/pdf/2610.35162v1",
+      "doi": null,
+      "citations": 0,
+      "rule_score": 6.9,
+      "score": 8.845,
+      "tldr_zh": "构建多层关系事件模型，联合建模44所中学中自报八卦与感知被八卦两类关系的动态相互影响。",
+      "tldr": null,
+      "tags": [
+        "社会网络",
+        "方法论"
+      ],
+      "reason": "多层动态社会网络统计建模，直接服务社会网络分析读者。",
+      "backfill_date": null
+    },
+    {
+      "id": "arxiv:2610.35179",
+      "source": "arxiv",
+      "title": "High Scores, Hidden Failures: Evaluating Codebook-Based LLM Content Analysis",
+      "authors": [
+        "Elena Senger",
+        "Yuri Campbell",
+        "Rob van der Goot",
+        "Barbara Plank"
+      ],
+      "abstract": "Large language models (LLMs) are increasingly used for codebook-based content analysis in computational social science, where codebooks translate theoretical concepts into labeling schemes. While prior work reports strong predictive performance, it remains unclear whether these systems produce reliable and robust text annotations. We conduct a large-scale empirical failure-mode analysis of LLM-based coding pipelines across four datasets and five models by systematically evaluating their stability, robustness, and conceptual validity under controlled perturbations, domain shifts, and optimization procedures. We uncover multiple failure modes that are largely invisible under standard metrics, showing that high aggregate scores frequently coexist with severe label-level disparities, instability across runs, domain sensitivity, and shifts in label interpretation. Importantly, these failure modes persist under widely used optimization strategies and remain largely invisible under standard metrics such as accuracy and micro-F1. Our results demonstrate that current LLM-based coding pipelines cannot be treated as stable measurement tools without targeted validation beyond aggregate performance.",
+      "url": "https://arxiv.org/abs/2610.35179",
+      "published": "2026-10-26",
+      "venue": "arXiv",
+      "categories": [
+        "cs.CL",
+        "cs.CY"
+      ],
+      "pdf_url": "https://arxiv.org/pdf/2610.35179v1",
+      "doi": null,
+      "citations": 0,
+      "rule_score": 4.9,
+      "score": 8.745,
+      "tldr_zh": "在四个数据集和五个模型上系统扰动测试LLM编码本内容分析流程，发现高聚合分数下普遍存在标签级不稳定与概念效度失效。",
+      "tldr": null,
+      "tags": [
+        "文本计算",
+        "LLM智能体",
+        "方法论"
+      ],
+      "reason": "直接针对计算社会科学中LLM文本标注的可靠性问题，是文本计算方法论的重要警示性研究。",
+      "backfill_date": null
+    },
+    {
+      "id": "arxiv:2610.35628",
+      "source": "arxiv",
+      "title": "Investigating Forecasting Capabilities of Narrative Networks on Emerging Stories",
+      "authors": [
+        "Ravi Teja Karumuri",
+        "Steven Corman",
+        "Huan Liu",
+        "Joshua Garland"
+      ],
+      "abstract": "Networks have been used to model the interactions among the elements that underlie a narrative. In this paper, we investigate whether the structure of these networks can predict which links will emerge as a storyline evolves. We construct these networks from news articles using a Semantic Edge Parser (SEP) built on a Large Language Model (LLM), and evaluate the networks on three disparate real-world storylines, the 2022 Canadian Freedom Convoy, Hurricane Melissa (2025), and the 2025-26 Iranian protests. To test the narrative network's predictive capability, we construct a rolling window of the narrative and predict the emergent links between existing narrative elements on the day following the rolling window period. We identify candidate links with seven standard link predictors, including the Adamic-Adar index, Common Neighbors, and Preferential Attachment. Forecasting next-day links across the three storylines, we find Preferential Attachment to be the strongest standard link predictor, achieving a mean ROC-AUC of 0.76-0.79. It exceeds EdgeBank, a memorization baseline, by 11.3-14.5 points on every event. To summarize, narrative-network structure ranks next-day emergent relations above chance, though this advantage is concentrated among the most frequently mentioned, highly connected entities.",
+      "url": "https://arxiv.org/abs/2610.35628",
+      "published": "2026-10-26",
+      "venue": "arXiv",
+      "categories": [
+        "cs.SI"
+      ],
+      "pdf_url": "https://arxiv.org/pdf/2610.35628v1",
+      "doi": null,
+      "citations": 0,
+      "rule_score": 6.9,
+      "score": 8.345,
+      "tldr_zh": "用LLM语义边解析器从新闻构建叙事网络，在三个真实事件上滚动预测次日新出现的叙事元素链接。",
+      "tldr": null,
+      "tags": [
+        "文本计算",
+        "LLM智能体",
+        "社会网络"
+      ],
+      "reason": "结合LLM文本计算与网络链接预测，对计算社会科学方法有明确价值。",
+      "backfill_date": null
+    },
+    {
+      "id": "arxiv:2610.34544",
+      "source": "arxiv",
+      "title": "Joint Independence Testing for Latent Position Random Graphs",
+      "authors": [
+        "Xiaoyi Wen",
+        "Zoltan Szabo"
+      ],
+      "abstract": "Kernel techniques are among the most powerful methods in data science and statistics. One of the key properties of kernels contributing to their numerous successful applications is that the associated reproducing kernel Hilbert space is expressive enough to encode probability distributions without loss of information or to capture the joint independence of $M\\ge 2$ random variables, under mild conditions. Computationally, these measures (i) rely on the so-called Gram matrix which contains the pairwise similarity of sample points, and (ii) converge at a rate $O \\left(n^{-\\frac{1}{2}}\\right)$, where $n$ denotes the sample size. We focus on measuring the independence of latent position random graphs (LPRGs), a model widely-applied for instance in neuroscience, sociology, and epidemiology. In LPRGs a latent representation is associated to each node. The similarity of these representations (meant via a kernel) determines whether two nodes are connected, making the Gram matrices only implicitly observable and the estimation challenging. Despite the fundamental importance of quantifying the independence of $M$ LPRGs, very little is known about the solution of this problem; existing techniques are restricted to $M=2$ components and only guarantee consistency without rates. In this work, (i) we define an independence measure called graph Hilbert-Schmidt independence criterion (GHSIC) for $M\\ge 2$ LPRGs, (ii) we prove that it can be estimated at a rate $\\tilde{O}\\left(n^{-\\frac{1}{3}}\\right)$ relying on spectral decomposition of adjacency matrices, (iii) without the need to choose kernels and their hyperparameters. Numerical experiments demonstrate the effectiveness of the proposed GHSIC estimator both on synthetic examples and in the analysis of brain functional connectivity subnetworks in natural language perception.",
+      "url": "https://arxiv.org/abs/2610.34544",
+      "published": "2026-10-25",
+      "venue": "arXiv",
+      "categories": [
+        "stat.ML",
+        "cs.LG",
+        "cs.SI"
+      ],
+      "pdf_url": "https://arxiv.org/pdf/2610.34544v1",
+      "doi": null,
+      "citations": 0,
+      "rule_score": 6.7,
+      "score": 7.835,
+      "tldr_zh": "提出针对潜在位置随机图的联合独立性核检验方法，具有O(n^-1/2)收敛率，适用于社会学等网络数据。",
+      "tldr": null,
+      "tags": [
+        "社会网络",
+        "方法论"
+      ],
+      "reason": "面向社会网络常用LPRG模型的统计检验方法，方法价值明确。",
+      "backfill_date": null
+    },
+    {
+      "id": "arxiv:2610.34313",
+      "source": "arxiv",
+      "title": "From Data Footprints to Researcher Fingerprints: Temporal Ego-centric Research Group Detection in Scientific Knowledge Graphs",
+      "authors": [
+        "Simone Angioni",
+        "Miriam Baglioni",
+        "Andrea Mannocci",
+        "Paolo Manghi"
+      ],
+      "abstract": "Understanding who researchers collaborate with, when and how their research groups form, and how these evolve over time is a foundational prerequisite for constructing multidimensional, evidence-based researcher fingerprints -- a requirement that has become increasingly urgent in the context of ongoing reforms in research evaluation advocated by initiatives such as DORA, the Leiden Manifesto, and CoARA. In this paper, we propose an egocentric approach for fine-grained research group detection, operating at the scale of individual researchers' ego networks, as extracted from Scientific Knowledge Graphs (SKGs), and requiring the ego node to be present in all identified research groups -- a constraint that is not merely technical but reflects a commitment to researcher-centred analysis. Our approach builds on the Leiden algorithm as its computational core and is grounded in SKGs, which provide the heterogeneous, open scholarly metadata necessary to trace collaboration patterns at scale in a reproducible and transparent manner. We evaluate the proposed method through a user evaluation involving 10 researchers with diverse backgrounds and career stages, demonstrating its ability to surface meaningful and interpretable collaboration structures. The research groups identified constitute the structural scaffold upon which richer characterisations of scholarly identity -- including roles, seniority, contribution types, and publication patterns -- can be built in subsequent work, contributing to the broader goal of fairer and more transparent research assessment.",
+      "url": "https://arxiv.org/abs/2610.34313",
+      "published": "2026-10-25",
+      "venue": "arXiv",
+      "categories": [
+        "cs.DL",
+        "cs.SI"
+      ],
+      "pdf_url": "https://arxiv.org/pdf/2610.34313v1",
+      "doi": "10.5281/zenodo.23643294",
+      "citations": 0,
+      "rule_score": 5.5,
+      "score": 7.775,
+      "tldr_zh": "在科学知识图谱上以自我中心网络检测研究者随时间变化的科研团队，构建研究者指纹。",
+      "tldr": null,
+      "tags": [
+        "社会网络",
+        "方法论"
+      ],
+      "reason": "直接使用自我中心网络与知识图谱做合作团队检测，属社会网络分析方法应用。",
+      "backfill_date": null
+    },
+    {
+      "id": "arxiv:2610.34987",
+      "source": "arxiv",
+      "title": "AskGLP1: A Knowledge Graph LLM Agent for Exploring GLP-1 Experience from Online Patient Narratives",
+      "authors": [
+        "Zhaoqian Xue",
+        "Anay Somani",
+        "Siddhartha Singh",
+        "Junting Mu",
+        "Zhongyin Wang",
+        "Haozheng Liu",
+        "Ayesha Khatun",
+        "Yeaeun Kwon"
+      ],
+      "abstract": "GLP-1 medications are increasingly used for weight management, and many people share their experiences online. These narratives show why people take the drugs and what they experience, but they remain unstructured and disconnected from formal pharmacovigilance. We therefore present AskGLP1, a system that transforms online patient narratives into a knowledge graph (KG) and answers questions about medication experiences. Through an LLM-assisted pipeline grounded in the MedDRA terminology, AskGLP1 screens nearly 8.5 million Reddit posts for medication experiences and distills 163,135 of them, with 2,506 WebMD reviews, into a KG of 385,790 drug-side-effect and drug-purpose relations. We find that GLP-1 experiences are source- and drug-specific. Online narratives share the most common gastrointestinal symptoms with FAERS, but they foreground everyday burdens such as fatigue and food aversion, whereas FAERS reports more often include injection-site reactions and selected serious diagnoses such as pancreatitis. We further find that posts report less nausea and vomiting for tirzepatide than for semaglutide, more fatigue for Wegovy than Ozempic and for Zepbound than Mounjaro. Evaluations show that the agent answers with verifiable evidence and declines requests for medical advice. Our findings reveal gaps between what FAERS captures and what people report online, and they call for patient-centered approaches to pharmacovigilance. Code, prompts, and evaluation questions are available at https://github.com/ZhaoqianXue/AskGLP1.",
+      "url": "https://arxiv.org/abs/2610.34987",
+      "published": "2026-10-26",
+      "venue": "arXiv",
+      "categories": [
+        "cs.CL",
+        "cs.AI",
+        "cs.SI"
+      ],
+      "pdf_url": "https://arxiv.org/pdf/2610.34987v1",
+      "doi": null,
+      "citations": 0,
+      "rule_score": 6.7,
+      "score": 7.335,
+      "tldr_zh": "用LLM流水线将850万Reddit帖与WebMD评论提炼为38万条药物-副作用关系知识图谱，发现GLP-1体验因来源和药物而异。",
+      "tldr": null,
+      "tags": [
+        "文本计算",
+        "LLM智能体",
+        "数字痕迹"
+      ],
+      "reason": "在线患者叙事与LLM知识图谱构建，属数字痕迹文本计算应用，但主题偏健康。",
+      "backfill_date": null
+    },
+    {
+      "id": "openalex:W7223667940",
+      "source": "openalex",
+      "title": "Populations, exposures and outcomes: How social media data is poised to advance climate-demography research",
+      "authors": [
+        "Jude P. Mikal",
+        "Stevie Chancellor",
+        "Kathryn L. Grace",
+        "Sripriya Rajamani"
+      ],
+      "abstract": "As the natural environment continues to change, there is a shared sense among researchers, policymakers, and health practitioners that we need to better understand the impacts of those changes on health and health behaviors for individuals and populations. “Big” social media data, including large datasets from platforms like X (formerly Twitter), Reddit, Facebook, TikTok, and YouTube, provide access to previously hard-to-reach populations. These data are posed to revolutionize the data landscape in climate change research; however, there are limitations and ethical concerns with data from these platforms, such as ethical questions, biases, noise, and a distinct underrepresentation of marginalized groups. These issues could hamper the adoption of social media data in research on climate change and health. In this commentary, we propose leveraging and augmenting a “human-in-the-loop” approach that uses humans in data extraction, quality assurances, and model testing to ensure data quality and overcome known limitations of social media data. Using examples from health data, we propose new horizons in climate change health research made possible with qualitative research methods.",
+      "url": "https://doi.org/10.1073/pnas.2321161122",
+      "published": "2026-10-26",
+      "venue": "Proceedings of the National Academy of Sciences",
+      "categories": [],
+      "pdf_url": null,
+      "doi": "https://doi.org/10.1073/pnas.2321161122",
+      "citations": 1,
+      "rule_score": 6.4,
+      "score": 7.32,
+      "tldr_zh": "综述社交媒体大数据在气候-人口研究中的机遇，指出可触及难达人群但存在伦理、偏差与边缘群体代表性不足问题。",
+      "tldr": null,
+      "tags": [
+        "数字痕迹",
+        "在线平台",
+        "综述"
+      ],
+      "reason": "讨论社交媒体数字痕迹用于人口健康研究，与计算社会科学相关但偏气候应用。",
+      "backfill_date": null
+    }
+  ]
 }
