@@ -1,0 +1,353 @@
+{
+  "app": "Murmur",
+  "version": 1,
+  "date": "2026-10-29",
+  "generated_at": "2026-10-29T05:15:58+08:00",
+  "count": 10,
+  "counts": {
+    "sources": {
+      "arxiv": 90,
+      "openalex": 134
+    },
+    "unique": 224,
+    "new": 200,
+    "candidates": 26,
+    "selected": 10,
+    "fresh_selected": 10,
+    "errors": 0
+  },
+  "papers": [
+    {
+      "id": "openalex:W7223944939",
+      "source": "openalex",
+      "title": "Mechanisms reinforcing and countering segregation: How existing friendship and dislike ties impact friendship homophily and dislike heterophily among Muslim and non-Muslim students in German schools",
+      "authors": [
+        "Vieri Pistocchi",
+        "Filip Agneessens"
+      ],
+      "abstract": "Homophily is an important social force in many social networks. While homophilous tendencies among positive relations (such as friendship) and heterophilous tendencies in negative tie networks (such as dislike) have been extensively studied, less is known about how such tendencies might become stronger or weaker as a result of past experiences. Focusing on homophilous and heterophilous tendencies between non-Muslim and Muslim students in schools, this paper explores whether, in line with Intergroup Contact Theory , existing friendship connections with outgroup members will reduce their inclination to dislike outgroup peers compared to ingroup peers (i.e., reduce dislike heterophily), and reduce their preferences for ingroup friendships over outgroup friends (i.e., reduce friendship homophily). On the other hand, in line with Attribution Theory and Social Identity Theory , we propose that existing dislike connections with outgroup members are likely to strengthen dislike heterophilous tendencies and friendship homophilous tendencies, thus further reinforcing religious segregation in schools. To test these hypotheses, we apply Stochastic Actor-Oriented Models (SAOMs) to the friendship and dislike networks of 1678 Muslim and non-Muslim students (FIS data) across 17 German school settings where this religious divide is particularly salient. Contrary to what we expected based on Intergroup Contact Theory , our study shows that prior interreligious friendships do not weaken a person’s tendency for friendship homophily. However, it does seem to reduce heterophily in dislike, but only because it makes students more likely to dislike ingroup peers. On the other hand, prior interreligious dislike ties are found to amplify dislike to outgroups, while not affecting friendship homophily. Surprisingly, our study also shows that ingroup friendships reduce dislike for outgroup members. We explore the implications of the findings that friendship homophily appears unaffected by prior interreligious contacts, while dislike heterophily is strengthened by existing negative outgroup ties, but reduced by both outgroup and ingroup friendships.",
+      "url": "https://doi.org/10.1016/j.socnet.2026.10.002",
+      "published": "2026-10-27",
+      "venue": "Social Networks",
+      "categories": [],
+      "pdf_url": null,
+      "doi": "https://doi.org/10.1016/j.socnet.2026.10.002",
+      "citations": 0,
+      "rule_score": 7.8,
+      "score": 8.89,
+      "tldr_zh": "用德国学校穆斯林与非穆斯林学生的追踪网络数据，检验既有友谊与厌恶关系如何强化或削弱友谊同质性与厌恶异质性。",
+      "tldr": null,
+      "tags": [
+        "社会网络",
+        "方法论"
+      ],
+      "reason": "直接研究社会网络中的同质性与负向关系动态，是社会网络分析核心议题。",
+      "backfill_date": null
+    },
+    {
+      "id": "arxiv:2610.37112",
+      "source": "arxiv",
+      "title": "Decoupling Procedural and Outcome Fairness in Seed Allocation for Influence Maximization",
+      "authors": [
+        "Xiaojing Du",
+        "Chunlei Meng",
+        "Wentao Gao",
+        "Ke Sun",
+        "Feiyu Yang"
+      ],
+      "abstract": "On online social platforms, equal seed access to interventions can yield unequal group outcomes through social spillovers, so an access audit alone can miss outcome disparities. We characterise this trade-off through an exact allocation-structure decomposition and a sharp first-moment floor for graph-independent seeding under additive spillovers on stochastic block networks. Decoupled Procedural Allocation (DPA) combines group quotas with selection by seeds' contributions to each group's outcome. Rankings balance total outcome against disparity, and within-quota exchanges reduce the gap. Computable bounds quantify retained total outcome. DPA achieves the smallest mean outcome gap among the compared methods at the common access tolerances on both development and prospective suites. Exposure and independent-cascade studies show how the propagation mechanism changes this trade-off. On Pokec, DPA nearly equalises modelled gender outcomes at the closest access-parity quota while preserving most of the degree-based allocation's total outcome.",
+      "url": "https://arxiv.org/abs/2610.37112",
+      "published": "2026-10-27",
+      "venue": "arXiv",
+      "categories": [
+        "cs.SI"
+      ],
+      "pdf_url": "https://arxiv.org/pdf/2610.37112v1",
+      "doi": null,
+      "citations": 0,
+      "rule_score": 7.9,
+      "score": 8.395,
+      "tldr_zh": "提出解耦程序公平与结果公平的影响力最大化种子分配方法，在随机块网络上量化溢出导致的结果差距并给出可计算界。",
+      "tldr": null,
+      "tags": [
+        "扩散与传播",
+        "方法论",
+        "社会网络"
+      ],
+      "reason": "研究社交平台影响力传播中的种子分配与群体公平，属网络扩散与算法公平交叉的实证方法工作。",
+      "backfill_date": null
+    },
+    {
+      "id": "arxiv:2610.36333",
+      "source": "arxiv",
+      "title": "Activity-based temporal hypergraphs: from individual activity to collective social dynamics",
+      "authors": [
+        "Marco Mancastroppa",
+        "Giulia Cencetti",
+        "Iacopo Iacopini",
+        "Giovanni Petri",
+        "Alain Barrat"
+      ],
+      "abstract": "Temporal hypergraphs provide an interesting representation for many social systems, as they integrate both the temporal and group nature of social interactions. Designing models of time-varying hyper-networks yields thus a convenient way to generate surrogates of empirical social systems, to understand the mechanisms underlying their emergent properties, and to investigate the evolution of dynamical processes taking place on such structures. Here, we focus on a specific and powerful class of these models, the activity-based temporal hypergraphs. We show how activity mechanisms provide control over the time scale of the dynamics, allow high modelling flexibility, and capture heterogeneity in agents' behavior. We also highlight how the activity can straightforwardly be extracted from empirical data to create surrogate datasets. We present paradigmatic examples of such models: the higher-order activity-driven models (HADx), which show that different underlying rules for the selection of active interactions produce different higher-order dynamics; the Emerging Activity Temporal Hypergraph model (EATH), able to generate surrogates of empirical systems by using higher-order mechanisms driven by both activity and group memory. We conclude discussing future perspectives for activity-based temporal hypergraphs, highlighting the potential of this framework to bridge realistic modelling of social dynamics with the study of the complex dynamical process they can support, from social contagion to opinion dynamics.",
+      "url": "https://arxiv.org/abs/2610.36333",
+      "published": "2026-10-26",
+      "venue": "arXiv",
+      "categories": [
+        "physics.soc-ph",
+        "cond-mat.stat-mech",
+        "cs.SI",
+        "physics.data-an"
+      ],
+      "pdf_url": "https://arxiv.org/pdf/2610.36333v1",
+      "doi": null,
+      "citations": 0,
+      "rule_score": 7.6,
+      "score": 8.38,
+      "tldr_zh": "综述并构建基于活动的时间超图模型，用活动机制控制集体社会动力学时间尺度并刻画个体行为异质性。",
+      "tldr": null,
+      "tags": [
+        "复杂网络",
+        "仿真与ABM",
+        "社会网络"
+      ],
+      "reason": "时间超图建模集体社会互动，属复杂网络与社会系统建模的方法论贡献。",
+      "backfill_date": null
+    },
+    {
+      "id": "arxiv:2610.37418",
+      "source": "arxiv",
+      "title": "Neighborhood Deprivation Shapes Post-Flood Population Losses in Pune and Bandung",
+      "authors": [
+        "Sukie Xiuqi Yang",
+        "Guangyuan Weng",
+        "Shiyue Cui",
+        "Zhicong Chen",
+        "Catherine Chen"
+      ],
+      "abstract": "Disaster research in high-income settings shows that better-resourced communities see population inflows and faster recovery, while disadvantaged communities suffer prolonged population loss. Whether this pattern holds in rapidly urbanizing cities of the Global South remains unclear. Here we show, using mobile phone data from Pune, India, and Bandung, Indonesia, how neighborhood-level changes in phone presence, a proxy for short-term population movement, relate to flooding and neighborhood deprivation. We combine satellite-derived flood maps with phone records to compare flooded and non-flooded areas over the 30 days around each flood. In both cities, less deprived neighborhoods see phone presence rise after flooding, while more deprived neighborhoods see it fall, consistent with resource-seeking interpretations documented in North American and European disaster research. The cities differed, however, in how deprivation relates to flood exposure: in Pune, more deprived flooded neighborhoods showed suggestive evidence of disproportionately larger decreases in detected device presence than similarly deprived non-flooded neighborhoods; no comparable interaction was observed in Bandung. Economic considerations are associated with post-flood device-presence changes in South and Southeast Asian cities in ways that parallel high-income contexts, though local context adds variation.",
+      "url": "https://arxiv.org/abs/2610.37418",
+      "published": "2026-10-27",
+      "venue": "arXiv",
+      "categories": [
+        "cs.CY",
+        "physics.soc-ph"
+      ],
+      "pdf_url": "https://arxiv.org/pdf/2610.37418v1",
+      "doi": null,
+      "citations": 0,
+      "rule_score": 5.0,
+      "score": 8.25,
+      "tldr_zh": "用印度浦那和印尼万隆的手机数据发现，洪水后贫困程度低的社区手机存在量上升、贫困社区下降，揭示灾害恢复的资源不平等。",
+      "tldr": null,
+      "tags": [
+        "数字痕迹",
+        "城市与流动",
+        "因果推断"
+      ],
+      "reason": "手机数据结合卫星洪水图做灾害人口流动的准因果比较，是数字痕迹用于社会不平等研究的典型实证。",
+      "backfill_date": null
+    },
+    {
+      "id": "arxiv:2610.37624",
+      "source": "arxiv",
+      "title": "Rare, Relevant, and Still Wrong: How Memory Fails LLM Group Decisions",
+      "authors": [
+        "Anouar Imel",
+        "Imad Charradi",
+        "Abderrahman Sghir",
+        "Khalil El Khammar"
+      ],
+      "abstract": "When an LLM group's discussion is compressed into a short memory for a final decision maker, what should the memory keep? Two natural heuristics keep the rarest claims or the claims relevant to the decision criteria. On hidden-profile tasks both look attractive, because how widely a fact is held is confounded with whether it helps. We introduce CrossProfile, a diagnostic benchmark of 60 templates with automatically verified answer keys, in which the ownership of supporting, decoy, and irrelevant facts is crossed while their text is held fixed (480 tasks). Across Qwen2.5-7B, Llama-3.1-8B, and two DeepSeek models, both heuristics fail in predictable places. Selecting by relevance readmits decoys, because decoys are on topic: even a perfect relevance filter loses 23 to 31 points to rarest-first selection in the classic hidden-profile configuration. Rarest-first selection is no better than random selection on average and wins only where the rare facts happen to be the useful ones. In both cases accuracy follows the balance of evidence the memory keeps, not the policy that kept it. The decision model adds a third failure, a form of social proof: it gives extra weight to facts attributed to many agents. Removing the attribution tags, or reassigning them at random with line order fixed, raises accuracy in the classic configuration by 13 to 24 points. In natural discussions the evidence is lost before any memory acts: the complete transcript yields lower accuracy than no notes at all.",
+      "url": "https://arxiv.org/abs/2610.37624",
+      "published": "2026-10-27",
+      "venue": "arXiv",
+      "categories": [
+        "cs.AI",
+        "cs.CL",
+        "cs.MA",
+        "cs.SI"
+      ],
+      "pdf_url": "https://arxiv.org/pdf/2610.37624v1",
+      "doi": null,
+      "citations": 0,
+      "rule_score": 5.5,
+      "score": 7.775,
+      "tldr_zh": "构建CrossProfile基准测试LLM群体决策中的记忆压缩，发现按稀有性或相关性筛选记忆都会系统性保留错误信息。",
+      "tldr": null,
+      "tags": [
+        "LLM智能体",
+        "实验",
+        "方法论"
+      ],
+      "reason": "研究LLM多智能体群体决策与信息聚合偏差，属LLM智能体与集体决策的实验研究。",
+      "backfill_date": null
+    },
+    {
+      "id": "arxiv:2610.36478",
+      "source": "arxiv",
+      "title": "Multi-Scale Spatio-Temporal Exploratory Analysis of Urban Vehicle Theft",
+      "authors": [
+        "Chaitanya Jobanputra",
+        "George Mohler",
+        "Sebastian Vollmer",
+        "Gerrit Großmann"
+      ],
+      "abstract": "Vehicle theft is a persistent urban problem with large economic and social costs. We analyze 521,098 stolen-vehicle reports filed with the Los Angeles Police Department from 2000 to 2022, at scales from hours to decades and from 100 m grid cells to census tracts. Much of the work lies in making the administrative records fit for analysis: we separate thefts from recoveries and traffic reports filed in the same records, repair time fields, validate the geocoding, and harmonize census data across changing tract boundaries. Theft is strongly and persistently concentrated: 10.8% of 250 m cells hold half of all thefts, and six census tracts are significant rate hotspots in all 23 years after false discovery rate control. Thefts close in space and time are more frequent than expected by chance, but about half of this excess comes from events at identical coordinates. Lower-income tracts have more thefts at equal exposure, monthly temperature shows no association with theft, and thefts peak in the evening. From 2015-2019 to 2021-2022, the share of Kia and Hyundai among stolen vehicles rose from 1.5% to 9.5% and from 1.6% to 7.7%, mostly among model years 2011-2021, which largely lacked a standard immobilizer. All findings are descriptive. We also describe how the data quality issues we corrected would otherwise distort several of these patterns.",
+      "url": "https://arxiv.org/abs/2610.36478",
+      "published": "2026-10-27",
+      "venue": "arXiv",
+      "categories": [
+        "cs.CY"
+      ],
+      "pdf_url": "https://arxiv.org/pdf/2610.36478v1",
+      "doi": null,
+      "citations": 0,
+      "rule_score": 5.2,
+      "score": 7.76,
+      "tldr_zh": "分析洛杉矶2000-2022年52万起盗车记录，发现盗车在250米网格和少数普查区高度持续聚集，且时空邻近案件多于随机预期。",
+      "tldr": null,
+      "tags": [
+        "城市与流动",
+        "方法论",
+        "社会网络"
+      ],
+      "reason": "大规模行政记录清洗与多尺度时空聚集分析，对计算社会科学的空间数据方法有参考价值。",
+      "backfill_date": null
+    },
+    {
+      "id": "arxiv:2610.36484",
+      "source": "arxiv",
+      "title": "CogArena: Benchmarking Multimodal Agents on Interactive Behavioral Experiments",
+      "authors": [
+        "Kianté Fernandez",
+        "Caitlin Chen",
+        "Jialu Zhou",
+        "Bartek Sadowski",
+        "Anthony C. Miceli",
+        "Ian Krajbich"
+      ],
+      "abstract": "Claims about the cognitive capabilities of large language models are typically tested by translating behavioral paradigms into text prompts, bypassing the visual interfaces and time pressure through which human participants actually engage with experiments. At the same time, AI agents can now complete online behavioral tasks and produce human-like data, which raises concerns that online datasets in the social and behavioral sciences are increasingly open to contamination. We introduce CogArena, a benchmark of ten experimental paradigms from the social and behavioral sciences. Agents complete the experiments through a standard web browser, working with the same visual stimuli and response interfaces that online participants use. A three-level scoring procedure evaluates whether the agent completed the task, how accurately it performed, and whether its data show the behavioral signatures each paradigm reliably produces in people. Across four multimodal models, each run ten times per task, we find that finishing an experiment and reproducing its signatures are different things. Many sessions did not finish, and those that did reproduced some signatures reliably and others not at all. CogArena provides the tasks, scoring code, and a public leaderboard for new submissions.",
+      "url": "https://arxiv.org/abs/2610.36484",
+      "published": "2026-10-27",
+      "venue": "arXiv",
+      "categories": [
+        "cs.AI",
+        "cs.CY",
+        "cs.HC",
+        "q-bio.NC"
+      ],
+      "pdf_url": "https://arxiv.org/pdf/2610.36484v1",
+      "doi": null,
+      "citations": 0,
+      "rule_score": 4.2,
+      "score": 7.71,
+      "tldr_zh": "构建CogArena基准，让多模态智能体通过浏览器完成十项社会行为实验，并评估其类人程度与数据污染风险。",
+      "tldr": null,
+      "tags": [
+        "LLM智能体",
+        "实验",
+        "方法论"
+      ],
+      "reason": "直接关系在线行为实验的数据污染与LLM智能体模拟人类被试，对计算社会科学实验方法有明确价值。",
+      "backfill_date": null
+    },
+    {
+      "id": "arxiv:2610.37580",
+      "source": "arxiv",
+      "title": "Spectral Braids: A Topological Descriptor for Dynamic Directed Networks",
+      "authors": [
+        "Mehmet Emin Aktas",
+        "Esra Akbas"
+      ],
+      "abstract": "Eigenvalues are a workhorse of graph machine learning: spectral clustering, spectral graph neural networks, and graph kernels all summarize a network by the eigenvalues of a matrix. These eigenvalues are almost always treated as a static list of numbers. When a graph changes, however, its eigenvalues move, and when the matrix is not symmetric, they move in the complex plane, where they can wind around each other. The pattern of this winding is a braid, a classical object from topology. We propose spectral braids, a methodology for dynamic directed networks: each snapshot is aggregated into a community-level transition matrix, its complex eigenvalues are tracked over time, and the braid they trace is read off as a word. The word is then mapped to a matrix by the Burau representation, which gives a fixed-size feature vector for any classifier. The braid has a concrete meaning: each eigenvalue describes how a group of communities behaves, and each crossing records one group overtaking another. We evaluate the method on dynamic network classification, using synthetic networks of online communities whose labels describe how the network evolved between the same starting and ending states. Our experimental results show that the proposed features reach 97.1% accuracy on four classes, against 44.5% for the best feature set that does not track eigenvalues, and that the Burau features also separate networks containing the same events in a different order, which simple counts of crossings cannot do. To the best of our knowledge, this is the first study that defines braids and braid monodromy on graph data and uses them as features for learning on dynamic networks.",
+      "url": "https://arxiv.org/abs/2610.37580",
+      "published": "2026-10-27",
+      "venue": "arXiv",
+      "categories": [
+        "cs.SI",
+        "cs.LG"
+      ],
+      "pdf_url": "https://arxiv.org/pdf/2610.37580v1",
+      "doi": null,
+      "citations": 0,
+      "rule_score": 5.5,
+      "score": 7.275,
+      "tldr_zh": "提出谱辫拓扑描述子，追踪动态有向网络快照的复特征值缠绕模式，用于刻画网络演化。",
+      "tldr": null,
+      "tags": [
+        "复杂网络",
+        "方法论"
+      ],
+      "reason": "面向动态有向网络的谱与拓扑新方法，对复杂网络分析有方法价值。",
+      "backfill_date": null
+    },
+    {
+      "id": "arxiv:2610.37073",
+      "source": "arxiv",
+      "title": "Beyond urban boundaries: Percolation reveals land-consumptive growth in India",
+      "authors": [
+        "Somwrita Sarkar",
+        "Chirag Deb",
+        "Carolina Pantoja Mardones",
+        "Anmol Gaur",
+        "Arunim Anand",
+        "Rashi Shrivastava",
+        "Anusha Roy",
+        "Arnab Jana"
+      ],
+      "abstract": "Cities often extend beyond their administrative boundaries, complicating assessments of urban sustainability. Using Global Human Settlement Layer data for India's 50 largest urban agglomerations (1975--2025), we develop a percolation-based framework for urban delineation. Within district-based regions, we apply unrestricted DBSCAN to spatial coordinates of 100-m cells with positive population and built-up surface. We treat neighborhood distance as the percolation control parameter and the proportion of eligible cells in the largest connected cluster as the empirical order parameter. Sharp increases in this proportion reveal characteristic percolation transitions. Post-transition connection lengths declined (median:650m to 350m), indicating that previously disconnected settlements coalesce at progressively shorter spatial distances alongside increasing urban land consumption. Urban footprint increased from 447.6 to 1,382.7km$^2$, while population densities declined. SDG11.3.1 land-consumption-to-population-growth ratios generally exceeded unity. Zipf and allometric relationships describe cross-sectional urban structure, but land-consumptive growth shows little relationship with city size. Urban delineation thus shapes sustainability assessments.",
+      "url": "https://arxiv.org/abs/2610.37073",
+      "published": "2026-10-27",
+      "venue": "arXiv",
+      "categories": [
+        "physics.soc-ph"
+      ],
+      "pdf_url": "https://arxiv.org/pdf/2610.37073v1",
+      "doi": null,
+      "citations": 0,
+      "rule_score": 7.4,
+      "score": 6.87,
+      "tldr_zh": "用渗流框架和DBSCAN对印度50个大都市区1975–2025年建成区做界定，发现城市边界外溢与连通跃迁。",
+      "tldr": null,
+      "tags": [
+        "城市与流动",
+        "复杂网络"
+      ],
+      "reason": "将渗流与连通性方法用于城市空间扩展，与复杂网络和城市计算边缘相关。",
+      "backfill_date": null
+    },
+    {
+      "id": "openalex:W4407785632",
+      "source": "openalex",
+      "title": "Supervising the search process produces reliable and generalizable information-seeking agents",
+      "authors": [
+        "Guangzhi Xiong",
+        "Qiao Jin",
+        "Xiao Wang",
+        "Fang Yin",
+        "Haolin Liu",
+        "Yifan Yang",
+        "Fangyuan Chen",
+        "Zhixing Song"
+      ],
+      "abstract": "Abstract Large language models (LLMs) are transforming web search by shifting from document ranking to synthesizing answers, and are increasingly deployed as autonomous agentic search systems that iteratively interact with external knowledge sources. Despite this progress, building effective search agents remains challenging because high-quality intermediate search steps are difficult to generate. Previous approaches have primarily relied on outcome supervision, rewarding agents only for producing correct final answers. This often leads to reward hacking and excessive dependence on parametric memory, limiting generalization to out-of-domain tasks. To address these limitations, we introduce RAG-Gym, a framework that shifts supervision from final answers to the search process itself. With RAG-Gym, we systematically investigate architecture design, parameter optimization, and action evaluation, identifying reasoning reflection as a critical capability for search agents. Building on this insight, we propose Re 2 Search++, a process-supervised agent that achieves substantial improvements on multi-hop information-seeking benchmarks, especially in out-of-domain settings. Performance gains are driven primarily by higher-quality search queries rather than answer optimization alone, and the learned search critics transfer across models, including proprietary LLMs. These findings show that supervising the search process produces more reliable and generalizable information-seeking agents.",
+      "url": "https://doi.org/10.1038/s41467-026-78807-z",
+      "published": "2026-10-28",
+      "venue": "Nature Communications",
+      "categories": [],
+      "pdf_url": null,
+      "doi": "https://doi.org/10.1038/s41467-026-78807-z",
+      "citations": 1,
+      "rule_score": 4.2,
+      "score": 6.71,
+      "tldr_zh": "提出RAG-Gym，对LLM搜索智能体的搜索过程而非仅最终答案进行监督，提升泛化能力。",
+      "tldr": null,
+      "tags": [
+        "LLM智能体",
+        "方法论"
+      ],
+      "reason": "涉及LLM智能体与信息检索过程监督，对LLM智能体方法有参考价值，但不涉及社会网络或社会行为分析。",
+      "backfill_date": null
+    }
+  ]
+}
