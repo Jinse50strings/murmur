@@ -1,20 +1,342 @@
 {
   "app": "Murmur",
   "version": 1,
-  "date": "2026-10-30",
-  "generated_at": "2026-10-30T05:21:47+08:00",
-  "count": 0,
+  "date": "2026-10-31",
+  "generated_at": "2026-10-31T04:59:37+08:00",
+  "count": 10,
   "counts": {
     "sources": {
-      "arxiv": 42,
+      "arxiv": 94,
       "openalex": 0
     },
-    "unique": 42,
-    "new": 28,
-    "candidates": 0,
-    "selected": 0,
-    "fresh_selected": 0,
+    "unique": 94,
+    "new": 94,
+    "candidates": 28,
+    "selected": 10,
+    "fresh_selected": 10,
     "errors": 1
   },
-  "papers": []
+  "papers": [
+    {
+      "id": "arxiv:2610.40289",
+      "source": "arxiv",
+      "title": "Reversing Polarization through Tolerance-Aware Recommendation and Adaptive Diversification",
+      "authors": [
+        "Zhanzhan Zhao",
+        "Shuqi Zhao",
+        "Zichen Fan",
+        "Dana Randall"
+      ],
+      "abstract": "Recommender systems face a tension between broadening exposure to diverse viewpoints and avoiding interactions that reinforce extreme positions. This tension is especially consequential in already polarized populations. Here we investigate whether recommendation strategies can reverse polarization rather than merely slow its development. Building on the Attraction--Repulsion Model of opinion dynamics, we introduce two complementary design principles: Tolerance-aware recommendation, which seeks to learn each individual's tolerance for disagreement and reduces exposure to viewpoints beyond that tolerance, and adaptive diversification, which broadens exposure for agents with more extreme opinions while retaining stronger personalization for moderates. Agent-based experiments show that highly personalized recommendations intensify polarization under polarized initial conditions. Tolerance awareness alone primarily slows polarization, whereas combining it with adaptive diversification can reduce polarization below its initial level and, under suitable conditions, restore consensus. Additional experiments incorporating persistent extreme influencers and a spiral-of-silence mechanism show that the combined strategy can mitigate polarization under social pressure and selective participation. To examine whether these findings extend beyond predefined opinion-update rules, we repeat the experiments on a simulated social platform populated by 100 LLM-driven agents prompted to move toward opinions similar to their own and away from those that differ substantially. Across three runs, the combined strategy is again the only recommendation policy tested that reverses polarization in every run. These findings distinguish polarization prevention from reversal and identify tolerance-aware, adaptive exposure as a promising recommendation design principle for reconnecting divided populations.",
+      "url": "https://arxiv.org/abs/2610.40289",
+      "published": "2026-10-29",
+      "venue": "arXiv",
+      "categories": [
+        "cs.SI"
+      ],
+      "pdf_url": "https://arxiv.org/pdf/2610.40289v1",
+      "doi": null,
+      "citations": 0,
+      "rule_score": 8.6,
+      "score": 8.93,
+      "tldr_zh": "基于吸引-排斥舆论动力学，提出容忍度感知推荐与自适应多样化策略，智能体实验显示可逆转极化。",
+      "tldr": null,
+      "tags": [
+        "舆论与极化",
+        "仿真与ABM",
+        "在线平台"
+      ],
+      "reason": "直接研究推荐算法对舆论极化的干预，属计算社会科学核心议题。",
+      "backfill_date": null
+    },
+    {
+      "id": "arxiv:2610.39297",
+      "source": "arxiv",
+      "title": "Spreading Dynamics on Higher-Order Networks: A Structure-Mechanism-Behavior Perspective with Applications",
+      "authors": [
+        "Ming Xie",
+        "Shibo He",
+        "Qihao Huang",
+        "Yuzhen Fan",
+        "Jiming Chen"
+      ],
+      "abstract": "Spreading in real-world networks, including modern communication and networked systems, often unfolds through group interactions rather than isolated pairwise contacts. Higher-order network representations such as simplicial complexes, hypergraphs, and their temporal, multilayer, and directed extensions provide a principled way to encode group interactions. Unfortunately, existing studies on spreading over these substrates remain fragmented and largely model-centric, offering limited insight into how higher-order representations and contagion mechanisms jointly shape emergent dynamics. This review addresses this gap by introducing a structure-mechanism-behavior three-level perspective that provides a systematic mapping from higher-order network structures and spreading mechanisms to collective behaviors. Within this framework, we compare how different higher-order network representations encode group interactions, introduce a taxonomy of contagion mechanisms, and analyze their structural carrying capacity, defined as the ability of a given representation to support specific contagion mechanisms and the associated dynamical behaviors. We further map specific structure-mechanism combinations to three hallmark emergent behaviors, thereby offering a unified cross-level perspective beyond existing model-centric surveys. These insights are particularly relevant for communication systems involving group interactions, such as social information spreading, cooperative protocols, and distributed networked processes. Lastly, leveraging this three-level perspective, we offer a roadmap for guiding and controlling dynamics on higher-order networks, while discussing future directions in representation choice, mechanism design, and data-driven inference.",
+      "url": "https://arxiv.org/abs/2610.39297",
+      "published": "2026-10-29",
+      "venue": "arXiv",
+      "categories": [
+        "cs.SI",
+        "physics.app-ph"
+      ],
+      "pdf_url": "https://arxiv.org/pdf/2610.39297v1",
+      "doi": null,
+      "citations": 0,
+      "rule_score": 7.6,
+      "score": 8.88,
+      "tldr_zh": "综述高阶网络上的传播动力学，提出结构-机制-行为三层视角系统映射群体交互下的涌现动态。",
+      "tldr": null,
+      "tags": [
+        "复杂网络",
+        "扩散与传播",
+        "综述"
+      ],
+      "reason": "高阶网络传播的系统综述，对复杂网络与扩散研究有高参考价值。",
+      "backfill_date": null
+    },
+    {
+      "id": "arxiv:2610.38416",
+      "source": "arxiv",
+      "title": "BiliPicks: Seven Years of Weekly Platform Curation on Bilibili with Video Metadata, Comments, and Danmaku",
+      "authors": [
+        "Ruomeng Liu"
+      ],
+      "abstract": "BiliPicks documents seven years of Bilibili's Weekly Picks, a platform-curated editorial video series. The dataset covers 371 publicly listed issues and 13,758 curated videos from 22 March 2019 to 7 May 2026. It links issue dates, themes and editorial recommendations to video metadata, 47,799,657 top-level comments, 125,690,760 time-synchronised overlay comments (danmaku), and 13,739 cover images. Weekly issues provide a consistent unit for tracing changes in category composition, recurring creators and editorial framing. Corresponding comments and danmaku connect video-level discussion with audience expressions tied to particular moments, while covers add a visual dimension. We evaluate retrieval coverage and illustrate longitudinal analyses of selection, audience language and cover presentation. BiliPicks provides a dataset for future studies of platform curation, linking changes in published selections to their editorial framing and corresponding audience engagement.",
+      "url": "https://arxiv.org/abs/2610.38416",
+      "published": "2026-10-28",
+      "venue": "arXiv",
+      "categories": [
+        "cs.SI"
+      ],
+      "pdf_url": "https://arxiv.org/pdf/2610.38416v1",
+      "doi": null,
+      "citations": 0,
+      "rule_score": 5.0,
+      "score": 8.75,
+      "tldr_zh": "发布B站七年“每周必看”策展数据集，含1.37万视频、4780万评论与1.26亿弹幕，支持纵向分析。",
+      "tldr": null,
+      "tags": [
+        "在线平台",
+        "数字痕迹",
+        "文本计算"
+      ],
+      "reason": "平台策展与大规模评论/弹幕数字痕迹数据集，直接服务在线平台与计算社会科学实证研究。",
+      "backfill_date": null
+    },
+    {
+      "id": "arxiv:2610.37970",
+      "source": "arxiv",
+      "title": "Statistical Detectability of Coordination",
+      "authors": [
+        "Letizia Iannucci",
+        "Antonis Matakos",
+        "Mikko Kivelä"
+      ],
+      "abstract": "Information operations exploit coordinated activity on social media to amplify messages and manipulate public discourse. A common approach to coordination detection is to project account-entity interactions into account similarity networks based on temporal proximity, action counts, or behavioural similarity, and identify dense subgraphs or behavioural clusters. However, the current methodology finds groups of co-activated accounts or partitions all users into most similarly acting clusters, even when the accounts are acting independently of each other or the co-activity is due to some expected source. We formulate coordination detection based on hypothesis testing of account pairs and compare different null models. We connect the resulting pairwise scores to the planted-submatrix detection problem and derive statistical and computational limits as functions of group size, population size, and signal strength. We estimate the signal for 7 modalities of coordination over 26 labelled information-operation datasets, and compare the predicted regime with the performance of recovery heuristics. Our method achieves higher agreement with the labelled ground truth than previously reported, but the choice of null model is important and it changes the regime of most modalities. While it is always possible to extract a set of significantly densely co-acting accounts across nearly all modalities regardless of regime, density alone is uninformative of detection performance, rendering anomalous cluster discovery a poor proxy for recovering an information operation. Detectability boundaries establish whether an operation of a given size and signal can be recovered at all, and how much confidence a flagged group warrants.",
+      "url": "https://arxiv.org/abs/2610.37970",
+      "published": "2026-10-27",
+      "venue": "arXiv",
+      "categories": [
+        "cs.SI"
+      ],
+      "pdf_url": "https://arxiv.org/pdf/2610.37970v1",
+      "doi": null,
+      "citations": 0,
+      "rule_score": 7.9,
+      "score": 8.395,
+      "tldr_zh": "将协同行为检测形式化为账号对假设检验，比较零模型并联系植入子矩阵检测理论。",
+      "tldr": null,
+      "tags": [
+        "在线平台",
+        "方法论",
+        "社会网络"
+      ],
+      "reason": "为社交媒体协同操纵检测提供统计可检测性框架，方法价值明确。",
+      "backfill_date": null
+    },
+    {
+      "id": "arxiv:2610.40164",
+      "source": "arxiv",
+      "title": "Who Owns Digital News, and Who Gets Cited: Measuring Media Concentration Across 77 Countries and Seven AI Systems",
+      "authors": [
+        "Peter Carragher",
+        "Kathleen M. Carley"
+      ],
+      "abstract": "Digital news outlets compete for audience attention. Search engines equipped with generative AI systems such as Google's AI overviews increasingly decide where that attention goes, as well as the revenue it represents. Yet, the lack of a consistent data collection infrastructure between national-level regulatory bodies has hindered between-country comparative analysis of media concentration, and with it any assessment of how these intermediaries reshape digital news markets. To address this issue, we compile an ownership dataset for 9,761 digital news outlets drawn from Wikipedia and Wikidata, achieving high agreement with independently compiled US and UK news directories. Using this dataset, we derive traffic-weighted concentration indices for 77 countries. We find that journalists report more owner pressure in countries with higher concentration, and that outlet-level measures understate concentration, with owner-level indices a median 1.30x higher. Applying concentration measures to AI-mediated news discovery, we find that citation distributions from major AI systems are up to 2.08x more concentrated than traffic, and that if Google AI Overviews mediated all organic search, the resulting rise in US concentration would be several times that associated with highly regulated media mergers and acquisitions. Finally, our analyses indicate that AI systems preferentially cite state-controlled media outlets when prompted in that country's native language. Together, these findings raise concerns about the effect AI systems may have on digital media. We release the dataset to enable the monitoring of digital news globally, so that the impact of disruptive technologies on digital media markets can be tracked as they emerge.",
+      "url": "https://arxiv.org/abs/2610.40164",
+      "published": "2026-10-29",
+      "venue": "arXiv",
+      "categories": [
+        "cs.CY"
+      ],
+      "pdf_url": "https://arxiv.org/pdf/2610.40164v1",
+      "doi": null,
+      "citations": 0,
+      "rule_score": 3.7,
+      "score": 8.185,
+      "tldr_zh": "用维基数据构建77国9761家数字新闻媒体所有权数据集，测算流量加权集中度并考察AI系统引用格局。",
+      "tldr": null,
+      "tags": [
+        "在线平台",
+        "数字痕迹",
+        "方法论"
+      ],
+      "reason": "测量媒体集中度与AI中介对新闻注意力分配的影响，属平台与数字痕迹的计算社会科学实证研究。",
+      "backfill_date": null
+    },
+    {
+      "id": "arxiv:2610.38385",
+      "source": "arxiv",
+      "title": "Revisiting Temporal Link Prediction through Structural Proximity",
+      "authors": [
+        "Yuzhang Fei",
+        "Yanping Zheng",
+        "Lu Yi",
+        "Zhewei Wei"
+      ],
+      "abstract": "Existing temporal link prediction methods typically rely on learned temporal representations to capture evolving interaction patterns. In this paper, we show that a classical structural proximity measure can match or outperform these methods without training or learned temporal sequence modeling. We revisit Personalized PageRank (PPR) on historical interaction graphs, using simple sliding-window retention or exponential time decay. Surprisingly, across 14 datasets, Time-decay PPR ranks first on nine and second on four among the compared methods, including datasets with few repeated edges. To understand this result, we examine the historical paths connecting source nodes to previously unseen destinations. We find that such paths contain useful predictive information, and that PPR outperforms a strong neural baseline on queries where historical structure clearly distinguishes the true destination from negative candidates. These results show that strong performance on current benchmarks does not necessarily require complex temporal models. More fundamentally, they raise the question of how much predictive value learned temporal modeling adds beyond historical structural proximity. Our findings motivate reassessing progress in temporal link prediction with strong classical baselines.",
+      "url": "https://arxiv.org/abs/2610.38385",
+      "published": "2026-10-28",
+      "venue": "arXiv",
+      "categories": [
+        "cs.SI",
+        "cs.LG"
+      ],
+      "pdf_url": "https://arxiv.org/pdf/2610.38385v1",
+      "doi": null,
+      "citations": 0,
+      "rule_score": 6.7,
+      "score": 7.835,
+      "tldr_zh": "发现带时间衰减的个性化PageRank在14个数据集上多数优于学习式时序链路预测方法。",
+      "tldr": null,
+      "tags": [
+        "社会网络",
+        "方法论"
+      ],
+      "reason": "时序链路预测的简洁强基线，对动态网络分析有方法启示。",
+      "backfill_date": null
+    },
+    {
+      "id": "arxiv:2610.37978",
+      "source": "arxiv",
+      "title": "Solitary movement style predicts collective foraging while whom to follow emerges only in company",
+      "authors": [
+        "Hiroshi Higashi"
+      ],
+      "abstract": "How far can behaviour inside a group, and the group's performance, be predicted from members measured while alone? We tested this on three public datasets of human collective foraging (621, 128 and 1,133 participants). A low-dimensional individual representation estimated from private-phase movement was mapped onto behaviour inside the group through a mapping learned on other participants. Private information processing was stable between the two halves of a session (split-half reliability, the correlation between the halves, 0.60--0.83) and predicted behaviour inside the group with correlations of 0.30--0.66. Selective social learning, following those who have succeeded or stopped, showed stable individual differences inside the group (reliability 0.45--0.59) yet was not predicted at all from the same person's private behaviour. Group performance was predicted with a correlation of 0.55 in all three datasets by simulations never fitted to group outcomes or by the mean of individually measured performance, a prediction carried by mobility and individual performance rather than by social weights. We found no credible evidence for an effect of how members were combined (equivalence bound 0.06). Whom to follow thus emerges only in company, which delimits what solitary measurements can predict and compose.",
+      "url": "https://arxiv.org/abs/2610.37978",
+      "published": "2026-10-27",
+      "venue": "arXiv",
+      "categories": [
+        "physics.soc-ph",
+        "cs.MA",
+        "q-bio.NC"
+      ],
+      "pdf_url": "https://arxiv.org/pdf/2610.37978v1",
+      "doi": null,
+      "citations": 0,
+      "rule_score": 6.2,
+      "score": 7.81,
+      "tldr_zh": "用三个集体觅食数据集发现，独处时的移动风格可预测群体内行为，但“跟随谁”只在群体中才显现。",
+      "tldr": null,
+      "tags": [
+        "实验",
+        "社会网络",
+        "方法论"
+      ],
+      "reason": "研究个体行为与群体社会学习的关系，涉及集体行为与社会影响，对计算社会科学有实证价值。",
+      "backfill_date": null
+    },
+    {
+      "id": "arxiv:2610.40324",
+      "source": "arxiv",
+      "title": "Crowds Believe in You: Online Prediction Markets Overestimate How Often People Achieve Their Own Goals",
+      "authors": [
+        "Zihan Chen",
+        "Lei Nico Zheng",
+        "Di Zhu"
+      ],
+      "abstract": "People increasingly share personal goals online and invite others to forecast them. Research on the planning fallacy finds that observers predict a person's behavior less optimistically than the person does, and prediction markets aggregate such judgments, harnessing the wisdom of crowds. We study 6,150 prediction markets on Manifold in which 1,660 users asked about their own futures (\"Will I ...?\"), reconstruct every order and execution, and compare these self-markets with markets about external events. Self-markets resolved YES 4.4 percentage points less often than their final prices implied, whereas external markets were nearly calibrated (0.9 points); the difference was 2.2 points at the same price level and 1.9 points within creators who made both kinds of market. Absent when markets opened, the overstatement emerged within a day of trading, even where the person never traded, and peaked in the week before close. In a market's first day, observers moved external-market prices down toward the base rate, but moved self-market prices 3.6 points further toward YES, except in markets naming an outcome the person would not want, which were not overpriced. The correction came late and largely from the person, whose orders supplied 38% of the eventual movement toward the outcome in self-markets, against 9% in external markets. Because self-market prices mainly failed to separate successes from failures, a recalibration learned from earlier markets improved later forecasts by only 1.5%. Crowds believe in the futures people pose for themselves, and the information that would correct them lies with the person.",
+      "url": "https://arxiv.org/abs/2610.40324",
+      "published": "2026-10-29",
+      "venue": "arXiv",
+      "categories": [
+        "cs.HC",
+        "cs.CY",
+        "cs.SI",
+        "econ.GN"
+      ],
+      "pdf_url": "https://arxiv.org/pdf/2610.40324v1",
+      "doi": null,
+      "citations": 0,
+      "rule_score": 5.0,
+      "score": 7.75,
+      "tldr_zh": "分析Manifold上6150个预测市场，发现关于个人目标的自我市场比外部事件市场更常落空，群体过于乐观。",
+      "tldr": null,
+      "tags": [
+        "在线平台",
+        "舆论与极化",
+        "实验"
+      ],
+      "reason": "研究在线预测市场中的群体判断偏差，涉及众包信念聚合，对计算社会科学有明确实证价值。",
+      "backfill_date": null
+    },
+    {
+      "id": "arxiv:2610.40259",
+      "source": "arxiv",
+      "title": "The Price of a Chance in Artificial Societies",
+      "authors": [
+        "Shuqi Zhao",
+        "Boyu Wang",
+        "Shuangyue Niu",
+        "Chenhao Zhang",
+        "Zhanzhan Zhao"
+      ],
+      "abstract": "Rapid advances in large language models (LLMs) have enabled autonomous agents to interact, coordinate, and pursue individual goals in artificial societies. However, our understanding of how reward structures shape their competitive behavior and collective outcomes remains incomplete. We simulate 200 LLM agents competing over 50 rounds to maximize individual wealth. We define overcompetition and lying flat as population investment above and below a Bayesian adaptive baseline, respectively. At the lowest tested reward, populations lie flat; at the two highest, they overcompete, most strongly at intermediate winner coverage. The investment committed to pursuing an uncertain reward constitutes the price of a chance. Agents near the qualification cutoff can invest heavily yet receive no prize, finishing poorer than nonwinners who invest less. Agents' stated rationales link investment decisions to perceived qualification prospects and expected returns. At the collective level, greater investment does not consistently improve ability selection. With a fixed total prize budget, offering smaller prizes to more winners can reduce investment while preserving selection quality relative to the corresponding top-ability target. Further broadening reward coverage yields additional savings but reduces selection quality. These findings show how reward design shapes overcompetition and lying flat, distributes the costs of pursuing opportunity, and influences what competition collectively achieves.",
+      "url": "https://arxiv.org/abs/2610.40259",
+      "published": "2026-10-29",
+      "venue": "arXiv",
+      "categories": [
+        "cs.CY"
+      ],
+      "pdf_url": "https://arxiv.org/pdf/2610.40259v1",
+      "doi": null,
+      "citations": 0,
+      "rule_score": 4.4,
+      "score": 7.72,
+      "tldr_zh": "模拟200个LLM智能体50轮竞争，发现低奖励下躺平、高奖励下过度竞争，中间覆盖率最激烈。",
+      "tldr": null,
+      "tags": [
+        "LLM智能体",
+        "仿真与ABM"
+      ],
+      "reason": "LLM智能体人工社会仿真研究集体行为与激励机制，契合计算社会科学仿真方向。",
+      "backfill_date": null
+    },
+    {
+      "id": "arxiv:2610.39781",
+      "source": "arxiv",
+      "title": "Finding Is Not Returning, Returning Is Not Reconstructing: A Multi-Dimensional Evaluation of Agent Social Re-entry",
+      "authors": [
+        "Sheng Wan",
+        "Cong Ma",
+        "Sichen Dong",
+        "Qian'Ang Mao",
+        "Chenhan Zhang",
+        "Daning Hu",
+        "Qiang Yang"
+      ],
+      "abstract": "As Large Language Model (LLM) agents increasingly participate in persistent social environments, understanding their long-term social interaction capabilities becomes increasingly important. While existing research has advanced long-term memory and conversational context retrieval, less attention has been paid to whether agents can autonomously re-engage with previously inactive conversations. In particular, remembering a past interaction does not necessarily mean that an agent can identify when to revisit it, decide to return, or reconstruct the context needed for a coherent continuation. To investigate this gap, we introduce agent social re-entry as a multi- dimensional evaluation problem, distinguishing three complementary capabilities: Finding, Returning, and Reconstructing. We develop a shared-snapshot evaluation framework that measures these dimensions independently, allowing us to examine how conversational resurfacing and persistent memory relate to different aspects of social re-entry. Evaluations across six LLM configurations show that resurfacing substantially improves target conversation identification, while persistent memory is associated with higher rates of autonomous target-directed replying. However, neither improvement is accompanied by consistent gains in contextual reconstruction. These results highlight the distinction between accessing previous conversations, choosing to re-engage, and maintaining conversational continuity. Our framework provides a way to evaluate these capabilities separately rather than relying on memory retrieval or conversational response quality alone.",
+      "url": "https://arxiv.org/abs/2610.39781",
+      "published": "2026-10-29",
+      "venue": "arXiv",
+      "categories": [
+        "cs.AI",
+        "cs.SI"
+      ],
+      "pdf_url": "https://arxiv.org/pdf/2610.39781v1",
+      "doi": null,
+      "citations": 0,
+      "rule_score": 6.2,
+      "score": 7.31,
+      "tldr_zh": "提出LLM智能体社交再进入的多维评测，区分发现、返回与重构三种能力。",
+      "tldr": null,
+      "tags": [
+        "LLM智能体",
+        "在线平台",
+        "方法论"
+      ],
+      "reason": "面向LLM智能体长期社会交互的评测框架，与智能体社会仿真相关。",
+      "backfill_date": null
+    }
+  ]
 }
