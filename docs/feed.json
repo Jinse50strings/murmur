@@ -1,138 +1,20 @@
 {
   "app": "Murmur",
   "version": 1,
-  "date": "2026-11-02",
-  "generated_at": "2026-11-02T04:45:47+08:00",
-  "count": 4,
+  "date": "2026-11-03",
+  "generated_at": "2026-11-03T07:39:14+08:00",
+  "count": 0,
   "counts": {
     "sources": {
       "arxiv": 0,
-      "openalex": 161
+      "openalex": 137
     },
-    "unique": 161,
-    "new": 161,
-    "candidates": 7,
-    "selected": 4,
-    "fresh_selected": 4,
+    "unique": 137,
+    "new": 133,
+    "candidates": 1,
+    "selected": 0,
+    "fresh_selected": 0,
     "errors": 0
   },
-  "papers": [
-    {
-      "id": "openalex:W7224448565",
-      "source": "openalex",
-      "title": "Behind the organizational chart: The emergence of “gurus” in advice networks",
-      "authors": [
-        "Andrea Ancona",
-        "Francesco Renzini",
-        "Roy Cerqueti",
-        "Flaminio Squazzoni"
-      ],
-      "abstract": "Explaining the endogenous emergence of “gurus” – high-status professionals who are referred to for advice but are unlikely to seek it themselves – in organizations requires an integrated approach. This approach must consider the interplay of individual attributes (e.g., skills and status), structural factors (e.g., informal networks), and organizational contexts (e.g., knowledge-sharing infrastructure and internal competitiveness) from a dynamic perspective. In this study, we develop an agent-based model of advice network formation calibrated on an empirically observed network to identify the factors and processes driving “guru” emergence. Our results show that the emergence of “gurus” depends primarily on status differentials, homophily, and organizational context. In low-competitive settings, a relatively stable proportion of “gurus” emerges once the advice network reaches equilibrium. However, as competitiveness increases, network equilibrium is associated with fewer “gurus”, whose emergence is decoupled from formal hierarchical roles. Contrary to common sense, differences in skills among professionals contribute only marginally to network dynamics and “guru” formation. Overall, our findings suggest a fundamental misalignment between formal hierarchies and informal status dynamics within organizations, which could lead to tension.",
-      "url": "https://doi.org/10.1016/j.socnet.2026.10.003",
-      "published": "2026-10-29",
-      "venue": "Social Networks",
-      "categories": [],
-      "pdf_url": null,
-      "doi": "https://doi.org/10.1016/j.socnet.2026.10.003",
-      "citations": 0,
-      "rule_score": 6.1,
-      "score": 8.805,
-      "tldr_zh": "构建基于实证网络校准的智能体模型，发现地位差异、同质性和组织竞争环境驱动组织建议网络中“导师”型人物的涌现。",
-      "tldr": null,
-      "tags": [
-        "社会网络",
-        "仿真与ABM"
-      ],
-      "reason": "直接研究建议网络形成机制，属社会网络分析与ABM结合的核心议题。",
-      "backfill_date": null
-    },
-    {
-      "id": "openalex:W7224961970",
-      "source": "openalex",
-      "title": "Agreement Helps, Disagreement Matters: Scaling Framing Function Annotation With Large Language Models",
-      "authors": [
-        "Emily Robinson",
-        "Ranadheer Malla",
-        "Chico Q. Camargo"
-      ],
-      "abstract": "Framing research has long relied on human annotation, but many aspects of framing – especially framing functions such as defining problems, identifying causes, making moral evaluations, or proposing solutions are difficult to label consistently and at scale. We demonstrate that large language models can reliably identify these framing functions, achieving levels of agreement comparable to those of human annotators. We evaluate three state-of-the-art models (GPT-5, Claude 3.7, and DeepSeek) alongside three trained human coders on a new dataset of social media posts about electric-vehicles, a highly topical and contested issue that holds many interpretations. This setting provides a strong test of both agreement and meaningful disagreement in framing-function annotation. Across models and humans, we find not only substantial convergence but also patterns of valid disagreement – differences that reflect legitimate alternative interpretations rather than annotation error. Recognising and preserving these cases enhances construct validity and provides a more realistic portrayal of how framing functions operate in contested debates. Our results demonstrate that large language models can scale framing function analysis while capturing the variability inherent in human interpretation, enabling forms of communication research that were previously impractical with human-only coding.",
-      "url": "https://doi.org/10.1177/08944393261501889",
-      "published": "2026-10-30",
-      "venue": "Social Science Computer Review",
-      "categories": [],
-      "pdf_url": null,
-      "doi": "https://doi.org/10.1177/08944393261501889",
-      "citations": 0,
-      "rule_score": 6.4,
-      "score": 7.82,
-      "tldr_zh": "用GPT-5、Claude 3.7和DeepSeek与人工编码者对比标注电动车议题帖子的框架功能，发现LLM可靠性接近人类。",
-      "tldr": null,
-      "tags": [
-        "文本计算",
-        "LLM智能体",
-        "方法论"
-      ],
-      "reason": "展示LLM可规模化替代人工进行框架标注，对计算社会科学的文本方法有直接方法价值。",
-      "backfill_date": null
-    },
-    {
-      "id": "openalex:W7224894035",
-      "source": "openalex",
-      "title": "Datafication meets democracy: Epistemic distrust and data-driven campaigns in India",
-      "authors": [
-        "Amogh Dhar Sharma"
-      ],
-      "abstract": "While scholarship on data-driven campaigning has grown in recent years, the processes through which data is produced and how it translates to decision-making remain under-theorised. Drawing on ethnographic fieldwork conducted inside the campaign war room of a major political party during the 2022 Punjab Assembly elections in India, I examine the quotidian practices through which campaign data was collected, processed and rendered actionable. The article argues that democratic politics represents an arena where datafication indexes not an absolute faith in the power of numbers, but coexists with a pervasive suspicion about their capacity to reveal the truth. To conceptualise this phenomenon, I introduce the concept of ‘epistemic distrust’: a disposition in which political actors actively invest in data collection while remaining sceptical of the insights that data purportedly reveals. Bringing scholarship on data-driven campaigning into conversation with critical data studies, the article makes three interventions. First, I show how epistemic distrust generated a proliferation of competing data infrastructures, such that an excess of data – rather than scarcity – slowed decision-making and created inefficiencies. Second, I examine why, despite the campaign's information-rich environment, data increasingly assumed quantitative forms. Numbers acquired value not just because they facilitated statistical analysis, but because they enabled campaign workers to perform objectivity and credibility before sceptical party leaders. Third, foregrounding the labour of data production, I argue that interpersonal relations and human subjectivity are not distortions that contaminate data but are constitutive of how useful political insights emerge in the first place.",
-      "url": "https://doi.org/10.1177/20539517261492575",
-      "published": "2026-10-30",
-      "venue": "Big Data & Society",
-      "categories": [],
-      "pdf_url": null,
-      "doi": "https://doi.org/10.1177/20539517261492575",
-      "citations": 0,
-      "rule_score": 3.5,
-      "score": 7.675,
-      "tldr_zh": "基于印度旁遮普邦选举竞选作战室田野调查，提出“认知不信任”概念解释数据化竞选中的数据生产与决策。",
-      "tldr": null,
-      "tags": [
-        "在线平台",
-        "数字痕迹",
-        "方法论"
-      ],
-      "reason": "研究数据驱动政治竞选与平台数据实践，对计算社会科学的政治传播与数据化议题有实证价值。",
-      "backfill_date": null
-    },
-    {
-      "id": "openalex:W7224748796",
-      "source": "openalex",
-      "title": "FinTime-Fuse: a multimodal LLM for aligning news and financial time-series in enhanced forecasting",
-      "authors": [
-        "Shangyang Mou",
-        "Qiang Xue",
-        "Jinhui Chen",
-        "Tetsuya Takiguchi",
-        "Tsutomu Harada",
-        "Takashi Kamihigashi",
-        "Yasuo Ariki"
-      ],
-      "abstract": "Accurate financial time series forecasting hinges on effectively integrating both numerical price data and external textual signals, such as news events. While Time-LLM provides a cross-modal time-series prediction mechanism for price sequences, our main contribution focuses on a novel method to fuse these time-series embeddings with learned representations of news text within a large language model (LLM) framework. In contrast to traditional approaches, often relying on text-only training or simple numeric similarity for retrieval, our method leverages the LLM’s capacity to capture intricate correlations between language-based context and price fluctuations. To facilitate this, we introduce aligned datasets that pair daily (or periodic) financial news with the corresponding market data, ensuring temporal consistency. Our model performs token-level concatenation of textual embeddings extracted from a domain-specific financial language model and patched numerical embeddings, followed by frozen LLaMA self-attention in a shared embedding space. By jointly encoding textual and numerical features, the model captures interactions between historical market patterns and temporally aligned textual context. We evaluate the approach on three datasets spanning gold prices, foreign exchange rates, and Bitcoin, which include structured macroeconomic-calendar descriptions and news-derived textual summaries. Experimental results show that the incorporation of aligned textual information improves the accuracy of forecasting, underscoring the importance of robust integration of news data in financial prediction tasks.",
-      "url": "https://doi.org/10.1007/s42001-026-00494-z",
-      "published": "2026-10-30",
-      "venue": "Journal of Computational Social Science",
-      "categories": [],
-      "pdf_url": null,
-      "doi": "https://doi.org/10.1007/s42001-026-00494-z",
-      "citations": 0,
-      "rule_score": 4.2,
-      "score": 6.71,
-      "tldr_zh": "提出FinTime-Fuse多模态LLM，将新闻文本表示与金融时间序列嵌入融合以改进价格预测。",
-      "tldr": null,
-      "tags": [
-        "文本计算",
-        "LLM智能体"
-      ],
-      "reason": "属计算社会科学中的文本与LLM方法应用，但聚焦金融预测，与社会网络议题边缘相关。",
-      "backfill_date": null
-    }
-  ]
+  "papers": []
 }
