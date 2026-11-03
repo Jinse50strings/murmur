@@ -1,20 +1,355 @@
 {
   "app": "Murmur",
   "version": 1,
-  "date": "2026-11-03",
-  "generated_at": "2026-11-03T07:39:14+08:00",
-  "count": 0,
+  "date": "2026-11-04",
+  "generated_at": "2026-11-04T05:54:34+08:00",
+  "count": 10,
   "counts": {
     "sources": {
-      "arxiv": 0,
-      "openalex": 137
+      "arxiv": 73,
+      "openalex": 97
     },
-    "unique": 137,
-    "new": 133,
-    "candidates": 1,
-    "selected": 0,
-    "fresh_selected": 0,
+    "unique": 170,
+    "new": 169,
+    "candidates": 40,
+    "selected": 10,
+    "fresh_selected": 10,
     "errors": 0
   },
-  "papers": []
+  "papers": [
+    {
+      "id": "arxiv:2611.03072",
+      "source": "arxiv",
+      "title": "Algorithmic Intervention Decreases Polarization in Content Moderation",
+      "authors": [
+        "Anna Bertani",
+        "Saeedeh Mohammadi",
+        "Taha Yasseri"
+      ],
+      "abstract": "Crowd-based moderation relies on people's collective judgments to combat misinformation, but raters bring their own ideological biases to the task, shaping how they moderate each other's contributions. We ask whether an algorithmic redesign can counteract this bias, using X's Community Notes, where contributors write context for potentially misleading posts and rate each other's notes. Community Notes replaced simple majority voting with an algorithm that instead rewards agreement across people with different ideological viewpoints. Comparing 8,805 notes and 4,367 contributors before and after this change, we find that ideological polarization decreased in the algorithm's estimates of contributor and note positions. Although negative interactions increased, contributors became less structurally aligned, indicating that negative interactions were less organized along partisan lines. These findings show that algorithmic incentives can reshape both the social structure and behavioral dynamics of crowds, extending beyond their intended effects on content moderation.",
+      "url": "https://arxiv.org/abs/2611.03072",
+      "published": "2026-11-02",
+      "venue": "arXiv",
+      "categories": [
+        "physics.soc-ph"
+      ],
+      "pdf_url": "https://arxiv.org/pdf/2611.03072v1",
+      "doi": null,
+      "citations": 0,
+      "rule_score": 8.6,
+      "score": 9.43,
+      "tldr_zh": "比较X社区笔记算法改动前后，发现跨立场共识算法降低了贡献者与笔记的意识形态极化。",
+      "tldr": null,
+      "tags": [
+        "在线平台",
+        "舆论与极化",
+        "因果推断"
+      ],
+      "reason": "在线平台内容治理与极化因果实证，是该领域核心议题。",
+      "backfill_date": null
+    },
+    {
+      "id": "arxiv:2611.02816",
+      "source": "arxiv",
+      "title": "Discovering hierarchical governing equations for community-structured complex network dynamics with LLM agents",
+      "authors": [
+        "Jinlei Zhang",
+        "Zixuan Zhang",
+        "Hao Qiu",
+        "Feng Chen",
+        "Jiateng Yin",
+        "Xiaoyong Yan",
+        "Xiaolei Ma",
+        "Hao Sun"
+      ],
+      "abstract": "Governing equations provide an interpretable description of the mechanisms underlying complex network dynamics, yet their discovery from observational data remains challenging when shared community-level dynamics coexist with individual-level variations and the relevant functional structures may be absent from the initial candidate library or not explicitly specified in advance. Here we formulate this task as a hierarchical law-discovery problem and introduce SAGE, a large language model-guided self-reflective agent framework for discovering community-shared governing laws and individual-specific dynamical variations. SAGE organizes equation discovery into an iterative Library-Discovery-Review process that first identifies shared community-level structures and then resolves node-specific residual dynamics, while adaptively refining the candidate space to introduce missing dynamical terms when needed. This hierarchical and interpretable formulation enables SAGE to distinguish shared community-level dynamics from individual-level variations and to reveal the mechanisms underlying complex network dynamics. Across two synthetic networks and four real-world networks spanning mobile communication, brain electrophysiology, power grids and urban rail transit, SAGE recovers compact and interpretable governing equations, reproduces observed system dynamics and outperforms representative equation-discovery baselines. The framework remains robust under incomplete observations and can transfer community-level governing laws to nodes with entirely missing observations. These results establish a hierarchical and adaptive approach for disentangling shared and individual dynamical mechanisms in community-structured complex networks.",
+      "url": "https://arxiv.org/abs/2611.02816",
+      "published": "2026-11-02",
+      "venue": "arXiv",
+      "categories": [
+        "physics.soc-ph",
+        "cs.AI"
+      ],
+      "pdf_url": "https://arxiv.org/pdf/2611.02816v1",
+      "doi": null,
+      "citations": 0,
+      "rule_score": 9.3,
+      "score": 8.965,
+      "tldr_zh": "提出SAGE框架，用LLM智能体迭代发现社区结构复杂网络的共享与个体动力学方程。",
+      "tldr": null,
+      "tags": [
+        "复杂网络",
+        "LLM智能体",
+        "方法论"
+      ],
+      "reason": "直接面向复杂网络动力学方程发现，方法新颖且与计算社会科学方法论高度相关。",
+      "backfill_date": null
+    },
+    {
+      "id": "arxiv:2611.03240",
+      "source": "arxiv",
+      "title": "Susceptibility optimization for wisdom of crowds: A social power reformulation and realization framework",
+      "authors": [
+        "Ye Tian",
+        "Anzhi Sheng",
+        "Angela Fontan",
+        "Long Wang",
+        "Karl H. Johansson"
+      ],
+      "abstract": "Whether social influence makes a crowd wiser or more biased hinges on who yields to others and who holds firm. Such heterogeneous susceptibilities to social influence, together with the influence network, determine the weight each agent's initial estimate carries in the collective estimate, known as social power. This paper studies susceptibility optimization for maximizing the wisdom of crowds under the Friedkin-Johnsen model. Minimizing the squared collective bias over susceptibilities leads to a nonconvex problem. To overcome this nonconvexity, we develop a social power reformulation and realization framework, which decomposes the problem into two stages: first characterizing the social power that minimizes the collective bias, then determining the susceptibilities that induce such social power. Social power reformulation yields a quadratic program over the probability simplex. Under uniform-sign biases, the optimal social power concentrates on the least biased agents and immediately determines the optimal susceptibilities; under mixed-sign biases, its geometry enables a linear-time construction algorithm. For social power realization, we introduce the notions of susceptibility realizability and establish necessary and sufficient conditions for them, under which we derive all optimal susceptibilities in closed form using the Laplacian pseudoinverse and eigenvector centrality. These results yield a unified algorithm that solves the original problem globally, with worst-case complexity cubic in the number of agents when realizability holds. Finally, we develop a fully distributed implementation with linear communication complexity, illustrating how collective intelligence can emerge from local interactions.",
+      "url": "https://arxiv.org/abs/2611.03240",
+      "published": "2026-11-02",
+      "venue": "arXiv",
+      "categories": [
+        "eess.SY",
+        "cs.SI",
+        "math.OC"
+      ],
+      "pdf_url": "https://arxiv.org/pdf/2611.03240v1",
+      "doi": null,
+      "citations": 0,
+      "rule_score": 6.9,
+      "score": 8.845,
+      "tldr_zh": "在Friedkin-Johnsen模型下优化个体对社会影响的易感性，通过社会权力重构框架最小化集体偏差以提升群体智慧。",
+      "tldr": null,
+      "tags": [
+        "社会网络",
+        "方法论",
+        "仿真与ABM"
+      ],
+      "reason": "直接研究社会影响网络与群体智慧，属社会网络分析核心议题，方法有理论价值。",
+      "backfill_date": null
+    },
+    {
+      "id": "arxiv:2611.01319",
+      "source": "arxiv",
+      "title": "Inferring missing locations in human mobility data using memory effects",
+      "authors": [
+        "Pablo Rosillo-Rodes",
+        "Antònia Tugores",
+        "David Sánchez",
+        "José J. Ramasco"
+      ],
+      "abstract": "Empirical datasets used to characterize human mobility are sparse in space and time, owing to technological factors such as coverage and battery, or to the erratic nature of online interactions. Missing data can bias the conclusions drawn from them, so filling the gaps in incomplete timelines is a key challenge in computational social science. Here, we propose a simple imputation method in which the informativeness of an observation decays with its bidirectional temporal distance from the missing entry, at a rate set by a single parameter per individual. On synthetic and real Twitter data, a power-law decay, selected by Bayesian model comparison, yields accurate imputations (macro-AUROC above 0.9 overall, and above 0.8 for the most mobile users) and matches a gap-aware continuous-time Markov chain, outperforming it among the most mobile users. The method is robust to moderate noise and generalizes across countries and European administrative regions.",
+      "url": "https://arxiv.org/abs/2611.01319",
+      "published": "2026-10-31",
+      "venue": "arXiv",
+      "categories": [
+        "cs.LG",
+        "physics.soc-ph"
+      ],
+      "pdf_url": "https://arxiv.org/pdf/2611.01319v1",
+      "doi": null,
+      "citations": 0,
+      "rule_score": 7.9,
+      "score": 8.395,
+      "tldr_zh": "提出基于双向时间距离幂律衰减的缺失位置填补法，在Twitter数据上AUROC超0.9。",
+      "tldr": null,
+      "tags": [
+        "城市与流动",
+        "数字痕迹",
+        "方法论"
+      ],
+      "reason": "人类移动数据缺失填补，直接服务计算社会科学数据方法。",
+      "backfill_date": null
+    },
+    {
+      "id": "arxiv:2611.01935",
+      "source": "arxiv",
+      "title": "No Note Is an Island: Probing LLMs' Understanding of Crowdsourced Fact-Checking Environments",
+      "authors": [
+        "Weijian Fan",
+        "Chichen Lin",
+        "Xiao Han",
+        "Jiaying Wu"
+      ],
+      "abstract": "Large language models (LLMs) increasingly assist crowdsourced fact-checking, yet evaluations focus on individual annotations. A correction's reach and reception depend on visibility, audience responses, and platform policies. We introduce correction context understanding: assessing corrective content, interpreting audience responses, and reasoning about platform dynamics within a shared environment. We build NoteHabitat from 36 months of Weibo Annotations data, linking 102,994 posts (42,853 annotations), 431,407 comments, and five policy events. Evaluating diverse model families across seven tasks spanning content, interaction, and management reveals three gaps. Annotation quality correlates only weakly with engagement ($ρ=0.068$), while four zero-shot LLMs systematically underrate quality relative to human judgments, especially evidence support and objectivity. Models also miss toxic comments supporting corrections (36.4% average recall across ten models). At the platform level, LLMs partially predict policy-associated outcome directions, but LLM-guided simulations poorly reproduce daily activity. Cross-group analyses expose blind spots tied to contribution types and reader stances that aggregate scores conceal. Reliable fact-checking AI must understand the note, the conversation around it, and the platform in which both unfold.",
+      "url": "https://arxiv.org/abs/2611.01935",
+      "published": "2026-11-01",
+      "venue": "arXiv",
+      "categories": [
+        "cs.SI"
+      ],
+      "pdf_url": "https://arxiv.org/pdf/2611.01935v1",
+      "doi": null,
+      "citations": 0,
+      "rule_score": 5.7,
+      "score": 8.285,
+      "tldr_zh": "基于微博36个月数据构建NoteHabitat，评估LLM对众包事实核查环境中内容、互动与平台动态的理解，发现标注质量与互动弱相关等三类差距。",
+      "tldr": null,
+      "tags": [
+        "LLM智能体",
+        "在线平台",
+        "文本计算"
+      ],
+      "reason": "结合LLM与在线平台众包核查，涉及数字痕迹与平台动态，对计算社会科学有实证价值。",
+      "backfill_date": null
+    },
+    {
+      "id": "arxiv:2611.01918",
+      "source": "arxiv",
+      "title": "AgenticMobility: An Open-Source Platform for Multi-AI-Agent Mobility Dynamics",
+      "authors": [
+        "Jiaheng Xiao",
+        "Jiangtao Han",
+        "Jiachen Wang",
+        "Honghai Li",
+        "Lijun Sun",
+        "Kay Axhausen",
+        "Chang Liu",
+        "Zhengbing He"
+      ],
+      "abstract": "Understanding mobility dynamics and the effects of urban transportation management policies requires examining how individual travel decisions, traffic conditions, and policy interventions influence one another over time. We present AgenticMobility, an open-source experimental platform for studying how mobility AI agents and other AI agents interact, adapt through repeated experience, and collectively shape mobility outcomes. Persistent agents retain identities and relevant states across rounds, with explicit interfaces defining information access, admissible actions, and decision schedules; linked records trace decisions, execution, and feedback. In the current implementation, large language model (LLM) agents act as travelers choosing routes and departure times and as a manager periodically adjusting link charges within MATSim. A preliminary demonstration spans 100 simulated days in each of five configurations, with one run per configuration and a shared simulation seed. In the joint traveler--manager run, all 1,179,300 finalized target decisions satisfied action constraints; execution checks verified implementation of accepted choices and preservation of personal memories across days. Trajectories show stable route choices alongside departure-time adjustments and differences between controlled-trip and population-wide outcomes. The platform supports experiments on individual adaptation, collective outcomes, and management interventions by varying information access, retained experience, and management feedback. Source code is available at https://github.com/Agentic-City-Research/Agentic-Mobility",
+      "url": "https://arxiv.org/abs/2611.01918",
+      "published": "2026-11-01",
+      "venue": "arXiv",
+      "categories": [
+        "cs.MA",
+        "cs.AI",
+        "physics.soc-ph"
+      ],
+      "pdf_url": "https://arxiv.org/pdf/2611.01918v1",
+      "doi": null,
+      "citations": 0,
+      "rule_score": 8.1,
+      "score": 7.905,
+      "tldr_zh": "开源多LLM智能体出行仿真平台，智能体重复决策并共同塑造城市交通结果。",
+      "tldr": null,
+      "tags": [
+        "LLM智能体",
+        "仿真与ABM",
+        "城市与流动"
+      ],
+      "reason": "LLM智能体+城市流动仿真平台，契合计算社会科学新兴方向。",
+      "backfill_date": null
+    },
+    {
+      "id": "arxiv:2611.03246",
+      "source": "arxiv",
+      "title": "A Common Language for Dynamic Graphs: Interaction Tokenization Enables Foundation Models",
+      "authors": [
+        "Fuyuan Ma",
+        "Yili Wang",
+        "Xin He",
+        "Xin Zhang",
+        "Ying Wang",
+        "Xin Wang"
+      ],
+      "abstract": "Dynamic graphs capture evolving interactions in Web systems, including online communication, user engagement, and recommendation. Graph foundation models aim to reuse predictive capabilities across networks, but extending this capability to dynamic graphs faces two challenges. First, node identities are graph-specific, and similar interaction patterns can appear at different temporal and activity scales, making histories difficult to represent consistently across networks. Second, the predictive roles of historical patterns vary across interaction dynamics, limiting transfer from a narrow range of training processes. In this paper, we show that a common interaction language, combined with learning across diverse interaction processes, offers a basis for dynamic graph foundation modeling. We propose CL-DGFM, a Common Language Dynamic Graph Foundation Model for temporal link prediction. Its Dynamic Interaction Tokenizer encodes interaction memory, historical connectivity, and ordered destination transitions into calibrated tabular inputs, making dynamic histories accessible to existing predictors without an additional trainable graph encoder. Its Dynamic Interaction Prior trains a pretrained tabular foundation predictor across diverse synthetic dynamics. Labeled historical context guides prediction, with a Contextual Value Adapter modulating attention values. The model transfers to real graphs without target-graph parameter updates. Experiments on TGB and TGB-Seq demonstrate competitive performance. Further comparisons show that the common language supports basic machine learning and neural models, and enables direct use of frozen tabular foundation models on dynamic graphs.",
+      "url": "https://arxiv.org/abs/2611.03246",
+      "published": "2026-11-02",
+      "venue": "arXiv",
+      "categories": [
+        "cs.LG",
+        "cs.SI"
+      ],
+      "pdf_url": "https://arxiv.org/pdf/2611.03246v1",
+      "doi": null,
+      "citations": 0,
+      "rule_score": 6.2,
+      "score": 7.81,
+      "tldr_zh": "提出交互分词方法为动态图构建通用语言，使基础模型可跨网络迁移预测在线交互行为。",
+      "tldr": null,
+      "tags": [
+        "复杂网络",
+        "方法论",
+        "在线平台"
+      ],
+      "reason": "动态图基础模型方法，涉及在线交互网络建模，对网络分析方法有借鉴意义。",
+      "backfill_date": null
+    },
+    {
+      "id": "arxiv:2611.02996",
+      "source": "arxiv",
+      "title": "LLMs and the Organization of Scientific Work",
+      "authors": [
+        "Stefano Bianchini",
+        "Georgiana-Ioana Coroama"
+      ],
+      "abstract": "The advent of large language models (LLMs) represents a technological revolution for science. Their diffusion may reshape not only how scientists conduct research, but also how they organize their work within teams. Here, we develop a conceptual framework in which LLMs expand individual capabilities across a range of research activities, reducing reliance on complementary human inputs within tasks and facilitating a more specialized division of labor among team members. We further propose that teams' history of collaboration may constrain their ability to reorganize in response to the new technological capabilities. Using CRediT contribution statements from approximately 120,000 PLOS ONE articles published between 2018 and 2025, we investigate changes in the division of labor within scientific teams following the release of ChatGPT in late 2022. We document three main findings. First, participation in scientific tasks falls below its previous trajectory, particularly in conceptualization, execution, and writing. Second, researchers become more specialized, exhibiting narrower task portfolios and less overlap in their contributions with co-authors. Third, these changes are concentrated among newly formed teams, whose members have no prior collaboration ties, whereas established teams, whose members have all collaborated previously, exhibit considerably greater organizational inertia. Our findings suggest that, in the wake of LLM diffusion, scientific work is being reorganized around greater individual autonomy and an increasingly specialized division of labor within teams.",
+      "url": "https://arxiv.org/abs/2611.02996",
+      "published": "2026-11-02",
+      "venue": "arXiv",
+      "categories": [
+        "cs.CY"
+      ],
+      "pdf_url": "https://arxiv.org/pdf/2611.02996v1",
+      "doi": null,
+      "citations": 0,
+      "rule_score": 5.1,
+      "score": 7.755,
+      "tldr_zh": "用约12万篇PLOS ONE贡献声明，分析LLM扩散如何改变科研团队分工与协作历史的影响。",
+      "tldr": null,
+      "tags": [
+        "LLM智能体",
+        "数字痕迹",
+        "方法论"
+      ],
+      "reason": "以大规模署名数据研究团队分工与LLM扩散，属计算社会科学核心议题。",
+      "backfill_date": null
+    },
+    {
+      "id": "arxiv:2611.02407",
+      "source": "arxiv",
+      "title": "Networked Synthetic Social Engineering on the Web",
+      "authors": [
+        "Bryan C. Boots"
+      ],
+      "abstract": "Several genuine AI services may repeat one unsupported source, and correcting that source may leave later reports unchanged. We examine these networked consequences of synthetic social engineering (SSE), deliberately misleading influence intended to redirect AI recipients from authorized objectives. Our framework connects social influence, information aggregation, and misinformation correction research to observable evidence and permission boundaries. It separates originating attempts from legitimate intermediaries' work and distinguishes identity, evidentiary support, and authorization. We test four relationships using Qwen3-4B and two briefing tasks across 1,080 research units in our Agent Service Exchange and Evidence Commons (ASE-EC). Multiple dependent publishers produced no supported increase in unsupported verification (78.3% versus 75.0%); publication availability left downstream violation reach at 40.0% in both arms. These comparisons direct attention to weaknesses already present in the reference workflows. High reference error rates and retained private handoffs preclude claims of immunity to social pressure. Without scope revalidation, corrections identifying dependent reports reduced residual invalid decisions from 14.4% to 8.1% at equal notification coverage and increased successful report repairs from 16/63 to 36/63. Scope revalidation added no demonstrated protection, and clearing dialogue offered no established recovery advantage. Unapproved requests persisted, all blocked by an external gateway. For designers, the findings caution against treating publisher count as independent evidence, notification as repair, or cleared histories as recovery. They support targeting corrections at reused reports, assessing factual and permission recovery separately, and enforcing authorization at execution.",
+      "url": "https://arxiv.org/abs/2611.02407",
+      "published": "2026-11-02",
+      "venue": "arXiv",
+      "categories": [
+        "cs.CR",
+        "cs.AI",
+        "cs.CY"
+      ],
+      "pdf_url": "https://arxiv.org/pdf/2611.02407v1",
+      "doi": null,
+      "citations": 0,
+      "rule_score": 4.9,
+      "score": 7.745,
+      "tldr_zh": "构建多智能体服务交换框架，用Qwen3-4B测试合成社会工程中错误信息经多个发布者网络化传播与纠错失效。",
+      "tldr": null,
+      "tags": [
+        "LLM智能体",
+        "扩散与传播",
+        "在线平台"
+      ],
+      "reason": "研究LLM智能体网络中的错误信息传播与纠正，直接关联计算社会科学与扩散议题。",
+      "backfill_date": null
+    },
+    {
+      "id": "arxiv:2611.02033",
+      "source": "arxiv",
+      "title": "How Green Is Your Manifesto? Scoring Environmental Positions in the 2024 EU Elections with an LLM Panel",
+      "authors": [
+        "Franco Corti",
+        "Sajid Siraj"
+      ],
+      "abstract": "Locating political parties on environmental and climate policy is central to the study of party competition, yet the established instruments, expert surveys and the hand coding of manifestos, are costly, periodic, and slow to extend to new documents. We ask whether a panel of large language models can serve as a cheaper and reproducible alternative. Treating each manifesto as a set of sentences, three models from independent providers score every sentence on two dimensions, environmental protection and climate change, separating a party's position on an issue from the salience it gives it, and the judgments are averaged to the manifesto level. Agreement across the models is retained as a built-in reliability signal. We apply the panel to 41 manifestos from the 2024 European Parliament election, covering Austria, France, Germany, Italy, Spain, and the European party families, and validate it against the 2024 Chapel Hill Expert Survey for the 25 parties with a like-for-like expert benchmark, using the other manifestos as diagnostic cases. The panel recovers the expert ordering of parties with strong rank agreement on both dimensions, while reading them as systematically greener than experts do, a gap we interpret as the distance between manifesto promise and governing record. Inter-model disagreement modestly flags where the instrument errs, and position and salience prove related for environmental protection but independent for climate change. The result is a transparent, low-cost, and multilingual instrument that complements rather than replaces expert and hand-coded approaches; the prompt, code, and manifesto-level results are released openly.",
+      "url": "https://arxiv.org/abs/2611.02033",
+      "published": "2026-11-01",
+      "venue": "arXiv",
+      "categories": [
+        "cs.CL",
+        "cs.CY",
+        "econ.GN"
+      ],
+      "pdf_url": "https://arxiv.org/pdf/2611.02033v1",
+      "doi": null,
+      "citations": 0,
+      "rule_score": 3.7,
+      "score": 7.685,
+      "tldr_zh": "用三家LLM组成评审团对2024欧盟选举41份宣言逐句打分，测量政党环境立场与议题显著性。",
+      "tldr": null,
+      "tags": [
+        "文本计算",
+        "LLM智能体",
+        "方法论"
+      ],
+      "reason": "LLM面板替代专家编码测量政治立场，是计算社会科学文本方法的直接应用。",
+      "backfill_date": null
+    }
+  ]
 }
