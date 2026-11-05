@@ -1,304 +1,339 @@
 {
   "app": "Murmur",
   "version": 1,
-  "date": "2026-11-05",
-  "generated_at": "2026-11-05T06:06:10+08:00",
-  "count": 9,
+  "date": "2026-11-06",
+  "generated_at": "2026-11-06T06:13:07+08:00",
+  "count": 10,
   "counts": {
     "sources": {
-      "arxiv": 85,
-      "openalex": 128
+      "arxiv": 93,
+      "openalex": 0
     },
-    "unique": 213,
-    "new": 188,
+    "unique": 93,
+    "new": 79,
     "candidates": 24,
-    "selected": 9,
-    "fresh_selected": 9,
-    "errors": 0
+    "selected": 10,
+    "fresh_selected": 10,
+    "errors": 1
   },
   "papers": [
     {
-      "id": "arxiv:2611.03980",
+      "id": "arxiv:2611.06639",
       "source": "arxiv",
-      "title": "Measuring Model-Specific Alignment Drift in LLM-Based Opinion Dynamics",
+      "title": "Replicability, Reproducibility, and Robustness in Political and Social Science Research with Large Language Models",
       "authors": [
-        "Nataša Djurdjevac Conrad",
-        "Sebastian Pokutta",
-        "Christof Schütte"
+        "Joan C. Timoneda",
+        "Sebastián Vallejo Vera"
       ],
-      "abstract": "Large language model (LLM) agents are increasingly used as synthetic participants in opinion-dynamics experiments, often assuming that an agent's behaviour is fully determined by its prompt. We test this assumption with a framework in which LLM agents discuss a contested policy issue over repeated rounds while their stance is quantified by a fixed psychometric instrument independent of any dynamics model. Across six LLMs, committed personas are intrinsically stable: in each of the five models tested without peer input, every agent keeps its assigned side for 20 rounds. The observed loss of alignment under discussion is therefore interaction-induced, we call it alignment drift, and model-specific: gpt-4.1 keeps opinion clusters apart, claude-sonnet-5 holds them partially, and gpt-5.6-sol and claude-opus-5 abandon them. Under selective attention, one LLM maintains separated opinion clusters under stance-homophilous attention. Qualitative profiles persist at doubled population and horizon and on a second issue. Such heterogeneity makes the LLM choice a first-class validity variable for social simulation.",
-      "url": "https://arxiv.org/abs/2611.03980",
-      "published": "2026-11-02",
+      "abstract": "This chapter addresses the central reproducibility problem of research with large language models. LLM output is probabilistic and varies across models and versions, which can have significant effects on downstream statistical results. The chapter distinguishes between replicability, reproducibility, and robustness, and proposes a probabilistic standard based on the distribution of results, not identical outputs. It introduces a standardized prompt script, tests within-model variation for encoders and decoders, and develops error-structure analysis to diagnose where models err and whether their errors align. Using three datasets, the chapter shows that measurement choice can reverse the sign of downstream regression coefficients. Existing design-based corrections with gold-labeled subsamples restore validity, but come at the cost of estimate precision. The main contribution of the chapter is a stacked ensemble of open-weight models that improves precision in the correction step while retaining estimate validity.",
+      "url": "https://arxiv.org/abs/2611.06639",
+      "published": "2026-11-04",
       "venue": "arXiv",
       "categories": [
-        "cs.AI",
-        "physics.soc-ph"
-      ],
-      "pdf_url": "https://arxiv.org/pdf/2611.03980v1",
-      "doi": null,
-      "citations": 0,
-      "rule_score": 9.3,
-      "score": 8.965,
-      "tldr_zh": "用六种LLM智能体多轮讨论争议政策，发现立场漂移由互动引发且因模型而异。",
-      "tldr": null,
-      "tags": [
-        "LLM智能体",
-        "舆论与极化",
-        "仿真与ABM"
-      ],
-      "reason": "LLM智能体舆论动力学实验，直接关联计算社会科学与极化研究。",
-      "backfill_date": null
-    },
-    {
-      "id": "arxiv:2611.04992",
-      "source": "arxiv",
-      "title": "BaCon: Band-Concentrated Exponential Random Graph Models",
-      "authors": [
-        "Enrico Schiazzano",
-        "Giulia Preti",
-        "Aristides Gionis",
-        "Matteo Riondato",
-        "Gianmarco De Francisci Morales"
-      ],
-      "abstract": "Exponential-family random graph models ERGMs provide a parametric interpretable framework for modeling real graphs including the Web and social networks Fitted ERGMs may suffer from degeneracy matching observed graph statistics in expectation does not guarantee that the observed graph and similar ones are highly probable under the fitted distribution We introduce Band-Concentrated ERGMs BaCon a framework that avoids degeneracy by imposing a probabilistic constraint requiring at least $1-δ$ of the distribution probability mass to lie on the set of graphs with statistics within an $\\varepsilon$-tolerance band around the observed statistics BaCons maximumentropy distribution still belongs to the exponential family while including a factor checking for inclusion in the tolerance band We derive the exact Metropolis-Hastings acceptance rule for this target and use a practical stochastic approximation procedure with a smoothed band membership during fitting Experiments on social networks across increasingly challenging model specifications show that BaCon substantially increases the probability mass assigned to graphs whose statistics are close to the observed ones while remaining estimable for specifications where standard ERGM estimation fails These results demonstrate that probability mass constraints are a principled way to mitigate degeneracy while retaining the benefits of exponential-family graph models",
-      "url": "https://arxiv.org/abs/2611.04992",
-      "published": "2026-11-03",
-      "venue": "arXiv",
-      "categories": [
-        "cs.SI"
-      ],
-      "pdf_url": "https://arxiv.org/pdf/2611.04992v1",
-      "doi": null,
-      "citations": 0,
-      "rule_score": 9.3,
-      "score": 8.465,
-      "tldr_zh": "提出Band-Concentrated ERGM，用统计量容差带约束避免模型退化，保持最大熵指数族形式。",
-      "tldr": null,
-      "tags": [
-        "社会网络",
-        "方法论"
-      ],
-      "reason": "直接改进社会网络建模的核心统计模型ERGM，方法价值明确。",
-      "backfill_date": null
-    },
-    {
-      "id": "arxiv:2611.05252",
-      "source": "arxiv",
-      "title": "Interpretable Social Network Churn Prediction via Ergodic Markov Chains",
-      "authors": [
-        "Matthew McQuistion",
-        "Siddhartha Sharan",
-        "Afia Zaheer"
-      ],
-      "abstract": "Predicting social network churn before it becomes visible in aggregate metrics remains an open challenge, particularly in enterprise settings where heterogeneous usage patterns, sparse data, and deployment constraints preclude standard supervised approaches. We formalize this problem as finite-step engagement projection over contributor-role Markov chains, with a stationary-distribution interpretation for ergodic chains in the long-run limit. For each engagement feature type within a network (e.g., Q&A, communities, articles, etc.), users are classified monthly into four behavioral states and a transition matrix is estimated from six months of history. Six-step propagation yields a label-free projection of the contributor mix; for ergodic chains, the Perron-Frobenius theorem establishes convergence under repeated propagation. Comparing projected future engagement to current engagement produces the Health Ratio, a single score requiring no trained model, no labels, and no infrastructure beyond SQL. Validated across seven rolling prediction windows on 11,500+ tenant-level networks, the Health Ratio achieves mean AUC 0.917 with a 156 times churn-rate gradient across risk tiers, outperforming all single-signal baselines and the growth-adjusted variant previously deployed in production. An ablation study shows that six-step propagation achieves similar churn discrimination to the eigenvector-based score. Deployed on Microsoft Engage since October 2025, the framework powers customer health monitoring and has enabled proactive intervention on at-risk networks before decline becomes visible in traditional metrics.",
-      "url": "https://arxiv.org/abs/2611.05252",
-      "published": "2026-11-03",
-      "venue": "arXiv",
-      "categories": [
-        "stat.AP",
-        "cs.SI"
-      ],
-      "pdf_url": "https://arxiv.org/pdf/2611.05252v1",
-      "doi": null,
-      "citations": 0,
-      "rule_score": 7.2,
-      "score": 7.86,
-      "tldr_zh": "用贡献者角色马尔可夫链做六步传播，实现无标签的社会网络流失预测。",
-      "tldr": null,
-      "tags": [
-        "社会网络",
-        "方法论"
-      ],
-      "reason": "社会网络用户流失预测的可解释方法，属社会网络分析应用。",
-      "backfill_date": null
-    },
-    {
-      "id": "arxiv:2611.04886",
-      "source": "arxiv",
-      "title": "Modelling lock-in of AI adoption through skill erosion",
-      "authors": [
-        "Renaud Lambiotte"
-      ],
-      "abstract": "Generative AI can improve immediate performance but may erode the human skills required for future work. We study a model in which individuals tend to imitate successful peers, while their independent skills grow with practice and erode with reliance on AI. Because each agent's skill reflects their history, non-users and AI users develop different skill distributions, which we derive exactly. Skill erosion can produce bistability and hysteresis between a low-adoption, high-skill state and a high-adoption, low-skill state. When agents rarely change behaviour at random, the two transitions are asymmetric. A single AI user spreads through a population of experts only if AI-assisted work earns more than expert work, whatever the timescale of skill adaptation. A single non-user, by contrast, can lead an AI-dependent population back to independent work only if they regain enough skill before returning to AI, which becomes easier the more persistent behaviours are. As AI improves, adoption can jump abruptly, and a sufficiently long increase in its benefit, such as a period of low prices, can leave a population relying on AI after the benefit has returned to its initial value. Skill erosion thus creates a history-dependent switching cost that can make widespread AI adoption difficult to reverse.",
-      "url": "https://arxiv.org/abs/2611.04886",
-      "published": "2026-11-03",
-      "venue": "arXiv",
-      "categories": [
-        "cs.AI",
-        "physics.soc-ph"
-      ],
-      "pdf_url": "https://arxiv.org/pdf/2611.04886v1",
-      "doi": null,
-      "citations": 0,
-      "rule_score": 5.7,
-      "score": 7.785,
-      "tldr_zh": "建模同伴模仿与技能侵蚀，发现AI采用存在双稳态与滞后，单用户扩散条件不对称。",
-      "tldr": null,
-      "tags": [
-        "扩散与传播",
-        "仿真与ABM"
-      ],
-      "reason": "社会扩散与行为锁定的建模研究，关联复杂网络传播动力学。",
-      "backfill_date": null
-    },
-    {
-      "id": "arxiv:2611.04289",
-      "source": "arxiv",
-      "title": "When Debate Amplifies Risk: Social-Bias Vulnerabilities in Multi-Agent Safety Deliberation",
-      "authors": [
-        "Qinghua Mao",
-        "Xi Lin",
-        "Yuxin Qi",
-        "Zihao Xu",
-        "Jinze Gu",
-        "Yuliang Chen"
-      ],
-      "abstract": "Retrieval-augmented Web applications increasingly employ multi-agent debate (MAD) to aggregate conflicting, noisy, and heterogeneous information, yet deliberation is fundamentally a social process susceptible to interpersonal dynamics. When retrieved Web sources contain latent hazards alongside safe factual content, social biases such as conformity pressure and authority deference can override evidence-grounded safety boundaries. In this work, we investigate whether the social structure of deliberation can paradoxically amplify latent Web safety risks. We introduce SafeConflict-Bias, a controlled counterfactual diagnostic protocol spanning six core Web risk categories, which holds queries and retrieved evidence strictly invariant while isolating conversational majority sway, authority cues, and confidence asymmetry. Empirical evaluation across diverse proprietary and open-source backbones reveals that while isolated models reliably reject unsafe guidance, standard MAD catastrophically capitulates to social pressure---surging unsafe adoption from 0.0\\% up to 100.0\\% and systematically silencing safe minority evidence. To resolve this systemic fragility without retraining or debate regeneration, we propose RiskTrace-Debias, an inference-time auditing framework uniting evidence-first precommitment, social-metadata masking, and consistency-gated arbitration. RiskTrace-Debias suppresses worst-case unsafe adoption to $\\le 2.0\\%$ across all architectures without inducing over-refusal, while generating verifiable provenance traces to audit interpersonal manipulation in Web deliberation.",
-      "url": "https://arxiv.org/abs/2611.04289",
-      "published": "2026-11-03",
-      "venue": "arXiv",
-      "categories": [
-        "cs.CR",
-        "cs.AI",
+        "cs.CL",
         "cs.CY"
       ],
-      "pdf_url": "https://arxiv.org/pdf/2611.04289v1",
+      "pdf_url": "https://arxiv.org/pdf/2611.06639v1",
       "doi": null,
       "citations": 0,
-      "rule_score": 4.2,
-      "score": 7.71,
-      "tldr_zh": "发现多智能体辩论中的从众与权威偏见会放大检索网页中的潜在安全风险。",
+      "rule_score": 5.2,
+      "score": 8.76,
+      "tldr_zh": "提出LLM研究可复现性框架，区分可复制、可复现与稳健性，发现测量选择可反转回归系数符号。",
       "tldr": null,
       "tags": [
+        "方法论",
         "LLM智能体",
-        "舆论与极化",
-        "实验"
+        "文本计算"
       ],
-      "reason": "研究多智能体辩论的社会偏见机制，属LLM智能体与社会影响交叉议题。",
+      "reason": "直接关乎用LLM做社会科学测量的可复现性与下游统计稳健性，方法论价值高。",
       "backfill_date": null
     },
     {
-      "id": "openalex:W7225136492",
-      "source": "openalex",
-      "title": "Social media ban for minors: a computational analysis of media coverage in Europe and beyond",
+      "id": "arxiv:2611.06572",
+      "source": "arxiv",
+      "title": "Does Personality Persuade? Investigating Personality Trait Prompting and Persuasion in Large Language Models",
       "authors": [
-        "Sopho KHARAZI",
-        "Arianna Sala",
-        "Gerrit Bostelmann",
-        "Bonka Kotseva",
-        "Jens Patrick Linge",
-        "Emília Gómez"
+        "Ruben Boone",
+        "Gilles Eerlings",
+        "Sebe Vanbrabant",
+        "Davy Vanacken",
+        "Kris Luyten"
       ],
-      "abstract": "This study examined global media portrayals of social media bans for minors, focusing on dominant narratives, framing dimensions, and persuasion techniques. We compiled a multilingual dataset of 10,509 articles from mainstream media and unverified online sources published between 1 January 2024 and 15 March 2025 in 24 EU languages, Arabic, Chinese, Georgian, Russian, and Ukrainian. Using sentence-embedding-based clustering and machine learning to identify and analyse framing dimensions and persuasion techniques, we found that non-EU media relied more heavily than EU sources on politically charged framing and loaded language. Policy Prescription and Evaluation was the most common framing dimension, while Doubt was the dominant persuasion technique. A bivariate analysis of standardised residuals showed that Policy Prescription and Evaluation framing paired with Doubt was the most common combination. The analysis also revealed an “institutionalist top-down” reporting pattern in mainstream media, linking Political framing with Flag Waving persuasion. Unverified sources adopted a “populist-alarmist” approach, pairing Security and Defense framing with Appeal to Values persuasion and thereby revealing a security–value connection. Overall, this study shows how social media bans for minors are represented in Europe and beyond and supports evidence-based youth-protection policy.",
-      "url": "https://doi.org/10.1140/epjds/s13688-026-00712-8",
-      "published": "2026-11-03",
-      "venue": "EPJ Data Science",
-      "categories": [],
-      "pdf_url": null,
-      "doi": "https://doi.org/10.1140/epjds/s13688-026-00712-8",
+      "abstract": "Large language models (LLMs) can be prompted to express different personality profiles, but it remains unclear how reliably they do so or whether personality affects their persuasiveness. We investigate these questions in two evaluations. First, we assess Big Five personality prompting using the IPIP-NEO-120, examining reproducibility, trait controllability, cross-trait effects, and unconditioned model profiles. Second, we conduct a within-subjects user study (N=32) in which participants discuss moral dilemmas with LLM agents whose personalities are aligned, mismatched, neutral, or unconditioned. We find that prompted profiles can be reproducible and responsive to requested traits, although controllability varies across models and changes to one trait can affect others. Unconditioned models also exhibit systematic personality profiles rather than neutral baselines. In the user study, personality alignment did not significantly affect perceived persuasiveness, stance switching, or confidence changes. Participants switched their initial stance in only 8 of 128 conversations, while confidence changes were more common. Participants' Big Five traits were not significantly associated with susceptibility to persuasion, but higher self-reported AI persuasion literacy was associated with less frequent confidence changes. Exploratory analysis showed that logical appeals dominated agent messages. These findings distinguish technical control over prompted LLM personality from observable influence on users and motivate evaluating persuasive interactions beyond explicit changes in decisions.",
+      "url": "https://arxiv.org/abs/2611.06572",
+      "published": "2026-11-04",
+      "venue": "arXiv",
+      "categories": [
+        "cs.CY"
+      ],
+      "pdf_url": "https://arxiv.org/pdf/2611.06572v1",
+      "doi": null,
       "citations": 0,
-      "rule_score": 5.7,
-      "score": 7.285,
-      "tldr_zh": "分析24种语言万余篇报道，发现非欧盟媒体对未成年人社媒禁令更多政治化框架与煽动语言。",
+      "rule_score": 5.4,
+      "score": 8.27,
+      "tldr_zh": "检验LLM大五人格提示的可控性，并用32人实验发现人格设定影响其说服效果。",
+      "tldr": null,
+      "tags": [
+        "LLM智能体",
+        "实验",
+        "舆论与极化"
+      ],
+      "reason": "LLM智能体人格与说服的用户实验，直接关联计算社会科学与舆论研究。",
+      "backfill_date": null
+    },
+    {
+      "id": "arxiv:2611.06550",
+      "source": "arxiv",
+      "title": "Who Gets Counted? Large Language Models, Informative Refusal, and Downstream Bias in Name-Based Demographic Classification",
+      "authors": [
+        "Christian Pipal",
+        "Morgan Wack",
+        "Eva-Maria Vogel"
+      ],
+      "abstract": "Researchers routinely infer gender, race, and ethnicity from names, yet the standard tools used for this task misclassify the groups that diversity research most needs to measure. Large language models (LLMs) have been proposed as a remedy because they label diverse names accurately. We ask whether that accuracy carries over to the estimates researchers report. Across 10,000 Chinese names, 19,998 North Carolina voters with self-reported race, and 300 political science authors with human reference codes, we compare three LLMs with seven traditional tools and link the voter sample to party registration and age. Selective labeling explains part of the LLMs' accuracy advantage. Claude Haiku labels half of the voters, and a traditional tool limited to its most confident half is more accurate. Hard labels from every tool understate the White--Black gap in Democratic registration by 36% to 65%, while BIRDiE estimation on BISG posteriors comes within 0.03 of it. Haiku's missing labels select on age, inflating the age gap by six years. Combined with BISG, LLM answers sharpen individual labels without a demonstrated gain in BIRDiE accuracy. Classifiers should be judged by the estimates they produce, including the consequences of missing labels",
+      "url": "https://arxiv.org/abs/2611.06550",
+      "published": "2026-11-04",
+      "venue": "arXiv",
+      "categories": [
+        "cs.CY"
+      ],
+      "pdf_url": "https://arxiv.org/pdf/2611.06550v1",
+      "doi": null,
+      "citations": 0,
+      "rule_score": 4.7,
+      "score": 8.235,
+      "tldr_zh": "比较三种LLM与七种传统工具从姓名推断人口特征，发现LLM准确率部分源于选择性标注并带来下游偏差。",
+      "tldr": null,
+      "tags": [
+        "文本计算",
+        "方法论",
+        "因果推断"
+      ],
+      "reason": "涉及数字痕迹中的人口属性测量偏差与下游统计影响，对计算社会科学测量方法有直接价值。",
+      "backfill_date": null
+    },
+    {
+      "id": "arxiv:2611.05750",
+      "source": "arxiv",
+      "title": "Follow or Surpass? Collaboration, Sound, and the Recognition of Influence in Lineages of Jazz Trumpet Players",
+      "authors": [
+        "Onur Tuncay Bal",
+        "Samuel Coavoux",
+        "Nathalia A. Loureiro",
+        "Balazs Vedres",
+        "Mark Wittek"
+      ],
+      "abstract": "Cultural fields cohere not only horizontally, through collaboration, but also vertically, through lineages of artistic influence. Considerable attention has been devoted to collaboration networks in various fields of creative production; however, we know less about the structure of artistic influence that is nevertheless key to individual artistic development and the evolution of genres. We examine the structure of such an influence network in a genealogy of 52 prominent jazz trumpet players, combining musicians' discographies, demographic characteristics, geographical locations, and audio analysis of more than 16,000 recordings with exponential random graph models. Direct collaboration, overlap in collaborators, and sonic context similarity, that is, the similarity of the recordings on which players appear, are each associated with an ascribed influence tie, net of the others. Not surprisingly, ascribed ties connect musicians whose recordings share a similar sonic context, but musicians also tend to collaborate with their influences and share collaborators with them. However, players whose recordings share a sonic context and who move in the same circle of collaborators can be thought of as peers or rivals, rather than as influences of each other, because lineage implies a succession predicated on difference as much as on continuity. Taken together, our findings suggest that a field's account of its own evolution is neither a record of who played together nor a map of shared sonic contexts, but a selective ordering that requires both. While our data do not permit a causal account, our aim is to provide a rich and varied methodological strategy and descriptive as well as inferential tools to understand the yet understudied vertical integration of cultural fields through influence ties.",
+      "url": "https://arxiv.org/abs/2611.05750",
+      "published": "2026-11-03",
+      "venue": "arXiv",
+      "categories": [
+        "cs.SI",
+        "stat.AP"
+      ],
+      "pdf_url": "https://arxiv.org/pdf/2611.05750v1",
+      "doi": null,
+      "citations": 0,
+      "rule_score": 8.3,
+      "score": 7.915,
+      "tldr_zh": "用唱片、人口、地理与音频数据构建52位爵士小号手的师承影响网络，以ERGM发现合作、合作者重叠与音色相似共同塑造影响力认可。",
+      "tldr": null,
+      "tags": [
+        "社会网络",
+        "数字痕迹",
+        "方法论"
+      ],
+      "reason": "文化影响网络的实证建模，涉及网络形成机制与ERGM方法，对社会网络分析读者有方法价值。",
+      "backfill_date": null
+    },
+    {
+      "id": "arxiv:2611.06756",
+      "source": "arxiv",
+      "title": "How Rich is the Rich-Club? Super Rich-Club Organization in Complex Networks",
+      "authors": [
+        "Lucía S. Ramirez",
+        "Laia Barjuan",
+        "M. Ángeles Serrano"
+      ],
+      "abstract": "The rich-club coefficient is used in complex networks to quantify the tendency of progressively higher-degree nodes to be more densely connected than expected by chance. However, it does not capture whether high degree nodes towards the core are actually more interconnected than the original network. Here, we jointly analyze the rich-club coefficient and an enrichment coefficient, which quantifies whether the internal average degree of progressively higher-degree subgraphs is greater than that of the original network, despite the decreasing number of nodes. We apply this framework to real and synthetic networks. Our results reveal three distinct regimes of core organization: rich-club organization without enrichment, enrichment without rich-club organization, and a combination of both, which we call Super Rich-Club organization. In the latter regime, high-degree nodes form cohesive and unusually dense cores that support efficient communication. Our results show that characterizing core organization across structural scales requires considering both relative density and internal connectivity, revealing a stronger form of core organization in real systems with implications for network structure, spectral properties that govern dynamical processes, and communicability.",
+      "url": "https://arxiv.org/abs/2611.06756",
+      "published": "2026-11-04",
+      "venue": "arXiv",
+      "categories": [
+        "physics.soc-ph",
+        "cond-mat.stat-mech"
+      ],
+      "pdf_url": "https://arxiv.org/pdf/2611.06756v1",
+      "doi": null,
+      "citations": 0,
+      "rule_score": 7.9,
+      "score": 7.895,
+      "tldr_zh": "联合分析rich-club系数与富集系数，在真实与合成网络中揭示三类核心组织模式，区分高阶节点是否真正更紧密互联。",
+      "tldr": null,
+      "tags": [
+        "复杂网络",
+        "方法论"
+      ],
+      "reason": "对复杂网络核心结构度量的改进，属网络科学基础方法贡献。",
+      "backfill_date": null
+    },
+    {
+      "id": "arxiv:2611.06529",
+      "source": "arxiv",
+      "title": "Emergent regularity of walking patterns: evidence from Swiss cities",
+      "authors": [
+        "Guo-Shiuan Lin",
+        "Martin Hendrick",
+        "Maider Llaguno-Munitxa",
+        "Gabriele Manoli"
+      ],
+      "abstract": "Human travel behaviour is characterised by high temporal and spatial regularity, as demonstrated by the Exploration and Preferential Return (EPR) mechanism, whereby individuals alternate between exploring new locations and preferentially returning to previously visited places. Yet, existing evidence is based on aggregated mobility data that cannot distinguish short trips or separate active mobility (i.e., walking and biking) from other mobility modes. This limits our ability to assess the benefits of walking activities and proximity-based policies such as the 15-minute city. Here, we analyse the spatial distribution and duration of walking habits of 1,318 participants, tracked during a 4-week time use survey in major Swiss cities - which are very close to the 15-minute city model. We find that walking activity is highly concentrated around individuals' home and work locations. These two attractors create walking patterns that are fundamentally different from other transport modes, which are instead used for longer trips and to connect home-workplace. We then introduce a dual-center EPR model, with empirically derived parameters, to simulate the decaying probability of walking away from the centers. Combining empirical data and the EPR framework, we find that groups with higher walking times show a stronger tendency to take long-distance walks and explore more destinations. In general, walking behavior reflects both individual circumstances and residential context: walking durations are shorter among people without a public transport pass, car owners, and residents of low-density rural areas. These findings provide a basis for more targeted assessments of walkability and active-mobility-oriented urban design.",
+      "url": "https://arxiv.org/abs/2611.06529",
+      "published": "2026-11-04",
+      "venue": "arXiv",
+      "categories": [
+        "physics.soc-ph"
+      ],
+      "pdf_url": "https://arxiv.org/pdf/2611.06529v1",
+      "doi": null,
+      "citations": 0,
+      "rule_score": 6.4,
+      "score": 7.82,
+      "tldr_zh": "分析瑞士主要城市1318人四周步行轨迹，发现步行模式呈现探索-优先返回的规律性，支持15分钟城市邻近性政策。",
+      "tldr": null,
+      "tags": [
+        "城市与流动",
+        "数字痕迹"
+      ],
+      "reason": "基于个体追踪数据的移动规律实证，属人类流动性与城市计算研究。",
+      "backfill_date": null
+    },
+    {
+      "id": "arxiv:2611.05951",
+      "source": "arxiv",
+      "title": "Community Search under Member-Specific Tolerances",
+      "authors": [
+        "Yanghao Liu",
+        "Fangda Guo",
+        "Yuxuan Zhang",
+        "Xueqi Cheng"
+      ],
+      "abstract": "We study community search when each vertex has its own tolerance for differences in position. For positions such as opinions or homes, a latitude-consistent community (LCC) contains the query vertex, is connected, has minimum degree at least k, and bounds its diameter by the smallest member tolerance. Motivated by social judgment theory, the bound exactly characterizes persistent acceptance of every interaction in a closed group under bounded-confidence dynamics with arbitrary positive weights. It also prevents rejection under social-judgment dynamics, whereas natural relaxations preserve neither guarantee. Finding a maximum LCC is NP-hard even in the plane, and with unbounded dimension, deciding whether an LCC exists is NP-complete for every fixed k >= 2. LatSweep turns the coupled bound into a sweep over the smallest tolerance, yielding two feasible heuristics, a (1,2)-bicriteria approximation and an exact branch-and-bound algorithm. Across eight graphs with up to 1.8 billion edges, the exact algorithm proves optimality on all but 9 of 3,700 efficiency queries and usually certifies absence within microseconds when no LCC exists. Its branch-and-bound solver proves more queries than a reimplemented maximum-(k,r)-core algorithm, a mixed-integer program and CP-SAT. In simulations, uneven influence disrupts initially accepted interactions in pairwise groups. Outside ties invalidate the guarantee for many real groups. On two location-based networks, tolerance-agnostic groups often place another member's home beyond a member's estimated travel radius; comparisons with spatial communities of the same size detect no co-visit loss from enforcing every member's tolerance.",
+      "url": "https://arxiv.org/abs/2611.05951",
+      "published": "2026-11-04",
+      "venue": "arXiv",
+      "categories": [
+        "cs.SI",
+        "cs.CC",
+        "cs.DB"
+      ],
+      "pdf_url": "https://arxiv.org/pdf/2611.05951v1",
+      "doi": null,
+      "citations": 0,
+      "rule_score": 6.2,
+      "score": 7.81,
+      "tldr_zh": "提出成员容忍度约束下的社区搜索问题，证明最大LCC求解NP难，并给出LatSweep算法。",
+      "tldr": null,
+      "tags": [
+        "社会网络",
+        "方法论",
+        "舆论与极化"
+      ],
+      "reason": "社区搜索与有界置信舆论动力学直接相关，属社会网络分析方法。",
+      "backfill_date": null
+    },
+    {
+      "id": "arxiv:2611.05730",
+      "source": "arxiv",
+      "title": "The Male Abstraction Bias in Internet Culture and Large Language Models",
+      "authors": [
+        "Douglas Guilbeault",
+        "Bhargav Srinivasa Desikan"
+      ],
+      "abstract": "Two foundational aspects of human cognition, abstractness and gender, are typically examined as separable. Here, we find they are systematically linked throughout the entire space of concepts spanning single (N = 40,000) and multi-word expressions (N = 67,000): across billions of words and millions of images on the internet -- and across numerous measurement techniques -- more abstract concepts are more associated with men, an effect which replicates in languages around the world. This pattern not only holds across conceptual domains, but it also maps onto grammatical structure: verbs and adverbs are more abstract and more male-coded, a system-wide trace of stereotypes accentuating agentic qualities in men. Furthermore, this bias emerges in human and AI responses in free association tasks, indicating its internalization and its algorithmic reproduction. The male abstraction bias may underlie and unify a range of stereotypes, evidencing gender as a core organizing dimension in conceptual space.",
+      "url": "https://arxiv.org/abs/2611.05730",
+      "published": "2026-11-03",
+      "venue": "arXiv",
+      "categories": [
+        "cs.CY",
+        "cs.CL",
+        "cs.HC"
+      ],
+      "pdf_url": "https://arxiv.org/pdf/2611.05730v1",
+      "doi": null,
+      "citations": 0,
+      "rule_score": 4.7,
+      "score": 7.735,
+      "tldr_zh": "分析数十亿词与数百万图像，发现抽象概念更关联男性，该偏差跨语言复现并出现在LLM自由联想中。",
       "tldr": null,
       "tags": [
         "文本计算",
         "在线平台"
       ],
-      "reason": "大规模多语言媒体框架计算分析，与在线平台政策舆论相关。",
+      "reason": "大规模互联网文本与图像中的性别刻板印象测量，属计算社会科学文化分析议题。",
       "backfill_date": null
     },
     {
-      "id": "arxiv:2611.04346",
+      "id": "arxiv:2611.06289",
       "source": "arxiv",
-      "title": "Trail systems self-organize through individual route optimization",
+      "title": "AGORA cities: the hidden infrastructure shaping urban fragility",
       "authors": [
-        "Brendan Wallace",
-        "Andrew Berdahl"
+        "Eleonora Andreotti",
+        "Munazza Usmani",
+        "Alice Barsanti",
+        "Maurizio Napolitano"
       ],
-      "abstract": "As animals, including humans, walk, they compact the vegetation and ground beneath them, reducing the cost of movement for subsequent travelers. From this positive feedback emerge networks of trails which allow for efficient movement and store generational-scale information about the environment. Models simulating this process show how individuals following local cues produce trail systems with many of the features of real-world networks. However, little has been done to investigate walkers with more complete knowledge of their environment and the abilities to plan their behavior intelligently. Here we introduce a simple general model for trail formation, based on minimizing cost of movement by individuals. As in real environments, our simulations produce a striking variety of complex trail networks. We show that these trail systems optimally connect space according to the spatial needs of the walkers, that the geometry of those trail systems matches theoretical predictions and that the systems they generate may fall into multiple attracting states. As technological advances allow us to quantify trail systems across diverse habitats and species, our model provides a theoretical foundation for empirical research on animal trails and for understanding the emergence of human transportation networks, with implications for urban design.",
-      "url": "https://arxiv.org/abs/2611.04346",
-      "published": "2026-11-03",
+      "abstract": "Urban services are unevenly distributed across the city, yet it is unclear when their joint presence signals fragility and when it instead outlines a neighbourhood's vocation. For Bologna and Florence, we integrate Foursquare and OpenStreetMap points of interest with Sentinel-2-derived green indicators based on the 3-30-300 rule, cluster urban areas accordingly, and benchmark the clusters against the demographic, social, economic and composite fragility indices produced by the municipal statistical offices, which are exogenous to the analysis. In both cities, we identify a subset of infrastructures, termed AGORA (Arts, Green environments, and Open Routes for Access and mobility), whose joint provision is associated with lower fragility. The AGORA Alignment score (AA), based on the rank correlation between AGORA endowment and composite fragility, indicates full alignment in Florence (AA = 1.00) and strong but incomplete alignment in Bologna (AA = 0.80). The remaining service categories instead show wide and heterogeneous distributions: they differentiate areas without tracking fragility and can be interpreted as expressions of urban vocations. The least fragile cluster, the only one with full AGORA endowment, hosts just 3.3% of residents in Bologna and 6.3% in Florence. The framework offers a procedure transferable to other contexts and identifies the expansion of AGORA infrastructures as a candidate lever for reducing fragility without altering existing vocations.",
+      "url": "https://arxiv.org/abs/2611.06289",
+      "published": "2026-11-04",
       "venue": "arXiv",
       "categories": [
-        "nlin.AO",
-        "q-bio.QM"
+        "physics.soc-ph"
       ],
-      "pdf_url": "https://arxiv.org/pdf/2611.04346v1",
+      "pdf_url": "https://arxiv.org/pdf/2611.06289v1",
       "doi": null,
       "citations": 0,
-      "rule_score": 4.2,
-      "score": 7.21,
-      "tldr_zh": "构建个体路径成本最小化的通用模型，仿真再现真实小径网络的多样复杂结构。",
+      "rule_score": 7.9,
+      "score": 7.395,
+      "tldr_zh": "整合Foursquare、OSM兴趣点与绿地指标对博洛尼亚和佛罗伦萨城市区域聚类，发现艺术、绿地与可达路径等设施共现与较低城市脆弱性相关。",
       "tldr": null,
       "tags": [
-        "仿真与ABM",
-        "复杂网络",
-        "城市与流动"
+        "城市与流动",
+        "数字痕迹"
       ],
-      "reason": "基于智能体仿真生成路径网络，直接关联复杂网络形成与人类流动建模。",
+      "reason": "用数字痕迹刻画城市设施空间结构与脆弱性，属计算社会科学城市研究方向。",
       "backfill_date": null
     },
     {
-      "id": "arxiv:2611.03993",
+      "id": "arxiv:2611.06393",
       "source": "arxiv",
-      "title": "Whose startup does the AI back? An algorithm audit of reputation and demographic signals in LLM-assisted crowdfunding",
+      "title": "A Cracked Mirror: How People Perceive Gender Performance by Large Language Models",
       "authors": [
-        "Mirza Samad Ahmed Baig",
-        "Syeda Anshrah Gillani"
+        "Faezeh Fadaei",
+        "Jenny Carla Moran",
+        "Taha Yasseri"
       ],
-      "abstract": "Large language model (LLM) assistants increasingly advise backers on which crowdfunding campaigns to support. LLMs have known race and gender problems, and it is unsettled whether they reproduce, erase, or reverse the discrimination documented in entrepreneurial finance. We ask when, and through which decision process, LLM assistants use founders' gender and ethnicity. In a pre-specified choice-based conjoint experiment, seven LLMs chose among five synthetic campaigns with independently randomized quality signals and founder names, under three backer personas and a persona-free control (40,248 responses). By default, founder names barely matter: under budget-conscious and delivery-focused personas, gender and Black-name effects are statistically equivalent to zero. When the backer wants to support underrepresented creators, the models favor Black-signaled (+8.1 percentage points; positive in all seven models) and female-signaled (+5.1) founders. They do so most strongly among near-tied campaigns and for the founder who alone carries the signal, and they almost never name gender or ethnicity in their reasons. The results fit an agency account of algorithmic discrimination: an aligned assistant takes its demographic preferences from its user rather than from its training data.",
-      "url": "https://arxiv.org/abs/2611.03993",
-      "published": "2026-11-02",
+      "abstract": "How do large language models (LLMs) perform gender under zero-shot prompting, and how do people interpret those performances in conversation? Drawing on gender performativity, we examine how gendered meanings emerge through generated language, conversational context and human interpretation. In a preregistered randomised online experiment, 1,060 participants each had five short conversations with an LLM. We used minimal prompts to elicit performances from \"very masculine\" to \"very feminine\" and asked participants to rate their partner's perceived gender after each conversation. Mean ratings shifted in the direction of the prompts, but ratings at the extremes were closer to the midpoint than the prompt labels implied. When prompted to perform as \"neither masculine nor feminine\", the models were perceived as slightly masculine on average. Ratings varied across models and conversation topics. Women and men gave similar ratings at the extremes, but women rated the models as more masculine across the intermediate prompt levels. Participants' explanations illustrate how they drew on writing style, emotional expression and conversational interests, sometimes questioning the stereotypes behind their judgements. These findings suggest that conversational AI acts as a cracked mirror of gender norms. Models reproduce recognisable cues, and people interpret and sometimes challenge the meanings those cues carry.",
+      "url": "https://arxiv.org/abs/2611.06393",
+      "published": "2026-11-04",
       "venue": "arXiv",
       "categories": [
-        "cs.CL",
-        "cs.AI",
-        "cs.CY",
-        "cs.ET"
+        "physics.soc-ph",
+        "cs.HC"
       ],
-      "pdf_url": "https://arxiv.org/pdf/2611.03993v1",
-      "doi": "10.1016/j.jbvi.2026.e00682",
+      "pdf_url": "https://arxiv.org/pdf/2611.06393v1",
+      "doi": null,
       "citations": 0,
-      "rule_score": 3.7,
-      "score": 7.185,
-      "tldr_zh": "对七个LLM做众筹选择联合实验，发现默认情形下创始人性别与族裔影响甚微。",
+      "rule_score": 7.4,
+      "score": 7.37,
+      "tldr_zh": "1060人预注册在线实验与LLM进行五轮对话，发现模型性别表现随提示偏移但极端值趋中，人对性别感知受对话语境影响。",
       "tldr": null,
       "tags": [
         "LLM智能体",
         "实验",
-        "方法论"
+        "在线平台"
       ],
-      "reason": "用预注册联合实验审计LLM决策中的群体偏见，属计算社会科学算法审计。",
-      "backfill_date": null
-    },
-    {
-      "id": "arxiv:2611.03935",
-      "source": "arxiv",
-      "title": "Labtune: Treating Lab Organization and Information Sharing as Experimental Variables in LLM-Agent Discovery",
-      "authors": [
-        "Goran Mitevski"
-      ],
-      "abstract": "De-siloing can create groupthink; silos can prevent knowledge sharing and reduce research efficiency. The same tension appears in research systems built with large language model (LLM) agents, yet their organization is usually fixed by design. I propose treating laboratory structure and information sharing as experimental variables. I introduce Labtune, an open framework for bounded research workflows with user-selected laboratory organization, communication policy, model configuration and budget. Users can choose among six editable designs, from multidisciplinary silos and transdisciplinary teams to co-leaders, hub-and-spoke structures, flat co-labs and a single scientist. Information sharing can independently vary from none to high detail, with an optional channel for conditional abstractions called wisdom. Sharing is enforced by the controller at phase barriers rather than through unrestricted agent chat, while delegation does not create additional budget or permissions. Development evidence is separated from protected confirmation, and an optional multi-lab layer allows laboratories with different structures to exchange filtered information. Labtune is an idea and system-description paper, not a benchmark result. Its contribution is to make laboratory organization and information sharing configurable and measurable under matched budgets. I do not claim that one design or level of sharing is best; the aim is to create a concrete experimental space in which those differences can be tested.",
-      "url": "https://arxiv.org/abs/2611.03935",
-      "published": "2026-11-02",
-      "venue": "arXiv",
-      "categories": [
-        "physics.soc-ph",
-        "cs.MA"
-      ],
-      "pdf_url": "https://arxiv.org/pdf/2611.03935v1",
-      "doi": null,
-      "citations": 0,
-      "rule_score": 5.7,
-      "score": 6.285,
-      "tldr_zh": "提出Labtune框架，把实验室组织结构与信息共享设为LLM智能体科研流程的可调实验变量。",
-      "tldr": null,
-      "tags": [
-        "LLM智能体",
-        "实验"
-      ],
-      "reason": "涉及LLM智能体组织与信息共享，但偏科研流程设计，社会网络关联边缘。",
+      "reason": "LLM行为与人类感知的在线实验，涉及LLM智能体社会属性与实验方法。",
       "backfill_date": null
     }
   ]

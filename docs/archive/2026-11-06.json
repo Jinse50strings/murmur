@@ -1,0 +1,340 @@
+{
+  "app": "Murmur",
+  "version": 1,
+  "date": "2026-11-06",
+  "generated_at": "2026-11-06T06:13:07+08:00",
+  "count": 10,
+  "counts": {
+    "sources": {
+      "arxiv": 93,
+      "openalex": 0
+    },
+    "unique": 93,
+    "new": 79,
+    "candidates": 24,
+    "selected": 10,
+    "fresh_selected": 10,
+    "errors": 1
+  },
+  "papers": [
+    {
+      "id": "arxiv:2611.06639",
+      "source": "arxiv",
+      "title": "Replicability, Reproducibility, and Robustness in Political and Social Science Research with Large Language Models",
+      "authors": [
+        "Joan C. Timoneda",
+        "Sebastián Vallejo Vera"
+      ],
+      "abstract": "This chapter addresses the central reproducibility problem of research with large language models. LLM output is probabilistic and varies across models and versions, which can have significant effects on downstream statistical results. The chapter distinguishes between replicability, reproducibility, and robustness, and proposes a probabilistic standard based on the distribution of results, not identical outputs. It introduces a standardized prompt script, tests within-model variation for encoders and decoders, and develops error-structure analysis to diagnose where models err and whether their errors align. Using three datasets, the chapter shows that measurement choice can reverse the sign of downstream regression coefficients. Existing design-based corrections with gold-labeled subsamples restore validity, but come at the cost of estimate precision. The main contribution of the chapter is a stacked ensemble of open-weight models that improves precision in the correction step while retaining estimate validity.",
+      "url": "https://arxiv.org/abs/2611.06639",
+      "published": "2026-11-04",
+      "venue": "arXiv",
+      "categories": [
+        "cs.CL",
+        "cs.CY"
+      ],
+      "pdf_url": "https://arxiv.org/pdf/2611.06639v1",
+      "doi": null,
+      "citations": 0,
+      "rule_score": 5.2,
+      "score": 8.76,
+      "tldr_zh": "提出LLM研究可复现性框架，区分可复制、可复现与稳健性，发现测量选择可反转回归系数符号。",
+      "tldr": null,
+      "tags": [
+        "方法论",
+        "LLM智能体",
+        "文本计算"
+      ],
+      "reason": "直接关乎用LLM做社会科学测量的可复现性与下游统计稳健性，方法论价值高。",
+      "backfill_date": null
+    },
+    {
+      "id": "arxiv:2611.06572",
+      "source": "arxiv",
+      "title": "Does Personality Persuade? Investigating Personality Trait Prompting and Persuasion in Large Language Models",
+      "authors": [
+        "Ruben Boone",
+        "Gilles Eerlings",
+        "Sebe Vanbrabant",
+        "Davy Vanacken",
+        "Kris Luyten"
+      ],
+      "abstract": "Large language models (LLMs) can be prompted to express different personality profiles, but it remains unclear how reliably they do so or whether personality affects their persuasiveness. We investigate these questions in two evaluations. First, we assess Big Five personality prompting using the IPIP-NEO-120, examining reproducibility, trait controllability, cross-trait effects, and unconditioned model profiles. Second, we conduct a within-subjects user study (N=32) in which participants discuss moral dilemmas with LLM agents whose personalities are aligned, mismatched, neutral, or unconditioned. We find that prompted profiles can be reproducible and responsive to requested traits, although controllability varies across models and changes to one trait can affect others. Unconditioned models also exhibit systematic personality profiles rather than neutral baselines. In the user study, personality alignment did not significantly affect perceived persuasiveness, stance switching, or confidence changes. Participants switched their initial stance in only 8 of 128 conversations, while confidence changes were more common. Participants' Big Five traits were not significantly associated with susceptibility to persuasion, but higher self-reported AI persuasion literacy was associated with less frequent confidence changes. Exploratory analysis showed that logical appeals dominated agent messages. These findings distinguish technical control over prompted LLM personality from observable influence on users and motivate evaluating persuasive interactions beyond explicit changes in decisions.",
+      "url": "https://arxiv.org/abs/2611.06572",
+      "published": "2026-11-04",
+      "venue": "arXiv",
+      "categories": [
+        "cs.CY"
+      ],
+      "pdf_url": "https://arxiv.org/pdf/2611.06572v1",
+      "doi": null,
+      "citations": 0,
+      "rule_score": 5.4,
+      "score": 8.27,
+      "tldr_zh": "检验LLM大五人格提示的可控性，并用32人实验发现人格设定影响其说服效果。",
+      "tldr": null,
+      "tags": [
+        "LLM智能体",
+        "实验",
+        "舆论与极化"
+      ],
+      "reason": "LLM智能体人格与说服的用户实验，直接关联计算社会科学与舆论研究。",
+      "backfill_date": null
+    },
+    {
+      "id": "arxiv:2611.06550",
+      "source": "arxiv",
+      "title": "Who Gets Counted? Large Language Models, Informative Refusal, and Downstream Bias in Name-Based Demographic Classification",
+      "authors": [
+        "Christian Pipal",
+        "Morgan Wack",
+        "Eva-Maria Vogel"
+      ],
+      "abstract": "Researchers routinely infer gender, race, and ethnicity from names, yet the standard tools used for this task misclassify the groups that diversity research most needs to measure. Large language models (LLMs) have been proposed as a remedy because they label diverse names accurately. We ask whether that accuracy carries over to the estimates researchers report. Across 10,000 Chinese names, 19,998 North Carolina voters with self-reported race, and 300 political science authors with human reference codes, we compare three LLMs with seven traditional tools and link the voter sample to party registration and age. Selective labeling explains part of the LLMs' accuracy advantage. Claude Haiku labels half of the voters, and a traditional tool limited to its most confident half is more accurate. Hard labels from every tool understate the White--Black gap in Democratic registration by 36% to 65%, while BIRDiE estimation on BISG posteriors comes within 0.03 of it. Haiku's missing labels select on age, inflating the age gap by six years. Combined with BISG, LLM answers sharpen individual labels without a demonstrated gain in BIRDiE accuracy. Classifiers should be judged by the estimates they produce, including the consequences of missing labels",
+      "url": "https://arxiv.org/abs/2611.06550",
+      "published": "2026-11-04",
+      "venue": "arXiv",
+      "categories": [
+        "cs.CY"
+      ],
+      "pdf_url": "https://arxiv.org/pdf/2611.06550v1",
+      "doi": null,
+      "citations": 0,
+      "rule_score": 4.7,
+      "score": 8.235,
+      "tldr_zh": "比较三种LLM与七种传统工具从姓名推断人口特征，发现LLM准确率部分源于选择性标注并带来下游偏差。",
+      "tldr": null,
+      "tags": [
+        "文本计算",
+        "方法论",
+        "因果推断"
+      ],
+      "reason": "涉及数字痕迹中的人口属性测量偏差与下游统计影响，对计算社会科学测量方法有直接价值。",
+      "backfill_date": null
+    },
+    {
+      "id": "arxiv:2611.05750",
+      "source": "arxiv",
+      "title": "Follow or Surpass? Collaboration, Sound, and the Recognition of Influence in Lineages of Jazz Trumpet Players",
+      "authors": [
+        "Onur Tuncay Bal",
+        "Samuel Coavoux",
+        "Nathalia A. Loureiro",
+        "Balazs Vedres",
+        "Mark Wittek"
+      ],
+      "abstract": "Cultural fields cohere not only horizontally, through collaboration, but also vertically, through lineages of artistic influence. Considerable attention has been devoted to collaboration networks in various fields of creative production; however, we know less about the structure of artistic influence that is nevertheless key to individual artistic development and the evolution of genres. We examine the structure of such an influence network in a genealogy of 52 prominent jazz trumpet players, combining musicians' discographies, demographic characteristics, geographical locations, and audio analysis of more than 16,000 recordings with exponential random graph models. Direct collaboration, overlap in collaborators, and sonic context similarity, that is, the similarity of the recordings on which players appear, are each associated with an ascribed influence tie, net of the others. Not surprisingly, ascribed ties connect musicians whose recordings share a similar sonic context, but musicians also tend to collaborate with their influences and share collaborators with them. However, players whose recordings share a sonic context and who move in the same circle of collaborators can be thought of as peers or rivals, rather than as influences of each other, because lineage implies a succession predicated on difference as much as on continuity. Taken together, our findings suggest that a field's account of its own evolution is neither a record of who played together nor a map of shared sonic contexts, but a selective ordering that requires both. While our data do not permit a causal account, our aim is to provide a rich and varied methodological strategy and descriptive as well as inferential tools to understand the yet understudied vertical integration of cultural fields through influence ties.",
+      "url": "https://arxiv.org/abs/2611.05750",
+      "published": "2026-11-03",
+      "venue": "arXiv",
+      "categories": [
+        "cs.SI",
+        "stat.AP"
+      ],
+      "pdf_url": "https://arxiv.org/pdf/2611.05750v1",
+      "doi": null,
+      "citations": 0,
+      "rule_score": 8.3,
+      "score": 7.915,
+      "tldr_zh": "用唱片、人口、地理与音频数据构建52位爵士小号手的师承影响网络，以ERGM发现合作、合作者重叠与音色相似共同塑造影响力认可。",
+      "tldr": null,
+      "tags": [
+        "社会网络",
+        "数字痕迹",
+        "方法论"
+      ],
+      "reason": "文化影响网络的实证建模，涉及网络形成机制与ERGM方法，对社会网络分析读者有方法价值。",
+      "backfill_date": null
+    },
+    {
+      "id": "arxiv:2611.06756",
+      "source": "arxiv",
+      "title": "How Rich is the Rich-Club? Super Rich-Club Organization in Complex Networks",
+      "authors": [
+        "Lucía S. Ramirez",
+        "Laia Barjuan",
+        "M. Ángeles Serrano"
+      ],
+      "abstract": "The rich-club coefficient is used in complex networks to quantify the tendency of progressively higher-degree nodes to be more densely connected than expected by chance. However, it does not capture whether high degree nodes towards the core are actually more interconnected than the original network. Here, we jointly analyze the rich-club coefficient and an enrichment coefficient, which quantifies whether the internal average degree of progressively higher-degree subgraphs is greater than that of the original network, despite the decreasing number of nodes. We apply this framework to real and synthetic networks. Our results reveal three distinct regimes of core organization: rich-club organization without enrichment, enrichment without rich-club organization, and a combination of both, which we call Super Rich-Club organization. In the latter regime, high-degree nodes form cohesive and unusually dense cores that support efficient communication. Our results show that characterizing core organization across structural scales requires considering both relative density and internal connectivity, revealing a stronger form of core organization in real systems with implications for network structure, spectral properties that govern dynamical processes, and communicability.",
+      "url": "https://arxiv.org/abs/2611.06756",
+      "published": "2026-11-04",
+      "venue": "arXiv",
+      "categories": [
+        "physics.soc-ph",
+        "cond-mat.stat-mech"
+      ],
+      "pdf_url": "https://arxiv.org/pdf/2611.06756v1",
+      "doi": null,
+      "citations": 0,
+      "rule_score": 7.9,
+      "score": 7.895,
+      "tldr_zh": "联合分析rich-club系数与富集系数，在真实与合成网络中揭示三类核心组织模式，区分高阶节点是否真正更紧密互联。",
+      "tldr": null,
+      "tags": [
+        "复杂网络",
+        "方法论"
+      ],
+      "reason": "对复杂网络核心结构度量的改进，属网络科学基础方法贡献。",
+      "backfill_date": null
+    },
+    {
+      "id": "arxiv:2611.06529",
+      "source": "arxiv",
+      "title": "Emergent regularity of walking patterns: evidence from Swiss cities",
+      "authors": [
+        "Guo-Shiuan Lin",
+        "Martin Hendrick",
+        "Maider Llaguno-Munitxa",
+        "Gabriele Manoli"
+      ],
+      "abstract": "Human travel behaviour is characterised by high temporal and spatial regularity, as demonstrated by the Exploration and Preferential Return (EPR) mechanism, whereby individuals alternate between exploring new locations and preferentially returning to previously visited places. Yet, existing evidence is based on aggregated mobility data that cannot distinguish short trips or separate active mobility (i.e., walking and biking) from other mobility modes. This limits our ability to assess the benefits of walking activities and proximity-based policies such as the 15-minute city. Here, we analyse the spatial distribution and duration of walking habits of 1,318 participants, tracked during a 4-week time use survey in major Swiss cities - which are very close to the 15-minute city model. We find that walking activity is highly concentrated around individuals' home and work locations. These two attractors create walking patterns that are fundamentally different from other transport modes, which are instead used for longer trips and to connect home-workplace. We then introduce a dual-center EPR model, with empirically derived parameters, to simulate the decaying probability of walking away from the centers. Combining empirical data and the EPR framework, we find that groups with higher walking times show a stronger tendency to take long-distance walks and explore more destinations. In general, walking behavior reflects both individual circumstances and residential context: walking durations are shorter among people without a public transport pass, car owners, and residents of low-density rural areas. These findings provide a basis for more targeted assessments of walkability and active-mobility-oriented urban design.",
+      "url": "https://arxiv.org/abs/2611.06529",
+      "published": "2026-11-04",
+      "venue": "arXiv",
+      "categories": [
+        "physics.soc-ph"
+      ],
+      "pdf_url": "https://arxiv.org/pdf/2611.06529v1",
+      "doi": null,
+      "citations": 0,
+      "rule_score": 6.4,
+      "score": 7.82,
+      "tldr_zh": "分析瑞士主要城市1318人四周步行轨迹，发现步行模式呈现探索-优先返回的规律性，支持15分钟城市邻近性政策。",
+      "tldr": null,
+      "tags": [
+        "城市与流动",
+        "数字痕迹"
+      ],
+      "reason": "基于个体追踪数据的移动规律实证，属人类流动性与城市计算研究。",
+      "backfill_date": null
+    },
+    {
+      "id": "arxiv:2611.05951",
+      "source": "arxiv",
+      "title": "Community Search under Member-Specific Tolerances",
+      "authors": [
+        "Yanghao Liu",
+        "Fangda Guo",
+        "Yuxuan Zhang",
+        "Xueqi Cheng"
+      ],
+      "abstract": "We study community search when each vertex has its own tolerance for differences in position. For positions such as opinions or homes, a latitude-consistent community (LCC) contains the query vertex, is connected, has minimum degree at least k, and bounds its diameter by the smallest member tolerance. Motivated by social judgment theory, the bound exactly characterizes persistent acceptance of every interaction in a closed group under bounded-confidence dynamics with arbitrary positive weights. It also prevents rejection under social-judgment dynamics, whereas natural relaxations preserve neither guarantee. Finding a maximum LCC is NP-hard even in the plane, and with unbounded dimension, deciding whether an LCC exists is NP-complete for every fixed k >= 2. LatSweep turns the coupled bound into a sweep over the smallest tolerance, yielding two feasible heuristics, a (1,2)-bicriteria approximation and an exact branch-and-bound algorithm. Across eight graphs with up to 1.8 billion edges, the exact algorithm proves optimality on all but 9 of 3,700 efficiency queries and usually certifies absence within microseconds when no LCC exists. Its branch-and-bound solver proves more queries than a reimplemented maximum-(k,r)-core algorithm, a mixed-integer program and CP-SAT. In simulations, uneven influence disrupts initially accepted interactions in pairwise groups. Outside ties invalidate the guarantee for many real groups. On two location-based networks, tolerance-agnostic groups often place another member's home beyond a member's estimated travel radius; comparisons with spatial communities of the same size detect no co-visit loss from enforcing every member's tolerance.",
+      "url": "https://arxiv.org/abs/2611.05951",
+      "published": "2026-11-04",
+      "venue": "arXiv",
+      "categories": [
+        "cs.SI",
+        "cs.CC",
+        "cs.DB"
+      ],
+      "pdf_url": "https://arxiv.org/pdf/2611.05951v1",
+      "doi": null,
+      "citations": 0,
+      "rule_score": 6.2,
+      "score": 7.81,
+      "tldr_zh": "提出成员容忍度约束下的社区搜索问题，证明最大LCC求解NP难，并给出LatSweep算法。",
+      "tldr": null,
+      "tags": [
+        "社会网络",
+        "方法论",
+        "舆论与极化"
+      ],
+      "reason": "社区搜索与有界置信舆论动力学直接相关，属社会网络分析方法。",
+      "backfill_date": null
+    },
+    {
+      "id": "arxiv:2611.05730",
+      "source": "arxiv",
+      "title": "The Male Abstraction Bias in Internet Culture and Large Language Models",
+      "authors": [
+        "Douglas Guilbeault",
+        "Bhargav Srinivasa Desikan"
+      ],
+      "abstract": "Two foundational aspects of human cognition, abstractness and gender, are typically examined as separable. Here, we find they are systematically linked throughout the entire space of concepts spanning single (N = 40,000) and multi-word expressions (N = 67,000): across billions of words and millions of images on the internet -- and across numerous measurement techniques -- more abstract concepts are more associated with men, an effect which replicates in languages around the world. This pattern not only holds across conceptual domains, but it also maps onto grammatical structure: verbs and adverbs are more abstract and more male-coded, a system-wide trace of stereotypes accentuating agentic qualities in men. Furthermore, this bias emerges in human and AI responses in free association tasks, indicating its internalization and its algorithmic reproduction. The male abstraction bias may underlie and unify a range of stereotypes, evidencing gender as a core organizing dimension in conceptual space.",
+      "url": "https://arxiv.org/abs/2611.05730",
+      "published": "2026-11-03",
+      "venue": "arXiv",
+      "categories": [
+        "cs.CY",
+        "cs.CL",
+        "cs.HC"
+      ],
+      "pdf_url": "https://arxiv.org/pdf/2611.05730v1",
+      "doi": null,
+      "citations": 0,
+      "rule_score": 4.7,
+      "score": 7.735,
+      "tldr_zh": "分析数十亿词与数百万图像，发现抽象概念更关联男性，该偏差跨语言复现并出现在LLM自由联想中。",
+      "tldr": null,
+      "tags": [
+        "文本计算",
+        "在线平台"
+      ],
+      "reason": "大规模互联网文本与图像中的性别刻板印象测量，属计算社会科学文化分析议题。",
+      "backfill_date": null
+    },
+    {
+      "id": "arxiv:2611.06289",
+      "source": "arxiv",
+      "title": "AGORA cities: the hidden infrastructure shaping urban fragility",
+      "authors": [
+        "Eleonora Andreotti",
+        "Munazza Usmani",
+        "Alice Barsanti",
+        "Maurizio Napolitano"
+      ],
+      "abstract": "Urban services are unevenly distributed across the city, yet it is unclear when their joint presence signals fragility and when it instead outlines a neighbourhood's vocation. For Bologna and Florence, we integrate Foursquare and OpenStreetMap points of interest with Sentinel-2-derived green indicators based on the 3-30-300 rule, cluster urban areas accordingly, and benchmark the clusters against the demographic, social, economic and composite fragility indices produced by the municipal statistical offices, which are exogenous to the analysis. In both cities, we identify a subset of infrastructures, termed AGORA (Arts, Green environments, and Open Routes for Access and mobility), whose joint provision is associated with lower fragility. The AGORA Alignment score (AA), based on the rank correlation between AGORA endowment and composite fragility, indicates full alignment in Florence (AA = 1.00) and strong but incomplete alignment in Bologna (AA = 0.80). The remaining service categories instead show wide and heterogeneous distributions: they differentiate areas without tracking fragility and can be interpreted as expressions of urban vocations. The least fragile cluster, the only one with full AGORA endowment, hosts just 3.3% of residents in Bologna and 6.3% in Florence. The framework offers a procedure transferable to other contexts and identifies the expansion of AGORA infrastructures as a candidate lever for reducing fragility without altering existing vocations.",
+      "url": "https://arxiv.org/abs/2611.06289",
+      "published": "2026-11-04",
+      "venue": "arXiv",
+      "categories": [
+        "physics.soc-ph"
+      ],
+      "pdf_url": "https://arxiv.org/pdf/2611.06289v1",
+      "doi": null,
+      "citations": 0,
+      "rule_score": 7.9,
+      "score": 7.395,
+      "tldr_zh": "整合Foursquare、OSM兴趣点与绿地指标对博洛尼亚和佛罗伦萨城市区域聚类，发现艺术、绿地与可达路径等设施共现与较低城市脆弱性相关。",
+      "tldr": null,
+      "tags": [
+        "城市与流动",
+        "数字痕迹"
+      ],
+      "reason": "用数字痕迹刻画城市设施空间结构与脆弱性，属计算社会科学城市研究方向。",
+      "backfill_date": null
+    },
+    {
+      "id": "arxiv:2611.06393",
+      "source": "arxiv",
+      "title": "A Cracked Mirror: How People Perceive Gender Performance by Large Language Models",
+      "authors": [
+        "Faezeh Fadaei",
+        "Jenny Carla Moran",
+        "Taha Yasseri"
+      ],
+      "abstract": "How do large language models (LLMs) perform gender under zero-shot prompting, and how do people interpret those performances in conversation? Drawing on gender performativity, we examine how gendered meanings emerge through generated language, conversational context and human interpretation. In a preregistered randomised online experiment, 1,060 participants each had five short conversations with an LLM. We used minimal prompts to elicit performances from \"very masculine\" to \"very feminine\" and asked participants to rate their partner's perceived gender after each conversation. Mean ratings shifted in the direction of the prompts, but ratings at the extremes were closer to the midpoint than the prompt labels implied. When prompted to perform as \"neither masculine nor feminine\", the models were perceived as slightly masculine on average. Ratings varied across models and conversation topics. Women and men gave similar ratings at the extremes, but women rated the models as more masculine across the intermediate prompt levels. Participants' explanations illustrate how they drew on writing style, emotional expression and conversational interests, sometimes questioning the stereotypes behind their judgements. These findings suggest that conversational AI acts as a cracked mirror of gender norms. Models reproduce recognisable cues, and people interpret and sometimes challenge the meanings those cues carry.",
+      "url": "https://arxiv.org/abs/2611.06393",
+      "published": "2026-11-04",
+      "venue": "arXiv",
+      "categories": [
+        "physics.soc-ph",
+        "cs.HC"
+      ],
+      "pdf_url": "https://arxiv.org/pdf/2611.06393v1",
+      "doi": null,
+      "citations": 0,
+      "rule_score": 7.4,
+      "score": 7.37,
+      "tldr_zh": "1060人预注册在线实验与LLM进行五轮对话，发现模型性别表现随提示偏移但极端值趋中，人对性别感知受对话语境影响。",
+      "tldr": null,
+      "tags": [
+        "LLM智能体",
+        "实验",
+        "在线平台"
+      ],
+      "reason": "LLM行为与人类感知的在线实验，涉及LLM智能体社会属性与实验方法。",
+      "backfill_date": null
+    }
+  ]
+}
