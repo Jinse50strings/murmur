@@ -1,341 +1,47 @@
 {
   "app": "Murmur",
   "version": 1,
-  "date": "2026-11-12",
-  "generated_at": "2026-11-12T06:56:51+08:00",
-  "count": 10,
+  "date": "2026-11-13",
+  "generated_at": "2026-11-13T06:25:03+08:00",
+  "count": 1,
   "counts": {
     "sources": {
-      "arxiv": 92,
-      "openalex": 74
+      "arxiv": 37,
+      "openalex": 156
     },
-    "unique": 166,
-    "new": 142,
-    "candidates": 22,
-    "selected": 10,
-    "fresh_selected": 10,
+    "unique": 193,
+    "new": 168,
+    "candidates": 2,
+    "selected": 1,
+    "fresh_selected": 1,
     "errors": 0
   },
   "papers": [
     {
-      "id": "arxiv:2611.13919",
-      "source": "arxiv",
-      "title": "EAGLE: Early Identification of Information Propagation Sources through Generalized Bayesian Inference in Large-scale Social Networks",
-      "authors": [
-        "Tao Wen",
-        "Yu-wang Chen",
-        "Jie Zhao",
-        "Changchun Pan",
-        "Tahir Abbas Syed",
-        "Yong-Yeol Ahn",
-        "Kang Hao Cheong"
-      ],
-      "abstract": "In the era of infodemics, rapidly pinpointing information propagation sources is essential for mitigating negative impacts and enhancing societal resilience. This study presents EAGLE (Early identificAtion of propagation sources through GeneraLized Bayesian infErence), a novel and effective framework for early source identification in large-scale social networks, which integrates evolutionary computation to strategically deploy sparse observers with generalized Bayesian inference to aggregate observational data of varying credibility. Unlike existing approaches, our method relies on limited input from human observers and explicitly incorporates the uncertainty and noise of the data. Comprehensive evaluations across diverse networks and propagation scenarios demonstrate that our approach consistently surpasses state-of-the-art models, without relying on assumptions about propagation characteristics or user attributes. Utilizing real-world datasets with empirical propagation paths from Twitter, our method is among the first capable of identifying potential sources in large-scale networks using limited observers, demonstrating its broad applicability. These findings highlight the effectiveness of generalized Bayesian inference in uncovering propagation dynamics and equip organizations and policymakers with critical tools to proactively address threats to digital trust and security.",
-      "url": "https://arxiv.org/abs/2611.13919",
-      "published": "2026-11-10",
-      "venue": "arXiv",
-      "categories": [
-        "cs.SI"
-      ],
-      "pdf_url": "https://arxiv.org/pdf/2611.13919v1",
-      "doi": null,
-      "citations": 0,
-      "rule_score": 7.2,
-      "score": 8.36,
-      "tldr_zh": "提出EAGLE框架，用稀疏观察者与广义贝叶斯推断在大规模社交网络中早期定位信息传播源，显式建模观测噪声与不确定性。",
-      "tldr": null,
-      "tags": [
-        "扩散与传播",
-        "社会网络",
-        "方法论"
-      ],
-      "reason": "直接研究社交网络信息传播源识别，属扩散与传播核心问题，方法有明确价值。",
-      "backfill_date": null
-    },
-    {
-      "id": "openalex:W7225737210",
+      "id": "openalex:W7225806724",
       "source": "openalex",
-      "title": "Streetscape perception conditions the causal impacts of low-stress bicycle infrastructure",
+      "title": "A new response to online disinformation: How positive authentication labels for news influence user engagement",
       "authors": [
-        "M. Mavin De Silva",
-        "Siqin Wang",
-        "Ashani Piyatilake",
-        "Sijian Tian",
-        "Santiago Garcia Gabilondo",
-        "Tadachika Nakayama"
+        "Johanna Eggers"
       ],
-      "abstract": "Abstract Perceived streetscapes (people's visual evaluations of the surrounding street environment) influence how people respond to transportation infrastructure, yet their role in shaping cycling behavior remains underexplored. Here, we combine street-view imagery, spatial AI techniques and causal inference to examine how neighborhood perceptions condition the effectiveness of bicycle infrastructure. We derive six types of perceptions from panoramic images and link them to built environment features. Leveraging the staggered rollout of protected and painted bike lanes in New York City, we implement a quasi-experimental, causal inferential framework using propensity score matching, Difference-in-Differences, and causal forest models on bikeshare origin–destination data. We find that bike lanes significantly increase ridership, with no detectable pre-treatment effects. Protected lanes increase ridership by ∼ 32% (β = 0.2705, p-value < 0.001), while painted lanes increase ridership by ∼ 10% (β = 0.0967, p-value < 0.05). Treatment effects vary systematically across perceived environments: painted lanes perform best on already safe and lively streets, whereas protected lanes remain effective across a wider range of contexts and generate the strongest gains in stressful or lower-quality environments. Street level counterfactual predictions provide the possibility to integrate human perception into infrastructure planning and design.",
-      "url": "https://doi.org/10.1093/pnasnexus/pgag354",
-      "published": "2026-11-10",
-      "venue": "PNAS Nexus",
+      "abstract": "As negative content labelling faces limitations and automation challenges, the complementary concept of positive labelling is an increasingly promising solution to increase user engagement with reputable news content. The core idea of positive labelling is to label authentic content as good rather than marking fraudulent content as bad . This computational social science study collected digital trace data from 860 participants through a simulated social media news feed. The treatment group was exposed to a positive content authentication label. Results show that the treatment did not affect low- and medium-level engagement actions, such as time spent viewing a post or clicking the content and article link. However, high-level engagement actions, such as commenting and reading the article, significantly increased. The results indicate that exposure to content authentication labels enhances cognitive engagement with authenticated sources, potentially strengthening the role of authentic news in the online news environment and mitigating the risks posed by disinformation.",
+      "url": "https://doi.org/10.1177/20539517261500665",
+      "published": "2026-11-11",
+      "venue": "Big Data & Society",
       "categories": [],
       "pdf_url": null,
-      "doi": "https://doi.org/10.1093/pnasnexus/pgag354",
+      "doi": "https://doi.org/10.1177/20539517261500665",
       "citations": 0,
-      "rule_score": 4.2,
-      "score": 8.21,
-      "tldr_zh": "结合街景图像、空间AI与双重差分和因果森林，发现街景感知调节纽约自行车道对骑行行为的因果影响。",
+      "rule_score": 7.8,
+      "score": 8.39,
+      "tldr_zh": "用860人模拟信息流实验发现，给真实新闻加正面认证标签不影响浏览点击，但提升评论和阅读等深度参与。",
       "tldr": null,
       "tags": [
-        "因果推断",
-        "城市与流动",
+        "实验",
+        "在线平台",
         "数字痕迹"
       ],
-      "reason": "用准实验因果推断与空间AI研究城市出行行为，方法上对计算社会科学有明确借鉴价值。",
-      "backfill_date": null
-    },
-    {
-      "id": "arxiv:2611.13339",
-      "source": "arxiv",
-      "title": "Measuring Definition Sensitivity in LLM Annotation of Social Science Concepts",
-      "authors": [
-        "Bogdan Mamaev",
-        "Qizhou Wang",
-        "Christopher Leckie",
-        "Matteo Vergani"
-      ],
-      "abstract": "In social science research, text annotation is a fundamental task that is traditionally a costly, hard-to-scale manual process. Researchers have used large language models (LLMs) to perform annotation by writing a definition of a concept into a prompt - a rule that determines whether a label should be attributed to a text depending on its content. However, concepts such as hate speech, fake news, and terrorism typically have several theoretically defensible competing definitions. It is also unknown whether the model actually applied the definition to provide the label or the label was based on the model's pretrained notion of the concept. To test this, we have the model annotate the same texts twice, each time with a different definition. We call the disagreement between the two sets of annotations definition sensitivity. As a control, we paraphrase one definition but leave its requirements unchanged - the disagreement between the annotations with the two wordings becomes the paraphrase floor. Across six concepts and three LLMs, a swap of competing definitions always changes more annotations, on average, than a paraphrase. This shows that the annotations depend on the prompted definition, so any set of annotations should be interpreted together with the definition that produced it. The LLM annotator's definition sensitivity and its paraphrase floor should both be reported in such work.",
-      "url": "https://arxiv.org/abs/2611.13339",
-      "published": "2026-11-09",
-      "venue": "arXiv",
-      "categories": [
-        "cs.CL",
-        "cs.CY"
-      ],
-      "pdf_url": "https://arxiv.org/pdf/2611.13339v1",
-      "doi": null,
-      "citations": 0,
-      "rule_score": 4.2,
-      "score": 7.71,
-      "tldr_zh": "让LLM用两套不同定义对同一批文本标注，测量定义敏感性，发现标注结果受定义影响，且可能混入预训练概念先验。",
-      "tldr": null,
-      "tags": [
-        "文本计算",
-        "方法论",
-        "LLM智能体"
-      ],
-      "reason": "直接关系到用LLM做社会科学文本标注的效度问题，对计算社会科学方法论文献有明确价值。",
-      "backfill_date": null
-    },
-    {
-      "id": "arxiv:2611.13683",
-      "source": "arxiv",
-      "title": "Non-Gaussian limit distributions of giant-component sizes in inhomogeneous networks",
-      "authors": [
-        "Tomoaki Nogawa",
-        "Takehisa Hasegawa"
-      ],
-      "abstract": "We demonstrate that the size distribution of giant components in percolation and epidemic spreading models on highly inhomogeneous networks often fails to converge to a Gaussian distribution in the thermodynamic limit. Instead, when appropriately scaled, the distribution converges to a non-Gaussian limit distribution (NGLD). This scaling behavior aligns with the generalized central limit theorem (GCLT), which governs sums of random variables following heavy-tailed distributions. For scale-free networks, the scaling exponent is determined solely by the degree exponent of the network, independently of the control parameter. In contrast, on the Farey graph, a deterministic hierarchical small-world network, the scaling exponent varies continuously with the control parameter.",
-      "url": "https://arxiv.org/abs/2611.13683",
-      "published": "2026-11-10",
-      "venue": "arXiv",
-      "categories": [
-        "cond-mat.stat-mech",
-        "cond-mat.dis-nn"
-      ],
-      "pdf_url": "https://arxiv.org/pdf/2611.13683v1",
-      "doi": null,
-      "citations": 0,
-      "rule_score": 4.9,
-      "score": 7.245,
-      "tldr_zh": "证明非均匀网络上渗流与传播模型的巨组件尺寸分布不收敛于高斯，而按广义中心极限定理收敛到非高斯极限分布，尺度指数由度指数决定。",
-      "tldr": null,
-      "tags": [
-        "复杂网络",
-        "扩散与传播"
-      ],
-      "reason": "研究复杂网络渗流与传播的巨组件涨落理论，对网络传播理论有方法价值。",
-      "backfill_date": null
-    },
-    {
-      "id": "arxiv:2611.14288",
-      "source": "arxiv",
-      "title": "Can AI be a 'Researcher Without Borders'? Auditing Bias in AI-Assisted Social Science Research about China and the US",
-      "authors": [
-        "Yuan Zhang",
-        "Thales Bertaglia",
-        "Ralph Schroeder"
-      ],
-      "abstract": "Although large language models have demonstrated strong performance on algorithmic and mathematical tasks, their suitability as social science research assistants remains unclear, particularly because many social science questions lack agreed-upon, quantifiable benchmark answers. Evaluating this suitability is important since researchers and students increasingly rely on AI to generate research ideas. When questions concern the countries in which models were developed, bias may be exacerbated: Do AI models favour the countries where they were developed or the social theories associated with those countries' scholarly traditions? Such biases could distort research findings, undermine scientific credibility, and distort findings when they are disseminated to the public. To investigate whether models exhibit country-focused bias in social science research, we designed a benchmarking task requiring AI to write short essays on social science questions in relation to the US and China as well as some broader social science questions. We varied three conditions: question type (cross-country comparisons, country-specific questions, and general questions); model (two US-developed, two China-developed, and one Europe-developed model); and prompting modality (a base essay-writing request, a researcher identity, a US researcher identity, and a Chinese researcher identity). Responses were manually annotated for bias and source use by two researchers with experience in social science in relation to China and the US. Our analyses show that, on the whole, US and Chinese models and the European one are not politically biased but differ in the sources they cite. Still, some comparative questions favour one country over another, and this tendency is more pronounced for certain questions. These findings suggest that researchers and students should exercise caution when using AI for social science research.",
-      "url": "https://arxiv.org/abs/2611.14288",
-      "published": "2026-11-10",
-      "venue": "arXiv",
-      "categories": [
-        "cs.CY"
-      ],
-      "pdf_url": "https://arxiv.org/pdf/2611.14288v1",
-      "doi": null,
-      "citations": 0,
-      "rule_score": 4.2,
-      "score": 7.21,
-      "tldr_zh": "审计LLM在关于中美社会科学研究中的偏向，检验其是否偏向开发国或其学术传统。",
-      "tldr": null,
-      "tags": [
-        "LLM智能体",
-        "方法论",
-        "文本计算"
-      ],
-      "reason": "关注LLM作为研究工具的系统性偏差，对计算社会科学的方法论与AI辅助研究有明确价值。",
-      "backfill_date": null
-    },
-    {
-      "id": "arxiv:2611.14499",
-      "source": "arxiv",
-      "title": "Spatial patterns of transportation choice in Niterói",
-      "authors": [
-        "Sandro Martinelli Reia",
-        "Taylor Anderson",
-        "Dieter Pfoser"
-      ],
-      "abstract": "Characterizing how people move through a city requires spatially and temporally fine-grained data that are often costly and difficult to obtain. Here, we introduce a computational framework that uses macroscopic, aggregated, and static urban data to construct a microscopic, dynamic, and spatially detailed representation of urban mobility. Building on an existing activity simulator, the framework combines a synthetic population, the built environment, and transport networks to generate daily trips and assign walking, car, or public transit. Applied to approximately 475,000 synthetic residents of Niterói, Brazil, simulated neighborhood-level transit patterns show a strong association with an empirical activity proxy (Pearson r=0.885). Walking is more prevalent in compact central areas, car use increases toward the periphery, and public-transit use remains comparatively high along bus corridors. Reducing walking times to and from bus stops by 30% increases the modeled public-transit-to-car ratio by 11.3%, with larger transit-share gains in several peripheral areas. These results reveal spatial differences in transportation choice and identify where improved transit access may have the greatest modeled effect.",
-      "url": "https://arxiv.org/abs/2611.14499",
-      "published": "2026-11-10",
-      "venue": "arXiv",
-      "categories": [
-        "physics.soc-ph",
-        "cs.MA",
-        "stat.OT"
-      ],
-      "pdf_url": "https://arxiv.org/pdf/2611.14499v1",
-      "doi": null,
-      "citations": 0,
-      "rule_score": 7.6,
-      "score": 6.88,
-      "tldr_zh": "用聚合静态城市数据构建合成人口与活动模拟器，生成巴西尼泰罗伊约47.5万居民出行并分配交通方式，模拟公交格局与实证活动代理相关r=0.885。",
-      "tldr": null,
-      "tags": [
-        "仿真与ABM",
-        "城市与流动"
-      ],
-      "reason": "基于智能体的城市出行仿真，与计算社会科学中的城市流动建模相关，但偏交通应用。",
-      "backfill_date": null
-    },
-    {
-      "id": "arxiv:2611.14152",
-      "source": "arxiv",
-      "title": "Where are the shortest-path nodes in spatial networks?",
-      "authors": [
-        "Xinhan Liu",
-        "Robert Kooij",
-        "Piet Van Mieghem"
-      ],
-      "abstract": "To predict the spatial distribution of shortest-path nodes, we propose a Gaussian estimate of the shortest-path node probability $π_{uv}(w)$, the probability that a node $w$ lies on a shortest path between a source $u$ and a destination $v$. According to the Gaussian estimate, three variables affect the shortest-path node probability $π_{uv}(w)$ and combine into one variable, the standardized detour $X_{uvw}$. In our simulations of hard and soft random geometric graphs in Euclidean, hyperbolic and spherical space, the standardized detour $X_{uvw}$ alone approximately determines how fast the shortest-path node probability $π_{uv}(w)$ decreases as the node $w$ moves away from the geodesic between the source $u$ and the destination $v$. We find and explain that, when the hopcount variance $σ^2(H_{uv})$ is very small, the shortest-path nodes have a discrete spatial distribution, a quantized distribution of shortest-path nodes. We further extend the study to spatially inhomogeneous networks, for which we propose a method to find the shortest-path nodes.",
-      "url": "https://arxiv.org/abs/2611.14152",
-      "published": "2026-11-10",
-      "venue": "arXiv",
-      "categories": [
-        "physics.soc-ph"
-      ],
-      "pdf_url": "https://arxiv.org/pdf/2611.14152v1",
-      "doi": null,
-      "citations": 0,
-      "rule_score": 5.5,
-      "score": 6.775,
-      "tldr_zh": "提出最短路径节点概率的高斯估计，在欧氏、双曲、球面空间的随机几何图中发现标准化绕行量X近似决定该概率随偏离测地线的衰减速度。",
-      "tldr": null,
-      "tags": [
-        "复杂网络",
-        "方法论"
-      ],
-      "reason": "空间网络最短路径结构分析，属复杂网络基础理论，与社会行为关联有限。",
-      "backfill_date": null
-    },
-    {
-      "id": "arxiv:2611.14333",
-      "source": "arxiv",
-      "title": "AI Isn't Getting Dumber, We're Getting Pickier: Rising Standards in Human Evaluation of Large Language Models",
-      "authors": [
-        "Zihan Chen",
-        "Lei Nico Zheng",
-        "Di Zhu"
-      ],
-      "abstract": "Users often complain that AI assistants such as ChatGPT are getting worse. Some versions do change, but human evaluation leaves a second possibility untested: the people judging may change. We separate the two on Chatbot Arena, a public platform where people compare answers from two anonymous large language models (LLMs) and pick the better one or say both are bad. We study 1,260,967 blind votes cast from May 2023 to August 2024 on pairs of models whose versions are fixed: dated vendor snapshots and models with fixed open weights. For the same pair of unchanged models, the share of votes saying \"both are bad\" rises by 1.71 percentage points a month on a mean of 17.1%, and by 1.91 points a month in 2024. In fourteen pairs observed often in both 2023 and 2024, it rose in every one, from 15.5% to 23.3%. The ranking does not trend: in 2024, the stronger model's share of decisive votes is flat. The rise holds within the same voter and on the same pair, and across arrival cohorts from their first recorded vote. It holds with prompt controls, in every major language, for dated vendor snapshots, open-weight models and models with stable answer length, and between interface changes. The drift is shared across models: month effects estimated from other models' pairs remove it from each model's own pairs. Platform-wide, the average model would be expected to score 78% against the 2023 average, yet the share of \"both are bad\" votes ended near where it began. The pattern fits a standard that follows the category's progress, so a product that stands still is judged as declining. Absolute verdicts on AI drifted while relative comparisons held steady, an evaluation drift that matters for LLM leaderboards and for the human feedback used to train models.",
-      "url": "https://arxiv.org/abs/2611.14333",
-      "published": "2026-11-10",
-      "venue": "arXiv",
-      "categories": [
-        "cs.HC",
-        "cs.AI",
-        "cs.CL",
-        "cs.CY"
-      ],
-      "pdf_url": "https://arxiv.org/pdf/2611.14333v1",
-      "doi": null,
-      "citations": 0,
-      "rule_score": 4.7,
-      "score": 6.735,
-      "tldr_zh": "用Chatbot Arena百万盲投票发现，同一对固定模型下“都不好”比例每月升约1.7个百分点，说明人评标准在变严。",
-      "tldr": null,
-      "tags": [
-        "在线平台",
-        "数字痕迹",
-        "方法论"
-      ],
-      "reason": "基于在线平台大规模人类投票的行为数据分析，与计算社会科学中的评价偏差和平台数据研究相关，但非网络结构核心。",
-      "backfill_date": null
-    },
-    {
-      "id": "arxiv:2611.13947",
-      "source": "arxiv",
-      "title": "Data-driven regional traffic simulation from heterogeneous mobility sources",
-      "authors": [
-        "Federico Bellisardi",
-        "Chiara Mizzi",
-        "Alessandro Fabbri",
-        "Davide Micheli",
-        "Aldo Vannelli",
-        "Armando Bazzani"
-      ],
-      "abstract": "Regional traffic simulators increasingly combine mobile-phone, road-sensor and GPS data, but what each source contributes is rarely clear. We present an agent-based simulator of daily traffic in Emilia-Romagna, Italy: phone data give trips and their timing, half of the road sensors set the traffic level, all sensors correct it locally, and GPS traces guide route choice. We measure what each source adds against predictors without simulation, on sensors kept out of parameter calibration in winter 2020 and partly shared with it in summer 2021; as these sensors informed some modelling choices, the evaluation is not fully independent. Total traffic is within 1% of observations in winter and 10% in summer, and the simulator ranks roads better than a road-type predictor (Spearman 0.67-0.68 against 0.41-0.48, winter). GPS improves this ranking, sensors improve local estimates, and timing comes mostly from the demand. Single-road errors remain similar to those of simple predictors, and the test of specific origin-destination pairings was underpowered and inconclusive. These findings provide a practical framework for assessing the contribution and limitations of heterogeneous data sources in regional traffic simulation.",
-      "url": "https://arxiv.org/abs/2611.13947",
-      "published": "2026-11-10",
-      "venue": "arXiv",
-      "categories": [
-        "physics.soc-ph"
-      ],
-      "pdf_url": "https://arxiv.org/pdf/2611.13947v1",
-      "doi": null,
-      "citations": 0,
-      "rule_score": 7.4,
-      "score": 6.37,
-      "tldr_zh": "构建意大利艾米利亚-罗马涅的智能体交通仿真器，融合手机、传感器与GPS数据，总流量误差冬季1%、夏季10%，道路排序优于道路类型预测。",
-      "tldr": null,
-      "tags": [
-        "仿真与ABM",
-        "城市与流动"
-      ],
-      "reason": "多源移动数据驱动的区域交通ABM，方法上对流动仿真有参考价值，但社会网络分析关联较弱。",
-      "backfill_date": null
-    },
-    {
-      "id": "arxiv:2611.13366",
-      "source": "arxiv",
-      "title": "Mapping Instructors' Attitudes Towards Cheating with AI: An Exploratory Analysis Using Forum Analysis",
-      "authors": [
-        "Iman Mohammadi",
-        "Ali Keramati",
-        "Sina Rismanchian"
-      ],
-      "abstract": "In teaching and learning environments, cheating and the violation of academic integrity have always been one of the challenges, involving different levels of concerns such as administrative, personal knowledge, learning, and equity. The introduction of large language models has brought cheating in dialogue to the forefront, given the apparent capabilities of these models to complete students' academic assignments. This study aims to leverage recent dialogues among university professors about cheating with Generative AI to better understand their beliefs about academic honesty. In doing so, we analyze a corpus of 2.01 million posts (threads and comments) in the r/Professors subreddit discussing cheating after the release of ChatGPT, providing a better understanding of teachers' motivations to discourage cheating and the strategies they use to do so. We synthesize the why and how of addressing cheating to identify caveats about the future of AI and academic integration.",
-      "url": "https://arxiv.org/abs/2611.13366",
-      "published": "2026-11-09",
-      "venue": "arXiv",
-      "categories": [
-        "cs.CL",
-        "cs.CY"
-      ],
-      "pdf_url": "https://arxiv.org/pdf/2611.13366v1",
-      "doi": "10.22318/icls2026.578118",
-      "citations": 0,
-      "rule_score": 4.4,
-      "score": 6.22,
-      "tldr_zh": "分析r/Professors约201万帖，考察ChatGPT发布后高校教师对AI作弊的态度与担忧。",
-      "tldr": null,
-      "tags": [
-        "在线平台",
-        "文本计算"
-      ],
-      "reason": "基于Reddit大语料的文本计算与在线社区态度研究，属计算社会科学边缘到中等相关。",
+      "reason": "计算社会科学实验，研究在线平台信息标签对用户参与的影响，与数字痕迹和平台行为直接相关。",
       "backfill_date": null
     }
   ]

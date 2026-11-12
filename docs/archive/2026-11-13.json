@@ -1,0 +1,48 @@
+{
+  "app": "Murmur",
+  "version": 1,
+  "date": "2026-11-13",
+  "generated_at": "2026-11-13T06:25:03+08:00",
+  "count": 1,
+  "counts": {
+    "sources": {
+      "arxiv": 37,
+      "openalex": 156
+    },
+    "unique": 193,
+    "new": 168,
+    "candidates": 2,
+    "selected": 1,
+    "fresh_selected": 1,
+    "errors": 0
+  },
+  "papers": [
+    {
+      "id": "openalex:W7225806724",
+      "source": "openalex",
+      "title": "A new response to online disinformation: How positive authentication labels for news influence user engagement",
+      "authors": [
+        "Johanna Eggers"
+      ],
+      "abstract": "As negative content labelling faces limitations and automation challenges, the complementary concept of positive labelling is an increasingly promising solution to increase user engagement with reputable news content. The core idea of positive labelling is to label authentic content as good rather than marking fraudulent content as bad . This computational social science study collected digital trace data from 860 participants through a simulated social media news feed. The treatment group was exposed to a positive content authentication label. Results show that the treatment did not affect low- and medium-level engagement actions, such as time spent viewing a post or clicking the content and article link. However, high-level engagement actions, such as commenting and reading the article, significantly increased. The results indicate that exposure to content authentication labels enhances cognitive engagement with authenticated sources, potentially strengthening the role of authentic news in the online news environment and mitigating the risks posed by disinformation.",
+      "url": "https://doi.org/10.1177/20539517261500665",
+      "published": "2026-11-11",
+      "venue": "Big Data & Society",
+      "categories": [],
+      "pdf_url": null,
+      "doi": "https://doi.org/10.1177/20539517261500665",
+      "citations": 0,
+      "rule_score": 7.8,
+      "score": 8.39,
+      "tldr_zh": "用860人模拟信息流实验发现，给真实新闻加正面认证标签不影响浏览点击，但提升评论和阅读等深度参与。",
+      "tldr": null,
+      "tags": [
+        "实验",
+        "在线平台",
+        "数字痕迹"
+      ],
+      "reason": "计算社会科学实验，研究在线平台信息标签对用户参与的影响，与数字痕迹和平台行为直接相关。",
+      "backfill_date": null
+    }
+  ]
+}
