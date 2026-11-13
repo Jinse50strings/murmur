@@ -1,0 +1,334 @@
+{
+  "app": "Murmur",
+  "version": 1,
+  "date": "2026-11-14",
+  "generated_at": "2026-11-14T06:06:09+08:00",
+  "count": 10,
+  "counts": {
+    "sources": {
+      "arxiv": 86,
+      "openalex": 140
+    },
+    "unique": 226,
+    "new": 222,
+    "candidates": 36,
+    "selected": 10,
+    "fresh_selected": 10,
+    "errors": 0
+  },
+  "papers": [
+    {
+      "id": "openalex:W7225893590",
+      "source": "openalex",
+      "title": "Fine-Tuned Large Language Models for Theory-Aligned Social Science Content Analysis: Evidence From Collaborative Learning Discourse",
+      "authors": [
+        "Yoonhee Shin",
+        "YoungKwan Son",
+        "Haengkyung Lee",
+        "Minyoung Kim"
+      ],
+      "abstract": "Theory-based content analysis is central to social science research, but coding context-dependent interactional discourse remains difficult to scale. This study examines whether fine-tuned large language models (LLMs) can support theory-aligned, episode-level coding of complex social interaction, using socially shared metacognitive regulation (SSMR) in collaborative learning discourse as a demanding empirical case. Using a human-coded dataset of 2,372 discourse episodes from undergraduate collaborative problem-solving, we adapted the large language model content analysis (LACA) framework through an AI-aligned codebook, prompt design, and supervised fine-tuning. Prompt-only and fine-tuned models were compared across episode-level classification and multilayer SSMR coding. Fine-tuned models substantially improved agreement with human coding and predictive performance relative to prompt-only baselines. Performance was strongest for episode-level classification and several higher-support coding layers, whereas errors remained concentrated in sparse, boundary-prone, and highly interpretive categories requiring social-intent reconstruction and temporally unfolding context. The findings extend recent work on LLM-assisted qualitative and content analysis by showing both the promise and limits of supervised, theory-aligned automation for multilayer social interaction coding. Overall, the study supports a human-centered approach to LLM-assisted content analysis, in which automated coding can support more stable coding tasks while human expertise remains essential for ambiguous, boundary-prone, and interpretively demanding judgments.",
+      "url": "https://doi.org/10.1177/08944393261502769",
+      "published": "2026-11-12",
+      "venue": "Social Science Computer Review",
+      "categories": [],
+      "pdf_url": null,
+      "doi": "https://doi.org/10.1177/08944393261502769",
+      "citations": 0,
+      "rule_score": 5.7,
+      "score": 8.785,
+      "tldr_zh": "用微调大模型对协作学习对话做理论对齐的片段级编码，效果优于仅提示。",
+      "tldr": null,
+      "tags": [
+        "LLM智能体",
+        "文本计算",
+        "方法论"
+      ],
+      "reason": "展示LLM用于社会科学内容分析的可扩展方法，对计算社会科学方法论有直接价值。",
+      "backfill_date": null
+    },
+    {
+      "id": "arxiv:2611.14825",
+      "source": "arxiv",
+      "title": "Locating Debunkers for Rumor Mitigation in Directed Networks",
+      "authors": [
+        "Kasra Ghorbani",
+        "Xinshan Jiao",
+        "Tao Zhou"
+      ],
+      "abstract": "Rumors can spread widely through social networks, making the selection of a limited number of debunkers to disseminate corrective information important. Existing centrality-based methods only consider the individual influence of a node on spreading processes. Those individually influential nodes often have heavily overlapping influence ranges, resulting in a limited number of users they can cover. To address this problem, we propose the so-called Hybrid Marginal Influence (HMI) framework, which combines node centrality with additional audience coverage provided by each candidate and adaptively balances these two factors through a greedy selection procedure. We further develop the Debunker-Augmented SIR (DA-SIR) model for the propagation of rumors and corrective information. Experiments on ten real-world directed networks show that HMI generally selects debunkers with broader audience coverage than conventional centrality-based methods, accompanied by a lower final cumulative fraction of users who repost the rumor.",
+      "url": "https://arxiv.org/abs/2611.14825",
+      "published": "2026-11-10",
+      "venue": "arXiv",
+      "categories": [
+        "physics.soc-ph"
+      ],
+      "pdf_url": "https://arxiv.org/pdf/2611.14825v1",
+      "doi": null,
+      "citations": 0,
+      "rule_score": 6.9,
+      "score": 8.345,
+      "tldr_zh": "提出混合边际影响框架选取辟谣者，兼顾中心性与受众覆盖，并用DA-SIR模型验证其抑制谣言传播更优。",
+      "tldr": null,
+      "tags": [
+        "社会网络",
+        "扩散与传播",
+        "在线平台"
+      ],
+      "reason": "面向社交网络谣言抑制的节点选择方法，直接相关社会网络分析与传播。",
+      "backfill_date": null
+    },
+    {
+      "id": "arxiv:2611.15172",
+      "source": "arxiv",
+      "title": "Where Language-Model Vocabulary Rose on Stack Exchange",
+      "authors": [
+        "Fengming Liu"
+      ],
+      "abstract": "Stack Overflow banned answers generated by ChatGPT five days after the model's release, and many other Stack Exchange sites announced similar rules. I measure the vocabulary of the answers posted afterwards, 3.8 million answers on 170 sites from 2019 to 2024. A fixed list of 56 words that language models overuse rose about 14 percent above its pre-2023 trend, while the highest of 1,000 frequency-matched lists of ordinary words rose about 7 percent. In a screen of 15 site traits measured before the release, the strongest predictor of where the rise happened was the share of answers that received a body edit within 30 days of posting. On the least edited third of sites the list rose about 29 percent relative to matched controls, and on the most edited third it did not change. The gradient is also present among answers that were never edited. It follows the share of answers edited by their own authors, and the share edited by others adds little once that share is held fixed. Use of the model is unobserved, so these results cannot separate lower use on sites with a high self-edit share from any effect of editing on what the vocabulary records. Any vocabulary-based estimate for the network as a whole therefore pools sites where the marker vocabulary rose sharply with sites where it did not change.",
+      "url": "https://arxiv.org/abs/2611.15172",
+      "published": "2026-11-11",
+      "venue": "arXiv",
+      "categories": [
+        "cs.CL",
+        "cs.CY",
+        "cs.SI"
+      ],
+      "pdf_url": "https://arxiv.org/pdf/2611.15172v1",
+      "doi": null,
+      "citations": 0,
+      "rule_score": 5.5,
+      "score": 8.275,
+      "tldr_zh": "测量Stack Exchange上380万答案，发现LLM高频词在ChatGPT发布后上升约14%，编辑多的站点上升更少。",
+      "tldr": null,
+      "tags": [
+        "在线平台",
+        "数字痕迹",
+        "文本计算"
+      ],
+      "reason": "用大规模数字痕迹识别LLM对在线社区语言的影响，属计算社会科学实证核心议题。",
+      "backfill_date": null
+    },
+    {
+      "id": "openalex:W7130740401",
+      "source": "openalex",
+      "title": "Measuring immigration rhetoric in the UK parliament",
+      "authors": [
+        "Gloria Gennaro",
+        "Anna Vissens",
+        "Alice Thornewill von Essen",
+        "Tom Ravalde",
+        "E. Egidio Purcino De Souza",
+        "Simran Sangita Dave",
+        "Eliot Dable",
+        "Gabriel Facini"
+      ],
+      "abstract": "Abstract Migration is a defining phenomenon of our time, around which heightened political rhetoric creates the impression of unprecedented political conflict. In the UK, this perception coincides with major political developments, such as the Brexit referendum and the rise of anti-immigration politics. However, systematic understanding of elite discourse on this subject remains limited. We introduce a novel machine learning pipeline that combines LLMs and human inputs to analyze sentiment towards immigration in political speech. Applying our model to spoken contributions in the UK House of Commons from 1923 to 2025, we report high classifier performance and stability across modeling choices. Our descriptive findings validate and extend existing qualitative research: Labour Members of Parliament (MPs) have expressed more positive sentiment than Conservatives since the early 1960s, with party divergence widening in the early 1980s. Furthermore, cross-party rhetoric has grown increasingly negative over the past fifteen years, with Conservative and Reform UK MPs now using a more negative tone than any party has in the period studied. We discuss how this pipeline and dataset can support future research, highlighting use cases on the linkages between elite discourse and public opinion, discourse moralization, and positive and negative frames.",
+      "url": "https://doi.org/10.1093/pnasnexus/pgag391",
+      "published": "2026-11-12",
+      "venue": "PNAS Nexus",
+      "categories": [],
+      "pdf_url": null,
+      "doi": "https://doi.org/10.1093/pnasnexus/pgag391",
+      "citations": 0,
+      "rule_score": 4.2,
+      "score": 8.21,
+      "tldr_zh": "构建LLM加人工的机器学习流水线，测量1923至2025年英国议会移民话语情感并验证其稳定性。",
+      "tldr": null,
+      "tags": [
+        "文本计算",
+        "舆论与极化",
+        "方法论"
+      ],
+      "reason": "用LLM做政治精英话语的大规模文本测量，对计算社会科学文本方法有明确实证价值。",
+      "backfill_date": null
+    },
+    {
+      "id": "arxiv:2611.15313",
+      "source": "arxiv",
+      "title": "Influence of Assortativity on the SICP Spreading Process in Hypergraphs",
+      "authors": [
+        "Jelmer Stolwijk",
+        "Renze Dijkhuizen",
+        "H. A.",
+        "Peters",
+        "Huijuan Wang"
+      ],
+      "abstract": "Many real-world systems involve group interactions that cannot be captured by pairwise graphs. They can be better represented by hypergraphs where each hyperedge could connect an arbitrary number of nodes. The Susceptible-Infected Contact Process (SICP) has been proposed to model the spreading of information and epidemics on hypergraphs. However, how higher-order topological properties of a hypergraph influence the SICP spreading process remains understudied. In this paper, we examine the impact of hypergraph assortativity based on the Neighborhood Coefficient (NC)-the average size of hyperedges incident to a node-on the SICP spreading process. By introducing a low-complexity measure of hypergraph assortativity grounded in analysis of variance, we apply hyperdegree-preserving rewirings to real-world networks and synthetic hypergraph models to tune their assortativity. We find and explain why lower NC assortativity yields higher average epidemic prevalence and lower prevalence variance across different seed selections. This phenomenon is evident when hyperdegree-preserving rewirings are applied to real-world networks with heterogeneous topological structures, but it is largely absent when comparing synthetic random hypergraphs to their rewired counterparts.",
+      "url": "https://arxiv.org/abs/2611.15313",
+      "published": "2026-11-11",
+      "venue": "arXiv",
+      "categories": [
+        "cs.SI",
+        "physics.soc-ph"
+      ],
+      "pdf_url": "https://arxiv.org/pdf/2611.15313v1",
+      "doi": null,
+      "citations": 0,
+      "rule_score": 7.2,
+      "score": 7.86,
+      "tldr_zh": "提出基于方差分析的超图同配性度量，通过保持超度的重连实验，揭示同配性如何影响SICP传播阈值与规模。",
+      "tldr": null,
+      "tags": [
+        "复杂网络",
+        "扩散与传播",
+        "方法论"
+      ],
+      "reason": "研究高阶网络拓扑对传播过程的影响，属复杂网络与扩散核心议题。",
+      "backfill_date": null
+    },
+    {
+      "id": "arxiv:2611.15949",
+      "source": "arxiv",
+      "title": "Efficient Influence Minimization via Source-Integrated Sampling",
+      "authors": [
+        "Jingbang Chen",
+        "Junyao Wang"
+      ],
+      "abstract": "Influence minimization by node blocking is a fundamental problem in graph data management that seeks a small set of vertices whose removal minimizes the expected spread from a fixed source set. It supports decisions about where to intervene in large interaction networks to control harmful propagation, such as the spread of rumors and infectious diseases. Under the Independent Cascade (IC) model, selecting blockers requires comparing a large number of candidate sets, and estimating their effects on propagation can be costly. We propose SIG (Source-Integrated Greedy), a sampling framework for efficiently finding high-quality approximate solutions. Our key idea is to group the possible sets of neighbors directly activated by the sources according to their effects on blocker selection. SIG represents these groups in a compact weighted tree and computes their probabilities directly, allowing each sample to account for all source outcomes without enumerating them. We prove that SIG produces unbiased estimates of the lower-bound objective without increasing variance for fixed blocking plans, and establish a high-probability quality guarantee through independent validation. Extensive experiments on real-world networks show that SIG has the lowest mean total running time in all main comparisons, with speedups of up to 583x over the fastest baseline. SIG produces solutions competitive with those of prior methods and achieves the highest influence reduction in multiple settings, including on many of the largest networks, where several baselines exceed the runtime limit. Additional experiments show that SIG maintains consistently low running times as graph size and the blocking budget increase, while delivering stronger blocking solutions at larger budgets.",
+      "url": "https://arxiv.org/abs/2611.15949",
+      "published": "2026-11-11",
+      "venue": "arXiv",
+      "categories": [
+        "cs.SI",
+        "cs.DS"
+      ],
+      "pdf_url": "https://arxiv.org/pdf/2611.15949v1",
+      "doi": null,
+      "citations": 0,
+      "rule_score": 6.2,
+      "score": 7.81,
+      "tldr_zh": "提出源整合贪心采样框架SIG，在独立级联模型下高效选取阻断节点以最小化有害信息传播。",
+      "tldr": null,
+      "tags": [
+        "扩散与传播",
+        "复杂网络",
+        "方法论"
+      ],
+      "reason": "影响最小化与传播控制算法，直接相关复杂网络与扩散研究。",
+      "backfill_date": null
+    },
+    {
+      "id": "arxiv:2611.16586",
+      "source": "arxiv",
+      "title": "Large Language Models as Digital Twins: a Distribution-Aware Questionnaire-Based Evaluation",
+      "authors": [
+        "Francesco Di Cursi",
+        "Chiara Boldrini",
+        "Andrea Passarella",
+        "Marco Conti"
+      ],
+      "abstract": "This paper investigates whether Large Language Models can answer a personality questionnaire as a specific individual would. Given a user's social-media posts, the model completes the BFI-2-60 Big Five questionnaire as that user. The predicted responses are converted into trait scores and compared with the user's actual scores. We evaluate GPT-4, Gemma, Llama 3.1, and Mistral on the MyPersonality dataset. To determine whether predictions reflect information from the user's writing, we compare them with answers produced without user text and with values derived from general population tendencies. We measure prediction error across all users and separately for individuals with low, intermediate, and high trait scores. We also test whether an LLM can express an explicit personality profile when given only the target Big Five scores, without user text, and examine how predictions change as more text is provided. The results show that user text does not consistently improve performance. Models perform better near the middle of the trait distribution, while at the lower and upper ends they often remain close to central values or perform well at one end but poorly at the other. When given an explicit profile, GPT-4 most clearly translates trait information into consistent questionnaire responses, particularly for Extraversion and Neuroticism. Increasing context does not systematically reduce error: open-source models fluctuate more, whereas GPT-4 remains comparatively stable. Overall, the evaluated models do not consistently reproduce the questionnaire behavior of specific individuals.",
+      "url": "https://arxiv.org/abs/2611.16586",
+      "published": "2026-11-12",
+      "venue": "arXiv",
+      "categories": [
+        "cs.AI",
+        "cs.CY"
+      ],
+      "pdf_url": "https://arxiv.org/pdf/2611.16586v1",
+      "doi": null,
+      "citations": 0,
+      "rule_score": 5.2,
+      "score": 7.76,
+      "tldr_zh": "用社交媒体文本让GPT-4等模型模拟个人填写大五人格问卷，并与真实得分比较误差。",
+      "tldr": null,
+      "tags": [
+        "LLM智能体",
+        "数字痕迹",
+        "方法论"
+      ],
+      "reason": "评估LLM作为个体数字孪生的效度，对计算社会科学中LLM模拟方法有参考价值。",
+      "backfill_date": null
+    },
+    {
+      "id": "openalex:W7225857774",
+      "source": "openalex",
+      "title": "The social and cultural life of artificial intelligence (AI) slop: A research framework",
+      "authors": [
+        "Richard Jean So",
+        "Hoyt J. Long"
+      ],
+      "abstract": "The proliferation of artificial intelligence (AI)-generated content across digital platforms has sparked urgent institutional responses, most focused on detection tools that treat synthetic content as a form of pollution—or more colloquially “slop”—requiring technical mitigation. We argue that such approaches are insufficient. Instead, we propose the analytical category SLOP, distinct from its vernacular dismissal, to name a condition rather than a class of objects: information ecosystems in which AI-generated content has reached sufficient scale and surface competence that the signals once used to evaluate quality no longer reliably do so. What has become scarce is not content but the means of judging it. Under this condition, the value and potential harm of any given artifact emerge not from properties innate to the content but from social context—who produces it, who engages with it, and with what motivations. Existing frameworks are useful but inadequate. Spam scholarship identifies the infrastructures of attention through which AI-generated content flows; misinformation research illuminates the participatory aspects of this content creation; and detection work can isolate the technical signals that mark AI use. Yet none accounts for the relational properties emerging around synthetic content, which is actively sought out by some users, unlike spam, and neither reliably false nor intended to deceive, as with misinformation. We characterize SLOP along three dimensions (production, reception, and effects), drawing on platform studies and cultural sociology to propose a research agenda spanning ethnographies of production, studies of reception, and analysis of institutional effects and governance.",
+      "url": "https://doi.org/10.1177/20539517261506941",
+      "published": "2026-11-12",
+      "venue": "Big Data & Society",
+      "categories": [],
+      "pdf_url": null,
+      "doi": "https://doi.org/10.1177/20539517261506941",
+      "citations": 0,
+      "rule_score": 4.7,
+      "score": 7.735,
+      "tldr_zh": "提出SLOP分析框架，主张AI生成内容规模化后质量信号失效，问题从内容本身转向判断手段的稀缺。",
+      "tldr": null,
+      "tags": [
+        "在线平台",
+        "舆论与极化",
+        "综述"
+      ],
+      "reason": "直接讨论AI生成内容对在线信息生态与判断机制的影响，属平台与传播研究核心议题。",
+      "backfill_date": null
+    },
+    {
+      "id": "openalex:W7155523721",
+      "source": "openalex",
+      "title": "Identifying dynamical network markers of financial market instability",
+      "authors": [
+        "Mariko I. Ito",
+        "Hiroyuki Hasada",
+        "Yudai Honma",
+        "Takaaki Ohnishi",
+        "Tsutomu Watanabe",
+        "Kazuyuki Aihara"
+      ],
+      "abstract": "Abstract Market instability has been extensively studied using mathematical approaches to characterize complex trading dynamics and detect structural change points. This study explores the potential for early detection of market instability by applying the Dynamical Network Markers (DNM) theory to order placement and execution data from the Tokyo Stock Exchange. DNM theory identifies indicators associated with critical transitions as their precursors in high-dimensional financial market systems of many interacting elements. In this study, market participants are identified using virtual server IDs from the trading system, and multivariate time series representing their trading activities are constructed. This framework treats each participant as an interacting element, thereby enabling the application of DNM theory to the obtained time series. The results indicate the presence of DNM-related patterns associated with large price movements on a daily time scale. These findings demonstrate the applicability of the DNM framework to market participant behavioral data and provide a basis for understanding mechanisms of instabilizing dynamics in financial market systems. The study could inform potential future developments of DNM-based early warning indicators through the identification of appropriate forecasting horizons and time scales as well as the incorporation of multiple aspects of trading behavior.",
+      "url": "https://doi.org/10.1140/epjds/s13688-026-00710-w",
+      "published": "2026-11-13",
+      "venue": "EPJ Data Science",
+      "categories": [],
+      "pdf_url": null,
+      "doi": "https://doi.org/10.1140/epjds/s13688-026-00710-w",
+      "citations": 1,
+      "rule_score": 4.0,
+      "score": 7.7,
+      "tldr_zh": "将动态网络标记理论用于东京证交所订单数据，以参与者为节点提前检测市场不稳定临界点。",
+      "tldr": null,
+      "tags": [
+        "复杂网络",
+        "方法论"
+      ],
+      "reason": "把复杂网络临界转变方法用于金融交易系统，对复杂网络实证研究有明确价值。",
+      "backfill_date": null
+    },
+    {
+      "id": "arxiv:2611.16800",
+      "source": "arxiv",
+      "title": "A Code-Level Audit of X",
+      "authors": [
+        "Luka Bekavac",
+        "Simon Mayer"
+      ],
+      "abstract": "The transparency regime of recommender systems on Very Large Online Platforms (VLOPs) is undergoing significant change under the EU Digital Services Act (DSA). The DSA requires platforms to disclose information about their recommendation pipelines and grants vetted researchers access to non-public data, which may extend to recommender code. However, it is not known to what extent such code releases enable substantive and meaningful third-party auditing of a production recommender system. We address this question by proposing a code-level audit methodology for recommender systems and applying it to the X platform, which has voluntarily open-sourced its recommender pipeline. Our methodology is a backwards-walk traversal of the repository, tracing each decision-relevant component from the user-facing timeline back to its upstream producers, checking that it is reachable from the served pipeline, and classifying each under a four-tier inspectability scheme. Applying this procedure, we identify 13 transparency dead-ends on the live serving path: models, services, label lists, and configuration values that the public code depends on but the release does not contain. We find that the components that decide which posts are filtered and how they are ranked fall into the two least inspectable tiers, a pattern that intensifies with the 2025 integration of the proprietary Grok language model into moderation, annotation, and ranking. We further show that the release keeps 2023 code that the 2025 pipeline no longer reaches, with 36 parameter references that would pass for dead-ends without a reachability check. Finally, we discuss which additional artifacts would be required for meaningful auditing.",
+      "url": "https://arxiv.org/abs/2611.16800",
+      "published": "2026-11-12",
+      "venue": "arXiv",
+      "categories": [
+        "cs.CY",
+        "cs.SE"
+      ],
+      "pdf_url": "https://arxiv.org/pdf/2611.16800v1",
+      "doi": null,
+      "citations": 0,
+      "rule_score": 3.7,
+      "score": 7.685,
+      "tldr_zh": "提出对推荐系统代码做逆向遍历审计的方法，并应用于X开源推荐流水线评估DSA透明度。",
+      "tldr": null,
+      "tags": [
+        "在线平台",
+        "方法论"
+      ],
+      "reason": "面向平台推荐算法的代码级审计方法，对在线平台治理与计算社会科学方法论有明确价值。",
+      "backfill_date": null
+    }
+  ]
+}
