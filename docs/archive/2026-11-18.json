@@ -1,0 +1,338 @@
+{
+  "app": "Murmur",
+  "version": 1,
+  "date": "2026-11-18",
+  "generated_at": "2026-11-18T07:37:05+08:00",
+  "count": 10,
+  "counts": {
+    "sources": {
+      "arxiv": 62,
+      "openalex": 97
+    },
+    "unique": 159,
+    "new": 155,
+    "candidates": 32,
+    "selected": 10,
+    "fresh_selected": 10,
+    "errors": 0
+  },
+  "papers": [
+    {
+      "id": "arxiv:2611.20225",
+      "source": "arxiv",
+      "title": "Disparity in Influence: A Fairness Evaluation of Centrality Measures in Complex Networks",
+      "authors": [
+        "Kirtidev Mohapatra",
+        "Harsh Vardhan Singh",
+        "Rishi Ranjan Singh",
+        "Akrati Saxena"
+      ],
+      "abstract": "Social networks are shaped by homophily-driven connections, which naturally lead to the emergence of communities with uneven sizes and influence. Such structural imbalances impact the fairness of network analysis tools, particularly centrality measures that are widely used to identify influential nodes for tasks like information diffusion and network robustness. In this work, we conduct a comprehensive assessment of fairness in centrality measures, using influence spreading across networks with heterogeneous community structures. We first analytically show that disparity is bounded by outreach; cross-community outreach is bounded by the inter-community cut; and when all seeds lie in one community, disparity approaches the normalized outreach within that community as cross-community transmission vanishes. This explains why attenuation concentrates influence in the community where diffusion starts. We further evaluate a broad spectrum of centrality measures, including local, semi-local, global, and community-aware measures, on both synthetic network generative models and real-world datasets, using the Independent Cascade and Linear Threshold Models. The results consistently show that influence tends to concentrate within larger communities, with disparities becoming more pronounced under constrained or deterministic diffusion settings. We further observe that fairness is highly sensitive to the choice of centrality measure rather than its general category. In particular, fairness-aware adaptations of PageRank demonstrate a strong balance between maximizing influence reach and maintaining equitable distribution across communities. On real networks, these conclusions are largely stable under random removal or addition of up to 3% of the edges. Our findings highlight the need to explicitly account for fairness when designing and selecting centrality-based strategies in networked systems.",
+      "url": "https://arxiv.org/abs/2611.20225",
+      "published": "2026-11-15",
+      "venue": "arXiv",
+      "categories": [
+        "cs.SI"
+      ],
+      "pdf_url": "https://arxiv.org/pdf/2611.20225v1",
+      "doi": null,
+      "citations": 0,
+      "rule_score": 9.5,
+      "score": 8.975,
+      "tldr_zh": "分析同质性社区结构下中心性指标的公平性，证明影响力差异受跨社区外联与割边约束，并给出传播实验评估。",
+      "tldr": null,
+      "tags": [
+        "复杂网络",
+        "社会网络",
+        "扩散与传播"
+      ],
+      "reason": "直接研究复杂网络中心性度量的公平性与影响力传播，属网络分析核心方法论。",
+      "backfill_date": null
+    },
+    {
+      "id": "arxiv:2611.21235",
+      "source": "arxiv",
+      "title": "Language-model agents' beliefs can be manipulated via truthful evidence in open channel",
+      "authors": [
+        "Jinwei Hu",
+        "Qisong He",
+        "Xinmiao Huang",
+        "Youcheng Sun",
+        "Yi Dong",
+        "Xiaowei Huang"
+      ],
+      "abstract": "Language-model agents' beliefs can be manipulated through open channels such as social media, even when the information they receive is truthful. When agents fill gaps between fragments with self-induced relationships, they may accept those relationships as established facts and pass the resulting rumours to others. Drawing on cognitive theory of narrative understanding and film theory of montage, we introduce Generative Montage to operationalize this failure, termed narrative overfitting, by coordinating agents to arrange truthful fragments into misleading narratives. Across 1,090 rumour targets from six Twitter events, agents often accepted rumours overconfidently, with overall acceptance exceeding 65 percent in twelve of fourteen models. Acceptance remained above 50 percent after majority voting or review of the same evidence, showing how errors can reach downstream decisions. To explain this susceptibility, fragment interventions identify posts that influence belief within complete narratives. Synthetic controls then show that similar response patterns arise from valid evidence, separating belief influence from evidential support. This distinction motivates Grounded Monitor, a proof-of-concept neuro-symbolic runtime monitor that checks direct evidential support to guide agents' judgements, improving decision accuracy by 5.6 to 29.0 percentage points across original and anonymized settings. These findings expose a cognitive route to rumour amplification and support monitoring inferred relationships before agent-generated conclusions guide public decisions.",
+      "url": "https://arxiv.org/abs/2611.21235",
+      "published": "2026-11-16",
+      "venue": "arXiv",
+      "categories": [
+        "cs.AI",
+        "cs.CL",
+        "cs.MA",
+        "cs.SI"
+      ],
+      "pdf_url": "https://arxiv.org/pdf/2611.21235v1",
+      "doi": null,
+      "citations": 0,
+      "rule_score": 6.2,
+      "score": 8.81,
+      "tldr_zh": "提出生成式蒙太奇方法，让LLM智能体把真实信息碎片拼成误导叙事，14个模型中12个谣言接受率超65%。",
+      "tldr": null,
+      "tags": [
+        "LLM智能体",
+        "扩散与传播",
+        "舆论与极化"
+      ],
+      "reason": "直接研究LLM智能体在开放信息渠道中的信念操纵与谣言传播，是计算社会科学与LLM智能体交叉的核心议题。",
+      "backfill_date": null
+    },
+    {
+      "id": "openalex:W7234628464",
+      "source": "openalex",
+      "title": "Automating inequality? Gender bias in AI-mediated labor markets",
+      "authors": [
+        "Kenza Elass",
+        "Germain Gauthier",
+        "Debora Nozza",
+        "Paola Antonia Profeta"
+      ],
+      "abstract": "Generative AI is rapidly entering labor markets, with large language models (LLMs) now used to help write CVs and evaluate applicants. We study the risks this creates in a series of audit experiments in which applicant gender is randomly assigned while all other information is held constant. We find that LLMs generate gender-stereotypical CVs and exhibit gender bias in screening scores and wage recommendations. Screening scores track occupational gender segregation, penalizing women in male-dominated occupations and favoring them in female-dominated ones. Wage recommendations track occupational gender wage gaps when gender is explicit in the prompt, though this gradient weakens under name-based gender signaling and is sensitive to the LLMs being used. These disparities arise through two channels: evaluation bias, when identical CV content is evaluated differently by gender, and generation bias, when gendered content produced by the model affects later evaluation. Because the same systems shape both CV content and its subsequent assessment, these channels can reinforce one another. Taken together, our findings identify measurable risks of algorithmic amplification in AI-mediated job search.",
+      "url": "https://doi.org/10.1073/pnas.2534118123",
+      "published": "2026-11-16",
+      "venue": "Proceedings of the National Academy of Sciences",
+      "categories": [],
+      "pdf_url": null,
+      "doi": "https://doi.org/10.1073/pnas.2534118123",
+      "citations": 0,
+      "rule_score": 7.3,
+      "score": 8.365,
+      "tldr_zh": "通过审计实验随机分配求职者性别，发现LLM生成简历与筛选评分、薪资建议存在性别偏见。",
+      "tldr": null,
+      "tags": [
+        "实验",
+        "因果推断",
+        "LLM智能体"
+      ],
+      "reason": "用审计实验与因果设计研究LLM在劳动力市场的偏见，方法严谨且属计算社会科学前沿。",
+      "backfill_date": null
+    },
+    {
+      "id": "arxiv:2611.21519",
+      "source": "arxiv",
+      "title": "Embedding Cosine Measures Text Length Before It Measures Homogenization",
+      "authors": [
+        "Fengming Liu"
+      ],
+      "abstract": "Mean pairwise cosine similarity between transformer embeddings is a standard measure of whether online discourse is converging under generative AI. When the embeddings are mean-pooled outputs of an encoder never trained for sentence similarity, this measure mostly tracks text length. In 6.06 million Reddit comments, an uncentered DeBERTa-v3 measure had suggested that only conservative discourse broke toward homogeneity after late 2022. Truncating the same comments from 10 to 150 words raises their mean cosine by eight times the reported break. A placebo that swaps every comment for a random one of equal length reproduces 81% of the asymmetry, and a fixed-content simulation reproduces 78%. The leading principal direction carries 99.9% of raw DeBERTa homogeneity, and once length is handled the asymmetry disappears under every encoder. On 575,000 Stack Exchange answers the measure reports a post-ChatGPT homogenization of technical sites that the placebo fully reproduces, although answers grew longer. A census of 31 studies locates the risk where anisotropic encoders meet time-series or length-unequal designs. A reverse control on a well-known experiment shows that centering with renormalization can reverse a genuine effect. I propose a low-cost diagnostic protocol. Corrected measures show that the two political camps converged between 2019 and 2022 and stopped converging before ChatGPT. Cross-camp replies engage their targets more closely than same-camp replies.",
+      "url": "https://arxiv.org/abs/2611.21519",
+      "published": "2026-11-16",
+      "venue": "arXiv",
+      "categories": [
+        "cs.CL",
+        "cs.CY",
+        "cs.SI"
+      ],
+      "pdf_url": "https://arxiv.org/pdf/2611.21519v1",
+      "doi": null,
+      "citations": 0,
+      "rule_score": 5.7,
+      "score": 8.285,
+      "tldr_zh": "发现嵌入余弦相似度主要反映文本长度而非话语同质化，长度截断效应是原报告断点的八倍。",
+      "tldr": null,
+      "tags": [
+        "文本计算",
+        "方法论",
+        "在线平台"
+      ],
+      "reason": "对在线话语同质化的常用文本嵌入度量提出方法学批判，对数字痕迹与文本计算研究有重要警示价值。",
+      "backfill_date": null
+    },
+    {
+      "id": "arxiv:2611.20527",
+      "source": "arxiv",
+      "title": "Recurrent losers: A network approach to cover-bidding patterns in public procurement",
+      "authors": [
+        "Isabela Villamil",
+        "János Kertész"
+      ],
+      "abstract": "We develop and apply a network-based method to examine patterns consistent with cover bidding within procurement markets, using only bidder participation and winner identities. A statistical test identifies relationships in which firms win unusually often when particular competitors also bid. These relationships form a directed graph with links from recurrent losers to recurrent winners. We use maximum $k$-core to classify possible organizational forms of cover bidding and propose tender exposure -- the share of contested tenders involving a reported relationship -- as a market-level indicator of potential cover-bidding risk. Applied to 200,065 contracts procured by district engineering offices of the Philippine Department of Public Works and Highways (DPWH) from 2017 to 2025, covering three congressional terms, the method identifies 8,728 directed relationships across 407 of 564 markets. The $k$-core classes differ in network breadth, relationship depth, and bidder roles. In simpler networks, each recurrent loser is usually tied to a single winner, while highly interconnected networks involve multiple recurrent winners and broader groups of bidders that rarely win. Some of the deepest relationships and highest levels of tender exposure occur in intermediate networks, showing how relationships can reach much of a market without extensive interconnectedness. Offices named in official investigations more often contain highly interconnected networks than other offices. Two of the three offices referred for bid rigging are among the twelve in our ranking with the highest exposure in 2023-2025.",
+      "url": "https://arxiv.org/abs/2611.20527",
+      "published": "2026-11-16",
+      "venue": "arXiv",
+      "categories": [
+        "physics.soc-ph"
+      ],
+      "pdf_url": "https://arxiv.org/pdf/2611.20527v1",
+      "doi": null,
+      "citations": 0,
+      "rule_score": 5.5,
+      "score": 8.275,
+      "tldr_zh": "用投标参与与中标身份构建有向网络，识别菲律宾公共采购中疑似围标的输家到赢家关系模式。",
+      "tldr": null,
+      "tags": [
+        "社会网络",
+        "方法论"
+      ],
+      "reason": "将网络方法应用于腐败与围标检测，展示了社会网络分析在制度性行为数据中的实证价值。",
+      "backfill_date": null
+    },
+    {
+      "id": "openalex:W7233910276",
+      "source": "openalex",
+      "title": "The predictive power of the few: When a small group of early adopters signals collective success",
+      "authors": [
+        "Manuel Sebastian Mariani",
+        "René Algesheimer",
+        "Francesco Maria De Collibus",
+        "Claudio Juan Tessone"
+      ],
+      "abstract": "Abstract Can we effectively predict top-performing products, services, or businesses through a small set of adopters? Most previous studies focused on the effects and predictive power of the adoptions by central individuals in social networks, but the resulting insights are typically not applicable without relevant network data. However, informative adopters may still be detectable even when social ties are not observed. Here we examine the predictive power of selected adopter groups detected without network data in large-scale datasets from diverse domains: an e-commerce retailer, Yelp, Ethereum, and user-generated content online communities. Despite the differences among the studied domains, we consistently detect a small set of ``discoverer\" adopters who offer stronger and more reliable out-of-sample predictive signals than previously-studied adopter groups. Further, the discoverers' early adoptions can improve the performance of statistical-learning models for success prediction. We explore the implications of the found regularities through a two-stage laboratory experiment, whose results indicate that informing the discoverers first on new products generates a larger success difference between high-quality and low-quality products. Based on a multimethod approach, our findings indicate that a small group of discoverers can offer informative early signals of success, and their early awareness of new products might influence the relative success of competing products.",
+      "url": "https://doi.org/10.1093/pnasnexus/pgag392",
+      "published": "2026-11-16",
+      "venue": "PNAS Nexus",
+      "categories": [],
+      "pdf_url": null,
+      "doi": "https://doi.org/10.1093/pnasnexus/pgag392",
+      "citations": 0,
+      "rule_score": 5.4,
+      "score": 8.27,
+      "tldr_zh": "在电商、Yelp、以太坊等数据中发现无需网络数据即可识别的小群“发现者”采纳者，能可靠预测集体成功。",
+      "tldr": null,
+      "tags": [
+        "扩散与传播",
+        "在线平台",
+        "数字痕迹"
+      ],
+      "reason": "研究早期采纳者对集体成功的预测力，直接关联扩散传播与在线平台数字痕迹分析。",
+      "backfill_date": null
+    },
+    {
+      "id": "arxiv:2611.20538",
+      "source": "arxiv",
+      "title": "Effective and Efficient Rumor Assertion Over Large-Scale Social Networks (Technical Report)",
+      "authors": [
+        "Qi Wen",
+        "Vipin Chaudhary",
+        "Xiang Lian",
+        "Yutong Ye",
+        "Mingsong Chen"
+      ],
+      "abstract": "Nowadays, social networks, like Facebook, X, Reddit, YouTube, and so on, have become essential online platforms for users to connect with friends daily, post/share news, and express their opinions/comments. Meanwhile, however, the rapid and widespread dissemination of rumors and misinformation across social networks has become a serious concern. Such misleading information can distort public opinion and potentially cause significant social and economic consequences in real-world scenarios, including product promotion, elections and voting, and even cyberbullying. Therefore, accurately and efficiently verifying whether news spread on social networks is rumor or truth has become an increasingly important yet challenging problem. While previous works usually identified rumors by their contents, in this paper, we propose a novel \\textit{user behavior model} to capture the users' judgment/discriminative abilities, which is learned via our well-designed evidence-aware probability reconstructor. We develop a general framework for tackling \\textit{rumor assertion over large-scale social networks} (RA-SN), which can efficiently and effectively determine whether a given news item is a rumor with high confidence, based on users' behaviors, in a scalable manner. Extensive experiments demonstrate the efficiency and effectiveness of our proposed RA-SN approach on both real-world and synthetic graphs.",
+      "url": "https://arxiv.org/abs/2611.20538",
+      "published": "2026-11-16",
+      "venue": "arXiv",
+      "categories": [
+        "cs.SI",
+        "cs.CY"
+      ],
+      "pdf_url": "https://arxiv.org/pdf/2611.20538v1",
+      "doi": null,
+      "citations": 0,
+      "rule_score": 8.6,
+      "score": 7.93,
+      "tldr_zh": "提出在大规模社交网络上高效验证谣言的方法，结合内容与网络传播特征提升判定准确率与效率。",
+      "tldr": null,
+      "tags": [
+        "在线平台",
+        "扩散与传播",
+        "文本计算"
+      ],
+      "reason": "面向社交网络谣言检测，涉及在线平台信息传播与文本计算，相关但偏系统方法。",
+      "backfill_date": null
+    },
+    {
+      "id": "arxiv:2611.20294",
+      "source": "arxiv",
+      "title": "\"God says we are right!\": The Interplay between Religion and Propaganda on Arabic Social Media",
+      "authors": [
+        "Mahmoud Fawzi",
+        "Björn Ross",
+        "Walid Magdy"
+      ],
+      "abstract": "Religion is a main aspect of life in many parts of the world; hence, it acts as a powerful tool for influencing people's views and actions. In the context of propaganda and misinformation, religion has been perceived as a factor that impacts people negatively leading them to be influenced by false or biased information. However, there are limited quantitative studies that explore the exact role of religion in this process. In this study, we investigate whether state-sponsored propaganda accounts share religious content in a different way than the typical norms reported in the literature and whether they mobilize this content to promote their agendas. This is achieved by exploring 15 Middle Eastern propaganda Twitter datasets encompassing around 124 million tweets from 32.5K accounts attributed to KSA, UAE, Egypt, Turkey, and Iran. We find that propagandists share excerpts from the Quran and Hadith according to patterns that reflect aspects of their state's agenda. We also demonstrate examples where such religious texts were used to modulate political messages.",
+      "url": "https://arxiv.org/abs/2611.20294",
+      "published": "2026-11-15",
+      "venue": "arXiv",
+      "categories": [
+        "cs.SI"
+      ],
+      "pdf_url": "https://arxiv.org/pdf/2611.20294v1",
+      "doi": "10.1145/3772318.3791732",
+      "citations": 0,
+      "rule_score": 7.9,
+      "score": 7.895,
+      "tldr_zh": "用15个中东Twitter数据集（1.24亿推文）量化分析国家宣传账号如何差异化使用宗教内容推动议程。",
+      "tldr": null,
+      "tags": [
+        "在线平台",
+        "舆论与极化",
+        "数字痕迹"
+      ],
+      "reason": "基于大规模数字痕迹研究社交媒体宣传与舆论操纵，契合计算社会科学实证方向。",
+      "backfill_date": null
+    },
+    {
+      "id": "arxiv:2611.21362",
+      "source": "arxiv",
+      "title": "What You Post Is What You Symptom: Estimating Psychometric Networks from Social Media Discourse",
+      "authors": [
+        "Ştefana-Arina Tăbuşcă",
+        "Ana Sabina Uban",
+        "Liviu P. Dinu"
+      ],
+      "abstract": "Symptom networks in psychopathology are estimated almost exclusively from self-report questionnaires, restricting inference to whatever symptom set a given instrument covers. We introduce a framework for symptom-resolved network estimation directly from social media discourse and apply the framework to depression and eating disorders, with a third anorexia corpus as cross-dataset validation. To our knowledge, we are the first to estimate symptom-resolved psychometric networks from social media text, compare them to clinical co-endorsement networks, and replicate transdiagnostic linguistic markers across 3 independently recruited corpora spanning 2 disorders simultaneously. For depression, expression scores correlate with BDI-II totals at $ρ{=}0.434$, 20 of 21 items reach FDR significance, and split-half reliability is 0.935. The Network Comparison Test detects few edge differences between modalities (3-5\\% of edges), while bridge symptoms diverge. For eating disorders, the item-level results are exploratory. Identified linguistic features replicate the same direction across all 3 corpora, and they cluster in three construct families.",
+      "url": "https://arxiv.org/abs/2611.21362",
+      "published": "2026-11-16",
+      "venue": "arXiv",
+      "categories": [
+        "cs.CL",
+        "cs.AI",
+        "cs.CY",
+        "cs.SI"
+      ],
+      "pdf_url": "https://arxiv.org/pdf/2611.21362v1",
+      "doi": null,
+      "citations": 0,
+      "rule_score": 7.2,
+      "score": 7.86,
+      "tldr_zh": "提出从社交媒体文本估计症状级心理测量网络，在抑郁与进食障碍语料上复现跨诊断语言标记。",
+      "tldr": null,
+      "tags": [
+        "文本计算",
+        "数字痕迹",
+        "方法论"
+      ],
+      "reason": "将网络估计方法用于社交媒体文本的心理症状网络，属数字痕迹与文本计算方法创新。",
+      "backfill_date": null
+    },
+    {
+      "id": "arxiv:2611.20540",
+      "source": "arxiv",
+      "title": "Changing a View Is Not Amending a Record: Timing and Visibility in a Model of Public Correction",
+      "authors": [
+        "Ziming Liu"
+      ],
+      "abstract": "An accusation may remain on the public record after its author has changed their mind. Observers can respond either to what a person says now or to an earlier statement that has never been explicitly amended. We examine the consequences of these two signals with a generative agent-based model that separates private evidence updates, current expression, and revisions linked to a specific declaration. In paired worlds, evidence, prehistory, and opportunities to revisit that declaration remain fixed. When expression and amendment are synchronized and fully observed, the feedback channels produce identical trajectories. With sparse review, record-based feedback leaves 19.44 percentage points more eligible accusations unamended after 24 rounds (paired-world 95 percent bootstrap interval 13.89 to 25.31). The comparison averages 50 eligible worlds, containing 556 agents, from 128 newly generated worlds. Event traces show how a persistent public cue changes subsequent amendment propensity; an exact small-state calculation independently establishes the timing boundary. Reducing record salience can erase or reverse the increment, and a generic held-state process reproduces the dynamics. The findings show when current expression ceases to track correction of a particular public statement.",
+      "url": "https://arxiv.org/abs/2611.20540",
+      "published": "2026-11-16",
+      "venue": "arXiv",
+      "categories": [
+        "cs.SI"
+      ],
+      "pdf_url": "https://arxiv.org/pdf/2611.20540v1",
+      "doi": null,
+      "citations": 0,
+      "rule_score": 5.7,
+      "score": 7.785,
+      "tldr_zh": "用生成式智能体模型区分私下信念更新与公开记录修正，发现稀疏审查下记录反馈使未修正指控多出19.44个百分点。",
+      "tldr": null,
+      "tags": [
+        "仿真与ABM",
+        "LLM智能体",
+        "舆论与极化"
+      ],
+      "reason": "以智能体仿真研究公开更正与记录可见性对舆论的影响，属于计算社会科学中的仿真与传播议题。",
+      "backfill_date": null
+    }
+  ]
+}
