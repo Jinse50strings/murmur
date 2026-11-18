@@ -1,0 +1,350 @@
+{
+  "app": "Murmur",
+  "version": 1,
+  "date": "2026-11-19",
+  "generated_at": "2026-11-19T07:02:16+08:00",
+  "count": 10,
+  "counts": {
+    "sources": {
+      "arxiv": 98,
+      "openalex": 122
+    },
+    "unique": 220,
+    "new": 193,
+    "candidates": 29,
+    "selected": 10,
+    "fresh_selected": 10,
+    "errors": 0
+  },
+  "papers": [
+    {
+      "id": "arxiv:2611.21963",
+      "source": "arxiv",
+      "title": "Structural balance in complex networks: from measurement to dynamics, emergence and implications",
+      "authors": [
+        "Giacomo Vaccario",
+        "Piotr J. Górski",
+        "Georges Andres",
+        "Manuel S. Mariani",
+        "Janusz A. Hołyst"
+      ],
+      "abstract": "Structural balance theory, introduced in social psychology to describe how friendly and hostile ties organize into consistent patterns, has been reinterpreted through statistical physics and complex networks. In the classical formulation, a triad with positive or negative links, representing friendship and hostility, is balanced when the product of its signs is positive; a balanced network splits into at most two internally friendly, mutually hostile groups. This review synthesizes how the triadic formulation has been extended to a statistical-ensemble perspective in which balance is encoded by immanent three-body interactions described by a proper Hamiltonian, balanced configurations correspond to low-energy states, and balance measures serve as order parameters for transitions between consensus, polarization, and disorder. We organize the field into three sections: Measurement, Dynamics and Emergence, and Implications. In Measurement, we compare measures of structural balance and null models, and show that conclusions for a given system depend on the chosen measure and null model. In Dynamics and Emergence, we review deterministic and stochastic systems, including the gradient, Hamiltonian, and local triad models, and examine how noise, topology, and competing mechanisms determine whether balance emerges. In Implications, we survey consequences for belief formation, opinion contagion dynamics, polarization, international relations, and markets. Across domains, the evidence is strongest for local triadic stability and weakest for system-wide balance. Balance is not synonymous with harmony: balanced structures can reflect cohesion, polarization, or persistent conflict. Its empirical relevance is well supported in some reciprocal social systems, but remains less settled in biological and other complex networks.",
+      "url": "https://arxiv.org/abs/2611.21963",
+      "published": "2026-11-16",
+      "venue": "arXiv",
+      "categories": [
+        "physics.soc-ph",
+        "cond-mat.stat-mech"
+      ],
+      "pdf_url": "https://arxiv.org/pdf/2611.21963v1",
+      "doi": null,
+      "citations": 0,
+      "rule_score": 9.3,
+      "score": 9.465,
+      "tldr_zh": "综述结构平衡理论：从三元组符号测量到统计物理哈密顿量、动力学与涌现，并讨论其对群体极化的启示。",
+      "tldr": null,
+      "tags": [
+        "复杂网络",
+        "舆论与极化",
+        "综述"
+      ],
+      "reason": "结构平衡是符号社会网络与极化研究的核心理论，综述对复杂网络读者价值高。",
+      "backfill_date": null
+    },
+    {
+      "id": "arxiv:2611.22261",
+      "source": "arxiv",
+      "title": "Manufactured Authenticity: How Behavioral Signals Are Produced and Misread in Online Markets",
+      "authors": [
+        "Hou-Wan",
+        "Long",
+        "Yun Huang"
+      ],
+      "abstract": "Online platforms increasingly ask users to infer credibility from behavioral signals whose production conditions are opaque. We introduce manufactured authenticity: the platform-mediated production of observable activity that interfaces invite users to read as organic participation. Using 996,834 cryptocurrency tokens and 50,895 creator wallets from Pump.fun, a Solana-based token launchpad, we examine how legitimacy signals are produced in an automation-enabled online market. We identify four production strategies (high-velocity launching, passive launching, template-content creation, and organic-style creation) that generate distinct but interface-similar cues of activity, narrative plausibility, and participation. High-velocity and template-content strategies emerge as alternatives rather than cumulative layers: the former produces activity at scale, while the latter produces descriptions associated with higher reply engagement. Yet visible engagement does not imply broader diffusion: template-like content attracts replies without greater ownership dispersion, and tokens associated with non-organic production strategies exhibit more concentrated investor holdings than organic-style tokens. We argue that platform governance should move beyond detecting manipulation toward making signal provenance legible. We propose authenticity disclosure as a design approach for surfacing production conditions without requiring definitive claims about automation, AI authorship, or actor intent.",
+      "url": "https://arxiv.org/abs/2611.22261",
+      "published": "2026-11-17",
+      "venue": "arXiv",
+      "categories": [
+        "cs.SI"
+      ],
+      "pdf_url": "https://arxiv.org/pdf/2611.22261v1",
+      "doi": null,
+      "citations": 0,
+      "rule_score": 6.4,
+      "score": 8.82,
+      "tldr_zh": "分析Pump.fun近百万代币与5万钱包，识别四种制造活动信号策略，揭示平台界面如何误导用户对真实性的判断。",
+      "tldr": null,
+      "tags": [
+        "在线平台",
+        "数字痕迹",
+        "文本计算"
+      ],
+      "reason": "直接研究在线平台行为信号的生产与误读，是平台与数字痕迹研究的核心议题。",
+      "backfill_date": null
+    },
+    {
+      "id": "arxiv:2611.22987",
+      "source": "arxiv",
+      "title": "Longitudinal Multi-Dimensional Analysis of India-Pakistan Conflict Discourse on Reddit (2019-2025)",
+      "authors": [
+        "Yash Khare",
+        "Hunjun Shin",
+        "Mohit Singhal"
+      ],
+      "abstract": "Six India--Pakistan crises between 2019 and 2025, from the Pulwama attack to Operation Sindoor, have each been argued out on Reddit in India-aligned communities such as \\texttt{r/india}, in Pakistan-aligned communities such as \\texttt{r/pakistan}, and in general-audience ones such as \\texttt{r/worldnews}. A strike can be a security issue in one community and a question of who was harmed in another. Computational studies of the conflict have concentrated on the February 2019 crisis, with some splitting posts by national side, but to the best of our knowledge none has compared how differently aligned communities frame a series of crises. To investigate this, we collected 43K posts from ten such communities on Reddit and, after filtering, used a mixed-methods approach to analyze the 305K comments under the relevant posts. We label each comment's narrative frame with GPT-5.2 and measure contestation with Reddit's flag for comments that draw many votes in both directions. Contestation rates differ 2.5-fold between general-audience and India-aligned communities and 1.8-fold between humanitarian and economic framing, but only 1.1-fold between comments that Perspective scores as toxic and the rest. The mix of frames and sentiment tracks the kind of crisis more closely than its year: the first and last crises, both military and six years apart, draw nearly identical mixes, and the 2019 revocation of Article 370 draws a different one. Crossing into another group of communities sharpens opposition rather than softening it: commenters who post both inside and outside their usual group oppose the other side more often outside it, even as slightly fewer of their comments attack a person or group.",
+      "url": "https://arxiv.org/abs/2611.22987",
+      "published": "2026-11-17",
+      "venue": "arXiv",
+      "categories": [
+        "cs.SI",
+        "cs.CY"
+      ],
+      "pdf_url": "https://arxiv.org/pdf/2611.22987v1",
+      "doi": null,
+      "citations": 0,
+      "rule_score": 5.0,
+      "score": 8.75,
+      "tldr_zh": "收集Reddit十个社区43万帖305万评论，比较印巴六次危机中不同阵营社区对冲突的框架差异。",
+      "tldr": null,
+      "tags": [
+        "在线平台",
+        "文本计算",
+        "舆论与极化"
+      ],
+      "reason": "跨阵营在线社区话语框架的纵向计算分析，直接契合在线平台与舆论极化研究。",
+      "backfill_date": null
+    },
+    {
+      "id": "arxiv:2611.23175",
+      "source": "arxiv",
+      "title": "Finding Patient Zero in Temporal Contact Networks: A Comparative Study",
+      "authors": [
+        "Nathan Cincera Brack",
+        "Martin Sterchi",
+        "Lorenz Hilfiker",
+        "Abraham Bernstein"
+      ],
+      "abstract": "Identifying the source of an epidemic, i.e., the patient zero, in a temporal contact network is important for effective outbreak containment and resource allocation. While several methods have been proposed for this task, they have rarely been evaluated under comparable conditions, and no systematic comparison exists for temporal contact networks. We address this gap with a comparative study of seven major methods, namely Steiner Tree (ST), Individual-Based Approximation (IBA), Dynamic Message Passing (DMP), Monte Carlo Mean-Field (MCMF), Soft Margin Estimator (SME), Backtracking Network (BN, a graph neural network), and Belief Propagation (BP). We unify all methods under a single problem formulation and evaluate them on eight diverse temporal networks. In the main experiment, we compare source detection performance for varying basic reproduction numbers. Three complementary experiments on a subset of networks study (i) learning curves, (ii) partial observability, and (iii) parameter misspecification. We find that BP and BN are the strongest source detectors overall. SME is strong under partial observation but mediocre otherwise. IBA, DMP, and MCMF share a common weakness rooted in their factorized-likelihood assumption, leading to overconfident predictions. We identify scaling these methods to larger networks as the most pressing direction for future work.",
+      "url": "https://arxiv.org/abs/2611.23175",
+      "published": "2026-11-17",
+      "venue": "arXiv",
+      "categories": [
+        "cs.SI"
+      ],
+      "pdf_url": "https://arxiv.org/pdf/2611.23175v1",
+      "doi": null,
+      "citations": 0,
+      "rule_score": 6.2,
+      "score": 8.31,
+      "tldr_zh": "在统一问题框架下比较七种时序接触网络零号病人溯源方法，并在八个真实网络上系统评测。",
+      "tldr": null,
+      "tags": [
+        "扩散与传播",
+        "方法论",
+        "复杂网络"
+      ],
+      "reason": "时序网络上的传播源定位方法比较，对扩散与网络方法读者有明确价值。",
+      "backfill_date": null
+    },
+    {
+      "id": "openalex:W7235412955",
+      "source": "openalex",
+      "title": "The sound of persuasion: Using generative AI to identify gender gaps in political influence",
+      "authors": [
+        "Ethan Craig Busby",
+        "Lisa P. Argyle",
+        "Parker Davis",
+        "Joshua R. Gubler",
+        "Bryce Hepner",
+        "Christopher F. Karpowitz",
+        "Alex Lyman",
+        "Justin Olcott"
+      ],
+      "abstract": "Women often experience a deficit in persuasive influence, particularly in contexts like politics, where expectations about women’s behavior may conflict with gendered expectations about the domain and role. In spite of this widespread pattern, the mechanisms behind the gender gap in persuasion are difficult to isolate and test in dynamic political conversations. Women may be less persuasive simply because role-based expectations prompt others to afford women less authority when speaking about politics generally or about some political topics. Alternatively, women may be less persuasive because they tend to use linguistic patterns or rhetorical strategies that are less effective. Using an original AI-based approach, we put 4,300 human subjects into realistic, real-time phone conversations with an AI agent. These agents were randomly assigned either a masculine or feminine gendered conversation topic and a male- or female-sounding voice, allowing us to manipulate topic and perceptions of speakers’ gender while holding constant other elements of rhetorical content and strategy. After validating the experimental treatments, we find no direct effects of perceived gender of the AI agent, as cued by voice. However, gender affects other important aspects of the persuasive interaction. Research subjects were more likely to be persuaded about the masculine topic (defense spending) than the feminine topic (aid to the poor). Additionally, women research subjects were, on average, more persuaded than men. To the extent that men and women emphasize different topics in political conversations and have different discussion partners, these dynamics are likely to shape women’s political persuasive influence.",
+      "url": "https://doi.org/10.1073/pnas.2615776123",
+      "published": "2026-11-17",
+      "venue": "Proceedings of the National Academy of Sciences",
+      "categories": [],
+      "pdf_url": null,
+      "doi": "https://doi.org/10.1073/pnas.2615776123",
+      "citations": 0,
+      "rule_score": 5.2,
+      "score": 8.26,
+      "tldr_zh": "用生成式AI驱动4300人实时电话对话实验，分离出政治说服力中的性别差距机制。",
+      "tldr": null,
+      "tags": [
+        "实验",
+        "LLM智能体",
+        "文本计算"
+      ],
+      "reason": "AI辅助大规模对话实验研究政治影响力与性别差异，方法对计算社会科学有明确借鉴价值。",
+      "backfill_date": null
+    },
+    {
+      "id": "arxiv:2611.23204",
+      "source": "arxiv",
+      "title": "A comparative exploration of Steinerberger curvature and resistance curvature in model and real-world complex networks",
+      "authors": [
+        "Madhumita Mondal",
+        "Priyank Vasu",
+        "Areejit Samal",
+        "Jürgen Jost"
+      ],
+      "abstract": "Discrete curvature extends the concept of curvature from continuous spaces to discrete structures such as graphs and networks. It provides a mathematical framework for characterising local and global network geometry, that offers insights into structural properties such as connectivity and clustering. In this study, we investigate Steinerberger curvature (SBC) and resistance curvature (RC) and examine their relationships with established graph curvature measures, namely Forman-Ricci, Augmented Forman-Ricci, and Ollivier-Ricci curvatures, a notion of scalar sectional curvature, as well as conventional vertex-based measures. A systematic comparative analysis is conducted across various synthetic network models and real-world networks, focusing on curvature distributions, correlations with structural measures, and the identification of structurally important vertices through network disintegration experiments based on global efficiency. Our results show that SBC generally exhibits weaker correlations with other measures. On the other hand, RC is strongly positively correlated with established discrete Ricci curvature measures, whereas it is predominantly negatively correlated with conventional vertex-based measures like degree and centrality-based measures. Furthermore, RC achieves a reduction in communication efficiency comparable to or faster than established Ricci curvature measures. These findings suggest that SBC captures structural characteristics that are largely distinct from those reflected by other measures, while RC exhibits distinct structural associations and shows significant potential for identifying vertices critical to network connectivity.",
+      "url": "https://arxiv.org/abs/2611.23204",
+      "published": "2026-11-17",
+      "venue": "arXiv",
+      "categories": [
+        "cs.SI"
+      ],
+      "pdf_url": "https://arxiv.org/pdf/2611.23204v1",
+      "doi": null,
+      "citations": 0,
+      "rule_score": 7.9,
+      "score": 7.895,
+      "tldr_zh": "系统比较Steinerberger曲率与电阻曲率在合成和真实网络中的分布及与其他离散曲率的相关性。",
+      "tldr": null,
+      "tags": [
+        "复杂网络",
+        "方法论"
+      ],
+      "reason": "离散曲率是网络结构分析工具，属复杂网络方法学，但社会行为关联较弱。",
+      "backfill_date": null
+    },
+    {
+      "id": "arxiv:2611.23123",
+      "source": "arxiv",
+      "title": "Inferring Locations and Correcting Bias in Infectious Disease Data Using Human Mobility",
+      "authors": [
+        "Owen Tucker",
+        "Lily Wang",
+        "Ruochen Kong",
+        "Haley Stone",
+        "Jing Du",
+        "Matthew Scotch",
+        "Flora D. Salim",
+        "Taylor Anderson"
+      ],
+      "abstract": "Understanding and reconstructing infectious disease transmission remains challenging due to sparsely sampled and biased epidemiological case data: only a small fraction of infectious disease cases are reported to health authorities, and an even smaller fraction are sent to labs for genomic sequencing. In this work, we study the problem of inferring unobserved transmission events by integrating pathogen genomic data with human mobility information. Intuitively, even if we do not have case data for a certain region, such as a census block group, we can use massive-scale individual mobility data to understand where people may be exposed and infer where unobserved cases may be located. Assuming only a subset of cases are reported and sequenced, we reconstruct a phylogenetic tree from observed cases and transform it into a partial transmission tree using the outbreaker2 tool. This tree contains inferred transmissions based on the genetic distance of the observed cases. As these inferred nodes have unknown locations, we propose a mobility-aware belief propagation approach to estimate their locations using human mobility data. Experiments on simulated and real-world genomic surveillance data with biased sampling show that incorporating mobility data improves the reconstruction of inferred transmission trees, reducing cross-entropy relative to the observed distribution by 39.4% and 16.1%, respectively. Results on real-world COVID-19 sequence data show the promise of combining genomic and mobility data for more reliable location inference, with potential implications for outbreak analysis and public health decision-making.",
+      "url": "https://arxiv.org/abs/2611.23123",
+      "published": "2026-11-17",
+      "venue": "arXiv",
+      "categories": [
+        "cs.SI"
+      ],
+      "pdf_url": "https://arxiv.org/pdf/2611.23123v1",
+      "doi": "10.1145/841645.384329",
+      "citations": 0,
+      "rule_score": 6.7,
+      "score": 7.835,
+      "tldr_zh": "结合病原体基因组与大规模人类移动数据，推断未报告病例位置并校正疾病监测偏差。",
+      "tldr": null,
+      "tags": [
+        "城市与流动",
+        "因果推断",
+        "数字痕迹"
+      ],
+      "reason": "用移动数据做流行病推断与偏差校正，属计算社会科学中数字痕迹与流动应用。",
+      "backfill_date": null
+    },
+    {
+      "id": "arxiv:2611.22975",
+      "source": "arxiv",
+      "title": "Large Language Models Have Not Yet Transformed Science",
+      "authors": [
+        "Ron Bekkerman",
+        "Nichole Li",
+        "Bahareh Kargar",
+        "Mark Somers"
+      ],
+      "abstract": "The emergence of large language models (LLMs) in late 2022 has raised questions about the future of science, but assessing their impact requires understanding how scientific practices were already evolving. We analyze 2.5 million full-text papers across five disciplines from 2015 to 2025, tracing trends over a broad spectrum of lexical, structural, epistemological, and social dimensions. Aside from frequency shifts in some words, most pre-2023 trends continued with limited detectable breaks. Among the notable exceptions, growth in computer science coauthor teams accelerated significantly in Asia, while apparent declines in biomedical topic diversity largely reflected standardization in article formats. Our study establishes an empirical foundation for monitoring the health of global science as LLM adoption deepens.",
+      "url": "https://arxiv.org/abs/2611.22975",
+      "published": "2026-11-17",
+      "venue": "arXiv",
+      "categories": [
+        "cs.CL",
+        "cs.AI",
+        "cs.CY",
+        "cs.DL"
+      ],
+      "pdf_url": "https://arxiv.org/pdf/2611.22975v1",
+      "doi": null,
+      "citations": 0,
+      "rule_score": 5.2,
+      "score": 7.76,
+      "tldr_zh": "分析2015-2025年五学科250万篇全文，发现LLM出现后多数科学趋势延续，仅少数指标出现断点。",
+      "tldr": null,
+      "tags": [
+        "文本计算",
+        "方法论",
+        "数字痕迹"
+      ],
+      "reason": "用大规模全文计量刻画科学实践变迁，属科学计量与文本计算方法，与计算社会科学相关但非核心。",
+      "backfill_date": null
+    },
+    {
+      "id": "arxiv:2611.22716",
+      "source": "arxiv",
+      "title": "High-Coverage Blind Spots in Online Abuse Monitoring: Account Selection, Held-Out Flagging Rates, and Sample Composition",
+      "authors": [
+        "Ziming Liu"
+      ],
+      "abstract": "Platforms with limited monitoring capacity may rank target accounts by the number of abusive replies received or by the share of replies labeled abusive. We test how these rankings affect account selection, historical flagged-reply coverage, and held-out labeling rates. In the Online Abusive Attacks (OAA) data (945,987 replies to 384 accounts), two 25-account lists share just one account. Count-based selection covers 75.56% of flagged replies, while rate-based selection covers 5.04%. In a 500-iteration stratified historical hold-out, the lists have labeling rates of 2.69% and 4.98%, respectively (1.85 times). A volume- and group-preserving null model produces low list overlap without a corresponding rate advantage. We repeat the comparison on a second dataset of replies to UK election candidates. The two 25-account lists overlap in eight accounts, but the rate advantage is smaller in historical splits and reverses in three matched-group chronological tests. The findings distinguish differences in who is selected for monitoring from differences in future labeling rates across populations and time.",
+      "url": "https://arxiv.org/abs/2611.22716",
+      "published": "2026-11-17",
+      "venue": "arXiv",
+      "categories": [
+        "cs.SI"
+      ],
+      "pdf_url": "https://arxiv.org/pdf/2611.22716v1",
+      "doi": null,
+      "citations": 0,
+      "rule_score": 5.0,
+      "score": 7.75,
+      "tldr_zh": "比较按辱骂回复数量与比例筛选监测账号，发现两种名单几乎不重叠，覆盖率与标注率差异显著。",
+      "tldr": null,
+      "tags": [
+        "在线平台",
+        "方法论",
+        "数字痕迹"
+      ],
+      "reason": "揭示在线辱骂监测中账号选择偏差，对平台数字痕迹测量方法有实证价值。",
+      "backfill_date": null
+    },
+    {
+      "id": "arxiv:2611.21825",
+      "source": "arxiv",
+      "title": "Urban Representation Learning for Identifying Potential Disparities in Crime Reporting",
+      "authors": [
+        "Jorge Valverde-Rebaza",
+        "Carlos Paez De La Cruz",
+        "Pedro Pérez-Collado",
+        "Daniel Sánchez-Cataño",
+        "Eashley Martínez-Vergara"
+      ],
+      "abstract": "Open crime data support urban safety analysis but reflect reported incidents rather than the complete distribution of criminal activity, potentially introducing spatial distortions in downstream analysis. We propose a self-supervised urban representation learning framework for identifying unusual reporting patterns relative to representation-similar peers using only georeferenced crime records. The method constructs complementary hourly, weekly, and static reporting profiles, learns scale-specific representations under geographic self-supervision, and integrates them into a unified latent space. Neighbor Profile Divergence (NPD) is then used to quantify disagreement between each region's reporting profile and those of its retrieved peers. Experiments on more than 1.8 million crime records from Mexico City, aggregated into 1,058 H3 regions, show that the proposed representation achieves a mean Silhouette score of 0.4052, compared with 0.2863 for Hex2Vec. NPD rankings remain highly stable across neighborhood sizes, with Spearman correlations from 0.9720 to 0.9951, while most high-divergence candidates persist across configurations. The retrieved peers also extend substantially beyond immediate geographic neighborhoods, indicating that the learned representation captures structure beyond local spatial proximity. High-divergence regions exhibit spatially organized patterns and, in several cases, differences in incident volume relative to peer expectations. These results support NPD as an internal auditing and prioritization mechanism for identifying regions that warrant further investigation, rather than as direct evidence of underreporting.",
+      "url": "https://arxiv.org/abs/2611.21825",
+      "published": "2026-11-16",
+      "venue": "arXiv",
+      "categories": [
+        "cs.LG",
+        "cs.CY",
+        "cs.IR"
+      ],
+      "pdf_url": "https://arxiv.org/pdf/2611.21825v1",
+      "doi": null,
+      "citations": 0,
+      "rule_score": 4.7,
+      "score": 7.735,
+      "tldr_zh": "用自监督城市表征学习比较各区域犯罪报案画像与相似区域，识别报案行为异常与潜在漏报差异。",
+      "tldr": null,
+      "tags": [
+        "城市与流动",
+        "数字痕迹",
+        "方法论"
+      ],
+      "reason": "基于地理犯罪记录的数字痕迹表征学习，揭示报案偏差，与社会计算和城市分析直接相关。",
+      "backfill_date": null
+    }
+  ]
+}
