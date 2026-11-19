@@ -1,0 +1,351 @@
+{
+  "app": "Murmur",
+  "version": 1,
+  "date": "2026-11-20",
+  "generated_at": "2026-11-20T07:10:59+08:00",
+  "count": 10,
+  "counts": {
+    "sources": {
+      "arxiv": 90,
+      "openalex": 0
+    },
+    "unique": 90,
+    "new": 70,
+    "candidates": 20,
+    "selected": 10,
+    "fresh_selected": 10,
+    "errors": 1
+  },
+  "papers": [
+    {
+      "id": "arxiv:2611.24758",
+      "source": "arxiv",
+      "title": "Polycentrality in Urban Socioecological Systems: A Multilayer Analysis of Social Infrastructure in Iztapalapa, Mexico City",
+      "authors": [
+        "Marco A. Rosas",
+        "Gustavo Carreón",
+        "Carlos Gershenson",
+        "Jesús Mario Siqueiros"
+      ],
+      "abstract": "The spatial distribution of infrastructure and activities, along with the networks and interactions that connect them, is key to understanding the relationship between urban form, function, and sustainability from a complex systems perspective. Within this dynamic relationship, the extent to which localized social infrastructure can reinforce existing functional centralities or create conditions for the emergence of new ones remains insufficiently understood. This study examines these relationships through the UTOPÍAS program in Iztapalapa, Mexico City, where 15 public social facilities have been established across a historically underserved urban territory. We develop a multilayer network framework integrating pedestrian infrastructure, GTFS-based public transport services, and UTOPÍAS as a target layer to assess multimodal connectivity, travel-time accessibility, and spatial coverage. These conditions are examined alongside indicators of local economic centrality (PCI and wPCI) to investigate how infrastructure interdependencies relate to the functional organization of urban space. The analysis reveals spatial heterogeneity in multimodal accessibility and differences in the integration of UTOPÍAS with existing transport networks. By relating these patterns to pre-existing economic centralities, we examine whether distributed social infrastructure may reinforce established functional centers or create conditions favorable to emerging centralities, without assuming that spatial decentralization necessarily produces polycentrality. The findings contribute a relational, data-driven approach to understanding how social infrastructure and mobility shape urban functions, emphasizing accessibility and territorial integration as critical conditions for more equitable and sustainable urban development.",
+      "url": "https://arxiv.org/abs/2611.24758",
+      "published": "2026-11-18",
+      "venue": "arXiv",
+      "categories": [
+        "physics.soc-ph",
+        "stat.ME"
+      ],
+      "pdf_url": "https://arxiv.org/pdf/2611.24758v1",
+      "doi": null,
+      "citations": 0,
+      "rule_score": 9.3,
+      "score": 8.465,
+      "tldr_zh": "用多层网络整合步行、公交与社会设施，分析墨西哥城Iztapalapa社会基础设施是否强化或催生城市中心性。",
+      "tldr": null,
+      "tags": [
+        "城市与流动",
+        "复杂网络",
+        "社会网络"
+      ],
+      "reason": "多层城市网络与中心性分析，直接契合复杂网络与城市计算方向。",
+      "backfill_date": null
+    },
+    {
+      "id": "arxiv:2611.24252",
+      "source": "arxiv",
+      "title": "Neither graphs nor hypergraphs: structural moments of higher-order interactions determine stochastic social-impact dynamics",
+      "authors": [
+        "Emanuele Cozzo"
+      ],
+      "abstract": "Whether higher-order interactions can be reduced to simpler representations is a question about the dynamics they drive, not only about their structure: what can be discarded is whatever the dynamics does not see. We make this precise for binary-state stochastic dynamics in which each agent, when updated, interacts with a randomly selected group and changes state according to the fraction of disagreeing members, as in generalized voter and social-impact models on hypergraphs. We ask which statistics of the group-interaction process determine the resulting Markov dynamics. For response functions that are polynomials of degree $q$, the answer is a hierarchy of size-weighted inclusion moments, which we call structural moments, involving at most $q$ neighbors at a time, regardless of how large the groups are. These moments are not only sufficient but also necessary: two interaction structures produce identical dynamics for all such rules if and only if their moments coincide. More generally, each class of rules selects its own minimal structural description, ranging from weighted pairwise links for linear rules to the full distribution of co-membership by group size for arbitrary rules. For voter-type rules, the same moments also reconstruct exact pairwise copying representations of these dynamics.",
+      "url": "https://arxiv.org/abs/2611.24252",
+      "published": "2026-11-18",
+      "venue": "arXiv",
+      "categories": [
+        "cond-mat.stat-mech",
+        "physics.soc-ph"
+      ],
+      "pdf_url": "https://arxiv.org/pdf/2611.24252v1",
+      "doi": null,
+      "citations": 0,
+      "rule_score": 5.5,
+      "score": 8.275,
+      "tldr_zh": "证明高阶交互的随机社会影响动力学由结构矩层级决定，可用至多q个邻居的统计量刻画。",
+      "tldr": null,
+      "tags": [
+        "复杂网络",
+        "仿真与ABM",
+        "方法论"
+      ],
+      "reason": "高阶网络动力学可约化性理论结果，对复杂网络与社会影响建模核心相关。",
+      "backfill_date": null
+    },
+    {
+      "id": "arxiv:2611.24449",
+      "source": "arxiv",
+      "title": "Ordinal Hegselmann-Krause Systems",
+      "authors": [
+        "Martin Hoefer",
+        "Tim Koglin",
+        "Jakob Lindner",
+        "Jannis Schramek"
+      ],
+      "abstract": "We study opinion formation in the popular Hegselmann-Krause model when agents replace the traditional averaging update by a median update or more general ordinal aggregation methods. We analyze the convergence properties of synchronous and asynchronous dynamics. For asynchronous dynamics, we show that every HKS with a $1$-Lipschitz ordinal aggregation function converges in worst-case time $\\mathcal{O}(n^4)$. For the special case of median aggregation and for the family of $k\\textsf{-large}$ aggregation functions, in which agents select the $k$-th largest opinion in their neighborhood, we obtain sharper bounds of $\\mathcal{O}(n^3)$. For general ordinal aggregation, some sequence of $\\mathcal{O}(n^2)$ updates reaches an equilibrium from every initial state. Nevertheless, other update sequences may cycle, and uniform random activation can require exponentially many updates with overwhelming probability. For synchronous dynamics, we obtain a tight characterization. Ordinal aggregation functions satisfying the $1$-Lipschitz condition are shown to guarantee convergence in linear time. This result applies to many natural examples such as minimum, maximum, median, and $k\\textsf{-large}$ functions. When the Lipschitz condition is violated, there exist instances in which synchronous dynamics do not converge at all.",
+      "url": "https://arxiv.org/abs/2611.24449",
+      "published": "2026-11-18",
+      "venue": "arXiv",
+      "categories": [
+        "cs.DS",
+        "cs.GT",
+        "cs.SI"
+      ],
+      "pdf_url": "https://arxiv.org/pdf/2611.24449v1",
+      "doi": null,
+      "citations": 0,
+      "rule_score": 5.0,
+      "score": 8.25,
+      "tldr_zh": "将Hegselmann-Krause观点动力学中的平均更新换为中位数等序数聚合，给出同步与异步收敛时间上界。",
+      "tldr": null,
+      "tags": [
+        "舆论与极化",
+        "仿真与ABM",
+        "方法论"
+      ],
+      "reason": "观点动力学核心模型的收敛性理论分析，直接服务舆论与极化建模。",
+      "backfill_date": null
+    },
+    {
+      "id": "arxiv:2611.24927",
+      "source": "arxiv",
+      "title": "Mapping the AI Supply Chain: Dependencies, Vulnerabilities, and Market Concentration in the AI Ecosystem",
+      "authors": [
+        "Sarah H. Cen",
+        "Lindsey A. Gailmard",
+        "Joohan Kim",
+        "Rishi Bommasani",
+        "Daniel E. Ho",
+        "Percy Liang"
+      ],
+      "abstract": "AI systems are built across many organizations that contribute models, data, compute, capital, talent, and other assets. While the layers of the AI stack are relatively well understood, the relationships between actors and components across layers remains sparsely documented. In this work, we focus on the organizations that make up the AI supply chain: the complex network of actors that contribute to the development and deployment of AI. We motivate the examination of the organizational AI supply chain---highlighting concerns about concentration, power, chokepoints, cascading failures, fragmented accountability, and risk---then describe our pipeline for mapping the AI supply chain. Our pipeline yields our main contribution: a multilayered, large-scale dataset of actors and relationships in the AI ecosystem, annotated with dates, descriptions, types, tags, and more. This work takes a step toward systematically mapping and measuring the AI supply chain and its properties, cataloging how models, data, chips, infrastructure, capital, and even talent flow between organizations. This data enable critical examinations of industry relationships and yield insights into the political economy of AI development and concentration. We provide several illustrative analyses, including studying the most central actors, analyzing network concentration, and identifying communities and chokepoints. While our dataset is fairly comprehensive, it is also necessarily incomplete: public documents omit private deals, and coverage is shaped by search design. Together, the approach, data, and findings aim to serve as a resource for studying the AI ecosystem. The dataset is publicly available at https://huggingface.co/datasets/sarahcen/ai-supply-chain and can be explored interactively at https://aisupplychains.org/.",
+      "url": "https://arxiv.org/abs/2611.24927",
+      "published": "2026-11-18",
+      "venue": "arXiv",
+      "categories": [
+        "cs.CY",
+        "cs.AI"
+      ],
+      "pdf_url": "https://arxiv.org/pdf/2611.24927v1",
+      "doi": null,
+      "citations": 0,
+      "rule_score": 4.2,
+      "score": 8.21,
+      "tldr_zh": "构建多层AI供应链数据集，刻画组织间依赖关系，揭示集中度、瓶颈与级联失效风险。",
+      "tldr": null,
+      "tags": [
+        "复杂网络",
+        "在线平台",
+        "方法论"
+      ],
+      "reason": "以复杂网络方法映射AI产业组织间关系，涉及集中度与级联失效，对复杂网络读者有明确方法与实证价值。",
+      "backfill_date": null
+    },
+    {
+      "id": "arxiv:2611.24684",
+      "source": "arxiv",
+      "title": "Hi Gemini, Who Should I Vote For? The Benefits (and Problems) of Using LLMs As Voting Advice Applications",
+      "authors": [
+        "William John Atkinson",
+        "Paul Saproza"
+      ],
+      "abstract": "Large language models (LLMs) can provide voters information about political issues, party positions, and even advise on which party to vote for. However, no previous study explores how well off-the-shelf LLMs function as voting advice applications (VAAs). In this article, we address this gap by examining how Gemini 3 Flash advises a sample of 6,022 German survey respondents on which party to vote for, based on their policy preferences and priorities alone. In brief, we find that for most respondents, following the LLM's advice would benefit voter-party policy alignment (i.e. congruence), with a significantly stronger remedial effect among voters with low levels of political interest and formal education. However, our analysis also reveals concerning biases in the LLM's recommendations. For instance, the LLM suggested voting for the AfD at approximately 1.5 times the frequency of a standard salience-weighted proximity model. In addition, the LLM hardly ever advised voting for either Die Linke or the BSW. We conclude that while LLMs can approximate the behaviour of VAAs, users should be aware that the LLM's recommendations are still biased in ways that are extremely difficult to trace.",
+      "url": "https://arxiv.org/abs/2611.24684",
+      "published": "2026-11-18",
+      "venue": "arXiv",
+      "categories": [
+        "cs.CY"
+      ],
+      "pdf_url": "https://arxiv.org/pdf/2611.24684v1",
+      "doi": null,
+      "citations": 0,
+      "rule_score": 3.7,
+      "score": 8.185,
+      "tldr_zh": "用Gemini 3 Flash对6022名德国受访者做投票建议，发现多数人政策契合度提升但存在系统性偏向。",
+      "tldr": null,
+      "tags": [
+        "LLM智能体",
+        "舆论与极化",
+        "实验"
+      ],
+      "reason": "考察LLM作为投票建议工具的效果与偏差，属计算社会科学中LLM与政治行为研究，方法有实证价值。",
+      "backfill_date": null
+    },
+    {
+      "id": "arxiv:2611.23870",
+      "source": "arxiv",
+      "title": "Localized active phase in the coevolving voter model with fixed links",
+      "authors": [
+        "Hoseung Jang",
+        "Maxi San Miguel",
+        "Byungjoon Min"
+      ],
+      "abstract": "The coevolving voter model (CVM) describes the evolution of node states and network topology through copying and rewiring dynamics. It traditionally assumes that all ties can be rewired, overlooking unbreakable real-world relationships like family or close friendships. To address this, we introduce fixed links that cannot be rewired and study how these structural constraints modify the collective dynamics of the CVM. In addition to the active and frozen phases of the CVM, we find a new localized active phase in which activity is sustained, beyond a percolation transition, by a giant component of fixed links. The existence of this new phase is predicted by a moment-closure approximation that goes beyond the standard pair approximation. The finite-size manifestation of this phase is an asymmetric fragmented phase. In addition, the active-frozen transition of the CVM, manifested as a fragmentation transition for finite systems, is delayed by the existence of fixed links to larger values of the rewiring rate.",
+      "url": "https://arxiv.org/abs/2611.23870",
+      "published": "2026-11-18",
+      "venue": "arXiv",
+      "categories": [
+        "physics.soc-ph",
+        "cond-mat.stat-mech",
+        "nlin.AO"
+      ],
+      "pdf_url": "https://arxiv.org/pdf/2611.23870v1",
+      "doi": null,
+      "citations": 0,
+      "rule_score": 7.6,
+      "score": 7.88,
+      "tldr_zh": "在投票者模型中引入不可重连的固定连边，发现超越渗流转变的局域活跃相，并用矩封闭近似预测。",
+      "tldr": null,
+      "tags": [
+        "复杂网络",
+        "仿真与ABM",
+        "方法论"
+      ],
+      "reason": "共演化网络动力学新相变结果，对复杂网络理论读者有方法价值。",
+      "backfill_date": null
+    },
+    {
+      "id": "arxiv:2611.24899",
+      "source": "arxiv",
+      "title": "\"I Don't Think It's a Scam\": A First Look at Family Intervention Barriers in Elder Abuse Discussions on Reddit and Baidu Tieba",
+      "authors": [
+        "Yipeng Wang",
+        "Huy Gia Han Vu",
+        "Jiaming Liu",
+        "Mihika Mehta",
+        "Poojitha Thota",
+        "Shirin Nilizadeh",
+        "Mohit Singhal"
+      ],
+      "abstract": "When older adults trust scammers despite warnings, families face obstacles to intervention. Complainants aged 60 and older reported \\$4.9 billion in losses in 2024 to the U.S. Internet Crime Complaint Center. To investigate family intervention barriers to elder scams, we collected 2M Reddit posts from May 2021 to June 2026 and 2B Baidu Tieba posts from 2007 to 2026. The final corpora contain 13,082 Reddit posts and 3,933 Baidu Tieba posts, labeled using platform-specific codebooks, manual reference annotations, and LLM coding. Through a mixed-methods analysis, we find that scams often extend beyond a single incident and are reported alongside debt problems and broken family relationships. In 68.0\\% of Reddit posts recording reactions, older adults showed resistance or continued involvement; in Baidu Tieba family-confrontation posts, 41.9\\% showed continued belief. Relatives identified fraud in 74.4\\% of Reddit posts and narrated cases on Baidu Tieba, but without the victim's consent, relatives may lack the legal authority to intervene. In Reddit posts recording reactions, account locks or credential changes appeared in 8.9\\% under resistance or continued involvement, compared with 33.3\\% under acceptance. Measures such as phone or network monitoring and financial takeover were reported more often under resistance. Recovering funds is very limited in posts recording follow-up results of fraud; Baidu Tieba users reported that police classified older adults' voluntary transfers as civil disputes.",
+      "url": "https://arxiv.org/abs/2611.24899",
+      "published": "2026-11-18",
+      "venue": "arXiv",
+      "categories": [
+        "cs.SI",
+        "cs.CR",
+        "cs.CY"
+      ],
+      "pdf_url": "https://arxiv.org/pdf/2611.24899v1",
+      "doi": null,
+      "citations": 0,
+      "rule_score": 5.5,
+      "score": 7.775,
+      "tldr_zh": "分析Reddit与贴吧数百万帖，发现老年人受骗常伴随债务与家庭关系破裂，家属干预面临阻力。",
+      "tldr": null,
+      "tags": [
+        "数字痕迹",
+        "文本计算",
+        "在线平台"
+      ],
+      "reason": "跨平台数字痕迹混合方法研究社会问题，契合计算社会科学实证。",
+      "backfill_date": null
+    },
+    {
+      "id": "arxiv:2611.23753",
+      "source": "arxiv",
+      "title": "Interpreting Timestamp Permutations in Dynamic Link Prediction",
+      "authors": [
+        "Ilia Karpov",
+        "Kirill Koloskov",
+        "Valeriy Kuleshov",
+        "Dmitry Ilvovsky"
+      ],
+      "abstract": "Timestamp permutations are used to test whether dynamic link predictors exploit temporal information, but a performance gap can reflect changes in training, evaluation history, or both. We separate these effects with a crossed diagnostic and measure input exposure: whether altered histories actually change the predictor's inputs. On MOOC, TCL trained with binary cross-entropy gains approximately eight pairwise-accuracy points from original-chronology training under either evaluation history, while changing history at fixed weights gives only 0.03 points. The small history contrast reflects unchanged inputs for 68.37% of queries, stable rankings for most others, and cancellation of gains and losses. Under original evaluation history, suppressing explicit time encoding reduces the training contrast from 8.03 to 3.64 points, a paired reduction of 4.39 points (95% interval [3.68, 5.09]) across six seeds. DyGFormer shows corresponding training and history contrasts of 22.34 and 0.38 points across two seeds, despite greater exposure. Partial history permutations further separate nominal intervention strength, input changes, and aggregate accuracy. These comparisons turn a single permutation gap into interpretable statements about training conditions and model responses, while leaving the internal mechanisms of temporal learning open.",
+      "url": "https://arxiv.org/abs/2611.23753",
+      "published": "2026-11-18",
+      "venue": "arXiv",
+      "categories": [
+        "cs.LG",
+        "cs.AI",
+        "cs.LO",
+        "cs.SI"
+      ],
+      "pdf_url": "https://arxiv.org/pdf/2611.23753v1",
+      "doi": null,
+      "citations": 0,
+      "rule_score": 6.7,
+      "score": 7.335,
+      "tldr_zh": "用交叉诊断分离训练与评估历史对动态链路预测的影响，发现性能提升主要来自训练时序而非历史输入变化。",
+      "tldr": null,
+      "tags": [
+        "方法论",
+        "在线平台"
+      ],
+      "reason": "动态网络预测的评估方法学诊断，对网络机器学习实证有参考价值。",
+      "backfill_date": null
+    },
+    {
+      "id": "arxiv:2611.24383",
+      "source": "arxiv",
+      "title": "What Majority Labels Hide: Annotator Disagreement and Model Errors in Multi-Dialect Arabic Sexism Detection",
+      "authors": [
+        "Alaa Bazaid",
+        "Arkaitz Zubiaga"
+      ],
+      "abstract": "Judgements of sexism are subjective and may vary across communities, yet sexism detection datasets usually reduce annotator judgements to a single majority label, obscuring disagreement and how models behave on contested cases. We introduce MuDAS, a dataset of YouTube comments in Saudi, Egyptian and Moroccan Arabic, each labelled by three native speakers of its dialect, with the individual annotations preserved. We use it to evaluate Arabic encoders fine-tuned with hard-label, soft-label and perspectivist objectives, GPT-5.6 Terra, and four Arabic-centric large language models. Model errors are more frequent on comments with annotator disagreement. Despite relatively close Macro-F1 scores, GPT-5.6 Terra and the fine-tuned encoders exhibit contrasting error patterns: GPT-5.6 Terra, even with the annotators' definition of sexism, over-classifies gender-related content such as religious advice on modesty, whereas the encoders miss implicit and prescriptive sexism. The Arabic-centric models also over-predict sexism and remain below the encoders. Disagreement-aware learning preserves Macro-F1, but soft labels improve alignment with annotators on contested comments at the expense of unanimous ones, and neither paradigm reliably identifies contested comments. Lower performance on Egyptian Arabic, clearest for the large language models, is not fully explained by the examined measures of test-set composition and dialectness. Majority-label scores can therefore hide contrasting error patterns that matter for content moderation.",
+      "url": "https://arxiv.org/abs/2611.24383",
+      "published": "2026-11-18",
+      "venue": "arXiv",
+      "categories": [
+        "cs.CL",
+        "cs.CY",
+        "cs.SI"
+      ],
+      "pdf_url": "https://arxiv.org/pdf/2611.24383v1",
+      "doi": null,
+      "citations": 0,
+      "rule_score": 5.7,
+      "score": 7.285,
+      "tldr_zh": "构建多方言阿拉伯语性别歧视数据集并保留标注者分歧，发现模型在争议样本上错误更多且不同模型错误模式相反。",
+      "tldr": null,
+      "tags": [
+        "文本计算",
+        "方法论",
+        "在线平台"
+      ],
+      "reason": "标注分歧与文本计算模型评估，对计算社会科学文本方法有实证价值。",
+      "backfill_date": null
+    },
+    {
+      "id": "arxiv:2611.24149",
+      "source": "arxiv",
+      "title": "Human-LLM Cognitive Extension: A Framework for Studying Coupled Cognition",
+      "authors": [
+        "Ernesto Biempica",
+        "Emiliano Bruner",
+        "Juan F Poyatos"
+      ],
+      "abstract": "Recent research on the use of Large Language Models (LLMs) reports divergent cognitive outcomes, including improved assisted performance, limited transfer, and compromised unaided learning. Here, we argue that part of this seeming inconsistency arises because studies often assess different cognitive systems without making the unit of analysis explicit. Building on work in extended and distributed cognition, we propose the Human-LLM Cognitive Extension (HLCE) as a methodological framework for matching experimental designs, measures, and causal inferences to four distinct systems: the human acting independently, the artificial agent, the joined human-LLM configuration, and the human after division. The framework also treats the coupling architecture as part of the experimental object. HLCE separates performance augmentation, system-level complementarity, post-interaction human change, and stronger claims of constitutive cognitive integration. This separation can improve the interpretation of existing evidence and guide the design of human-LLM interactions without assuming in advance that these configurations constitute extended minds. We illustrate the application of HLCE with a synthetic diagnostic experiment comparing two connecting configurations that differ in how supporting information is communicated. The example highlights how distinct couplings can shape the organization of joint problem-solving, even when the final outcome remains unchanged. Overall, HLCE provides a methodological basis for designing controlled experiments and interpreting evidence across distinct forms of human-LLM cognitive interaction.",
+      "url": "https://arxiv.org/abs/2611.24149",
+      "published": "2026-11-18",
+      "venue": "arXiv",
+      "categories": [
+        "cs.CY",
+        "cs.HC"
+      ],
+      "pdf_url": "https://arxiv.org/pdf/2611.24149v1",
+      "doi": null,
+      "citations": 0,
+      "rule_score": 4.4,
+      "score": 7.22,
+      "tldr_zh": "提出人-LLM认知扩展框架，区分独立人类、AI智能体、耦合系统与分工后人类四种分析单元以匹配实验与因果推断。",
+      "tldr": null,
+      "tags": [
+        "LLM智能体",
+        "方法论",
+        "因果推断"
+      ],
+      "reason": "为LLM与人耦合认知研究提供实验与因果推断方法论框架，对LLM智能体研究有明确价值。",
+      "backfill_date": null
+    }
+  ]
+}
