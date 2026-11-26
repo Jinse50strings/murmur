@@ -1,20 +1,336 @@
 {
   "app": "Murmur",
   "version": 1,
-  "date": "2026-11-24",
-  "generated_at": "2026-11-24T10:59:50+08:00",
-  "count": 0,
+  "date": "2026-11-26",
+  "generated_at": "2026-11-26T08:37:00+08:00",
+  "count": 10,
   "counts": {
     "sources": {
-      "arxiv": 1,
-      "openalex": 31
+      "arxiv": 98,
+      "openalex": 117
     },
-    "unique": 32,
-    "new": 31,
-    "candidates": 0,
-    "selected": 0,
-    "fresh_selected": 0,
+    "unique": 215,
+    "new": 215,
+    "candidates": 50,
+    "selected": 10,
+    "fresh_selected": 10,
     "errors": 0
   },
-  "papers": []
+  "papers": [
+    {
+      "id": "arxiv:2611.29945",
+      "source": "arxiv",
+      "title": "Friendship paradoxes in networks",
+      "authors": [
+        "Eun Lee",
+        "Hang-Hyun Jo"
+      ],
+      "abstract": "Since Scott L. Feld's seminal paper entitled ``Why your friends have more friends than you do'' [Am.~J.~Sociol.~\\textbf{96}, 1464 (1991)], the friendship paradox (FP) has been extensively studied in network science and related fields over the last decades. In this paper we survey the literature on the FP and its generalizations. We first introduce definitions and general results of the FPs defined in networks, and then overview their results on model networks. Empirical results using various social network data as well as applications to real-world problems, such as early detection of outbreaks and network sampling, are also summarized. Finally, we conclude by discussing several directions of possible future works.",
+      "url": "https://arxiv.org/abs/2611.29945",
+      "published": "2026-11-23",
+      "venue": "arXiv",
+      "categories": [
+        "physics.soc-ph"
+      ],
+      "pdf_url": "https://arxiv.org/pdf/2611.29945v1",
+      "doi": null,
+      "citations": 0,
+      "rule_score": 6.9,
+      "score": 9.345,
+      "tldr_zh": "系统综述友谊悖论的定义、模型网络与实证结果，并总结疫情早期检测与网络抽样等应用。",
+      "tldr": null,
+      "tags": [
+        "社会网络",
+        "复杂网络",
+        "综述"
+      ],
+      "reason": "友谊悖论领域权威综述，社会网络与网络科学读者必读。",
+      "backfill_date": null
+    },
+    {
+      "id": "arxiv:2611.32348",
+      "source": "arxiv",
+      "title": "Explaining intersectional segregation in multi-attribute social networks",
+      "authors": [
+        "Clara Eminente",
+        "Elisa Omodei",
+        "Michele Starnini"
+      ],
+      "abstract": "Segregation in students' friendships shapes their access to information and opportunities, and schools can reduce it by setting the composition of their classes. Yet segregation is usually measured one attribute at a time, although attributes such as migration background and sex are often correlated, so a preference over one can create segregation on the other. A single-attribute reading then attributes this induced segregation to the wrong preference and cannot identify which part of it a school can remove. In a network model with preferences over two correlated attributes, we derive in closed form the Coleman index, a standard segregation measure, separating the segregation due to each preference from the segregation it induces on the other attribute. In friendship networks of school classes in four European countries, ignoring sex inflates the estimated preference over migration background, increasingly so as the two attributes are more correlated. The closed form also shows what class composition can achieve. When students have no preference over one attribute, the segregation induced on it can be removed, whereas segregation set by a homophilic preference over the other cannot be changed. When both preferences are active, splitting a school with equal-sized groups and independent attributes reduces segregation only if the preferences pull in opposite directions. Judging a split by the school-wide average can hide classes that become more segregated. In the data, the split derived from the closed form removes induced segregation, and splitting does not lower segregation where both preferences are homophilic, as predicted.",
+      "url": "https://arxiv.org/abs/2611.32348",
+      "published": "2026-11-24",
+      "venue": "arXiv",
+      "categories": [
+        "physics.soc-ph",
+        "cs.CY",
+        "cs.SI"
+      ],
+      "pdf_url": "https://arxiv.org/pdf/2611.32348v1",
+      "doi": null,
+      "citations": 0,
+      "rule_score": 8.6,
+      "score": 8.93,
+      "tldr_zh": "建立双相关属性偏好网络模型，闭式分解Coleman隔离指数，区分各偏好及其交叉诱发的隔离。",
+      "tldr": null,
+      "tags": [
+        "社会网络",
+        "方法论"
+      ],
+      "reason": "社会网络中的隔离测量与网络生成模型，直接服务社会网络分析核心议题。",
+      "backfill_date": null
+    },
+    {
+      "id": "openalex:W7238776041",
+      "source": "openalex",
+      "title": "Humans show limited ability to distinguish human-authored from AI-generated political content on social media",
+      "authors": [
+        "Sejin Paik",
+        "Tiago Ventura",
+        "Rebecca Ansell",
+        "Leticia Bode",
+        "Autumn Toney",
+        "Lisa Singh"
+      ],
+      "abstract": "This study employs a set of behavioral experiments to examine how individuals perceive the humanness of social media posts about the 2024 U.S. presidential debate between Kamala Harris and Donald Trump. Posts presented in the experiment were authored either by humans or chatbots, varying the large language model (LLM), the model architecture, the social media platform, and the political personas. Participants judged randomly paired posts to identify which they perceived to be AI-generated. We find that human-authored posts were on average perceived as more human-like than AI outputs generated from five of the six LLMs in this study. However, participants' ability to detect AI-generated content is limited. They do so only slightly above chance in human-AI pairs, and this ability weakens for newer LLMs, varies by platform, and reflects partisan bias. Only posts generated with Llama 3.3 scored, on average, higher on perceived humanness than human-authored posts. The social media platform also mattered, with participants distinguishing human from AI on most platforms (YouTube, TikTok, Truth Social), but not on X/Twitter. Incivility and negative emotions are associated with high humanness perceptions, and partisan identity also shaped evaluations, with Republican respondents more likely to view ideologically misaligned AI posts as AI-generated.",
+      "url": "https://doi.org/10.1073/pnas.2534309123",
+      "published": "2026-11-23",
+      "venue": "Proceedings of the National Academy of Sciences",
+      "categories": [],
+      "pdf_url": null,
+      "doi": "https://doi.org/10.1073/pnas.2534309123",
+      "citations": 0,
+      "rule_score": 6.4,
+      "score": 8.82,
+      "tldr_zh": "行为实验让被试辨别2024美国大选辩论相关帖是人写还是AI生成，发现辨别力仅略高于随机。",
+      "tldr": null,
+      "tags": [
+        "实验",
+        "LLM智能体",
+        "在线平台"
+      ],
+      "reason": "用实验方法研究AI生成政治内容在社交媒体上的可辨识性，直接关系在线平台信息生态与计算社会科学。",
+      "backfill_date": null
+    },
+    {
+      "id": "openalex:W4412664754",
+      "source": "openalex",
+      "title": "Reducing belief in conspiracy theories as they unfold using large language models",
+      "authors": [
+        "Thomas H. Costello",
+        "Nathaniel Rabb",
+        "Michael Nicholas Stagnaro",
+        "Gordon Pennycook",
+        "David Gertler Rand"
+      ],
+      "abstract": "The emergence of conspiracy theories in the wake of major events is a significant societal challenge. Here, we test whether conversational dialogues with a large language model (LLM) can reduce belief in immediately unfolding conspiracies. In experiments conducted in the days following the July 2024 assassination attempt on Donald Trump and the September 2025 assassination of Charlie Kirk, US adults (Experiment 1: N = 472; Experiment 2: N = 1,042) holding conspiratorial views about the crisis event engaged in a multiturn conversation with an LLM prompted to reduce their conspiracy belief. Compared to control participants who either discussed an irrelevant topic with an LLM or viewed a static fact sheet, participants in the LLM treatment showed significantly reduced conspiracy beliefs in both experiments. We also found suggestive evidence of downstream effects of the LLM treatment, observing reduced belief in some-but not all-analyses of different conspiratorial beliefs 1 to 2 mo later. These results shed light on the psychology of emerging conspiracies and highlight the potential for scalable, information-focused LLM interventions to counteract misinformation in the immediate aftermath of high-profile societal events.",
+      "url": "https://doi.org/10.1073/pnas.2628011123",
+      "published": "2026-11-23",
+      "venue": "Proceedings of the National Academy of Sciences",
+      "categories": [],
+      "pdf_url": null,
+      "doi": "https://doi.org/10.1073/pnas.2628011123",
+      "citations": 2,
+      "rule_score": 5.9,
+      "score": 8.795,
+      "tldr_zh": "在暗杀事件后开展实验，发现与LLM多轮对话能显著降低美国成年人对即时阴谋论的相信程度。",
+      "tldr": null,
+      "tags": [
+        "实验",
+        "LLM智能体",
+        "舆论与极化"
+      ],
+      "reason": "用随机实验检验LLM对话干预对阴谋论信念的影响，是计算社会科学中LLM干预的前沿实证。",
+      "backfill_date": null
+    },
+    {
+      "id": "openalex:W4414588034",
+      "source": "openalex",
+      "title": "Promises and pitfalls of community moderation on social media",
+      "authors": [
+        "Isabelle Augenstein",
+        "Michiel A. Bakker",
+        "Tanmoy Chakraborty",
+        "David P. A. Corney",
+        "Emilio Ferrara",
+        "Iryna Gurevych",
+        "Scott A. Hale",
+        "Eduard H. Hovy"
+      ],
+      "abstract": "Social media platforms have traditionally relied on internal moderation teams and partnerships with independent fact-checking organizations to identify and flag problematic content. Recently, however, platforms including X (formerly Twitter) and Meta have shifted toward community-driven content moderation by launching their own versions of crowd-sourced fact-checking-Community Notes. If effectively scaled and governed, such crowd-checking initiatives have the potential to combat misinformation as successfully as community-driven efforts once did with spam. However, moderating misinformation is inherently more complex: perceptions of truth are often shaped by personal biases, political leanings, and cultural contexts, complicating consensus on what constitutes misleading content. This suggests that community efforts, while valuable, cannot replace the indispensable role of professional fact-checkers. Here we explore the emerging role of community-driven moderation, critically evaluate both the promises and the challenges of Community Notes at scale, and identify how collaborative and technical innovations can integrate the two distinct approaches.",
+      "url": "https://doi.org/10.1073/pnas.2518033123",
+      "published": "2026-11-23",
+      "venue": "Proceedings of the National Academy of Sciences",
+      "categories": [],
+      "pdf_url": null,
+      "doi": "https://doi.org/10.1073/pnas.2518033123",
+      "citations": 29,
+      "rule_score": 6.4,
+      "score": 8.32,
+      "tldr_zh": "综述社区众包事实核查（如Community Notes）的潜力与局限，指出真相判断受偏见和政治立场影响。",
+      "tldr": null,
+      "tags": [
+        "在线平台",
+        "舆论与极化",
+        "综述"
+      ],
+      "reason": "讨论社交媒体社区治理与错误信息，属平台治理和在线行为研究的重要议题。",
+      "backfill_date": null
+    },
+    {
+      "id": "arxiv:2611.31532",
+      "source": "arxiv",
+      "title": "Can LLM-Simulated Respondents Pre-Test Survey Questions? Evidence From Preregistered Prospective Validation",
+      "authors": [
+        "Sristi Bafna",
+        "Mac MacComas",
+        "Michael Bader",
+        "Kristina Gligorić"
+      ],
+      "abstract": "Large language models (LLMs) can be conditioned to simulate behavioral responses, including survey responses, but it remains unclear whether and how these simulations can support downstream research tasks. Here, we evaluate whether simulated respondents can support pre-testing new candidate survey questions before fielding them, operationalized as prioritizing candidate survey items. Specifically, we rank candidate questions by their mean responses, which can reveal ceiling or floor effects; their variance, which indicates whether responses contain meaningful variation; and differences between subpopulations, which indicate whether questions capture distinctions between relevant groups within a population. We introduce a preregistered, prospective evaluation that commits model predictions before target human responses exist, ruling out memorization of those responses by design. Using two waves of a local survey (2025: N = 1,271; 2026: N = 1,161), we built simulated respondents from 2025 participants and preregistered GPT-4.1 predictions for 22 questions introduced in 2026. Simulations accurately ranked questions by mean responses (Spearman \\r{ho} = 0.71) and anticipated which questions distinguished city from county residents (\\r{ho} = 0.88), Black from White residents (\\r{ho} = 0.68), and employed from unemployed residents (\\r{ho} = 0.57), suggesting simulations can help prioritize questions before fielding. More broadly, our prospective, preregistered design provides a general framework for evaluating AI simulations without contamination from memorized target outcomes.",
+      "url": "https://arxiv.org/abs/2611.31532",
+      "published": "2026-11-23",
+      "venue": "arXiv",
+      "categories": [
+        "cs.CL",
+        "cs.HC",
+        "cs.SI"
+      ],
+      "pdf_url": "https://arxiv.org/pdf/2611.31532v1",
+      "doi": null,
+      "citations": 0,
+      "rule_score": 5.7,
+      "score": 8.285,
+      "tldr_zh": "预注册前瞻验证LLM模拟受访者能否用于问卷预测试，评估其在排序候选题上的预测效力。",
+      "tldr": null,
+      "tags": [
+        "LLM智能体",
+        "方法论",
+        "实验"
+      ],
+      "reason": "检验LLM模拟调查回答的方法效度，对计算社会科学中的调查方法与LLM仿真有直接价值。",
+      "backfill_date": null
+    },
+    {
+      "id": "openalex:W7221826554",
+      "source": "openalex",
+      "title": "Sea-fishing cultures show rare blend of tight social ties and openness to strangers",
+      "authors": [
+        "A. Huang",
+        "Thomas Talhelm"
+      ],
+      "abstract": "Research has linked cultural differences to historical subsistence styles, but most studies have focused on farming or herding. Sea fishing is a major subsistence style, yet we know much less about whether fishing shapes culture. We propose an explanation for why fishing has received less attention—its cultural patterns do not fit neatly into the individualism-collectivism dichotomy that has been so useful in studies of farming and herding. First, we tested 1,010 people from nearby regions in Japan as a more controlled comparison. Then we tested the generalizability of the findings across 150 contemporary nations and historical records from 1,265 ethnic groups worldwide. People from fishing regions think holistically and emphasize responsibilities in close relationships more than people in nonfishing cultures (culture level d = 0.91). These characteristics are more common in collectivistic cultures and may have been adaptive for cooperation in dangerous seas. However, they show less ingroup loyalty and less outgroup discrimination (d = 1.37), which is more similar to individualistic cultures. Openness to outsiders may have been adaptive for fishing’s mobility and flexible labor networks. We address reverse causality by running instrumental variable analyses using data on environmental suitability for fishing. To pinpoint fishing, we compare regions that have coastlines, some by seas that support large fish populations and others that support few fish. Results show access to the ocean, trade, or transportation are not linked to these cultural differences. Finally, the cultural patterns do not extend to freshwater fishing, which has different demands from sea fishing.",
+      "url": "https://doi.org/10.1073/pnas.2536327123",
+      "published": "2026-11-24",
+      "venue": "Proceedings of the National Academy of Sciences",
+      "categories": [],
+      "pdf_url": null,
+      "doi": "https://doi.org/10.1073/pnas.2536327123",
+      "citations": 0,
+      "rule_score": 7.1,
+      "score": 7.855,
+      "tldr_zh": "跨日本样本、150国与1265族群数据发现，渔业文化兼具紧密社会纽带与对外来者开放。",
+      "tldr": null,
+      "tags": [
+        "社会网络",
+        "方法论"
+      ],
+      "reason": "跨文化实证研究社会关系结构，对文化与社会网络交叉议题有参考价值。",
+      "backfill_date": null
+    },
+    {
+      "id": "arxiv:2611.31009",
+      "source": "arxiv",
+      "title": "Origins of City Reputation: Measuring Trust and Bias in Online Reviews Using Agentic AI and NLP",
+      "authors": [
+        "Rafiazka Hilman",
+        "Júlia Koltai"
+      ],
+      "abstract": "Online reviews aggregate millions of individual judgments into signals that shape where people eat, stay and travel to, and increasingly read them as evidence of the reputation of places. Nevertheless, whether such reputations really reflect the places or more the instruments used to measure them is unclear. Here we compare two instruments for measuring trust and bias in 100,000 Yelp reviews from ten US cities: a large language model based agentic system including an evaluator critic loop, and a corpus-based tool built on pretrained classifiers, lexicons and rule-based features. Our results show that the two instruments agree on credibility, but not at all on plausibility. They also respond to different use of words and phrases. The corpus-based better flagged complaints and generalizations, whereas the agent better quoted references to social groups. We also found that with five examples, the agent treats ordinary superlatives as bias far more often than with none or one. Aggregated to cities, both instruments find little variation as less than half a percent of the variance of review level reputation lies between cities. This small differences between cities mostly arise from different levels of trust (in case of the agentic tool) and from bias (in case of the corpus-based tool), and the two instruments rank the cities differently. Reputation derived from platform reviews therefore depends on how the reviews are processed and analyzed. As platforms delegate this to language models, the definitions and examples built into these models become part of how places are valued.",
+      "url": "https://arxiv.org/abs/2611.31009",
+      "published": "2026-11-23",
+      "venue": "arXiv",
+      "categories": [
+        "physics.soc-ph"
+      ],
+      "pdf_url": "https://arxiv.org/pdf/2611.31009v1",
+      "doi": null,
+      "citations": 0,
+      "rule_score": 6.2,
+      "score": 7.81,
+      "tldr_zh": "用LLM智能体系统与语料分类器两种工具分析10万条Yelp评论，发现二者在可信度上一致但合理性判断完全不同。",
+      "tldr": null,
+      "tags": [
+        "LLM智能体",
+        "文本计算",
+        "城市与流动"
+      ],
+      "reason": "比较LLM与NLP方法测量在线评论中的信任与偏差，涉及数字痕迹与文本计算方法论。",
+      "backfill_date": null
+    },
+    {
+      "id": "arxiv:2611.31334",
+      "source": "arxiv",
+      "title": "Turbulent Epidemics: Scale-dependent Fluctuations as a Probe of Population Heterogeneity",
+      "authors": [
+        "Bernhard Mueller",
+        "Michael Lorke",
+        "M. Gabriela M. Gomes",
+        "Inken Padberg"
+      ],
+      "abstract": "Heterogeneous dynamics, including phenomena such as superspreading and clustering, is a hallmark of many infectious diseases. A key challenge lies in identifying observables that constrain heterogeneous dynamics. We here adapt the technique of turbulence decomposition from fluid dynamics to extract scale-dependent fluctuation spectra and correlation functions from disaggregated epidemiological data as a probe of population heterogeneity. To investigate possible explanations for the observed heterogeneities during the COVID-19 winter wave in Germany in 2020/21, we calculate synthetic observables using the new network-based simulation code \\textsc{Epimetheus} for an idealized structured population. The code can flexibly incorporate clustering, heterogeneous connectivity and susceptibility, superspreading as well as temporal modulations of transmission risk and factors like waning of immunity and vaccination. A qualitative comparison of simulated and observed fluctuation spectra and correlation functions as well as the secondary attack rate and the overdispersion indicates that both clustering and variations of susceptibility across population substructures of all scales are required to produce the observed dynamics. Combined with heterogeneous connectivity, it is likely that self-limiting effects would have limited the winter outbreak to $0.2\\texttt{-}0.35$ of the population without further behavioral changes after the autumn of 2020. A uniform population-wide reduction of transmission risk alone does not adequately explain the observed heterogeneities. Further analysis of the relative contributions and interplay of interventions and self-limiting effects on COVID-19 disease dynamics is required. We outline avenues towards a better integration of heterogeneity in models for predicting infectious disease dynamics and diagnosing effects of interventions.",
+      "url": "https://arxiv.org/abs/2611.31334",
+      "published": "2026-11-23",
+      "venue": "arXiv",
+      "categories": [
+        "q-bio.PE",
+        "physics.soc-ph"
+      ],
+      "pdf_url": "https://arxiv.org/pdf/2611.31334v1",
+      "doi": null,
+      "citations": 0,
+      "rule_score": 5.5,
+      "score": 7.775,
+      "tldr_zh": "将流体湍流分解用于疫情数据，提取尺度相关涨落谱，并用网络仿真代码Epimetheus解释德国COVID冬季波的异质性。",
+      "tldr": null,
+      "tags": [
+        "复杂网络",
+        "仿真与ABM",
+        "扩散与传播"
+      ],
+      "reason": "用网络仿真与尺度分解研究传播异质性，对复杂网络与计算社会科学有方法价值。",
+      "backfill_date": null
+    },
+    {
+      "id": "openalex:W7238796781",
+      "source": "openalex",
+      "title": "How transmission probability is distributed over the infectious period affects mean epidemic size in networks with cycles",
+      "authors": [
+        "Jake Burchard",
+        "Charles L. Nunn",
+        "Bruce W. Rogers",
+        "Linh Do",
+        "Dana K. Pasquale",
+        "James W. Moody"
+      ],
+      "abstract": "Infectious disease outbreaks depend on two interacting systems: within-host processes governing pathogen load and transmission risk, and social contact networks structuring exposure. Yet for computational and mathematical simplicity, these dynamics are rarely modeled simultaneously. For example, despite biological evidence to the contrary, epidemic models routinely assume transmission risk remains constant over the infectious period. Whether the temporal distribution of transmission risk, independent of its overall level, affects epidemic size in realistic networks remains uncertain. Here, we bridge within- and between-host dynamics by allowing transmission risk to vary with time since infection. Analytic results on small networks and simulation results over thousands of empirical networks show that although the distribution of transmission risk over the infectious period is irrelevant to expected epidemic size on single-source trees, it systematically affects expected epidemic size in realistic networks containing multiple routes linking infectious seeds to susceptible hosts. Under disease-inspired, front-loaded transmission profiles that peak early and decline gradually over the infectious period, epidemics can be larger or smaller than predicted under the constant transmission risk assumption. The sign and magnitude of this distortion depend jointly on cumulative infection potential, the specific shape of the front-loaded profile, and network structure. Analysis of the structural mechanisms underlying these differences shows that expected epidemic size is largely governed by the probability of the seed producing at least one secondary infection, which is itself determined entirely by the degree distribution of the network. These findings demonstrate the importance of integrating within-host dynamics with network structure in epidemic models.",
+      "url": "https://doi.org/10.1093/pnasnexus/pgag400",
+      "published": "2026-11-23",
+      "venue": "PNAS Nexus",
+      "categories": [],
+      "pdf_url": null,
+      "doi": "https://doi.org/10.1093/pnasnexus/pgag400",
+      "citations": 0,
+      "rule_score": 4.7,
+      "score": 7.735,
+      "tldr_zh": "让传染风险随感染时间变化，在数千真实网络上模拟，发现风险时间分布本身会改变平均疫情规模。",
+      "tldr": null,
+      "tags": [
+        "复杂网络",
+        "扩散与传播",
+        "仿真与ABM"
+      ],
+      "reason": "直接研究接触网络上的传播动力学，对复杂网络扩散研究有明确实证价值。",
+      "backfill_date": null
+    }
+  ]
 }
