@@ -1,341 +1,138 @@
 {
   "app": "Murmur",
   "version": 1,
-  "date": "2026-11-27",
-  "generated_at": "2026-11-27T08:44:52+08:00",
-  "count": 10,
+  "date": "2026-11-28",
+  "generated_at": "2026-11-28T08:12:04+08:00",
+  "count": 4,
   "counts": {
     "sources": {
-      "arxiv": 112,
-      "openalex": 155
+      "arxiv": 48,
+      "openalex": 119
     },
-    "unique": 267,
-    "new": 244,
-    "candidates": 33,
-    "selected": 10,
-    "fresh_selected": 10,
+    "unique": 167,
+    "new": 144,
+    "candidates": 5,
+    "selected": 4,
+    "fresh_selected": 4,
     "errors": 0
   },
   "papers": [
     {
-      "id": "arxiv:2611.34652",
-      "source": "arxiv",
-      "title": "Source Detection in Complex Networks: Observability, Identifiability, and Inference Frameworks",
-      "authors": [
-        "Xiu-Xiu Zhan",
-        "Qiao Ke",
-        "Chengjun Zhang",
-        "Miao He",
-        "Chenwei Xie",
-        "Seba Contreras",
-        "Zhongliang Zhao",
-        "Yixiu Kong"
-      ],
-      "abstract": "Tracing diffusion to its origin is a central inverse problem in complex networks, with applications ranging from epidemic investigation and information spreading to cyber incidents and disruptions in interconnected systems. Although source-detection methods have advanced along diverse methodological lines, their capabilities cannot be assessed independently of the evidence on which they operate. Network structure and diffusion dynamics determine which propagation histories are possible, while the observation mechanism determines which traces of those histories are retained. This review develops an information-centric and identifiability-aware perspective that connects these elements to source inference. We organize existing research around three overlapping observation settings: complete state snapshots, incomplete or noisy observations, and sensor-based observation and design. Within this organization, we examine structural, probabilistic, message-passing, simulation-based, and learning-based methods, comparing their required inputs, underlying assumptions, inference mechanisms, and computational demands. System-theoretic observability, statistical identifiability, and information-theoretic constraints provide complementary ways to examine what the available observations can reveal, while separating limitations of the evidence from those of estimation. Drawing on applications across epidemiological, information, biological, neural, and socioeconomic systems, we identify challenges in uncertainty assessment, model robustness, transfer across networks, and the acquisition of informative observations. This synthesis clarifies the conditions under which diffusion sources can be identified and how inference methods should be selected according to the available observations.",
-      "url": "https://arxiv.org/abs/2611.34652",
-      "published": "2026-11-24",
-      "venue": "arXiv",
-      "categories": [
-        "physics.soc-ph"
-      ],
-      "pdf_url": "https://arxiv.org/pdf/2611.34652v1",
-      "doi": null,
-      "citations": 0,
-      "rule_score": 8.6,
-      "score": 9.43,
-      "tldr_zh": "综述复杂网络源检测问题，从可观测性与可识别性视角统一梳理完全、部分等观测设定下的推断框架。",
-      "tldr": null,
-      "tags": [
-        "复杂网络",
-        "扩散与传播",
-        "综述"
-      ],
-      "reason": "源检测是网络扩散反问题的核心议题，该综述提供方法论框架，对复杂网络读者高度相关。",
-      "backfill_date": null
-    },
-    {
-      "id": "openalex:W7149707041",
+      "id": "openalex:W7240092792",
       "source": "openalex",
-      "title": "Errors in social network knowledge predict how ties evolve in the future",
+      "title": "Eigenvector centrality in disconnected networks",
       "authors": [
-        "Alice Xia",
-        "Yi Yang Teoh",
-        "Apoorva Bhandari",
-        "Oriel FeldmanHall"
+        "Martin G. Everett",
+        "Stephen P. Borgatti"
       ],
-      "abstract": "A notable feature of people’s social knowledge is that it is riddled with errors. These errors, e.g., making mistakes about who are actually friends in a social network, has typically been attributed to cognitive limitations or heuristics that prioritize knowledge of general social patterns over details about specific ties. Here, we demonstrate that such errors instead reflect an adaptive link prediction process that anticipates how the network will evolve far into the future. By longitudinally following a large, real-world social network (n = 196) and tracking the formation and dissolution of social ties over the course of a year, we show that judgments that are wrong in the moment accurately forecast which relationships will emerge or dissolve up to 6 months later. On average, participants’ errors predicted tie formation nearly 3× and tie loss more than 1.2× above chance levels. Beyond the use of simple heuristics like triadic closure and homophily, computational modeling reveals that successful link prediction relies on mental representations of the social network that integrates information about both direct and indirect, long-range ties between individuals. Having a social network representation that is future-oriented yields distinct social advantages: Those who are better able to predict changes in the network become more centrally positioned over time, contingent on their initial position.",
-      "url": "https://doi.org/10.1126/sciadv.aeh9321",
-      "published": "2026-11-25",
-      "venue": "Science Advances",
+      "abstract": "Eigenvector centrality (Bonacich 1972) for undirected graphs is one of the most used centrality measures in social network analysis. However, when applied to disconnected graphs, it typically assigns non-zero values only to nodes in the component with the largest eigenvalue, with all other nodes receiving zero. The usual solution is to calculate the dominant eigenvector for each component separately, but this creates difficulties when comparing centrality scores across components. This paper provides a comprehensive analysis of approaches to this problem, categorizing them into three types: (1) eigenvector computation on perturbed matrices that force connectivity, including epsilon perturbation, supernode augmentation, and PageRank; (2) algebraic generalizations that include eigenvector as a limiting case, such as Katz and Hubbell centrality; and (3) component-wise computation with various scaling factors. We demonstrate that existing methods involve arbitrary choices that fundamentally affect results. We propose two main rescaling approaches — degree matching and beta matching — and show that a quadratic variant of beta matching is the only method from the ones we consider satisfying all six evaluation criteria that we propose. These methods emerge from forcing the eigenvectors for each component to match either degree centrality or beta centrality for certain classes of graph. Among the component-wise methods, conventional normalizations satisfy four of our six criteria, degree matching, beta matching and edge-count scaling satisfy five, and quadratic beta matching satisfies all six. We call the resulting measures \"eigen-like centrality\" because they retain eigenvector properties but are not strictly eigenvectors. We illustrate our methods using the Davis Southern Women dataset and Freeman's EIES network, and extend the framework to directed data using singular value decomposition.",
+      "url": "https://doi.org/10.1016/j.socnet.2026.11.002",
+      "published": "2026-11-26",
+      "venue": "Social Networks",
       "categories": [],
       "pdf_url": null,
-      "doi": "https://doi.org/10.1126/sciadv.aeh9321",
-      "citations": 1,
-      "rule_score": 7.8,
-      "score": 8.89,
-      "tldr_zh": "追踪196人真实社交网络一年，发现人们对关系的错误认知反而能预测未来6个月关系的形成与解散。",
+      "doi": "https://doi.org/10.1016/j.socnet.2026.11.002",
+      "citations": 0,
+      "rule_score": 7.1,
+      "score": 8.855,
+      "tldr_zh": "系统梳理不连通网络中特征向量中心性的三类处理方案（扰动矩阵、代数推广等），并比较其跨分量可比性。",
       "tldr": null,
       "tags": [
         "社会网络",
         "方法论"
       ],
-      "reason": "直接研究社会网络认知误差与连边演化，属社会网络分析核心实证发现。",
+      "reason": "直接针对社会网络分析核心中心性度量的方法缺陷与修正，属方法论必读。",
       "backfill_date": null
     },
     {
-      "id": "arxiv:2611.33619",
-      "source": "arxiv",
-      "title": "Before They Were Cool: Do Early Fans Abandon Artists Who Suddenly Become Popular? Evidence from Online Music Listening",
-      "authors": [
-        "Zihan Chen",
-        "Lei Nico Zheng",
-        "Di Zhu"
-      ],
-      "abstract": "Identity-signalling theory, echoed in the hipster's \"I liked them before they were cool\", expects an artist's first fans to pull away once the artist becomes popular, by leaving or by avoiding what the newcomers play. A rival account expects the event that brings the crowd to renew existing listeners' attention to the artist. We test both in the Last.fm listening histories of 594,415 users (21.1 billion plays, 2005-2013), where every play appears on the user's profile. Study 1 detects 78 crowd arrivals: months in which the number of people discovering an artist tripled without a new album, single or EP, for example after a song appeared in a film. Study 2 compares Grammy and Mercury Prize winners with nominees who won nothing. We compare listeners who had played the artist before the crowd arrived (early fans) with early fans of comparison artists. Early fans did not withdraw. Those still listening stopped less often (25.8% vs. 29.1% over six months), and those who had drifted away returned more often (29.6% vs. 25.0%). Those who kept listening converged on the crowd: the song most newcomers played took a larger share of their plays, with no turn to deep cuts. More lapsed fans returned after larger surges, and neither fans with the most distinctive tastes nor fans facing a more mainstream crowd quit more. Award wins brought few new listeners and no clear change. Where listening is displayed by default, early fans moved towards the crowd after sudden popularity, not away from it.",
-      "url": "https://arxiv.org/abs/2611.33619",
-      "published": "2026-11-25",
-      "venue": "arXiv",
-      "categories": [
-        "cs.HC",
-        "cs.CY",
-        "cs.SI"
-      ],
-      "pdf_url": "https://arxiv.org/pdf/2611.33619v1",
-      "doi": null,
-      "citations": 0,
-      "rule_score": 5.0,
-      "score": 8.25,
-      "tldr_zh": "用Last.fm 59万用户210亿次播放记录检验“早期粉丝在艺人走红后是否离开”，发现走红事件反而重新吸引老听众。",
-      "tldr": null,
-      "tags": [
-        "数字痕迹",
-        "在线平台",
-        "因果推断"
-      ],
-      "reason": "基于大规模数字痕迹做身份信号与受众行为的因果检验，是计算社会科学的典型实证研究。",
-      "backfill_date": null
-    },
-    {
-      "id": "arxiv:2611.34709",
-      "source": "arxiv",
-      "title": "Decision and Support Mechanisms under Platform Information Overload: A Generative-Agent Experiment on College Application",
-      "authors": [
-        "Tingyu Dai",
-        "Xuanyou Liu"
-      ],
-      "abstract": "People now make major personal decisions surrounded by far more online information than they can read, yet research says little about why information overload affects some people more than others. We study this question in Chinese college applications, a high-stakes decision made amid heavy online content where each list can be scored objectively once admission cutoffs are released. We simulated 90 applicants using language-model agents with family backgrounds from a national household survey. Each applicant wrote a list of eight programs alone and revised it four times: after parent and teacher advice, after reading a feed of twenty real online items, after a mentor gave advice based on the applicant's rank, and after a second mentor offered only emotional support. After each step, we scored the list and asked how anxious the applicant felt. When applicants decided alone, admission rates were similar across socioeconomic status (SES) groups. The gap appeared once family background entered through parents and teachers: low-SES parents asked for low tuition and schools near home, leaving fewer reachable programs, so admission was 100% for high-SES vs. 77% for low-SES applicants. The platform feed gave everyone the same amount of information but did not narrow this gap; applicants maintained their decisions while reporting higher anxiety. Personalized advice cut the gap to 3 points by raising low-SES admission from 80% to 97%, but led students to higher tuition and less preferred majors. Emotional support did not further lower anxiety, but helped applicants go back and use helpful items they had ignored. These simulation results suggest that when information is abundant, more of it neither improves decisions nor reduces inequality. Personalized information does both, while moving inequality from the outcome to its cost.",
-      "url": "https://arxiv.org/abs/2611.34709",
-      "published": "2026-11-25",
-      "venue": "arXiv",
-      "categories": [
-        "cs.CY"
-      ],
-      "pdf_url": "https://arxiv.org/pdf/2611.34709v1",
-      "doi": null,
-      "citations": 0,
-      "rule_score": 3.7,
-      "score": 8.185,
-      "tldr_zh": "用90个LLM智能体模拟高考志愿填报，比较家长、教师、信息流与导师干预对信息过载下决策质量的影响。",
-      "tldr": null,
-      "tags": [
-        "LLM智能体",
-        "实验",
-        "在线平台"
-      ],
-      "reason": "生成式智能体实验研究平台信息过载与决策支持，方法上对计算社会科学仿真实验有明确参考价值。",
-      "backfill_date": null
-    },
-    {
-      "id": "arxiv:2611.34098",
-      "source": "arxiv",
-      "title": "Whose Side Are You On? A Framework and Benchmark for Assessing LLM Political Stances through Politicians Social Media Posts",
-      "authors": [
-        "Mohamed Osman",
-        "Mucahid Kutlu",
-        "Tamer Elsayed",
-        "Saban Kardas"
-      ],
-      "abstract": "Large language models (LLMs) increasingly participate in political discussions, making it important to understand which positions they support or oppose. We propose a framework for assessing LLMs' political stances through simulated social media interactions. The framework uses politicians' posts and multiple prompting methods to identify consistently expressed stances. Using this framework, we construct WorldPOLL, comprising 4,600 political posts from X/Twitter collected from approximately 200 politicians representing ruling and opposition blocs across 23 countries. Our quantitative analysis shows how support and opposition vary across models, countries, and political directions, while our qualitative analysis identifies the political views and policies models support or oppose. Together, these analyses reveal shared positions across models and differences across national contexts. We also examine whether models express consistent stances across prompting methods, investigate the reasons for disagreement, and assess the effects of model size and instruction tuning in stance inconsistency. WorldPOLL offers a practical way to measure LLM political tendencies, identify the views behind them, and assess their consistency in real-world political discussions.",
-      "url": "https://arxiv.org/abs/2611.34098",
-      "published": "2026-11-25",
-      "venue": "arXiv",
-      "categories": [
-        "cs.SI",
-        "cs.AI"
-      ],
-      "pdf_url": "https://arxiv.org/pdf/2611.34098v1",
-      "doi": null,
-      "citations": 0,
-      "rule_score": 7.9,
-      "score": 7.895,
-      "tldr_zh": "构建WorldPOLL基准，用23国约200名政客的4600条推文与多种提示方法评估LLM政治立场。",
-      "tldr": null,
-      "tags": [
-        "LLM智能体",
-        "舆论与极化",
-        "在线平台"
-      ],
-      "reason": "结合LLM立场评估与社交媒体政治话语，对计算社会科学中的极化与LLM研究有实证价值。",
-      "backfill_date": null
-    },
-    {
-      "id": "arxiv:2611.33254",
-      "source": "arxiv",
-      "title": "Anti-AI in the Wild: From Toxic Discourse to Action",
-      "authors": [
-        "Yage Zhang",
-        "Yukun Jiang",
-        "Ziqing Yang",
-        "Yihan Ma",
-        "Xinyue Shen",
-        "Yang Zhang"
-      ],
-      "abstract": "Online discussion of generative AI has become increasingly contentious, and communities devoted to supporting, opposing, or debating AI have emerged on social media. Some of these communities take anti-AI actions, such as deploying crawler tarpits and data-poisoning services to interfere with data collection and model training. Yet, the scope of these actions and their relationship to online discourse remain poorly understood. In this paper, we present the first measurement study of online conflict over generative AI, from toxic discourse to anti-AI actions. We collect 931,640 posts from 25 Reddit communities, label them with a large language model detector validated against human labels, identify 3,312 anti-AI actions, and trace the output of three deployed anti-AI tools. Our analysis reveals that 30.0% of posts in communities devoted to this conflict are toxic, compared to 4.4% in general AI communities. Anti-AI actions in these communities mainly target AI crawling or model training data, such as image cloaking and data poisoning. We further examine the implications of these anti-AI actions for AI training, by analyzing the text and code generated from deployed tools. Notably, 66.5% of the code samples generated by a data-poisoning service contain fabricated facts, misused APIs, or broken logic, yet 93.6% passes a public code-curation pipeline, close to the rate for real source code (95.0%). For crawler tarpit output, adding a period to the end of each paragraph increases the curation survival rate from 16.4% to 91.9%. We also find that crawler tarpit and data-poisoning output has already entered Common Crawl, a widely used public web archive, and that crawler tarpit output has also entered FineWeb, a released pretraining dataset. We hope our study can facilitate a better understanding of online conflict over generative AI and its implications for content moderation and AI training.",
-      "url": "https://arxiv.org/abs/2611.33254",
-      "published": "2026-11-24",
-      "venue": "arXiv",
-      "categories": [
-        "cs.SI",
-        "cs.AI",
-        "cs.CR"
-      ],
-      "pdf_url": "https://arxiv.org/pdf/2611.33254v1",
-      "doi": null,
-      "citations": 0,
-      "rule_score": 7.6,
-      "score": 7.88,
-      "tldr_zh": "测量25个Reddit社区93万帖，用LLM检测器识别3312次反AI行动，揭示毒性话语与线下行动的关联。",
-      "tldr": null,
-      "tags": [
-        "在线平台",
-        "文本计算",
-        "扩散与传播"
-      ],
-      "reason": "在线平台冲突与话语到行动的转化测量，契合计算社会科学的数字痕迹与文本计算议题。",
-      "backfill_date": null
-    },
-    {
-      "id": "arxiv:2611.34647",
-      "source": "arxiv",
-      "title": "The Hawkes Hypergraph Copy Model: A Semi-mechanistic Generative Model for Temporal Hypergraphs",
-      "authors": [
-        "Maxwell Lee",
-        "Charles Prince",
-        "Subhadeep Paul",
-        "Kevin S. Xu"
-      ],
-      "abstract": "Many complex networks involve time-varying relations between more than two nodes. Such networks are naturally modeled by temporal hypergraphs. We propose the Hawkes Hypergraph Copy Model (HHCM), a semi-mechanistic model for temporal hypergraphs that combines a Hawkes process to model the timestamps of hyperedges with a noisy copy mechanism to model the nodes present in hyperedges. Each hyperedge is either generated as an exogenous event with a baseline rate or an endogenous event as a noisy copy of a previous hyperedge. Our proposed model can be used for credit attribution, where the objective is to quantify the influence or contribution of a prior hyperedge to a current one. We apply the HHCM to perform attribution on several real network datasets with higher-order relations, including email networks and militarized interstate dispute networks.",
-      "url": "https://arxiv.org/abs/2611.34647",
-      "published": "2026-11-25",
-      "venue": "arXiv",
-      "categories": [
-        "cs.SI",
-        "physics.soc-ph",
-        "stat.AP"
-      ],
-      "pdf_url": "https://arxiv.org/pdf/2611.34647v1",
-      "doi": null,
-      "citations": 0,
-      "rule_score": 6.2,
-      "score": 7.81,
-      "tldr_zh": "提出Hawkes超图复制模型，用霍克斯过程加噪声复制机制生成时序超图，并用于超边间影响归因。",
-      "tldr": null,
-      "tags": [
-        "复杂网络",
-        "仿真与ABM",
-        "方法论"
-      ],
-      "reason": "高阶时序网络的生成模型与归因方法，对复杂网络建模读者有方法价值。",
-      "backfill_date": null
-    },
-    {
-      "id": "arxiv:2611.33546",
-      "source": "arxiv",
-      "title": "Community Notes Across Platforms: Evaluating the Feasibility of Re-using Crowd-sourced Context Notes",
-      "authors": [
-        "Nishka Arora",
-        "Yann Issam Aouidef",
-        "Ashish Goel"
-      ],
-      "abstract": "Crowdsourced fact-checking systems such as Community Notes can provide useful context for misleading content. Producing and rating new notes on such systems requires substantial contributor effort. However, the resulting context is typically confined to the post and platform for which it was created. We ask whether already-vetted notes can be reused when the same claims recur across posts and platforms. To investigate this question, we construct a human-labelled dataset using Community Notes attached to X posts created during a one-week period and candidate posts retrieved from Bluesky. Within our observation window, 140 of 340 claims had at least one confirmed recurrence on Bluesky, showing that cross-platform note reuse is a substantial opportunity. Recurrence alone, however, does not establish whether reuse would provide timely context. A timing analysis shows that many relevant notes were already Helpful when matching Bluesky posts appeared. Even when a Bluesky post appeared first, reuse could often still provide context sooner after publication than the original X post received its Helpful note. To automate the discovery of these opportunities, we evaluate a three-stage pipeline that searches the Bluesky stream for potential recurrences and determines whether an existing note applies. The pipeline achieves 72.6% precision in a held-out stream evaluation and 70.1% end-to-end recall on our known-positive set. We further characterize the pipeline's costs and principal failure modes. Crossnote, our prototype Bluesky labeler, implements this approach by applying existing Community Notes to matching posts. Our findings suggest that reusing vetted crowdsourced context is a compelling way to scale the reach and impact of Community Notes. Note reuse can complement the production of new notes by reducing duplicated effort and shortening time to context when misleading claims recur.",
-      "url": "https://arxiv.org/abs/2611.33546",
-      "published": "2026-11-24",
-      "venue": "arXiv",
-      "categories": [
-        "cs.SI",
-        "cs.IR"
-      ],
-      "pdf_url": "https://arxiv.org/pdf/2611.33546v1",
-      "doi": null,
-      "citations": 0,
-      "rule_score": 5.0,
-      "score": 7.75,
-      "tldr_zh": "构建X与Bluesky的人工标注数据集，发现340条主张中140条跨平台重现，评估众包社区笔记复用的可行性。",
-      "tldr": null,
-      "tags": [
-        "在线平台",
-        "文本计算",
-        "舆论与极化"
-      ],
-      "reason": "研究跨平台众包事实核查内容的复用，涉及在线平台信息治理与文本匹配方法。",
-      "backfill_date": null
-    },
-    {
-      "id": "openalex:W7239874584",
+      "id": "openalex:W4415067712",
       "source": "openalex",
-      "title": "Impact of service value fluctuation on market share: a simulation study",
+      "title": "Sustained changes to urban mobility after COVID-19 reinforced socioeconomic inequalities in Argentina, Chile and Colombia",
       "authors": [
-        "Yukihisa Fujita",
-        "Takashi Amakasu",
-        "Fujio Toriumi"
+        "Carmen Cabrera-Arnau",
+        "Miguel González‐Leonardo",
+        "Andrea Nasuto",
+        "Ruth Neville",
+        "Francisco Rowe"
       ],
-      "abstract": "Service value is a critical factor for gaining market share and retaining customers. Although the importance of service value is well-established, it is often challenging to consistently provide high-value service owing to various factors, such as human error and unforeseen incidents. Therefore, understanding the influence of service value fluctuations on market share is crucial for service providers to develop effective strategies. To evaluate this influence, we propose a consumer decision model that considers past service-use experiences and word-of-mouth. Moreover, consumers’ selection results influence other consumers’ choices through information diffusion. We investigate the model behavior through analytical analysis and simulation, and the results demonstrate that the model can reproduce insights from previous studies. Additionally, we evaluated the influence of service value fluctuation on market share across several market characteristics, particularly service-use frequency and the ease of word-of-mouth dissemination. The results revealed that fluctuations negatively impact market share, even if they increase the value received by consumers. Moreover, in markets characterized by high service-use frequency, the results imply that marketing strategies focused on providing information to consumers are replaced less effective. In such markets, service value fluctuation is critical for gaining market share.",
-      "url": "https://doi.org/10.1007/s42001-026-00505-z",
-      "published": "2026-11-25",
-      "venue": "Journal of Computational Social Science",
+      "abstract": "Urban mobility is central to economic activity, social inclusion and access to services. COVID-19 caused disruptions to mobility globally, yet its long-term impacts in Latin America remain poorly understood. Using > 170 million anonymised and aggregated location records from Meta-Facebook users in Argentina, Chile and Colombia (April 2020-May 2022), we examine changes in overall mobility volume relative to pre-pandemic baselines across socioeconomic and rural-urban gradients. Two years after the pandemic onset, mobility in the highest-density urban cores remained ~ 25–50% below baseline across the three countries, while the top 33% most affluent communities had not returned to baseline. These differences are explained by the scale of the initial mobility shock rather than by subsequent recovery rates. Our findings reveal how a global shock can entrench disparities in human mobility, with implications for urban resilience and planning in unequal nations. Our study underscores the need for proactive policies to prevent long-lasting mobility inequalities.",
+      "url": "https://doi.org/10.1038/s41467-026-79361-4",
+      "published": "2026-11-26",
+      "venue": "Nature Communications",
       "categories": [],
       "pdf_url": null,
-      "doi": "https://doi.org/10.1007/s42001-026-00505-z",
-      "citations": 0,
-      "rule_score": 4.9,
-      "score": 7.745,
-      "tldr_zh": "构建考虑过往服务体验与口碑的消费者决策模型，用分析与仿真发现服务价值波动如何影响市场份额。",
-      "tldr": null,
+      "doi": "https://doi.org/10.1038/s41467-026-79361-4",
+      "citations": 7,
+      "rule_score": 6.4,
+      "score": 6.4,
+      "tldr_zh": null,
+      "tldr": "Urban mobility is central to economic activity, social inclusion and access to services.",
       "tags": [
-        "仿真与ABM",
-        "扩散与传播"
+        "城市与流动"
       ],
-      "reason": "用仿真与信息扩散建模消费者选择与市场份额，属计算社会科学中仿真与传播议题。",
+      "reason": null,
       "backfill_date": null
     },
     {
-      "id": "arxiv:2611.33503",
-      "source": "arxiv",
-      "title": "Using AI to Simulate the Behaviour of European Populations",
+      "id": "openalex:W7240087013",
+      "source": "openalex",
+      "title": "Disagreements in global urban growth projections amplify uncertainties in deforestation and carbon emissions",
       "authors": [
-        "Umair Mehmood Imam"
+        "Xia Liao",
+        "Jasper van Vliet",
+        "Yuyu Zhou",
+        "Yan Liu",
+        "María Eugenia Correa-Cano",
+        "Robert Mangani",
+        "Sven Anders",
+        "Joseph Awetori Yaro"
       ],
-      "abstract": "Language models can stand in for survey respondents, but leading approaches build their simulated people from interviews or individual records. We show that a model can learn how European population groups respond from published statistics, without interviews and without training on individual records. We fine-tune an open-weight language model on more than 12 million published group-level answer distributions from about 40 European countries, setting it up to predict each group's departure from a reference distribution. On opinion surveys from its training families it calls the direction of group differences right 84% of the time, ahead of a demographic statistical model (77%, paired test) and level with Claude Opus 5 and 5.5, which it also ties on accuracy; the frontier models are more accurate on new questions. On 278 held-out questions, almost all from the survey families seen in training, its error is 12% lower than that statistical model. It runs on a single 32 GB GPU or a high-memory laptop, and in a test with an earlier model, an evidence gate calibrated on half of a survey's questions fell back to the reference where the model's adjustments did not help. Coupled to a transport simulation of a planned metro closure, with a conventional elasticity as the reference, it adds a testable age gradient to the response, which we freeze for later scoring.",
-      "url": "https://arxiv.org/abs/2611.33503",
-      "published": "2026-11-24",
-      "venue": "arXiv",
-      "categories": [
-        "cs.CL",
-        "cs.CY"
-      ],
-      "pdf_url": "https://arxiv.org/pdf/2611.33503v1",
-      "doi": null,
+      "abstract": "Global urbanization is profoundly reshaping 21st-century land systems, yet its future trajectory remains highly uncertain. Existing projections exhibit divergent urban growth patterns even under identical socioeconomic scenarios. Here, by synthesizing six urban growth projections, we reveal substantial disagreements in the extent and location of urban growth by 2100. These disagreements are amplified by land-system feedbacks, driving cross-dataset variation in urban-induced deforestation (1.75–4.91 million km 2) through direct forest conversion and indirect cropland displacement, assuming lost production is compensated by cropland expansion elsewhere. The associated emissions exhibit an absolute range of 29 to 76 GtCO 2 by 2100. Across 100 countries, this range accounts for an average of 3% of unconditional Nationally Determined Contribution emission budgets, reaching 26% in specific countries. Our findings establish cross-dataset disagreement as an important source of uncertainty in land and climate assessments, highlighting the need for robust spatial planning across plausible urban futures.",
+      "url": "https://doi.org/10.1038/s41467-026-79543-0",
+      "published": "2026-11-26",
+      "venue": "Nature Communications",
+      "categories": [],
+      "pdf_url": null,
+      "doi": "https://doi.org/10.1038/s41467-026-79543-0",
       "citations": 0,
-      "rule_score": 3.7,
-      "score": 7.685,
-      "tldr_zh": "仅用公开群体统计微调开源LLM，模拟欧洲各国人群调查回答，群体差异方向准确率达84%。",
-      "tldr": null,
+      "rule_score": 5.9,
+      "score": 5.9,
+      "tldr_zh": null,
+      "tldr": "Global urbanization is profoundly reshaping 21st-century land systems, yet its future trajectory remains highly uncertain.",
       "tags": [
-        "LLM智能体",
-        "方法论",
-        "仿真与ABM"
+        "城市与流动"
       ],
-      "reason": "提出无需个体数据的群体级LLM社会模拟方法，对计算社会科学中的硅样本与仿真研究有直接方法价值。",
+      "reason": null,
+      "backfill_date": null
+    },
+    {
+      "id": "openalex:W7124423216",
+      "source": "openalex",
+      "title": "The hidden structure of innovation networks",
+      "authors": [
+        "Lorenzo Emer",
+        "Anna Gallo",
+        "Mattia Marzi",
+        "Andrea Mina",
+        "Tiziano Squartini",
+        "Andrea Vandin"
+      ],
+      "abstract": "Innovation emerges from complex collaboration patterns - among inventors, firms, or institutions. However, not much is known about the overall mesoscopic structure around which inventive activity self-organizes. Here, we tackle this problem by employing patent data to analyze both individual (co-inventorship) and organization (co-ownership) networks in three strategic domains (artificial intelligence, biotechnology and semiconductors). We characterize the mesoscale structure (in terms of clusters) of each domain by comparing two alternative methods: a standard baseline - modularity maximization - and one based on the minimization of the Bayesian Information Criterion, instantiated with the Stochastic Block Model and its degree-corrected variant. We find that, across sectors, inventor networks are denser and more clustered than organization ones - consistently with the presence of small recurrent teams embedded into broader institutional hierarchies - whereas organization networks have a neater role-based structures, with few bridging firms coordinating the most peripheral ones; still, both are characterized by the presence of local core-periphery structures. We also find that the discovered meso-structures are connected to innovation output. In particular, Lorenz curves of forward citations show a pervasive inequality in technological influence: across sectors and methods, both inventor (especially) and organization networks consistently show high levels of concentration of citations in a few of the discovered clusters. Our results demonstrate that the baseline modularity-based method may not be capable of fully capturing the way collaborations drive the spreading of inventive impact across technological domains. This is due to the presence of local hierarchies that call for proper inferential tools.",
+      "url": "https://doi.org/10.1093/pnasnexus/pgag404",
+      "published": "2026-11-26",
+      "venue": "PNAS Nexus",
+      "categories": [],
+      "pdf_url": null,
+      "doi": "https://doi.org/10.1093/pnasnexus/pgag404",
+      "citations": 3,
+      "rule_score": 5.4,
+      "score": 5.4,
+      "tldr_zh": null,
+      "tldr": "Innovation emerges from complex collaboration patterns - among inventors, firms, or institutions.",
+      "tags": [
+        "方法论"
+      ],
+      "reason": null,
       "backfill_date": null
     }
   ]

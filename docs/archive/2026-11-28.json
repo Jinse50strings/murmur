@@ -1,0 +1,139 @@
+{
+  "app": "Murmur",
+  "version": 1,
+  "date": "2026-11-28",
+  "generated_at": "2026-11-28T08:12:04+08:00",
+  "count": 4,
+  "counts": {
+    "sources": {
+      "arxiv": 48,
+      "openalex": 119
+    },
+    "unique": 167,
+    "new": 144,
+    "candidates": 5,
+    "selected": 4,
+    "fresh_selected": 4,
+    "errors": 0
+  },
+  "papers": [
+    {
+      "id": "openalex:W7240092792",
+      "source": "openalex",
+      "title": "Eigenvector centrality in disconnected networks",
+      "authors": [
+        "Martin G. Everett",
+        "Stephen P. Borgatti"
+      ],
+      "abstract": "Eigenvector centrality (Bonacich 1972) for undirected graphs is one of the most used centrality measures in social network analysis. However, when applied to disconnected graphs, it typically assigns non-zero values only to nodes in the component with the largest eigenvalue, with all other nodes receiving zero. The usual solution is to calculate the dominant eigenvector for each component separately, but this creates difficulties when comparing centrality scores across components. This paper provides a comprehensive analysis of approaches to this problem, categorizing them into three types: (1) eigenvector computation on perturbed matrices that force connectivity, including epsilon perturbation, supernode augmentation, and PageRank; (2) algebraic generalizations that include eigenvector as a limiting case, such as Katz and Hubbell centrality; and (3) component-wise computation with various scaling factors. We demonstrate that existing methods involve arbitrary choices that fundamentally affect results. We propose two main rescaling approaches — degree matching and beta matching — and show that a quadratic variant of beta matching is the only method from the ones we consider satisfying all six evaluation criteria that we propose. These methods emerge from forcing the eigenvectors for each component to match either degree centrality or beta centrality for certain classes of graph. Among the component-wise methods, conventional normalizations satisfy four of our six criteria, degree matching, beta matching and edge-count scaling satisfy five, and quadratic beta matching satisfies all six. We call the resulting measures \"eigen-like centrality\" because they retain eigenvector properties but are not strictly eigenvectors. We illustrate our methods using the Davis Southern Women dataset and Freeman's EIES network, and extend the framework to directed data using singular value decomposition.",
+      "url": "https://doi.org/10.1016/j.socnet.2026.11.002",
+      "published": "2026-11-26",
+      "venue": "Social Networks",
+      "categories": [],
+      "pdf_url": null,
+      "doi": "https://doi.org/10.1016/j.socnet.2026.11.002",
+      "citations": 0,
+      "rule_score": 7.1,
+      "score": 8.855,
+      "tldr_zh": "系统梳理不连通网络中特征向量中心性的三类处理方案（扰动矩阵、代数推广等），并比较其跨分量可比性。",
+      "tldr": null,
+      "tags": [
+        "社会网络",
+        "方法论"
+      ],
+      "reason": "直接针对社会网络分析核心中心性度量的方法缺陷与修正，属方法论必读。",
+      "backfill_date": null
+    },
+    {
+      "id": "openalex:W4415067712",
+      "source": "openalex",
+      "title": "Sustained changes to urban mobility after COVID-19 reinforced socioeconomic inequalities in Argentina, Chile and Colombia",
+      "authors": [
+        "Carmen Cabrera-Arnau",
+        "Miguel González‐Leonardo",
+        "Andrea Nasuto",
+        "Ruth Neville",
+        "Francisco Rowe"
+      ],
+      "abstract": "Urban mobility is central to economic activity, social inclusion and access to services. COVID-19 caused disruptions to mobility globally, yet its long-term impacts in Latin America remain poorly understood. Using > 170 million anonymised and aggregated location records from Meta-Facebook users in Argentina, Chile and Colombia (April 2020-May 2022), we examine changes in overall mobility volume relative to pre-pandemic baselines across socioeconomic and rural-urban gradients. Two years after the pandemic onset, mobility in the highest-density urban cores remained ~ 25–50% below baseline across the three countries, while the top 33% most affluent communities had not returned to baseline. These differences are explained by the scale of the initial mobility shock rather than by subsequent recovery rates. Our findings reveal how a global shock can entrench disparities in human mobility, with implications for urban resilience and planning in unequal nations. Our study underscores the need for proactive policies to prevent long-lasting mobility inequalities.",
+      "url": "https://doi.org/10.1038/s41467-026-79361-4",
+      "published": "2026-11-26",
+      "venue": "Nature Communications",
+      "categories": [],
+      "pdf_url": null,
+      "doi": "https://doi.org/10.1038/s41467-026-79361-4",
+      "citations": 7,
+      "rule_score": 6.4,
+      "score": 6.4,
+      "tldr_zh": null,
+      "tldr": "Urban mobility is central to economic activity, social inclusion and access to services.",
+      "tags": [
+        "城市与流动"
+      ],
+      "reason": null,
+      "backfill_date": null
+    },
+    {
+      "id": "openalex:W7240087013",
+      "source": "openalex",
+      "title": "Disagreements in global urban growth projections amplify uncertainties in deforestation and carbon emissions",
+      "authors": [
+        "Xia Liao",
+        "Jasper van Vliet",
+        "Yuyu Zhou",
+        "Yan Liu",
+        "María Eugenia Correa-Cano",
+        "Robert Mangani",
+        "Sven Anders",
+        "Joseph Awetori Yaro"
+      ],
+      "abstract": "Global urbanization is profoundly reshaping 21st-century land systems, yet its future trajectory remains highly uncertain. Existing projections exhibit divergent urban growth patterns even under identical socioeconomic scenarios. Here, by synthesizing six urban growth projections, we reveal substantial disagreements in the extent and location of urban growth by 2100. These disagreements are amplified by land-system feedbacks, driving cross-dataset variation in urban-induced deforestation (1.75–4.91 million km 2) through direct forest conversion and indirect cropland displacement, assuming lost production is compensated by cropland expansion elsewhere. The associated emissions exhibit an absolute range of 29 to 76 GtCO 2 by 2100. Across 100 countries, this range accounts for an average of 3% of unconditional Nationally Determined Contribution emission budgets, reaching 26% in specific countries. Our findings establish cross-dataset disagreement as an important source of uncertainty in land and climate assessments, highlighting the need for robust spatial planning across plausible urban futures.",
+      "url": "https://doi.org/10.1038/s41467-026-79543-0",
+      "published": "2026-11-26",
+      "venue": "Nature Communications",
+      "categories": [],
+      "pdf_url": null,
+      "doi": "https://doi.org/10.1038/s41467-026-79543-0",
+      "citations": 0,
+      "rule_score": 5.9,
+      "score": 5.9,
+      "tldr_zh": null,
+      "tldr": "Global urbanization is profoundly reshaping 21st-century land systems, yet its future trajectory remains highly uncertain.",
+      "tags": [
+        "城市与流动"
+      ],
+      "reason": null,
+      "backfill_date": null
+    },
+    {
+      "id": "openalex:W7124423216",
+      "source": "openalex",
+      "title": "The hidden structure of innovation networks",
+      "authors": [
+        "Lorenzo Emer",
+        "Anna Gallo",
+        "Mattia Marzi",
+        "Andrea Mina",
+        "Tiziano Squartini",
+        "Andrea Vandin"
+      ],
+      "abstract": "Innovation emerges from complex collaboration patterns - among inventors, firms, or institutions. However, not much is known about the overall mesoscopic structure around which inventive activity self-organizes. Here, we tackle this problem by employing patent data to analyze both individual (co-inventorship) and organization (co-ownership) networks in three strategic domains (artificial intelligence, biotechnology and semiconductors). We characterize the mesoscale structure (in terms of clusters) of each domain by comparing two alternative methods: a standard baseline - modularity maximization - and one based on the minimization of the Bayesian Information Criterion, instantiated with the Stochastic Block Model and its degree-corrected variant. We find that, across sectors, inventor networks are denser and more clustered than organization ones - consistently with the presence of small recurrent teams embedded into broader institutional hierarchies - whereas organization networks have a neater role-based structures, with few bridging firms coordinating the most peripheral ones; still, both are characterized by the presence of local core-periphery structures. We also find that the discovered meso-structures are connected to innovation output. In particular, Lorenz curves of forward citations show a pervasive inequality in technological influence: across sectors and methods, both inventor (especially) and organization networks consistently show high levels of concentration of citations in a few of the discovered clusters. Our results demonstrate that the baseline modularity-based method may not be capable of fully capturing the way collaborations drive the spreading of inventive impact across technological domains. This is due to the presence of local hierarchies that call for proper inferential tools.",
+      "url": "https://doi.org/10.1093/pnasnexus/pgag404",
+      "published": "2026-11-26",
+      "venue": "PNAS Nexus",
+      "categories": [],
+      "pdf_url": null,
+      "doi": "https://doi.org/10.1093/pnasnexus/pgag404",
+      "citations": 3,
+      "rule_score": 5.4,
+      "score": 5.4,
+      "tldr_zh": null,
+      "tldr": "Innovation emerges from complex collaboration patterns - among inventors, firms, or institutions.",
+      "tags": [
+        "方法论"
+      ],
+      "reason": null,
+      "backfill_date": null
+    }
+  ]
+}
